@@ -1,6 +1,11 @@
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.siteDescription }}{{ end }}">
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
+{{/* ── 검색 엔진 소유권 인증 ── */}}
+{{ with .Site.Params.googleSiteVerification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+{{ with .Site.Params.naverSiteVerification }}<meta name="naver-site-verification" content="{{ . }}">{{ end }}
+{{ with .Site.Params.bingSiteVerification }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
+
 {{/* ── Canonical URL ── */}}
 <link rel="canonical" href="{{ .Permalink }}">
 

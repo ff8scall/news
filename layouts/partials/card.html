@@ -1,4 +1,4 @@
-<article class="post-card">
+<article class="post-card {{ with .Params.categories }}cat-{{ index . 0 | urlize }}{{ end }}">
   <a href="{{ .RelPermalink }}" class="card-link" aria-label="{{ .Title }} 자세히 보기">
     {{/* ── 썸네일 (이미지가 있을 때만 노출) ── */}}
     {{ if .Params.thumbnail }}

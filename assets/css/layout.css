@@ -230,6 +230,35 @@
   text-transform: uppercase;
 }
 
+/* ── 카테고리별 고유 색상 시스템 ── */
+.post-card { position: relative; border-top: 3px solid transparent; transition: all var(--duration-fast); }
+
+/* AI·신기술: 블루 */
+.post-card.cat-ai-신기술 { --cat-color: #007AFF; }
+/* AI 에이전트: 퍼플 */
+.post-card.cat-ai-에이전트 { --cat-color: #A855F7; }
+/* 수익화 전략: 골드 */
+.post-card.cat-수익화-전략 { --cat-color: #F59E0B; }
+/* 캠핑: 오렌지 */
+.post-card.cat-캠핑 { --cat-color: #F97316; }
+/* 라이프스타일: 핑크/그린 */
+.post-card.cat-라이프스타일 { --cat-color: #10B981; }
+
+/* 공통 액센트 적용 */
+.post-card[class*="cat-"] {
+  border-top-color: var(--cat-color);
+}
+.post-card[class*="cat-"] .card-category,
+.post-card[class*="cat-"] .card-category-inline {
+  background: var(--cat-color);
+  color: #FFFFFF;
+}
+.post-card[class*="cat-"]:hover {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--cat-color);
+  transform: translateY(-4px);
+  border-color: var(--cat-color);
+}
+
 .card-body { padding: var(--sp-5); }
 .card-title {
   font-size: var(--text-base);
