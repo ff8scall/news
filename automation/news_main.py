@@ -6,8 +6,8 @@ from history_manager import HistoryManager
 
 def create_hugo_post(article):
     """최종 선정된 뉴스를 Hugo 포스팅으로 생성"""
-    folder = "ai-tech" if article['score'] >= 8 else "others"
-    path = f"content/posts/{folder}"
+    # 2026 리뉴얼 계층 구조 반영: 모든 뉴스는 news 폴더에 통합 관리
+    path = "content/posts/news" 
     os.makedirs(path, exist_ok=True)
     
     clean_desc = article['summary'][:150].replace('\n', ' ')
@@ -29,6 +29,7 @@ image: "{article['urlToImage']}"
 
 **[원본 기사 보기]({article['url']})**
 """
+    # 유니크한 파일명을 위해 짧은 딜레이 방지용으로 타임스탬프에 인덱스 추가 가능
     with open(f"{path}/{filename}", "w", encoding="utf-8") as f:
         f.write(content)
     print(f"[SUCCESS] Posted: {article['title']}")
@@ -87,6 +88,9 @@ def main():
     print(f"\n[*] Final Selection: {len(high_value_news)} gems found.")
     for art in high_value_news:
         create_hugo_post(art)
+        # 파일명 겹침 방지 (초당 여러 개 생성 방지)
+        time.sleep(0.1) 
+
     print("=== Cycle Completed ===")
 
 if __name__ == "__main__":
