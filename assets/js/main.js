@@ -12,6 +12,51 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+  // ── 1.1 검색 모달 토글 ──────────────────────
+  const btnSearch      = document.getElementById('btn-search');
+  const btnSearchClose = document.getElementById('btn-search-close');
+  const searchModal    = document.getElementById('search-modal');
+
+  const toggleSearch = (state) => {
+    if (searchModal) {
+      searchModal.classList.toggle('is-open', state);
+      searchModal.setAttribute('aria-hidden', String(!state));
+      if (state) {
+        setTimeout(() => {
+          searchModal.querySelector('input')?.focus();
+        }, 100);
+      }
+    }
+  };
+
+  if (btnSearch) btnSearch.addEventListener('click', () => toggleSearch(true));
+  if (btnSearchClose) btnSearchClose.addEventListener('click', () => toggleSearch(false));
+  searchModal?.querySelector('.search-modal-overlay')?.addEventListener('click', () => toggleSearch(false));
+
+  // ESC 키로 닫기
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') toggleSearch(false);
+  });
+
+  // Pagefind UI 초기화
+  if (window.PagefindUI) {
+    new PagefindUI({
+      element: "#search-ui",
+      showSubResults: true,
+      translations: {
+        placeholder: "키워드를 입력하세요...",
+        clear_search: "지우기",
+        load_more: "더 보기",
+        search_label: "이 사이트 검색",
+        filters_label: "필터",
+        zero_results: "[query]에 대한 검색 결과가 없습니다.",
+        one_result: "[query]에 대해 1건의 결과가 있습니다.",
+        many_results: "[query]에 대해 [count]건의 결과가 있습니다.",
+        no_results: "결과를 찾을 수 없습니다."
+      }
+    });
+  }
+
   // ── 2. 모바일 햄버거 메뉴 ────────────────────
   const btnHamburger = document.getElementById('btn-hamburger');
   const mobileNav    = document.getElementById('mobile-nav');

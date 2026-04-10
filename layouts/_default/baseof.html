@@ -31,6 +31,7 @@
   </main>
 
   {{ partial "footer.html" . }}
+  {{ partial "search.html" . }}
 
   {{/* ── JS ── */}}
   {{ $js := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}

@@ -12,4 +12,6 @@ Thumbs.db
 
 # Editor
 .vscode/
-.idea/
+# Environment variables
+.env
+automation/.env
