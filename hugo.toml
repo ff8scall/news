@@ -40,21 +40,26 @@ removePathAccents = false
   term    = ["HTML", "RSS"]
 
 [[menus.main]]
-  name   = "캠핑"
-  url    = "/camping/"
+  name   = "AI·신기술"
+  url    = "/categories/ai-tech/"
   weight = 1
 
 [[menus.main]]
-  name   = "IT·테크"
-  url    = "/it/"
+  name   = "AI 에이전트"
+  url    = "/categories/ai-agents/"
   weight = 2
 
 [[menus.main]]
-  name   = "라이프스타일"
-  url    = "/lifestyle/"
+  name   = "수익화 전략"
+  url    = "/categories/profit/"
   weight = 3
 
 [[menus.main]]
-  name   = "요리"
-  url    = "/cooking/"
+  name   = "캠핑"
+  url    = "/categories/camping/"
   weight = 4
+
+[[menus.main]]
+  name   = "라이프스타일"
+  url    = "/categories/lifestyle/"
+  weight = 5
