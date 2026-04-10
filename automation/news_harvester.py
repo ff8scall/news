@@ -25,20 +25,33 @@ class NewsHarvester:
             try:
                 url = f"https://gnews.io/api/v4/search?q={kw}&lang=en&token={self.gnews_key}&max=10"
                 res = requests.get(url, timeout=10).json()
-                if "articles" in res:
-                    for i in res["articles"]:
-                        results.append({"title": i["title"], "url": i["url"], "source": i["source"]["name"], "urlToImage": i.get("image")})
+                for i in res.get("articles", []):
+                    # 이미지 링크 필수 체크
+                    img = i.get("image") or "https://source.unsplash.com/featured/?ai,tech"
+                    results.append({
+                        "title": i["title"], 
+                        "description": i.get("description", ""), # 원본 설명 추가
+                        "url": i["url"], 
+                        "source": i["source"]["name"], 
+                        "urlToImage": img
+                    })
             except: pass
 
-        # NewsAPI (상세 검색) - 가장 민감하므로 하나씩
-        for kw in target_keywords[3:]:
-            try:
-                url = f"https://newsapi.org/v2/everything?q={kw}&language=en&apiKey={self.newsapi_key}&pageSize=10"
-                res = requests.get(url, timeout=10).json()
-                if "articles" in res:
-                    for i in res["articles"]:
-                        results.append({"title": i["title"], "url": i["url"], "source": i["source"]["name"], "urlToImage": i.get("urlToImage")})
-            except: pass
+        # 2. NewsAPI (Technology Focus)
+        try:
+            q = " OR ".join(target_keywords[3:]) 
+            url = f"https://newsapi.org/v2/everything?q={q}&language=en&apiKey={self.newsapi_key}&pageSize={limit_per_api}"
+            res = requests.get(url, timeout=10).json()
+            for i in res.get("articles", []):
+                img = i.get("urlToImage") or "https://source.unsplash.com/featured/?technology"
+                results.append({
+                    "title": i["title"], 
+                    "description": i.get("description", ""), # 원본 설명 추가
+                    "url": i["url"], 
+                    "source": i["source"]["name"], 
+                    "urlToImage": img
+                })
+        except: pass
 
         seen = set()
         unique = []
