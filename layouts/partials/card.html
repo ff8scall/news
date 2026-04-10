@@ -1,19 +1,21 @@
 <article class="post-card">
   <a href="{{ .RelPermalink }}" class="card-link" aria-label="{{ .Title }} 자세히 보기">
-    {{/* ── 썸네일 ── */}}
+    {{/* ── 썸네일 (이미지가 있을 때만 노출) ── */}}
+    {{ if .Params.thumbnail }}
     <div class="card-thumb">
-      {{ with .Params.thumbnail }}
-      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" width="800" height="450">
-      {{ else }}
-      <div class="card-thumb-placeholder" aria-hidden="true">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m3 9 4-4 4 4 4-4 4 4"/><circle cx="7" cy="15" r="2"/></svg>
-      </div>
-      {{ end }}
-      {{/* ── 카테고리 뱃지 ── */}}
+      <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" loading="lazy" width="800" height="450">
       {{ with .Params.categories }}
       <span class="card-category">{{ index . 0 }}</span>
       {{ end }}
     </div>
+    {{ else }}
+    {{/* ── 이미지가 없을 때의 메타 정보 ── */}}
+    <div class="card-no-thumb-meta">
+      {{ with .Params.categories }}
+      <span class="card-category-inline">{{ index . 0 }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
 
     {{/* ── 본문 정보 ── */}}
     <div class="card-body">

@@ -211,7 +211,25 @@
   font-weight: var(--fw-bold);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  z-index: 2;
 }
+
+/* ── 이미지가 없는 카드 스타일 ── */
+.card-no-thumb-meta {
+  padding: var(--sp-5) var(--sp-5) 0;
+}
+.card-category-inline {
+  display: inline-block;
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--radius-full);
+  background: var(--accent-glow);
+  color: var(--accent-primary);
+  font-size: var(--text-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .card-body { padding: var(--sp-5); }
 .card-title {
   font-size: var(--text-base);
