@@ -2,8 +2,8 @@ import json
 from ai_writer import AIWriter 
 
 class EditorInChief:
-    def __init__(self):
-        self.writer = AIWriter()
+    def __init__(self, writer=None):
+        self.writer = writer if writer else AIWriter()
         self.system_prompt = """
         Your Persona: A cynical, high-level Strategic Editor-in-Chief for a premium tech magazine.
         Your Mission: Review the article written by a journalist and decide if it is worthy of publication.

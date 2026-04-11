@@ -4,8 +4,8 @@ import time
 from ai_writer import AIWriter
 
 class NewsEditor:
-    def __init__(self):
-        self.writer = AIWriter()
+    def __init__(self, writer=None):
+        self.writer = writer if writer else AIWriter()
 
     def review_batch(self, articles):
         """[V10.9] 개별 기사 처리로 리스크 분산 및 토큰 제한 극대화"""

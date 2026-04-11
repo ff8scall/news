@@ -2,7 +2,7 @@ import os
 import requests
 import json
 import time
-import google.generativeai as genai
+from google import genai
 from datetime import datetime
 from dotenv import load_dotenv
 
@@ -36,17 +36,27 @@ class AIWriter:
         self.github_token = os.getenv("GH_MODELS_TOKEN")
         if self.github_token: print(f"[*] GitHub Models Token Loaded: {self.github_token[:10]}***")
 
+        # [V12.0] New SDK Client
+        self.client = None
+        if self.gemini_key:
+            try:
+                self.client = genai.Client(api_key=self.gemini_key)
+            except Exception as e:
+                print(f" [!] Failed to initialize Gemini Client: {e}")
+
     def _generate_api_call(self, prompt, provider="gemini", model_name=None):
         """[V11.0] 개별 API 호출 및 쿼터 제한 감지"""
         if provider in self.failed_providers:
             return None
 
         if provider == "gemini":
-            if not self.gemini_key: return None
+            if not self.gemini_key or not self.client: return None
             try:
-                genai.configure(api_key=self.gemini_key)
-                model = genai.GenerativeModel(model_name if model_name else 'models/gemini-1.5-flash-latest')
-                response = model.generate_content(prompt)
+                target_model = model_name if model_name else 'gemini-2.0-flash'
+                response = self.client.models.generate_content(
+                    model=target_model,
+                    contents=prompt
+                )
                 if response and response.text:
                     return response.text
                 return None
@@ -233,6 +243,11 @@ class AIWriter:
                 time.sleep(5) # 실패했으나 밴되지 않은 경우만 약간 대기
             
         return None
+
+    def is_all_exhausted(self):
+        """[V12.0] 모든 공급자가 소진되었는지 확인"""
+        providers = ["github", "cloudflare", "gemini", "openrouter", "groq", "deepseek"]
+        return all(p in self.failed_providers for p in providers)
 
     def save_post(self, content, filename):
         if not content: return

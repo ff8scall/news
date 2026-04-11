@@ -8,7 +8,7 @@ import glob
 import random
 from datetime import datetime
 
-# [V10.9] 터미널 인코딩 및 출력 플러싱 최적화
+# [V12.0] 터미널 인코딩 및 출력 플러싱 최적화
 try:
     sys.stdout.reconfigure(encoding='utf-8')
 except:
@@ -104,7 +104,7 @@ featured: {is_featured}
 {article.get('eng_content', 'Processing...')}
 
 ---
-*Published by Lego-Sia Intelligence (V10.9)*
+*Published by Lego-Sia Intelligence (V12.0)*
 """
     with open(f"{base_path}/{md_filename}", "w", encoding="utf-8-sig") as f:
         f.write(content)
@@ -127,11 +127,13 @@ def get_api_quotas():
     return "\n".join(results) if results else "No quota data available."
 
 def main():
-    print(f"=== [V10.9 Hawk-Eye] Strategic Media Engine Initializing ===")
+    print(f"=== [V12.0 Hawk-Eye] Strategic Media Engine Initializing ===")
     harvester = NewsHarvester()
-    editor = NewsEditor()
+    from ai_writer import AIWriter
+    writer = AIWriter()
+    editor = NewsEditor(writer=writer)
     history = HistoryManager()
-    reviewer = EditorInChief() 
+    reviewer = EditorInChief(writer=writer) 
     telegram = TelegramRemote()
     
     raw_news = harvester.fetch_all(limit_per_cat=8) # 후보군 확보량 증대
@@ -140,13 +142,14 @@ def main():
 
     for article in raw_news:
         url = article['url']
-        if not history.is_already_processed(url):
+        title = article['title']
+        if not history.is_already_processed(url) and not history.is_similar_title_exists(title):
             if url not in seen_urls:
                 new_articles.append(article)
                 seen_urls.add(url)
         else:
-            # 테스트를 위해 중복 기사 발견 시 로그 출력
-            print(f" [SKIP] Duplicate found in history: {article['title'][:30]}...")
+            # 테스트를 위해 중복/유사 기사 발견 시 로그 출력
+            print(f" [SKIP] Duplicate or similar found: {title[:30]}...")
 
     # [테스트 전용] 중복이더라도 강제로 2건의 후보군을 포함시켜 로직 검증
     if not new_articles and len(raw_news) > 0:
@@ -157,22 +160,20 @@ def main():
         print("[*] No unique news found. System on standby.")
         return
 
-    # [V10.9] 6:2:2 전략적 티켓 관리 시스템 (총 5건 목표)
-    targets = {
-        "strategic": {"limit": 3, "count": 0, "cats": ["ai-tech", "ai-agents", "hardware", "AI-기술", "하드웨어"]},
-        "game": {"limit": 1, "count": 0, "cats": ["game", "게임"]},
-        "others": {"limit": 1, "count": 0, "cats": ["tech-biz", "monetization", "테크-비즈니스", "수익화-전략"]}
-    }
+    # [V12.0 Unchained Mode] 발행 건수 제한 완전 제거. 쿼터가 허용하는 한 수집된 모든 양질의 뉴스 발행.
     published_count = 0
     published_urls = []
 
-    # AI 우선 정렬
-    sorted_candidates = sorted(new_articles, key=lambda x: 0 if any(k in x['title'].lower() for k in ["ai", "chip", "nvidia", "hardware", "semiconductor"]) else 1)
+    # AI/전략 기사 우선 정렬
+    sorted_candidates = sorted(new_articles, key=lambda x: 0 if any(k in x['title'].lower() for k in ["ai", "chip", "nvidia", "hardware", "semiconductor", "agent", "robot", "llm"]) else 1)
 
     for article in sorted_candidates:
-        if published_count >= 5: 
-            break
+        # 건수 제한 없이 모든 후보군 전수 조사
         
+        if writer.is_all_exhausted():
+            print(" [CRITICAL] All AI Providers exhausted. Capacity reached for this session.")
+            break
+
         drafts = editor.review_batch([article])
         if not drafts: continue
         
@@ -189,22 +190,13 @@ def main():
             cat_slug = cat_map.get(raw_cat, "tech-biz")
             draft['eng_category_slug'] = cat_slug
             
-            group = "others"
-            if cat_slug in ["ai-tech", "ai-agents", "hardware"]: group = "strategic"
-            elif cat_slug == "gaming": group = "game"
-            
-            if targets[group]["count"] >= targets[group]["limit"]:
-                if published_count < 3 and group == "strategic": 
-                    pass 
-                else: 
-                    continue
-
+            # [V12.0 Aggressive Mode] 카테고리별 티켓 체크 제거 - 점수(Score)가 높으면 무조건 발행
             review = reviewer.review_article(draft)
             if review.get('decision') != 'PASS':
                 print(f" [REJECTED] {draft['kor_title'][:30]} - Reason: {review.get('reason', 'Low Score')}")
                 continue
 
-            if draft.get('score', 0) >= 8:
+            if draft.get('score', 0) >= 7:
                 post_slug = sanitize_slug(draft['eng_title'])
                 url_path = f"posts/{datetime.now().strftime('%Y/%m')}/{post_slug}/"
                 create_hugo_post(draft, lang='ko')
@@ -212,9 +204,8 @@ def main():
                 published_urls.append(f"https://news.lego-sia.com/{url_path}")
                 published_urls.append(f"https://news.lego-sia.com/en/{url_path}")
                 history.add_to_history(article['url'], draft['kor_title'])
-                targets[group]["count"] += 1
                 published_count += 1
-                print(f" [PUB - {group.upper()}] {draft['kor_title']}")
+                print(f" [PUB] {draft['kor_title']} (Score: {draft.get('score')})")
             else:
                 print(f" DEBUG: Score too low ({draft.get('score')}) for final publication.")
 
@@ -241,7 +232,7 @@ if __name__ == "__main__":
     telegram = TelegramRemote()
     try:
         # 1. 시작 알림
-        telegram.send_resp("🚀 [Lego-Sia v10.9] Strategic News Engine 가동을 시작합니다.")
+        telegram.send_resp("🚀 [Lego-Sia v12.0] Strategic News Engine 가동을 시작합니다.")
         main()
     except Exception as e:
         # 2. 에러 긴급 보고

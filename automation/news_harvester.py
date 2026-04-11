@@ -35,14 +35,40 @@ class NewsHarvester:
         self.test_mode = test_mode
         self.exhausted = set() # 기력 소진된 API 목록
         
-        # [V12.0] 전문 용어 풀 (Sophisticated Keyword Pools)
+        # [V12.0 Strategic] 전문 용어 및 비즈니스 임팩트 중심 키워드 풀 확장
         self.keyword_pools = {
-            "ai_tech": ["Multimodal LLMs", "Small Language Models SLM", "AI Reasoning", "Neural Architecture", "Silicon Photonics AI"],
-            "ai_agent": ["Agentic Workflows", "Multi-agent systems", "Autonomous planning", "AutoGPT evolution", "Task-oriented AI"],
-            "hardware": ["Blackwell B200", "B100 GPU", "HBM4 architecture", "2nm Process roadmap", "GaN power semic"],
-            "game": ["Unreal Engine 5.5", "Path Tracing gaming", "Handheld PC market", "Cloud gaming server", "AI driven NPCs"],
-            "monetization": ["AI Monetization strategy", "SaaS retention 2026", "Digital Ad trends", "Affiliate marketing AI"],
-            "tech_biz": ["Tech regulation 2026", "Big tech antitrust", "Venture capital AI", "Tech IPO 2026"]
+            "ai_tech": [
+                "Multimodal LLM architecture", "Mixture of Experts MoE efficiency", 
+                "Neural architecture search", "On-device AI inference", 
+                "Quantum machine learning algorithms", "Liquid Neural Networks",
+                "Transformer alternatives (Mamba, RWKV)", "Synthetic data generation"
+            ],
+            "ai_agent": [
+                "Agentic workflows enterprise", "Autonomous AI planning", 
+                "Multi-agent system orchestration", "Self-evolving AI software",
+                "Actionable AI task automation", "AI persona consistency"
+            ],
+            "hardware": [
+                "Advanced Packaging CoWoS", "High Bandwidth Memory HBM4", 
+                "2nm GAA process roadmap", "Custom AI Silicon ASIC", 
+                "Photonic interconnects", "Neuromorphic hardware efficiency",
+                "Thermal management AI data center", "Edge computing SoC"
+            ],
+            "game": [
+                "Unreal Engine 5.5 Nanite tech", "AI generated procedural content", 
+                "Neural rendering path tracing", "Micro-transaction AI economy",
+                "Handheld gaming PC innovation", "VR AR spatial computing"
+            ],
+            "monetization": [
+                "AI SaaS monetization strategy", "LLM unit economics optimization", 
+                "Digital advertising AI pivot", "B2B AI adoption ROI",
+                "Subscription fatigue tech solutions"
+            ],
+            "tech_biz": [
+                "Global semiconductor trade policy", "Big tech antitrust regulation 2026", 
+                "AI sovereignty and nation state", "Tech IPO market analysis",
+                "Venture Capital dry powder AI", "Strategic M&A in tech sector"
+            ]
         }
 
         self.categories_config = {
