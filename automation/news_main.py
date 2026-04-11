@@ -136,7 +136,7 @@ def main():
     reviewer = EditorInChief(writer=writer) 
     telegram = TelegramRemote()
     
-    raw_news = harvester.fetch_all(limit_per_cat=8) # 후보군 확보량 증대
+    raw_news, harvest_stats = harvester.fetch_all(limit_per_cat=8) 
     new_articles = []
     seen_urls = set()
 
@@ -158,6 +158,8 @@ def main():
     
     if not new_articles:
         print("[*] No unique news found. System on standby.")
+        quota_report = get_api_quotas()
+        telegram.send_resp(f"ℹ️ [SKIP] 새로운 뉴스가 없습니다.\n\n[수집통계]\n{json.dumps(harvest_stats, indent=2)}\n\n[QUOTA]\n{quota_report}")
         return
 
     # [V12.0 Unchained Mode] 발행 건수 제한 완전 제거. 쿼터가 허용하는 한 수집된 모든 양질의 뉴스 발행.
@@ -214,10 +216,19 @@ def main():
     try:
         quota_report = get_api_quotas()
         
+        # 상세 리포트 구성
+        h_detail = "\n".join([f"- {k}: {v}건" for k, v in harvest_stats.items()])
+        total_h = sum(harvest_stats.values())
+        
         if published_count > 0:
-            report_msg = f"✅ [DEPLOAY READY] 총 {published_count}건의 전략 리포트가 준비되었습니다.\n\n[QUOTA]\n{quota_report}"
+            report_msg = f"✅ [STRATEGIC REPORT COMPLETE]\n\n" \
+                         f"📦 [수집 통계]\n{h_detail}\n" \
+                         f"📑 후보군: {total_h}건 -> 필터링: {len(new_articles)}건\n\n" \
+                         f"🚀 [발행 규모]\n최종 발행: {published_count}건\n" \
+                         f"성공률: {int(published_count/len(new_articles)*100)}%\n\n" \
+                         f"[QUOTA]\n{quota_report}"
         else:
-            report_msg = f"ℹ️ [SKIP] 새로운 뉴스가 없습니다. (모든 중복 검사 완료)\n\n[QUOTA]\n{quota_report}"
+            report_msg = f"ℹ️ [SKIP] 새로운 뉴스가 없습니다.\n\n📦 [수집 통계]\n{h_detail}\n\n[QUOTA]\n{quota_report}"
             
         telegram.send_resp(report_msg)
         

@@ -189,7 +189,10 @@ class NewsHarvester:
     def fetch_all(self, limit_per_cat=5):
         all_unique_news = []
         seen_urls = set()
-        print(f"[*] Starting Intelligence Harvest (Strategic Mode: 6:2:2)...")
+        # [V12.0] 수집 통계 추적
+        stats = {"NewsAPI": 0, "TheNewsAPI": 0, "GNews": 0, "Currents": 0, "KR-RSS": 0}
+        
+        print(f"[*] Starting Intelligence Harvest (Strategic Mode: Unchained)...")
         
         for internal_key, config in self.categories_config.items():
             kor_name = config["kor_name"]
@@ -198,31 +201,38 @@ class NewsHarvester:
             cur_cat = config.get("currents_cat", "general")
             
             print(f"[*] Processing: {kor_name} (Query: {query})")
-            cat_results = []
             
-            if self.test_mode:
-                print(f"    [!] TEST MODE: Harvesting from Currents only")
-                cat_results += self._fetch_currents(query, kor_name, cur_cat, limit_per_cat)
-            else:
-                # [V10.9] API 전체 동원 및 소진 대응
-                cat_results += self._fetch_newsapi(query, kor_name, limit_per_cat)
-                time.sleep(1)
-                cat_results += self._fetch_thenewsapi(query, kor_name, thenews_cat, limit_per_cat)
-                time.sleep(1)
-                cat_results += self._fetch_gnews(query, kor_name, limit_per_cat)
-                time.sleep(1)
-                cat_results += self._fetch_currents(query, kor_name, cur_cat, limit_per_cat)
+            # 각 API별 수집 및 통계 기록
+            api_calls = [
+                ("NewsAPI", lambda: self._fetch_newsapi(query, kor_name, limit_per_cat)),
+                ("TheNewsAPI", lambda: self._fetch_thenewsapi(query, kor_name, thenews_cat, limit_per_cat)),
+                ("GNews", lambda: self._fetch_gnews(query, kor_name, limit_per_cat)),
+                ("Currents", lambda: self._fetch_currents(query, kor_name, cur_cat, limit_per_cat))
+            ]
+
+            for name, call_func in api_calls:
+                if self.test_mode and name != "Currents": continue
+                try:
+                    res = call_func()
+                    if res:
+                        stats[name] += len(res)
+                        for article in res:
+                            if article["url"] and article["url"] not in seen_urls:
+                                all_unique_news.append(article)
+                                seen_urls.add(article["url"])
+                    time.sleep(1)
+                except: pass
             
-            for article in cat_results:
+            print(f"    [V] {kor_name} stage: Current pool size {len(all_unique_news)}")
+
+        # KR RSS 보너스
+        kr_res = self._fetch_kr_rss()
+        if kr_res:
+            stats["KR-RSS"] += len(kr_res)
+            for article in kr_res:
                 if article["url"] and article["url"] not in seen_urls:
                     all_unique_news.append(article)
                     seen_urls.add(article["url"])
-            
-            print(f"    [V] {kor_name} stage: Current pool size {len(all_unique_news)}")
-            time.sleep(1)
-
-        # KR RSS는 항상 보너스로 추가
-        all_unique_news += self._fetch_kr_rss()
         
         print(f"[*] Final Intelligence Pool: {len(all_unique_news)} candidates.")
-        return all_unique_news
+        return all_unique_news, stats
