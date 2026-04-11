@@ -33,7 +33,7 @@ class AIWriter:
         if self.cf_account: print(f"[*] Cloudflare ID Loaded: {self.cf_account[:8]}***")
         
         # [V11.6] GitHub Models 전용 정보
-        self.github_token = os.getenv("GITHUB_MODELS_TOKEN")
+        self.github_token = os.getenv("GH_MODELS_TOKEN")
         if self.github_token: print(f"[*] GitHub Models Token Loaded: {self.github_token[:10]}***")
 
     def _generate_api_call(self, prompt, provider="gemini", model_name=None):
