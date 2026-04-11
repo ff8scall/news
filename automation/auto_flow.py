@@ -52,7 +52,7 @@ def run_batch_automation(post_count=3):
             print("[🚀] 배포 완료!")
             
             # IndexNow 알림 전송 (신규 포스팅 시 즉시 인덱싱 요청)
-            submit_indexnow("https://news.lego-sia.com/", "bd9cab15af0446658b1e7bd00b8120ca")
+            submit_indexnow("https://news.lego-sia.com/", "bbd0d9a6843c450eb3e9d811a0fd504a")
             return True
         except Exception as e:
             print(f"[X] 배포 실패: {e}")
