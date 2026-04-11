@@ -26,6 +26,15 @@ class AIWriter:
         if self.deepseek_key: print(f"[*] DeepSeek Key Loaded: {self.deepseek_key[:8]}***")
         if self.groq_key: print(f"[*] Groq Key Loaded: {self.groq_key[:8]}***")
         if self.openrouter_key: print(f"[*] OpenRouter Key Loaded: {self.openrouter_key[:8]}***")
+        
+        # [V11.5] Cloudflare 전용 정보
+        self.cf_account = os.getenv("CLOUDFLARE_ACCOUNT_ID")
+        self.cf_token = os.getenv("CLOUDFLARE_API_TOKEN")
+        if self.cf_account: print(f"[*] Cloudflare ID Loaded: {self.cf_account[:8]}***")
+        
+        # [V11.6] GitHub Models 전용 정보
+        self.github_token = os.getenv("GITHUB_MODELS_TOKEN")
+        if self.github_token: print(f"[*] GitHub Models Token Loaded: {self.github_token[:10]}***")
 
     def _generate_api_call(self, prompt, provider="gemini", model_name=None):
         """[V11.0] 개별 API 호출 및 쿼터 제한 감지"""
@@ -130,12 +139,69 @@ class AIWriter:
             except Exception as e:
                 print(f" [!] openrouter Failure: {e}")
                 return None
+
+        elif provider == "cloudflare":
+            if not self.cf_account or not self.cf_token: return None
+            try:
+                target_model = model_name if model_name else "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b"
+                url = f"https://api.cloudflare.com/client/v4/accounts/{self.cf_account}/ai/run/{target_model}"
+                response = requests.post(
+                    url,
+                    headers={"Authorization": f"Bearer {self.cf_token}", "Content-Type": "application/json"},
+                    json={"messages": [{"role": "user", "content": prompt}]},
+                    timeout=45
+                )
+                if response.status_code == 429:
+                    print(f" [!] Cloudflare Rate Limit. Skipping.")
+                    self.failed_providers.add("cloudflare")
+                    return None
+                
+                data = response.json()
+                if data.get("success") and "result" in data:
+                    return data["result"]["response"]
+                else:
+                    print(f" [!] Cloudflare Error Body: {data}")
+                    return None
+            except Exception as e:
+                print(f" [!] Cloudflare Failure: {e}")
+                return None
+        
+        elif provider == "github":
+            if not self.github_token: return None
+            try:
+                target_model = model_name if model_name else "gpt-4o-mini"
+                url = "https://models.inference.ai.azure.com/chat/completions"
+                response = requests.post(
+                    url,
+                    headers={"Authorization": f"Bearer {self.github_token}", "Content-Type": "application/json"},
+                    json={
+                        "model": target_model,
+                        "messages": [{"role": "user", "content": prompt}]
+                    },
+                    timeout=30
+                )
+                if response.status_code == 429:
+                    print(f" [!] GitHub Models Rate Limit. Skipping.")
+                    self.failed_providers.add("github")
+                    return None
+                
+                data = response.json()
+                if "choices" in data:
+                    return data["choices"][0]["message"]["content"]
+                else:
+                    print(f" [!] GitHub Models Error: {data}")
+                    return None
+            except Exception as e:
+                print(f" [!] GitHub Models Failure: {e}")
+                return None
         return None
 
     def generate_content(self, prompt, category="AI·신기술", model=None):
         """[V11.0 Performance] 스마트 폴백: 사용 가능한 모델 우선순위 순회"""
-        # [V11.0] 우선순위 조정: DeepSeek 추가 및 Gemini 2.0 상향
+        # [V11.7] 우선순위 조정: GitHub (GPT-4o-mini)를 주력으로 배치
         candidates = [
+            ("github", "gpt-4o-mini"),
+            ("cloudflare", "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b"),
             ("groq", "llama-3.1-8b-instant"),
             ("deepseek", "deepseek-chat"),
             ("gemini", "models/gemini-2.0-flash"),
