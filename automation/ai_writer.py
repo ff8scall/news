@@ -198,15 +198,14 @@ class AIWriter:
 
     def generate_content(self, prompt, category="AI·신기술", model=None):
         """[V11.0 Performance] 스마트 폴백: 사용 가능한 모델 우선순위 순회"""
-        # [V11.7] 우선순위 조정: GitHub (GPT-4o-mini)를 주력으로 배치
+        # [V12.1] 최종 우선순위: GitHub -> Cloudflare -> Gemini -> OpenRouter -> Groq -> DeepSeek
         candidates = [
             ("github", "gpt-4o-mini"),
             ("cloudflare", "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b"),
-            ("groq", "llama-3.1-8b-instant"),
-            ("deepseek", "deepseek-chat"),
             ("gemini", "models/gemini-2.0-flash"),
             ("openrouter", "openai/gpt-4o-mini"),
-            ("gemini", "models/gemini-1.5-flash-latest")
+            ("groq", "llama-3.1-8b-instant"),
+            ("deepseek", "deepseek-chat")
         ]
         
         # 특정 모델이 요청된 경우 최우선 순위로 삽입
