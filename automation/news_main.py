@@ -10,8 +10,11 @@ from news_harvester import NewsHarvester
 from ai_news_editor import NewsEditor
 from history_manager import HistoryManager
 from indexnow_service import notify_indexnow
+from ai_reviewer import EditorInChief
+from telegram_remote import TelegramRemote # [V10.8] 텔레그램 연동
 
 import requests
+import subprocess
 
 def download_image(original_url, category_slug, slug):
     """
@@ -150,34 +153,31 @@ def save_raw_archive(article, slug):
         print(f" [!] Raw archive save failed: {e}")
 
 def main():
-    print(f"=== [V10.0 Global] April 2026 Strategy Engine Starting ===")
+    print(f"=== [V10.7 Global] April 2026 Strategy Engine Starting ===")
     
     harvester = NewsHarvester()
     editor = NewsEditor()
     history = HistoryManager()
+    reviewer = EditorInChief() 
+    telegram = TelegramRemote() # [V10.8] 알림 봇 소환
     
     # 1. 뉴스 수집 (중복 기사 필터링 포함)
     raw_news = harvester.fetch_all(limit_per_cat=5)
     
-    # 2. 중복 처리 강화 (DB 대조 + 실시간 배치 내 전수 조사)
     new_articles = []
     seen_titles = [] 
-    published_urls = [] # [V10.5] 검색 색인용 URL 리스트
+    published_urls = [] 
     
+    # 2. 중복 처리 강화
     for article in raw_news:
         url = article['url']
         title = article['title']
         
-        # [V10.3] 하이브리드 중복 차단
         is_duplicate = False
-        
-        # 1) 히스토리 DB 대조 (문맥 유사도 0.5 이상 컷)
         if history.is_already_processed(url) or history.is_similar_title_exists(title, threshold=0.5):
             is_duplicate = True
         
-        # 2) 현재 작업 리스트 내 근접 중복 검사 (앞부분 일치 검사 추가)
         for seen_title in seen_titles:
-            # 제목 앞부분 15자 중 12자 이상이 겹치면 동일 사건으로 간주
             if title[:15] == seen_title[:15]:
                 is_duplicate = True
                 break
@@ -185,64 +185,75 @@ def main():
         if not is_duplicate:
             new_articles.append(article)
             seen_titles.append(title)
-        else:
-            continue
     
     if not new_articles:
-        print("[*] No unique news found in this cycle. Keeping existing archive.")
+        print("[*] No unique news found. Archive is steady.")
         return
 
-    # 3. AI 2-Step Editorial (Expansion Mode + Category Balancing)
-    print(f"[*] Deep-Editing {len(new_articles)} fresh articles with Priority...")
+    # 3. AI 2-Step Editorial & Final AI Review
+    print(f"[*] Council Meeting: Reviewing {len(new_articles)} candidates...")
     
-    # [V10.4] 우선순위 카테고리 관리
-    priority_order = ["ai-tech", "ai-agents", "hardware", "game"]
-    category_quota = {"tech-biz": 2, "monetization": 3} # 과밀 카테고리 제한
+    category_quota = {"tech-biz": 2, "monetization": 3}
     current_counts = {}
 
-    # 우선순위대로 정렬하여 추출
     sorted_articles = sorted(new_articles, key=lambda x: 0 if any(k in x['category'].lower() or k in x['title'].lower() for k in ["ai", "chip", "hardware", "game"]) else 1)
     
     for article in sorted_articles:
-        reviews = editor.review_batch([article])
-        for rev in reviews:
-            # 카테고리 매핑 및 정원 체크
-            cat_map = {
-                "AI-기술": "ai-tech", "AI-에이전트": "ai-agents", "하드웨어": "hardware",
-                "게임": "game", "수익화-전략": "monetization", "테크-비즈니스": "tech-biz"
-            }
-            cat_slug = cat_map.get(rev.get('category', 'tech-biz'), 'tech-biz')
-            rev['eng_category_slug'] = cat_slug
+        drafts = editor.review_batch([article])
+        for draft in drafts:
+            cat_map = {"AI-기술": "ai-tech", "AI-에이전트": "ai-agents", "하드웨어": "hardware", "게임": "game", "수익화-전략": "monetization", "테크-비즈니스": "tech-biz"}
+            cat_slug = cat_map.get(draft.get('category', 'tech-biz'), 'tech-biz')
+            draft['eng_category_slug'] = cat_slug
             
-            # [V10.4] 쿼터제 적용: 테크-비즈니스 등이 이미 찼으면 스킵
-            count = current_counts.get(cat_slug, 0)
-            if cat_slug in category_quota and count >= category_quota[cat_slug]:
-                # print(f" [QUOTA FULL] Skipping {cat_slug}: {rev['kor_title'][:30]}")
+            # [V10.7] AI 국장의 최종 심사
+            review = reviewer.review_article(draft)
+            if not review.get('approval', False):
+                print(f" [REJECTED by Chief Editor] Score {review.get('score')}: {draft['kor_title'][:30]}")
+                print(f"   Critique: {review.get('critique')}")
                 continue
 
-            if rev.get('score', 0) >= 8: # 품질 하한선 8점으로 상향
-                post_slug = sanitize_slug(rev['eng_title'])
+            # 쿼터제 적용
+            count = current_counts.get(cat_slug, 0)
+            if cat_slug in category_quota and count >= category_quota[cat_slug]:
+                continue
+
+            if draft.get('score', 0) >= 8:
+                post_slug = sanitize_slug(draft['eng_title'])
                 save_raw_archive(article, post_slug)
                 
-                # [V10.5] 파일명과 날짜 기반 URL 추출
                 now = datetime.now()
                 url_path = f"posts/{now.strftime('%Y/%m')}/{post_slug}/"
                 
-                ko_file = create_hugo_post(rev, lang='ko')
-                en_file = create_hugo_post(rev, lang='en')
+                create_hugo_post(draft, lang='ko')
+                create_hugo_post(draft, lang='en')
                 
                 published_urls.append(f"https://news.lego-sia.com/{url_path}")
                 published_urls.append(f"https://news.lego-sia.com/en/{url_path}")
                 
-                history.add_to_history(article['url'], rev['kor_title'])
-                current_counts[cat_slug] = count + 1 # 카운트 증가
-                print(f" [SUCCESS] Priority Added [{cat_slug}]: {rev['kor_title']}")
+                history.add_to_history(article['url'], draft['kor_title'])
+                current_counts[cat_slug] = count + 1 
+                print(f" [PASSED & PUBLISHED] {draft['kor_title']}")
 
-    # [V10.5] 검색 엔진 색인 알림 실행
+    # [V10.7] 자동 배포 및 메타데이터 동기화
     if published_urls:
-        notify_indexnow(published_urls)
+        print("[*] Syncing to Global Cloud (GitHub/Vercel)...")
+        try:
+            subprocess.run(["git", "add", "."], check=True)
+            subprocess.run(["git", "commit", "-m", f"auto: daily tech intelligence update ({len(published_urls)//2} articles)"], check=True)
+            subprocess.run(["git", "push", "origin", "main"], check=True)
+            print(" [SUCCESS] Deployed to Production.")
+            
+            # [V10.8] 텔레그램 알림 전송
+            article_count = len(published_urls) // 2
+            telegram.send_resp(f"🚀 **배포 완료: 총 {article_count}건의 새로운 전략적 인사이트가 추가되었습니다.**\n지금 바로 [Lego-Sia Magazine](https://news.lego-sia.com)에서 확인해보세요! 😊")
+            
+            # 배포 성공 후에만 색인 알림 전송
+            notify_indexnow(published_urls)
+        except Exception as e:
+            print(f" [!] Deployment failed: {e}")
+            telegram.send_resp(f"⚠️ **배포 실패 알림:**\n오류 내용: {e}")
 
-    print(f"[*] Global Update Complete. Archive Updated.")
+    print(f"[*] Mission Accomplished. Next window: 1 hour.")
 
 if __name__ == "__main__":
     main()

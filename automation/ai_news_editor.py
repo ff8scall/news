@@ -29,7 +29,8 @@ class NewsEditor:
         1. THEMATIC GATEKEEPER (SUPER STRICT): Score < 8 means skip. Score 9+ is "Editor's Choice".
            - CATEGORICAL REJECTION (Score 0): K-Pop, BTS, Entertainment, Sports, Politics, Celeb Gossips.
         2. DATA VISUALIZATION: For any numeric data, timelines, or comparative points, ALWAYS use Markdown Tables to enhance professional readability.
-        3. CATEGORY DIVERSITY: Do NOT default to "tech-biz".
+        3. TITLES (STRICT): 'eng_title' and 'kor_title' MUST be within 50 characters (including spaces). Punchy and SEO-friendly.
+        4. CATEGORY DIVERSITY: Do NOT default to "tech-biz".
         4. NO SHRINKAGE: Expand the content substantially (min 5 paragraphs).
         3. DUAL-LANGUAGE OUTPUT: Complete, long-form EN and KO versions are mandatory.
         4. IMAGE PROMPT: Unique 64-word artistic metaphor.
@@ -43,8 +44,8 @@ class NewsEditor:
             "category": "Corrected category (KO)",
             "eng_category": "Corrected category (EN)",
             "image_prompt": "Stylized metaphoric prompt...",
-            "eng_title": "Sophisticated Professional Title",
-            "kor_title": "분석과 통찰이 담긴 정교한 한국어 제목",
+            "eng_title": "Punchy Tech Strategy Title (Max 50 chars)",
+            "kor_title": "핵심을 찌르는 50자 이내의 한국어 제목",
             "keywords": ["tag1", "tag2", "tag3"],
             "eng_content": "Long-form professional English feature (Step 1). Min 5 paragraphs.",
             "kor_content": "글로벌 시장 맥락이 반영된 심층 한국어 본문 (Step 2). 최소 1,200자 이상.",
