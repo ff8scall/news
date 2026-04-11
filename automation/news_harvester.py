@@ -6,15 +6,13 @@ import feedparser
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
-# [V10.9] 터미널 로깅 최적화
+# [V12.1] 인코딩 및 환경 설정
 try:
     sys.stdout.reconfigure(encoding='utf-8')
 except:
     pass
 
-# .env 로드
-env_path = os.path.join(os.path.dirname(__file__), '.env')
-load_dotenv(env_path)
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 class NewsHarvester:
     def __init__(self, test_mode=False):
@@ -24,51 +22,20 @@ class NewsHarvester:
             "thenewsapi": os.getenv("THENEWSAPI_KEY"),
             "currents": os.getenv("CURRENTSAPI_KEY")
         }
-        # [V10.9] API별 일일 한도 설정 및 15% 안전 마진
-        self.limits = {
-            "gnews": 10,
-            "newsapi": 100,
-            "thenewsapi": 300,
-            "currents": 600
-        }
+        # [V12.1] 안전 마진 5%로 하향 (95% 풀가동)
+        self.limits = {"gnews": 10, "newsapi": 100, "thenewsapi": 300, "currents": 600}
         self.safety_margin = 0.05 
         self.test_mode = test_mode
-        self.exhausted = set() # 기력 소진된 API 목록
+        self.exhausted = set() 
         
-        # [V12.0 Strategic] 전문 용어 및 비즈니스 임팩트 중심 키워드 풀 확장
+        # [V12.0 Strategic] 전문 키워드 풀
         self.keyword_pools = {
-            "ai_tech": [
-                "Multimodal LLM architecture", "Mixture of Experts MoE efficiency", 
-                "Neural architecture search", "On-device AI inference", 
-                "Quantum machine learning algorithms", "Liquid Neural Networks",
-                "Transformer alternatives (Mamba, RWKV)", "Synthetic data generation"
-            ],
-            "ai_agent": [
-                "Agentic workflows enterprise", "Autonomous AI planning", 
-                "Multi-agent system orchestration", "Self-evolving AI software",
-                "Actionable AI task automation", "AI persona consistency"
-            ],
-            "hardware": [
-                "Advanced Packaging CoWoS", "High Bandwidth Memory HBM4", 
-                "2nm GAA process roadmap", "Custom AI Silicon ASIC", 
-                "Photonic interconnects", "Neuromorphic hardware efficiency",
-                "Thermal management AI data center", "Edge computing SoC"
-            ],
-            "game": [
-                "Unreal Engine 5.5 Nanite tech", "AI generated procedural content", 
-                "Neural rendering path tracing", "Micro-transaction AI economy",
-                "Handheld gaming PC innovation", "VR AR spatial computing"
-            ],
-            "monetization": [
-                "AI SaaS monetization strategy", "LLM unit economics optimization", 
-                "Digital advertising AI pivot", "B2B AI adoption ROI",
-                "Subscription fatigue tech solutions"
-            ],
-            "tech_biz": [
-                "Global semiconductor trade policy", "Big tech antitrust regulation 2026", 
-                "AI sovereignty and nation state", "Tech IPO market analysis",
-                "Venture Capital dry powder AI", "Strategic M&A in tech sector"
-            ]
+            "ai_tech": ["Multimodal LLM architecture", "Mixture of Experts MoE efficiency", "Neural architecture search", "On-device AI inference", "Quantum machine learning algorithms", "Liquid Neural Networks", "Transformer alternatives (Mamba, RWKV)", "Synthetic data generation"],
+            "ai_agent": ["Agentic workflows enterprise", "Autonomous AI planning", "Multi-agent system orchestration", "Self-evolving AI software", "Actionable AI task automation", "AI persona consistency"],
+            "hardware": ["Advanced Packaging CoWoS", "High Bandwidth Memory HBM4", "2nm GAA process roadmap", "Custom AI Silicon ASIC", "Photonic interconnects", "Neuromorphic hardware efficiency", "Thermal management AI data center", "Edge computing SoC"],
+            "game": ["Unreal Engine 5.5 Nanite tech", "AI generated procedural content", "Neural rendering path tracing", "Micro-transaction AI economy", "Handheld gaming PC innovation", "VR AR spatial computing"],
+            "monetization": ["AI SaaS monetization strategy", "LLM unit economics optimization", "Digital advertising AI pivot", "B2B AI adoption ROI", "Subscription fatigue tech solutions"],
+            "tech_biz": ["Global semiconductor trade policy", "Big tech antitrust regulation 2026", "AI sovereignty and nation state", "Tech IPO market analysis", "Venture Capital dry powder AI", "Strategic M&A in tech sector"]
         }
 
         self.categories_config = {
@@ -81,7 +48,6 @@ class NewsHarvester:
         }
 
     def _is_safe(self, api_name, res):
-        """[V10.9] 헤더를 분석하여 15% 잔량 유지 여부 판단"""
         if not res or res.status_code != 200: return False
         headers = res.headers
         rem = headers.get('X-Remaining-Quota') or headers.get('X-RateLimit-Remaining')
@@ -97,28 +63,18 @@ class NewsHarvester:
         return True
 
     def _get_dynamic_query(self, cat_key):
-        """[V12.0] 전문 키워드 로테이션 및 전략적 쿼리 생성"""
         import random
         config = self.categories_config.get(cat_key, {})
         base_q = config.get("base_q", "technology")
         pool = self.keyword_pools.get(cat_key, [])
-        
-        # 전문 키워드 1개 선택 + 베이스 쿼리 조합
         sub_q = random.choice(pool) if pool else ""
         return f"{base_q} {sub_q}".strip()
 
     def _get_time_params(self):
-        """[V12.0] 골든 타임 및 속보 윈도우 계산"""
         now = datetime.now()
-        # 새벽 5~7시: 글로벌 메가 트렌드 가중치 (popularity)
         if 5 <= now.hour <= 7:
-            sort_by = "popularity"
-            from_time = (now - timedelta(hours=24)).strftime('%Y-%m-%dT%H:%M:%S')
-        else:
-            sort_by = "publishedAt"
-            from_time = (now - timedelta(minutes=135)).strftime('%Y-%m-%dT%H:%M:%S') # 2시간 + 여유분
-        
-        return sort_by, from_time
+            return "popularity", (now - timedelta(hours=24)).strftime('%Y-%m-%dT%H:%M:%S')
+        return "publishedAt", (now - timedelta(minutes=135)).strftime('%Y-%m-%dT%H:%M:%S')
 
     def _normalize(self, raw, source_api, kor_name):
         title = raw.get("title") or "Untitled Article"
@@ -129,7 +85,6 @@ class NewsHarvester:
         return {"title": title, "description": desc, "urlToImage": image, "url": url, "source": source, "category": kor_name}
 
     def _fetch_newsapi(self, query, kor_name, limit):
-
         if "newsapi" in self.exhausted: return []
         sort_by, from_time = self._get_time_params()
         url = f"https://newsapi.org/v2/everything?q={query}&from={from_time}&sortBy={sort_by}&language=en&apiKey={self.keys['newsapi']}&pageSize={limit}"
@@ -154,7 +109,6 @@ class NewsHarvester:
 
     def _fetch_gnews(self, query, kor_name, limit):
         if "gnews" in self.exhausted: return []
-        # GNews는 검색 쿼리를 단순화해야 결과가 잘 나옴
         short_q = query.split(' ')[0]
         url = f"https://gnews.io/api/v4/search?q={short_q}&lang=en&max={limit}&token={self.keys['gnews']}"
         try:
@@ -186,53 +140,62 @@ class NewsHarvester:
         except: pass
         return articles
 
-    def fetch_all(self, limit_per_cat=5):
+    def fetch_all(self, limit_per_cat=8):
         all_unique_news = []
         seen_urls = set()
-        # [V12.0] 수집 통계 추적
         stats = {"NewsAPI": 0, "TheNewsAPI": 0, "GNews": 0, "Currents": 0, "KR-RSS": 0}
         
-        print(f"[*] Starting Intelligence Harvest (Strategic Mode: Unchained)...")
+        # [V12.1] 전략적 우선순위 리스트
+        strategy_map = {
+            "ai_tech": ["NewsAPI", "TheNewsAPI", "GNews", "Currents"],
+            "ai_agent": ["NewsAPI", "TheNewsAPI", "Currents", "GNews"],
+            "hardware": ["NewsAPI", "GNews", "TheNewsAPI", "Currents"],
+            "game": ["GNews", "Currents", "TheNewsAPI", "NewsAPI"],
+            "business": ["TheNewsAPI", "Currents", "NewsAPI", "GNews"],
+            "tech_biz": ["TheNewsAPI", "Currents", "NewsAPI", "GNews"]
+        }
         
+        print(f"[*] Starting Hybrid Strategic Harvest (V12.1: Priority & Fallback)...")
         for internal_key, config in self.categories_config.items():
             kor_name = config["kor_name"]
             query = self._get_dynamic_query(internal_key)
             thenews_cat = config.get("thenews_cat", "tech")
             cur_cat = config.get("currents_cat", "general")
             
-            print(f"[*] Processing: {kor_name} (Query: {query})")
+            print(f"[*] Analyzing Strategy for: {kor_name} (Query: {query})")
+            priorities = strategy_map.get(internal_key, ["NewsAPI", "TheNewsAPI", "GNews", "Currents"])
             
-            # 각 API별 수집 및 통계 기록
-            api_calls = [
-                ("NewsAPI", lambda: self._fetch_newsapi(query, kor_name, limit_per_cat)),
-                ("TheNewsAPI", lambda: self._fetch_thenewsapi(query, kor_name, thenews_cat, limit_per_cat)),
-                ("GNews", lambda: self._fetch_gnews(query, kor_name, limit_per_cat)),
-                ("Currents", lambda: self._fetch_currents(query, kor_name, cur_cat, limit_per_cat))
-            ]
-
-            for name, call_func in api_calls:
-                if self.test_mode and name != "Currents": continue
+            for api_name in priorities:
+                if self.test_mode and api_name != "Currents": continue
+                if api_name.lower() in self.exhausted: continue 
                 try:
-                    res = call_func()
+                    res = []
+                    if api_name == "NewsAPI": res = self._fetch_newsapi(query, kor_name, limit_per_cat)
+                    elif api_name == "TheNewsAPI": res = self._fetch_thenewsapi(query, kor_name, thenews_cat, limit_per_cat)
+                    elif api_name == "GNews": res = self._fetch_gnews(query, kor_name, limit_per_cat)
+                    elif api_name == "Currents": res = self._fetch_currents(query, kor_name, cur_cat, limit_per_cat)
+
                     if res:
-                        stats[name] += len(res)
+                        stats[api_name] += len(res)
                         for article in res:
                             if article["url"] and article["url"] not in seen_urls:
                                 all_unique_news.append(article)
                                 seen_urls.add(article["url"])
+                    
+                    if len(res) >= (limit_per_cat // 2):
+                        print(f"    [+] {api_name} provided sufficient depth. Moving to next category.")
+                        break
                     time.sleep(1)
                 except: pass
             
             print(f"    [V] {kor_name} stage: Current pool size {len(all_unique_news)}")
 
-        # KR RSS 보너스
         kr_res = self._fetch_kr_rss()
-        if kr_res:
-            stats["KR-RSS"] += len(kr_res)
-            for article in kr_res:
-                if article["url"] and article["url"] not in seen_urls:
-                    all_unique_news.append(article)
-                    seen_urls.add(article["url"])
+        for article in (kr_res or []):
+            if article["url"] and article["url"] not in seen_urls:
+                all_unique_news.append(article)
+                seen_urls.add(article["url"])
+                stats["KR-RSS"] += 1
         
         print(f"[*] Final Intelligence Pool: {len(all_unique_news)} candidates.")
         return all_unique_news, stats
