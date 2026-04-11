@@ -31,7 +31,7 @@ class NewsHarvester:
             "thenewsapi": 300,
             "currents": 600
         }
-        self.safety_margin = 0.15 
+        self.safety_margin = 0.05 
         self.test_mode = test_mode
         self.exhausted = set() # 기력 소진된 API 목록
         
@@ -90,7 +90,7 @@ class NewsHarvester:
             current_remaining = int(rem)
             limit = self.limits.get(api_name.lower(), 100)
             if current_remaining <= (limit * self.safety_margin):
-                print(f" [!] Quota Alert: {api_name} below 15% ({current_remaining}/{limit}). Skipping further calls.")
+                print(f" [!] Quota Alert: {api_name} below 5% ({current_remaining}/{limit}). Skipping further calls.")
                 self.exhausted.add(api_name.lower())
                 return False
         except: pass
