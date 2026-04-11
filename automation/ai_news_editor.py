@@ -39,6 +39,10 @@ class NewsEditor:
                         elif any(k in cat for k in ['hard', 'chip', 'semic', '하드']): draft['category'] = 'hardware'
                         elif any(k in cat for k in ['game', '플레이', '게임']): draft['category'] = 'game'
                         
+                        # [V12.1] 원본 메타데이터 보존 (이미지 및 주소 유실 방지)
+                        draft['original_image_url'] = article.get('urlToImage')
+                        draft['original_url'] = article.get('url')
+                        
                         all_drafts.append(draft)
                     except: continue
             except: continue

@@ -54,7 +54,9 @@ def create_hugo_post(article, lang='ko'):
     slug = sanitize_slug(article['eng_title'])
     timestamp = int(time.time())
     md_filename = f"{slug}-{timestamp}.md"
-    local_img_url = download_image(article.get('original_image_url'), article.get('eng_category_slug', 'tech-biz'), slug)
+    # [V12.1] 이미지 URL 추출 로직 강화 (다중 변수 체크)
+    raw_img_url = article.get('original_image_url') or article.get('urlToImage') or article.get('image')
+    local_img_url = download_image(raw_img_url, article.get('eng_category_slug', 'tech-biz'), slug)
     cat_slug = article.get('eng_category_slug', 'tech-biz')
     tags = json.dumps(article.get('keywords', []), ensure_ascii=False)
     is_featured = "true" if article.get('score', 0) >= 9 else "false"

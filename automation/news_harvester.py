@@ -78,7 +78,11 @@ class NewsHarvester:
 
     def _normalize(self, raw, source_api, kor_name):
         title = raw.get("title") or "Untitled Article"
-        image = raw.get("urlToImage") or raw.get("image") or raw.get("image_url") or ""
+        # [V12.1] 공격적인 이미지 필드 매핑 확장
+        image = raw.get("urlToImage") or raw.get("image") or raw.get("image_url") or \
+                raw.get("url_to_image") or raw.get("thumbnail") or raw.get("thumbnail_url") or \
+                raw.get("media") or raw.get("image_link") or ""
+        
         desc = raw.get("description") or raw.get("snippet") or raw.get("content", "")
         url = raw.get("url") or ""
         source = raw.get("source", {}).get("name") if isinstance(raw.get("source"), dict) else raw.get("source", source_api)
@@ -182,8 +186,9 @@ class NewsHarvester:
                                 all_unique_news.append(article)
                                 seen_urls.add(article["url"])
                     
-                    if len(res) >= (limit_per_cat // 2):
-                        print(f"    [+] {api_name} provided sufficient depth. Moving to next category.")
+                    # [V12.1 BUG FIX] 기사를 실제로 가져왔을 때만 다음 카테고리로 이동
+                    if len(res) >= max(1, limit_per_cat // 2):
+                        print(f"    [+] {api_name} provided sufficient depth ({len(res)} articles). Moving to next category.")
                         break
                     time.sleep(1)
                 except: pass
