@@ -1,5 +1,5 @@
 ﻿---
-title: "The Raw Reality of Code: How Chris Pirillo is Disrupting the Job Market with Radical Transparency"
+title: "The Raw Reality of Code: How Chris Pirillo is D..."
 date: "2026-04-11T13:38:38+09:00"
 description: "As we enter the second quarter of 2026, the tech landscape has become increasingly saturated with sanitized, AI-generated professional branding. Howev..."
 image: "/images/fallbacks/tech-biz.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Sparks Revolution: Tesla’s Dedicated Semi Factory and the New Era of Automated Logistics"
+title: "The Sparks Revolution: Tesla’s Dedicated Semi F..."
 date: "2026-04-11T12:48:42+09:00"
 description: "Tesla’s official opening of its dedicated Semi production facility in Sparks, Nevada, marks a watershed moment in the heavy-duty transportation sector..."
 image: "/images/the-sparks-revolution-teslas-dedicated-semi-factor.jpg"

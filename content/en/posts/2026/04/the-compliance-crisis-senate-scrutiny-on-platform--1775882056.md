@@ -1,5 +1,5 @@
 ﻿---
-title: "The Compliance Crisis: Senate Scrutiny on Platform Reporting Integrity"
+title: "The Compliance Crisis: Senate Scrutiny on Platf..."
 date: "2026-04-11T13:34:16+09:00"
 description: "As of April 2026, the intersection of platform responsibility and law enforcement efficacy has reached a critical boiling point. The recent Senate inq..."
 image: "/images/the-compliance-crisis-senate-scrutiny-on-platform-.jpg"

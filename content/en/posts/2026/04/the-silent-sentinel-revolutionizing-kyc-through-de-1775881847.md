@@ -1,5 +1,5 @@
 ﻿---
-title: "The Silent Sentinel: Revolutionizing KYC Through Device Intelligence"
+title: "The Silent Sentinel: Revolutionizing KYC Throug..."
 date: "2026-04-11T13:30:52+09:00"
 description: "As of April 2026, the fintech landscape has reached an inflection point where traditional manual Know Your Customer (KYC) processes are becoming an ex..."
 image: "/images/the-silent-sentinel-revolutionizing-kyc-through-de.jpg"

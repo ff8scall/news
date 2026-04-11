@@ -1,5 +1,5 @@
 ﻿---
-title: "The Algorithmic Echo: Cognitive Synchronization in the Age of LLMs"
+title: "The Algorithmic Echo: Cognitive Synchronization..."
 date: "2026-04-11T12:53:52+09:00"
 description: "As we navigate the second quarter of 2026, the boundary between human cognition and Large Language Models (LLMs) has reached an unprecedented point of..."
 image: "/images/the-algorithmic-echo-cognitive-synchronization-in-.jpg"

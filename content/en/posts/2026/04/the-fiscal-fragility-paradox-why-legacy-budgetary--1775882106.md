@@ -1,5 +1,5 @@
 ﻿---
-title: "The Fiscal Fragility Paradox: Why Legacy Budgetary Rules Are Failing in the Age of Geopolitical Volatility"
+title: "The Fiscal Fragility Paradox: Why Legacy Budget..."
 date: "2026-04-11T13:35:06+09:00"
 description: "As we navigate the volatility of April 2026, the European Union finds itself trapped in a structural conflict between its historical fiscal discipline..."
 image: "/images/fallbacks/tech-biz.jpg"

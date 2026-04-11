@@ -1,5 +1,5 @@
 ﻿---
-title: "The Valuation Mirage: Software Giants Reeling Under the Shadow of AI Dominance"
+title: "The Valuation Mirage: Software Giants Reeling U..."
 date: "2026-04-11T12:47:10+09:00"
 description: "As of April 2026, the software sector is grappling with a profound existential crisis. Friday’s market rout, which saw significant valuation haircuts ..."
 image: "/images/the-valuation-mirage-software-giants-reeling-under.jpg"

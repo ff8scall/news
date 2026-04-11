@@ -1,5 +1,5 @@
 ﻿---
-title: "The Orion Resonance: How Artemis II Defines the New Industrial Era"
+title: "The Orion Resonance: How Artemis II Defines the..."
 date: "2026-04-11T13:31:07+09:00"
 description: "As the Orion capsule completed its historic splashdown in April 2026, the global tech elite—Elon Musk, Jeff Bezos, and Tim Cook—paused their daily ope..."
 image: "/images/the-orion-resonance-how-artemis-ii-defines-the-new.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "인플루언서 마케팅의 재정의: 스킬 메타버스 인디아(Skill Metaverse India)와 AI 기반 시장의 탄생"
+title: "인플루언서 마케팅의 재정의: 스킬 메타버스 인디아(Skill Metaverse Ind..."
 date: "2026-04-11T12:51:00+09:00"
 description: "1. 스킬 메타버스 인디아, 이노파크 벤처스로부터 5억 루피 시드 투자 유치 완료."
 image: "/images/the-rise-of-algorithmic-influence-decoding-innopar.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Digital Void: Geopolitical Fragmentation and the Erasure of Global Order"
+title: "The Digital Void: Geopolitical Fragmentation an..."
 date: "2026-04-11T13:01:03+09:00"
 description: "As of April 2026, the ongoing conflict in Iran has acted as a stress test that has fundamentally shattered the illusion of international cohesion. The..."
 image: "/images/fallbacks/tech-biz.jpg"

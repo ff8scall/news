@@ -1,5 +1,5 @@
 ﻿---
-title: "Beyond the Glass: Sidtek’s Meishan Expansion and the Quest for Display Dominance"
+title: "Beyond the Glass: Sidtek’s Meishan Expansion an..."
 date: "2026-04-11T13:29:32+09:00"
 description: "In a decisive move that underscores the escalating demand for high-fidelity spatial computing components, Sidtek has officially broken ground on its O..."
 image: "/images/beyond-the-glass-sidteks-meishan-expansion-and-the.jpg"

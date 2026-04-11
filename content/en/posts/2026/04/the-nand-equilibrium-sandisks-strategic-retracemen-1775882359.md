@@ -1,5 +1,5 @@
 ﻿---
-title: "The NAND Equilibrium: SanDisk’s Strategic Retracement Amidst Hyper-Scalable AI Demands"
+title: "The NAND Equilibrium: SanDisk’s Strategic Retra..."
 date: "2026-04-11T13:39:19+09:00"
 description: "As we navigate the second quarter of 2026, the semiconductor landscape is witnessing a fascinating recalibration. SanDisk Corporation, long a stalwart..."
 image: "/images/fallbacks/hardware.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "Orchestrating the Infinite: How 'Conflux' Redefines Parallel AI Development"
+title: "Orchestrating the Infinite: How 'Conflux' Redef..."
 date: "2026-04-11T13:30:04+09:00"
 description: "The landscape of software engineering in April 2026 has reached a critical inflection point where the complexity of model integration often outpaces h..."
 image: "/images/fallbacks/tech-biz.jpg"

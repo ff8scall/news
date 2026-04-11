@@ -1,5 +1,5 @@
 ﻿---
-title: "The Sovereign Stack: Why Strategic Autonomy Defines 2026’s Industrial Landscape"
+title: "The Sovereign Stack: Why Strategic Autonomy Def..."
 date: "2026-04-11T13:35:22+09:00"
 description: "As we navigate the second quarter of 2026, the global geopolitical climate has evolved from a state of competitive trade to one of systemic fragility...."
 image: "/images/the-sovereign-stack-why-strategic-autonomy-defines.jpg"

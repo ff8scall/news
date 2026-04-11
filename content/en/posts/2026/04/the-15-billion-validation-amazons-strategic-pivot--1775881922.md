@@ -1,5 +1,5 @@
 ﻿---
-title: "The $15 Billion Validation: Amazon’s Strategic Pivot into Scalable Intelligent Infrastructure"
+title: "The $15 Billion Validation: Amazon’s Strategic..."
 date: "2026-04-11T13:32:02+09:00"
 description: "In a decisive moment for the cloud computing sector, Amazon CEO Andy Jassy has finally pulled back the curtain on the financial impact of the company'..."
 image: "/images/the-15-billion-validation-amazons-strategic-pivot-.jpg"

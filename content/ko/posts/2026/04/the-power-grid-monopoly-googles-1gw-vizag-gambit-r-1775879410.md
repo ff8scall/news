@@ -1,5 +1,5 @@
 ﻿---
-title: "전력망의 주권을 쥐다: 구글, 1GW 비자그 데이터센터 허브로 아시아 클라우드 판도를 바꾸다"
+title: "전력망의 주권을 쥐다: 구글, 1GW 비자그 데이터센터 허브로 아시아 클라우드 판도를..."
 date: "2026-04-11T12:50:10+09:00"
 description: "1. 구글, 인도 비자그 데이터센터(1GW)를 위한 전력 배전 라이선스 정식 획득."
 image: "/images/the-power-grid-monopoly-googles-1gw-vizag-gambit-r.jpg"

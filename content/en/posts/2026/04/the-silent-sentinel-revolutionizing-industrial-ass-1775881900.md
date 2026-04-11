@@ -1,5 +1,5 @@
 ﻿---
-title: "The Silent Sentinel: Revolutionizing Industrial Asset Longevity Through Predictive Intelligence"
+title: "The Silent Sentinel: Revolutionizing Industrial..."
 date: "2026-04-11T13:31:40+09:00"
 description: "As of April 2026, the global industrial landscape is undergoing a silent, yet seismic, shift. At the recent RLA-2026 symposium held at the CSIR-Nation..."
 image: "/images/the-silent-sentinel-revolutionizing-industrial-ass.jpg"

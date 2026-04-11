@@ -1,5 +1,5 @@
 ﻿---
-title: "The Pandora Protocol: Why Anthropic is Burying 'Claude Mythos'"
+title: "The Pandora Protocol: Why Anthropic is Burying..."
 date: "2026-04-11T12:44:26+09:00"
 description: "In a move that has sent tremors through the AI research community, Anthropic has officially declared that its latest large-scale model, 'Claude Mythos..."
 image: "/images/the-pandora-protocol-why-anthropic-is-burying-clau.jpg"

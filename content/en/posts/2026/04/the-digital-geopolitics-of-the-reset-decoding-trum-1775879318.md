@@ -1,5 +1,5 @@
 ﻿---
-title: "The Digital Geopolitics of the Reset: Decoding Trump’s Strategic Pivot in Islamabad"
+title: "The Digital Geopolitics of the Reset: Decoding..."
 date: "2026-04-11T12:48:38+09:00"
 description: "As we enter April 2026, the diplomatic landscape is witnessing an extraordinary recalibration. Donald Trump’s cryptic social media assertion regarding..."
 image: "/images/the-digital-geopolitics-of-the-reset-decoding-trum.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Rise of Algorithmic Influence: Decoding Innopark Ventures' Bet on Skill Metaverse India"
+title: "The Rise of Algorithmic Influence: Decoding Inn..."
 date: "2026-04-11T12:51:00+09:00"
 description: "As of April 2026, the landscape of digital commerce has undergone a tectonic shift. The recent disclosure that Hyderabad-based Skill Metaverse India s..."
 image: "/images/the-rise-of-algorithmic-influence-decoding-innopar.jpg"

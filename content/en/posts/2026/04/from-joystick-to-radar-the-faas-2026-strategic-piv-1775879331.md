@@ -1,5 +1,5 @@
 ﻿---
-title: "From Joystick to Radar: The FAA’s 2026 Strategic Pivot Toward Digital-Native Talent"
+title: "From Joystick to Radar: The FAA’s 2026 Strategi..."
 date: "2026-04-11T12:48:51+09:00"
 description: "As of April 2026, the Federal Aviation Administration (FAA) is confronting a systemic crisis: a national shortage of air traffic controllers that thre..."
 image: "/images/from-joystick-to-radar-the-faas-2026-strategic-piv.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Algorithmic Urban Renaissance: Mumbai’s Digital Leap in Slum Redevelopment"
+title: "The Algorithmic Urban Renaissance: Mumbai’s Dig..."
 date: "2026-04-11T12:46:22+09:00"
 description: "As of April 2026, the intersection of rapid urbanization and computational governance has reached a pivotal juncture in Maharashtra. Chief Minister De..."
 image: "/images/fallback-default.jpg"

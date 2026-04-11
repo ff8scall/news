@@ -1,5 +1,5 @@
 ﻿---
-title: "The Pixel 11 Paradigm: Samsung’s Next-Gen Display Architecture Redefines Mobile Visuals"
+title: "The Pixel 11 Paradigm: Samsung’s Next-Gen Displ..."
 date: "2026-04-11T13:37:56+09:00"
 description: "As we navigate the competitive landscape of Q2 2026, the strategic partnership between Samsung Display and Google reaches a new milestone. The Pixel 1..."
 image: "/images/fallbacks/hardware.jpg"

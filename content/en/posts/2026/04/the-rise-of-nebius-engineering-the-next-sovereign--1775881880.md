@@ -1,5 +1,5 @@
 ﻿---
-title: "The Rise of Nebius: Engineering the Next Sovereign AI Hyperscaler"
+title: "The Rise of Nebius: Engineering the Next Sovere..."
 date: "2026-04-11T13:31:20+09:00"
 description: "As of April 2026, the landscape of artificial intelligence infrastructure is undergoing a tectonic shift. Nebius has emerged as a formidable contender..."
 image: "/images/the-rise-of-nebius-engineering-the-next-sovereign-.jpg"

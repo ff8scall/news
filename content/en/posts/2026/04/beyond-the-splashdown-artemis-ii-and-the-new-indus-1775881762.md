@@ -1,5 +1,5 @@
 ﻿---
-title: "Beyond the Splashdown: Artemis II and the New Industrial Imperative for Deep Space Infrastructure"
+title: "Beyond the Splashdown: Artemis II and the New I..."
 date: "2026-04-11T13:29:23+09:00"
 description: "The successful splashdown of the Artemis II crew off the coast of San Diego on April 10, 2026, marks far more than a celebrated return of four courage..."
 image: "/images/fallbacks/tech-biz.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Power Grid Monopoly: Google’s 1GW Vizag Gambit Redefines Regional Tech Sovereignty"
+title: "The Power Grid Monopoly: Google’s 1GW Vizag Gam..."
 date: "2026-04-11T12:50:10+09:00"
 description: "In a decisive move for its long-term infrastructure strategy, Google has officially secured a power distribution licence for its monumental 1 GW data ..."
 image: "/images/the-power-grid-monopoly-googles-1gw-vizag-gambit-r.jpg"

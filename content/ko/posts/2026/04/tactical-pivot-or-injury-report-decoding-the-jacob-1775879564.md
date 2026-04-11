@@ -1,5 +1,5 @@
 ﻿---
-title: "IPL 2026 전략의 이면: 제이콥 더피 결장으로 본 로열 챌린저스 벵갈루루의 전술적 셈법"
+title: "IPL 2026 전략의 이면: 제이콥 더피 결장으로 본 로열 챌린저스 벵갈루루의 전술..."
 date: "2026-04-11T12:52:44+09:00"
 description: "1. 제이콥 더피 결장은 피치 환경과 데이터 분석에 기반한 RCB의 전술적 선택임."
 image: "/images/tactical-pivot-or-injury-report-decoding-the-jacob.jpg"

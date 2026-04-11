@@ -1,5 +1,5 @@
 ﻿---
-title: "The Persistence of Connection: Noah Wyle and the Evolution of Modern Fandom"
+title: "The Persistence of Connection: Noah Wyle and th..."
 date: "2026-04-11T12:53:25+09:00"
 description: "As we navigate the hyper-accelerated landscape of April 2026, where digital avatars and generative personas often dominate the headlines, the recent H..."
 image: "/images/the-persistence-of-connection-noah-wyle-and-the-ev.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Transparency Reckoning: DATT’s Financial Refiling and the New Standard for Blockchain Entities"
+title: "The Transparency Reckoning: DATT’s Financial Re..."
 date: "2026-04-11T12:45:36+09:00"
 description: "As we navigate the second quarter of 2026, the intersection of digital asset management and traditional fiscal governance remains a volatile frontier...."
 image: "/images/the-transparency-reckoning-datts-financial-refilin.jpg"

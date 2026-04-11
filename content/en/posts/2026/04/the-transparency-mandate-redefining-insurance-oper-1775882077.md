@@ -1,5 +1,5 @@
 ﻿---
-title: "The Transparency Mandate: Redefining Insurance Operations in the Era of Algorithmic Governance"
+title: "The Transparency Mandate: Redefining Insurance..."
 date: "2026-04-11T13:34:37+09:00"
 description: "As we navigate the second quarter of 2026, the intersection of legacy insurance systems and modern regulatory oversight has reached a critical junctur..."
 image: "/images/the-transparency-mandate-redefining-insurance-oper.jpg"

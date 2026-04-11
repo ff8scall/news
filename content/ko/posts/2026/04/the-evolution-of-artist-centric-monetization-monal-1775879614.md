@@ -1,5 +1,5 @@
 ﻿---
-title: "아티스트 중심의 수익화 모델 진화: 모날리 타쿠르의 ‘Butterflies’와 2026년 팬덤 경제"
+title: "아티스트 중심의 수익화 모델 진화: 모날리 타쿠르의 ‘Butterflies’와 202..."
 date: "2026-04-11T12:53:35+09:00"
 description: "1. 서사 중심 EP 발매: 단발성 싱글 위주 시장에서 3개 트랙의 유기적 서사를 강조해 청취 체류 시간을 확보하고 브랜드 가치를 제고함."
 image: "/images/the-evolution-of-artist-centric-monetization-monal.jpg"

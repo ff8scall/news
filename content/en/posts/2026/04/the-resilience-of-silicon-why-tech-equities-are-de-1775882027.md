@@ -1,5 +1,5 @@
 ﻿---
-title: "The Resilience of Silicon: Why Tech Equities Are Defying Geopolitical Gravity in Q2 2026"
+title: "The Resilience of Silicon: Why Tech Equities Ar..."
 date: "2026-04-11T13:33:47+09:00"
 description: "As we enter the second quarter of 2026, the S&P 500 and Nasdaq have staged a remarkable recovery, largely propelled by a renewed surge in the semicond..."
 image: "/images/the-resilience-of-silicon-why-tech-equities-are-de.jpg"

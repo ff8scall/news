@@ -1,5 +1,5 @@
 ﻿---
-title: "The Strategic Impasse: UniCredit’s 2026 Stance on its Russian Footprint"
+title: "The Strategic Impasse: UniCredit’s 2026 Stance..."
 date: "2026-04-11T12:47:54+09:00"
 description: "As of April 2026, the global banking sector remains caught in the precarious tension between geopolitical realignment and the cold, hard logic of shar..."
 image: "/images/the-strategic-impasse-unicredits-2026-stance-on-it.jpg"

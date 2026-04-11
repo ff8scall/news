@@ -1,5 +1,5 @@
 ﻿---
-title: "The Dawn of Mythos-Class Vulnerabilities: Redefining Code Integrity in the Era of Autonomous Agents"
+title: "The Dawn of Mythos-Class Vulnerabilities: Redef..."
 date: "2026-04-11T13:30:32+09:00"
 description: "As we navigate the hyper-accelerated software landscape of April 2026, the traditional paradigms of cybersecurity have effectively collapsed. Jeremie ..."
 image: "/images/the-dawn-of-mythos-class-vulnerabilities-redefinin.jpg"

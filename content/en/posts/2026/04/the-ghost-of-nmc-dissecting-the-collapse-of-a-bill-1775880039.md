@@ -1,5 +1,5 @@
 ﻿---
-title: "The Ghost of NMC: Dissecting the Collapse of a Billion-Dollar Healthcare Titan"
+title: "The Ghost of NMC: Dissecting the Collapse of a..."
 date: "2026-04-11T13:00:40+09:00"
 description: "The narrative of B.R. Shetty is a sobering case study in the fragility of corporate empires that rely on opaque financial structures and aggressive ov..."
 image: "/images/the-ghost-of-nmc-dissecting-the-collapse-of-a-bill.jpg"

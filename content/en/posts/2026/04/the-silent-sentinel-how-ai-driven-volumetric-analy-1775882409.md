@@ -1,5 +1,5 @@
 ﻿---
-title: "The Silent Sentinel: How AI-Driven Volumetric Analysis Redefines Cardiovascular Diagnostics"
+title: "The Silent Sentinel: How AI-Driven Volumetric A..."
 date: "2026-04-11T13:40:09+09:00"
 description: "As of April 2026, the intersection of diagnostic imaging and predictive analytics has reached a critical inflection point. A landmark study published ..."
 image: "/images/fallbacks/ai-agents.jpg"

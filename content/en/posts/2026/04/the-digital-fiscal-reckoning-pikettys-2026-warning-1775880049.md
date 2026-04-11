@@ -1,5 +1,5 @@
 ﻿---
-title: "The Digital Fiscal Reckoning: Piketty’s 2026 Warning and the Tech-Economy Nexus"
+title: "The Digital Fiscal Reckoning: Piketty’s 2026 Wa..."
 date: "2026-04-11T13:00:50+09:00"
 description: "As we navigate the second quarter of 2026, the global economic narrative is increasingly dominated by a familiar, yet chilling, specter: the crisis of..."
 image: "/images/the-digital-fiscal-reckoning-pikettys-2026-warning.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Digital Sentinel: How SEBI’s New IT Infrastructure Redefines Market Governance"
+title: "The Digital Sentinel: How SEBI’s New IT Infrast..."
 date: "2026-04-11T12:50:26+09:00"
 description: "As of April 2026, the Securities and Exchange Board of India (SEBI) has officially ushered in a new era of market supervision by launching three integ..."
 image: "/images/the-digital-sentinel-how-sebis-new-it-infrastructu.jpg"

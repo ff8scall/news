@@ -1,5 +1,5 @@
 ﻿---
-title: "AI 기반 마켓플레이스의 도약: 스킬 메타버스 인디아(Skill Metaverse India)의 전략적 자본 조달 분석"
+title: "AI 기반 마켓플레이스의 도약: 스킬 메타버스 인디아(Skill Metaverse I..."
 date: "2026-04-11T12:51:04+09:00"
 description: "1. 스킬 메타버스 인디아, 인노파크 벤처스로부터 5천만 루피 규모의 시드 투자 유치 완료."
 image: "/images/the-rise-of-ai-native-marketplaces-analyzing-innop.jpg"

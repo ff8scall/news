@@ -1,5 +1,5 @@
 ﻿---
-title: "The Strategic Paralysis of UniCredit: Why Russian Exposure Remains a Corporate Quagmire in 2026"
+title: "The Strategic Paralysis of UniCredit: Why Russi..."
 date: "2026-04-11T12:45:53+09:00"
 description: "As we navigate the second quarter of 2026, the global financial landscape is increasingly defined by the decoupling of Western capital from sanctioned..."
 image: "/images/the-strategic-paralysis-of-unicredit-why-russian-e.jpg"

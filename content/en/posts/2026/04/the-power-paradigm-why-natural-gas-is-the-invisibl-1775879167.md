@@ -1,5 +1,5 @@
 ﻿---
-title: "The Power Paradigm: Why Natural Gas is the Invisible Engine of the AI Revolution"
+title: "The Power Paradigm: Why Natural Gas is the Invi..."
 date: "2026-04-11T12:46:08+09:00"
 description: "As of April 2026, the global technology landscape finds itself in a state of 'Compute-Energy Parity.' While the public conversation fixates on next-ge..."
 image: "/images/the-power-paradigm-why-natural-gas-is-the-invisibl.jpg"

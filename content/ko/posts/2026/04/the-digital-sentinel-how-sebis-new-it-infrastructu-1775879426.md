@@ -1,5 +1,5 @@
 ﻿---
-title: "디지털 센티넬의 시대: 인도 증권거래위원회(SEBI)의 차세대 IT 플랫폼과 규제 프레임워크의 진화"
+title: "디지털 센티넬의 시대: 인도 증권거래위원회(SEBI)의 차세대 IT 플랫폼과 규제 프..."
 date: "2026-04-11T12:50:27+09:00"
 description: "1. 핵심요약: SEBI가 3개의 IT 통합 플랫폼을 출시하여 규제 사각지대를 해소하고 시장 투명성을 획기적으로 개선."
 image: "/images/the-digital-sentinel-how-sebis-new-it-infrastructu.jpg"

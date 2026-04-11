@@ -1,5 +1,5 @@
 ﻿---
-title: "The Nanometer Revolution: Intel’s 19-Micrometer GaN Breakthrough Redefines AI Density"
+title: "The Nanometer Revolution: Intel’s 19-Micrometer..."
 date: "2026-04-11T12:55:41+09:00"
 description: "In a defining moment for semiconductor architecture, Intel has shattered existing constraints with its latest innovation: a Gallium Nitride (GaN) chip..."
 image: "/images/the-nanometer-revolution-intels-19-micrometer-gan-.jpg"

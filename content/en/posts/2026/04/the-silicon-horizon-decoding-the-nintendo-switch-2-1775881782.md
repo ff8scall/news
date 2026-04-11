@@ -1,5 +1,5 @@
 ﻿---
-title: "The Silicon Horizon: Decoding the Nintendo Switch 2 Software Ecosystem in 2026"
+title: "The Silicon Horizon: Decoding the Nintendo Swit..."
 date: "2026-04-11T13:29:43+09:00"
 description: "As we navigate the second quarter of 2026, the industry’s focus has shifted from mere hardware speculation to the software library that will define th..."
 image: "/images/the-silicon-horizon-decoding-the-nintendo-switch-2.jpg"

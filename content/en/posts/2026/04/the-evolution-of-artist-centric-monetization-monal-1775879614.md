@@ -1,5 +1,5 @@
 ﻿---
-title: "The Evolution of Artist-Centric Monetization: Monali Thakur’s 'Butterflies' EP and the New Direct-to-Fan Economy"
+title: "The Evolution of Artist-Centric Monetization: M..."
 date: "2026-04-11T12:53:34+09:00"
 description: "In the hyper-competitive landscape of April 2026, the music industry is witnessing a pivot back toward high-concept, multi-track EPs as a strategic to..."
 image: "/images/the-evolution-of-artist-centric-monetization-monal.jpg"

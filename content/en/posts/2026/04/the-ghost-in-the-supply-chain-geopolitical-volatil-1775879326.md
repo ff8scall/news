@@ -1,5 +1,5 @@
 ﻿---
-title: "The Ghost in the Supply Chain: Geopolitical Volatility and the New Energy Reality of 2026"
+title: "The Ghost in the Supply Chain: Geopolitical Vol..."
 date: "2026-04-11T12:48:46+09:00"
 description: "As of mid-April 2026, the global economy finds itself at a precarious crossroads. Following the fragile ceasefire on April 7, which concluded 39 days ..."
 image: "/images/the-ghost-in-the-supply-chain-geopolitical-volatil.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "Geopolitical Volatility Meets Market Resilience: Assessing the 2026 Energy-Tech Nexus"
+title: "Geopolitical Volatility Meets Market Resilience..."
 date: "2026-04-11T12:48:19+09:00"
 description: "As we navigate the second quarter of 2026, the global financial landscape is experiencing a period of cautious optimism, dictated by a fragile equilib..."
 image: "/images/fallbacks/tech-biz.jpg"

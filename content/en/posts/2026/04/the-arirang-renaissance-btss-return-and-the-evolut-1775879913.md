@@ -1,5 +1,5 @@
 ﻿---
-title: "The Arirang Renaissance: BTS’s Return and the Evolution of Immersive Live Performance"
+title: "The Arirang Renaissance: BTS’s Return and the E..."
 date: "2026-04-11T12:58:34+09:00"
 description: "As of April 2026, the global entertainment landscape is witnessing a seismic shift characterized by the triumphant return of BTS. The 'Arirang Show' k..."
 image: "/images/the-arirang-renaissance-btss-return-and-the-evolut.jpg"

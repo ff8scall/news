@@ -1,5 +1,5 @@
 ﻿---
-title: "The Integrity Paradox: Phantom Blade Zero and the Pushback Against Predictive Frame Generation"
+title: "The Integrity Paradox: Phantom Blade Zero and t..."
 date: "2026-04-11T13:31:55+09:00"
 description: "The intersection of high-fidelity gaming and generative AI reached a critical inflection point this April 2026, as S-Game, the developer behind the hi..."
 image: "/images/the-integrity-paradox-phantom-blade-zero-and-the-p.jpg"

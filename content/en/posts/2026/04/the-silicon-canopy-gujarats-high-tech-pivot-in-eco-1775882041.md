@@ -1,5 +1,5 @@
 ﻿---
-title: "The Silicon Canopy: Gujarat’s High-Tech Pivot in Ecological Infrastructure"
+title: "The Silicon Canopy: Gujarat’s High-Tech Pivot i..."
 date: "2026-04-11T13:34:01+09:00"
 description: "In a decisive move to integrate industrial-scale technology with environmental conservation, the state of Gujarat has announced the establishment of 8..."
 image: "/images/the-silicon-canopy-gujarats-high-tech-pivot-in-eco.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Fidelity Frontier: Why ZBrush and Unreal Engine 5.5 Are Defining the Next Era of Digital Avatars"
+title: "The Fidelity Frontier: Why ZBrush and Unreal En..."
 date: "2026-04-11T13:29:51+09:00"
 description: "In April 2026, the threshold between pre-rendered cinematic assets and real-time game entities has effectively vanished. Recent developments in high-f..."
 image: "/images/the-fidelity-frontier-why-zbrush-and-unreal-engine.jpg"

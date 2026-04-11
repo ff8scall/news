@@ -1,5 +1,5 @@
 ﻿---
-title: "The Ghost in the Copyright: Rethinking Human Authorship in the Age of Autonomous AI"
+title: "The Ghost in the Copyright: Rethinking Human Au..."
 date: "2026-04-11T12:50:35+09:00"
 description: "As we navigate the second quarter of 2026, the intersection of autonomous artificial intelligence and intellectual property law has reached a critical..."
 image: "/images/fallbacks/tech-biz.jpg"

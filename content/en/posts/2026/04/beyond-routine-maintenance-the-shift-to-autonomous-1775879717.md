@@ -1,5 +1,5 @@
 ﻿---
-title: "Beyond Routine Maintenance: The Shift to Autonomous Industrial Asset Longevity"
+title: "Beyond Routine Maintenance: The Shift to Autono..."
 date: "2026-04-11T12:55:18+09:00"
 description: "As of April 2026, the industrial landscape is witnessing a pivot from reactive maintenance to a paradigm of 'Autonomous Asset Longevity.' The recent n..."
 image: "/images/beyond-routine-maintenance-the-shift-to-autonomous.jpg"

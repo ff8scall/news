@@ -1,5 +1,5 @@
 ﻿---
-title: "유리 너머의 도약: 시드텍(Sidtek)의 메이산(Meishan) 설비 확장과 마이크로디스플레이의 미래"
+title: "유리 너머의 도약: 시드텍(Sidtek)의 메이산(Meishan) 설비 확장과 마이크..."
 date: "2026-04-11T13:29:32+09:00"
 description: "1. 시드텍(Sidtek), 메이산 OLED 마이크로디스플레이 공장 대규모 증설 공식 착수"
 image: "/images/beyond-the-glass-sidteks-meishan-expansion-and-the.jpg"

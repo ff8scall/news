@@ -1,5 +1,5 @@
 ﻿---
-title: "Silicon Resilience: The Paradox of Tech Markets in a Volatile Geopolitical Era"
+title: "Silicon Resilience: The Paradox of Tech Markets..."
 date: "2026-04-11T13:33:28+09:00"
 description: "As we move into April 2026, the global financial landscape is witnessing a fascinating decoupling phenomenon. While the Middle East remains a hotbed o..."
 image: "/images/silicon-resilience-the-paradox-of-tech-markets-in-.jpg"

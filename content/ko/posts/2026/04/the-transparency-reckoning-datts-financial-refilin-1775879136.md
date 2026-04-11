@@ -1,5 +1,5 @@
 ﻿---
-title: "신뢰의 재정의: Digital Asset Technologies의 재무제표 수정 공시가 던지는 업계의 경종"
+title: "신뢰의 재정의: Digital Asset Technologies의 재무제표 수정 공시..."
 date: "2026-04-11T12:45:36+09:00"
 description: "1. DATT의 재무제표 수정 공시는 단순한 오류 수정이 아닌, 고도화된 규제 환경에 대응하기 위한 선제적 리스크 관리 전략임."
 image: "/images/the-transparency-reckoning-datts-financial-refilin.jpg"

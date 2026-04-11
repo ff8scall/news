@@ -1,5 +1,5 @@
 ﻿---
-title: "The Loom of Tomorrow: India’s Strategic Pivot in Textile Manufacturing"
+title: "The Loom of Tomorrow: India’s Strategic Pivot i..."
 date: "2026-04-11T13:01:11+09:00"
 description: "In a pivotal development for India’s industrial landscape, the government has formally approved 52 new applications under the Production Linked Incent..."
 image: "/images/the-loom-of-tomorrow-indias-strategic-pivot-in-tex.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Imperfection Advantage: Harnessing Atomic Defects for Next-Gen Photonics"
+title: "The Imperfection Advantage: Harnessing Atomic D..."
 date: "2026-04-11T13:38:21+09:00"
 description: "In a profound shift for semiconductor architecture, researchers at Rice University have successfully decoded the mystery of anomalous light signals, t..."
 image: "/images/fallbacks/tech-biz.jpg"

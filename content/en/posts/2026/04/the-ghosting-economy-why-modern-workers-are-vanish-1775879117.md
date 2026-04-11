@@ -1,5 +1,5 @@
 ﻿---
-title: "The Ghosting Economy: Why Modern Workers Are Vanishing from Digital Contracts"
+title: "The Ghosting Economy: Why Modern Workers Are Va..."
 date: "2026-04-11T12:45:37+09:00"
 description: "In April 2026, the gig economy has reached a paradoxical boiling point. While AI-driven talent matching platforms have made it easier than ever to lis..."
 image: "/images/fallback-default.jpg"

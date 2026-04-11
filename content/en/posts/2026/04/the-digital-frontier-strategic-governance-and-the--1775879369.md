@@ -1,5 +1,5 @@
 ﻿---
-title: "The Digital Frontier: Strategic Governance and the TTAADC Power Shift"
+title: "The Digital Frontier: Strategic Governance and..."
 date: "2026-04-11T12:49:30+09:00"
 description: "As we navigate the second quarter of 2026, the political landscape in Northeast India’s Tripura has reached a fever pitch. The upcoming Tripura Tribal..."
 image: "/images/the-digital-frontier-strategic-governance-and-the-.jpg"

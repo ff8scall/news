@@ -1,5 +1,5 @@
 ﻿---
-title: "The Bio-Digital Mirror: The Monetization of Aesthetic Permanence in the Age of Physical-Virtual Fusion"
+title: "The Bio-Digital Mirror: The Monetization of Aes..."
 date: "2026-04-11T12:53:43+09:00"
 description: "As we navigate the second quarter of 2026, the intersection of cosmetic surgery and digital public persona has reached a fever pitch. The recent discl..."
 image: "/images/the-bio-digital-mirror-the-monetization-of-aesthet.jpg"

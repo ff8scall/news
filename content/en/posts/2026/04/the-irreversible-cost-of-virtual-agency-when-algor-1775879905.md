@@ -1,5 +1,5 @@
 ﻿---
-title: "The Irreversible Cost of Virtual Agency: When Algorithmic Ambition Overturns Player Autonomy"
+title: "The Irreversible Cost of Virtual Agency: When A..."
 date: "2026-04-11T12:58:25+09:00"
 description: "In the fast-evolving landscape of April 2026, the intersection of autonomous NPC behavior and player-led narratives has reached a volatile tipping poi..."
 image: "/images/the-irreversible-cost-of-virtual-agency-when-algor.jpg"

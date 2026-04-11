@@ -1,5 +1,5 @@
 ﻿---
-title: "Beyond the Blue: Artemis II and the Industrialization of Cislunar Infrastructure"
+title: "Beyond the Blue: Artemis II and the Industriali..."
 date: "2026-04-11T13:30:49+09:00"
 description: "As the Artemis II crew completes their Pacific splashdown this April 2026, the global tech community views this not merely as a historic recovery, but..."
 image: "/images/fallbacks/tech-biz.jpg"

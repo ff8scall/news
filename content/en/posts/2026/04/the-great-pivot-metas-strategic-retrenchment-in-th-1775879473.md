@@ -1,5 +1,5 @@
 ﻿---
-title: "The Great Pivot: Meta’s Strategic Retrenchment in the Post-Reality Era"
+title: "The Great Pivot: Meta’s Strategic Retrenchment..."
 date: "2026-04-11T12:51:14+09:00"
 description: "As of April 2026, Meta Platforms finds itself at a defining crossroads. Following a string of devastating judicial losses that have constrained its da..."
 image: "/images/the-great-pivot-metas-strategic-retrenchment-in-th.jpg"

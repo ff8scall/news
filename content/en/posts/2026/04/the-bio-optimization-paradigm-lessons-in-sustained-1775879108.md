@@ -1,5 +1,5 @@
 ﻿---
-title: "The Bio-Optimization Paradigm: Lessons in Sustained Systemic Efficiency"
+title: "The Bio-Optimization Paradigm: Lessons in Susta..."
 date: "2026-04-11T12:45:08+09:00"
 description: "In the fast-paced ecosystem of April 2026, where corporate agility is measured by the weight of legacy processes and the velocity of resource deployme..."
 image: "/images/the-bio-optimization-paradigm-lessons-in-sustained.jpg"

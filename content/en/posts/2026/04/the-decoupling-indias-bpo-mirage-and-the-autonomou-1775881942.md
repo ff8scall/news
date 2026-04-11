@@ -1,5 +1,5 @@
 ﻿---
-title: "The Decoupling: India’s BPO Mirage and the Autonomous Agent Paradigm Shift"
+title: "The Decoupling: India’s BPO Mirage and the Auto..."
 date: "2026-04-11T13:32:22+09:00"
 description: "As we move into the second quarter of 2026, the long-predicted disruption of global service labor has shifted from academic concern to hard reality. I..."
 image: "/images/fallbacks/ai-agents.jpg"

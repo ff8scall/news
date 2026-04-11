@@ -1,5 +1,5 @@
 ﻿---
-title: "The Geopolitical Rebound: How Middle East Stability Reshapes the Tech Hardware Supply Chain"
+title: "The Geopolitical Rebound: How Middle East Stabi..."
 date: "2026-04-11T12:46:38+09:00"
 description: "As we navigate the second quarter of 2026, the intersection of macro-diplomacy and semiconductor economics has never been more volatile. The recent th..."
 image: "/images/fallback-default.jpg"

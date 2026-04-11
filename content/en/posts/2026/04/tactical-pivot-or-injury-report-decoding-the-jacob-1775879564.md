@@ -1,5 +1,5 @@
 ﻿---
-title: "Tactical Pivot or Injury Report? Decoding the Jacob Duffy Exclusion in IPL 2026 Strategy"
+title: "Tactical Pivot or Injury Report? Decoding the J..."
 date: "2026-04-11T12:52:44+09:00"
 description: "As the 2026 Indian Premier League (IPL) reaches its mid-season fever pitch, the strategic composition of playing XIs has become a battlefield of data ..."
 image: "/images/tactical-pivot-or-injury-report-decoding-the-jacob.jpg"

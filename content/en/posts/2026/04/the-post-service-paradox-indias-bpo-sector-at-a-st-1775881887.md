@@ -1,5 +1,5 @@
 ﻿---
-title: "The Post-Service Paradox: India’s BPO Sector at a Structural Inflection Point"
+title: "The Post-Service Paradox: India’s BPO Sector at..."
 date: "2026-04-11T13:31:27+09:00"
 description: "As of April 2026, the long-heralded promise of the AI revolution is transitioning from speculative optimism to a cold, structural reality for the glob..."
 image: "/images/fallbacks/tech-biz.jpg"

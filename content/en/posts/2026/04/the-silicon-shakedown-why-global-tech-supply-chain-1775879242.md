@@ -1,5 +1,5 @@
 ﻿---
-title: "The Silicon Shakedown: Why Global Tech Supply Chains Cannot Afford Geopolitical Volatility"
+title: "The Silicon Shakedown: Why Global Tech Supply C..."
 date: "2026-04-11T12:47:23+09:00"
 description: "As of April 2026, the global technology sector finds itself in the crosshairs of a precarious geopolitical impasse. The recent 39-day conflict involvi..."
 image: "/images/the-silicon-shakedown-why-global-tech-supply-chain.jpg"

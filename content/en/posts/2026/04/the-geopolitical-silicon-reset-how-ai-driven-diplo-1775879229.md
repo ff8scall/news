@@ -1,5 +1,5 @@
 ﻿---
-title: "The Geopolitical Silicon Reset: How AI-Driven Diplomacy is Redefining Global Energy Markets in 2026"
+title: "The Geopolitical Silicon Reset: How AI-Driven D..."
 date: "2026-04-11T12:47:09+09:00"
 description: "As we navigate the spring of 2026, the diplomatic theater in Islamabad has become the focal point of a historic convergence between legacy geopolitics..."
 image: "/images/the-geopolitical-silicon-reset-how-ai-driven-diplo.jpg"

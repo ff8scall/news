@@ -1,5 +1,5 @@
 ﻿---
-title: "Transparency Reset: Digital Asset Technologies Inc. Navigates a Crucial Financial Audit"
+title: "Transparency Reset: Digital Asset Technologies..."
 date: "2026-04-11T12:47:31+09:00"
 description: "Digital Asset Technologies Inc. (CSE: DATT) sent a ripple through the Vancouver financial ecosystem this April, announcing a formal intent to amend an..."
 image: "/images/transparency-reset-digital-asset-technologies-inc-.jpg"

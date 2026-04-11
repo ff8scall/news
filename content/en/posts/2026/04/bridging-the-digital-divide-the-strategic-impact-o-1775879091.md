@@ -1,5 +1,5 @@
 ﻿---
-title: "Bridging the Digital Divide: The Strategic Impact of the IIT Hyderabad and SSCTU Alliance"
+title: "Bridging the Digital Divide: The Strategic Impa..."
 date: "2026-04-11T12:45:02+09:00"
 description: "In April 2026, the strategic memorandum of understanding (MoU) between IIT Hyderabad and Sammakka Sarakka Central Tribal University (SSCTU) marks a pi..."
 image: "/images/bridging-the-digital-divide-the-strategic-impact-o.jpg"

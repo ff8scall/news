@@ -1,5 +1,5 @@
 ﻿---
-title: "The Rise of AI-Native Marketplaces: Analyzing Innopark’s Bet on Skill Metaverse India"
+title: "The Rise of AI-Native Marketplaces: Analyzing I..."
 date: "2026-04-11T12:51:04+09:00"
 description: "In a decisive move that underscores the maturation of India’s creator economy, Innopark Ventures has injected INR 5 crore in seed funding into Skill M..."
 image: "/images/the-rise-of-ai-native-marketplaces-analyzing-innop.jpg"

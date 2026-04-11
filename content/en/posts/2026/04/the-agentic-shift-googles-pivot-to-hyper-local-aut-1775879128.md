@@ -1,5 +1,5 @@
 ﻿---
-title: "The Agentic Shift: Google’s Pivot to Hyper-Local Autonomy in India"
+title: "The Agentic Shift: Google’s Pivot to Hyper-Loca..."
 date: "2026-04-11T12:45:28+09:00"
 description: "As of April 2026, the battle for the Indian digital ecosystem has shifted from passive information retrieval to active task execution. Google’s latest..."
 image: "/images/the-agentic-shift-googles-pivot-to-hyper-local-aut.jpg"

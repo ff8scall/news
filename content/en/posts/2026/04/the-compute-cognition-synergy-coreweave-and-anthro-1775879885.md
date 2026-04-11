@@ -1,5 +1,5 @@
 ﻿---
-title: "The Compute-Cognition Synergy: CoreWeave and Anthropic Reshape the AI Infrastructure Landscape"
+title: "The Compute-Cognition Synergy: CoreWeave and An..."
 date: "2026-04-11T12:58:05+09:00"
 description: "In a defining move for the 2026 enterprise AI landscape, CoreWeave has officially secured a landmark agreement to provide massive-scale cloud capacity..."
 image: "/images/fallbacks/tech-biz.jpg"

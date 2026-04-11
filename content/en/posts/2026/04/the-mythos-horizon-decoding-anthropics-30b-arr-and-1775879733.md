@@ -1,5 +1,5 @@
 ﻿---
-title: "The Mythos Horizon: Decoding Anthropic’s $30B ARR and the Death of Legacy SaaS"
+title: "The Mythos Horizon: Decoding Anthropic’s $30B A..."
 date: "2026-04-11T12:55:33+09:00"
 description: "As of April 2026, the arrival of Anthropic’s 'Mythos' model has done more than just boost performance metrics; it has fundamentally redefined the econ..."
 image: "/images/the-mythos-horizon-decoding-anthropics-30b-arr-and.jpg"

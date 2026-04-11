@@ -1,5 +1,5 @@
 ﻿---
-title: "The Digital Resilience Imperative: Empowering MSMEs and Global Workforces in the 2026 Economy"
+title: "The Digital Resilience Imperative: Empowering M..."
 date: "2026-04-11T13:35:47+09:00"
 description: "As we navigate the volatility of the mid-2026 economic landscape, the definition of corporate resilience has shifted from mere survival to the mastery..."
 image: "/images/the-digital-resilience-imperative-empowering-msmes.jpg"

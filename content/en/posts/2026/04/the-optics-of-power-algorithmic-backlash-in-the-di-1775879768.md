@@ -1,5 +1,5 @@
 ﻿---
-title: "The Optics of Power: Algorithmic Backlash in the Digital Governance Era"
+title: "The Optics of Power: Algorithmic Backlash in th..."
 date: "2026-04-11T12:56:08+09:00"
 description: "In the hyper-connected landscape of April 2026, the White House’s attempt to manage the narrative surrounding the Iran geopolitical crisis underscores..."
 image: "/images/the-optics-of-power-algorithmic-backlash-in-the-di.jpg"

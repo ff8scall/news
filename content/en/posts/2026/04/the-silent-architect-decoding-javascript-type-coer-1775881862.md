@@ -1,5 +1,5 @@
 ﻿---
-title: "The Silent Architect: Decoding JavaScript Type Coercion in the Era of High-Performance Web Apps"
+title: "The Silent Architect: Decoding JavaScript Type..."
 date: "2026-04-11T13:31:02+09:00"
 description: "In the fast-evolving ecosystem of April 2026, where web applications are increasingly competing with native performance, the fundamental mechanics of ..."
 image: "/images/fallbacks/tech-biz.jpg"

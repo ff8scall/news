@@ -1,5 +1,5 @@
 ﻿---
-title: "The Compliance Pivot: Assessing Taiwan’s Regulatory Oversight of Financial Leasing Entities"
+title: "The Compliance Pivot: Assessing Taiwan’s Regula..."
 date: "2026-04-11T13:34:52+09:00"
 description: "As of April 2026, the Financial Supervisory Commission (FSC) of Taiwan has reached a critical milestone in its systematic integration of leasing and i..."
 image: "/images/the-compliance-pivot-assessing-taiwans-regulatory-.jpg"

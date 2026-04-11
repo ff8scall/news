@@ -1,5 +1,5 @@
 ﻿---
-title: "The Digital Sideline: Analyzing Performance Gaps in 2026 Elite Sports Logistics"
+title: "The Digital Sideline: Analyzing Performance Gap..."
 date: "2026-04-11T12:53:15+09:00"
 description: "As we navigate the intense competitive landscape of April 2026, the intersection of high-stakes rugby and sports performance technology has reached a ..."
 image: "/images/the-digital-sideline-analyzing-performance-gaps-in.jpg"

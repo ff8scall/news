@@ -1,5 +1,5 @@
 ﻿---
-title: "The Strategic Devaluation: Palantir’s Dilemma in the Age of Anthropic Agility"
+title: "The Strategic Devaluation: Palantir’s Dilemma i..."
 date: "2026-04-11T12:55:01+09:00"
 description: "As of April 2026, the enterprise software landscape is witnessing a profound recalibration as Palantir Technologies faces a significant market correct..."
 image: "/images/the-strategic-devaluation-palantirs-dilemma-in-the.jpg"

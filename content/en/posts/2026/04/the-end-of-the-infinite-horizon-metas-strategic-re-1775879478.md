@@ -1,5 +1,5 @@
 ﻿---
-title: "The End of the Infinite Horizon: Meta’s Strategic Retreat and the New Reality"
+title: "The End of the Infinite Horizon: Meta’s Strateg..."
 date: "2026-04-11T12:51:18+09:00"
 description: "As of April 2026, the landscape of social technology has shifted dramatically. Meta, the titan that once staked its entire future on the promise of th..."
 image: "/images/the-end-of-the-infinite-horizon-metas-strategic-re.jpg"

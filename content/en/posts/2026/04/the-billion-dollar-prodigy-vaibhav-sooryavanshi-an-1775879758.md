@@ -1,5 +1,5 @@
 ﻿---
-title: "The Billion-Dollar Prodigy: Vaibhav Sooryavanshi and the New Frontier of Athlete Monetization"
+title: "The Billion-Dollar Prodigy: Vaibhav Sooryavansh..."
 date: "2026-04-11T12:56:00+09:00"
 description: "As we enter the peak of the 2026 cricket season, the emergence of 15-year-old Vaibhav Sooryavanshi in the Indian Premier League (IPL) serves as a fasc..."
 image: "/images/the-billion-dollar-prodigy-vaibhav-sooryavanshi-an.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Era of Mythos-Class Vulnerabilities: Redefining Codebase Integrity in 2026"
+title: "The Era of Mythos-Class Vulnerabilities: Redefi..."
 date: "2026-04-11T13:31:16+09:00"
 description: "As we navigate the second quarter of 2026, the complexity of enterprise software has reached a zenith, bringing with it a terrifying new breed of secu..."
 image: "/images/fallbacks/ai-tech.jpg"

@@ -1,5 +1,5 @@
 ﻿---
-title: "The Tariff Quagmire: Navigating the 2026 Global Trade Reckoning"
+title: "The Tariff Quagmire: Navigating the 2026 Global..."
 date: "2026-04-11T12:56:27+09:00"
 description: "As we navigate the second quarter of 2026, the global hardware supply chain is once again under fire, this time centered on the legality of a 10% glob..."
 image: "/images/the-tariff-quagmire-navigating-the-2026-global-tra.jpg"

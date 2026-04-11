@@ -1,5 +1,5 @@
 ﻿---
-title: "The Silent Architect: Decoding JavaScript Type Coercion in the Age of Autonomous AI Agents"
+title: "The Silent Architect: Decoding JavaScript Type..."
 date: "2026-04-11T13:30:19+09:00"
 description: "In the burgeoning landscape of 2026, where JavaScript remains the lingua franca of the web and increasingly, the execution layer for autonomous AI age..."
 image: "/images/the-silent-architect-decoding-javascript-type-coer.jpg"

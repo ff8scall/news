@@ -1,5 +1,5 @@
 ﻿---
-title: "The Transparency Rebellion: Why the Open-Source Counter-Movement is Decimating Proprietary Detection"
+title: "The Transparency Rebellion: Why the Open-Source..."
 date: "2026-04-11T12:49:11+09:00"
 description: "As of April 2026, the content verification landscape has devolved into a digital 'Red Queen's Race.' The recent surge in false-positive flags by comme..."
 image: "/images/the-transparency-rebellion-why-the-open-source-cou.jpg"
