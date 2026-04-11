@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Allow: /tags/
+Allow: /categories/
+Allow: /page/
 
 # Sitemaps (Global)
 Sitemap: https://news.lego-sia.com/sitemap.xml
@@ -8,5 +11,9 @@ Sitemap: https://news.lego-sia.com/sitemap.xml
 Sitemap: https://news.lego-sia.com/index.xml
 Sitemap: https://news.lego-sia.com/en/index.xml
 
-# Search Verification Key
+# Verification Files
+Allow: /naver*.html
+Allow: /google*.html
+Allow: /bing*.xml
+
 Disallow: /5ab061f17ab14049b6b3377c527b939c.txt

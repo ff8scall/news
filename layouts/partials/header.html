@@ -2,10 +2,18 @@
   <div class="container">
     <div class="header-inner">
 
-      {{/* ── 로고 (브랜드 네이밍 강화) ── */}}
+      {{/* ── 로고 (H1 태그 누락 해결) ── */}}
+      {{ if .IsHome }}
+      <h1 class="logo-wrapper" style="margin: 0; padding: 0; font-size: 1rem;">
+        <a href="{{ .Site.Home.RelPermalink }}" class="site-logo" aria-label="{{ .Site.Title }} 홈으로">
+          <span class="logo-accent">LEGO-SIA</span> INTELLIGENCE
+        </a>
+      </h1>
+      {{ else }}
       <a href="{{ .Site.Home.RelPermalink }}" class="site-logo" aria-label="{{ .Site.Title }} 홈으로">
         <span class="logo-accent">LEGO-SIA</span> INTELLIGENCE
       </a>
+      {{ end }}
 
       {{/* ── 데스크탑 GNB ── */}}
       <nav class="gnb" aria-label="주 메뉴">
