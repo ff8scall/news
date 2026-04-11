@@ -182,7 +182,7 @@ def main():
                 "ai-tech": "ai-tech", "AI-기술": "ai-tech",
                 "ai-agents": "ai-agents", "AI-에이전트": "ai-agents",
                 "hardware": "hardware", "하드웨어": "hardware",
-                "game": "game", "게임": "game",
+                "game": "gaming", "게임": "gaming",
                 "monetization": "monetization", "수익화-전략": "monetization",
                 "tech-biz": "tech-biz", "테크-비즈니스": "tech-biz"
             }
@@ -191,7 +191,7 @@ def main():
             
             group = "others"
             if cat_slug in ["ai-tech", "ai-agents", "hardware"]: group = "strategic"
-            elif cat_slug == "game": group = "game"
+            elif cat_slug == "gaming": group = "game"
             
             if targets[group]["count"] >= targets[group]["limit"]:
                 if published_count < 3 and group == "strategic": 

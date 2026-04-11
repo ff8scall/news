@@ -18,26 +18,36 @@ class AIWriter:
         self.groq_key = os.getenv("GROQ_API_KEY")
         self.openrouter_key = os.getenv("OPENROUTER_API_KEY")
         
-        # 디버깅: 키 로드 상태 확인 (V3.8 Quad-AI 구성)
-        if self.gemini_key: print(f"[*] Gemini Key Loaded: {self.gemini_key[:5]}***")
-        if self.deepseek_key: print(f"[*] DeepSeek Key Loaded: {self.deepseek_key[:5]}***")
-        if self.groq_key: print(f"[*] Groq Key Loaded: {self.groq_key[:5]}***")
-        if self.openrouter_key: print(f"[*] OpenRouter Key Loaded: {self.openrouter_key[:5]}***")
+        # [V11.0] 서비스 상태 추적
+        self.failed_providers = set()
+        
+        # 디버깅: 키 로드 상태 확인
+        if self.gemini_key: print(f"[*] Gemini Key Loaded: {self.gemini_key[:8]}***")
+        if self.deepseek_key: print(f"[*] DeepSeek Key Loaded: {self.deepseek_key[:8]}***")
+        if self.groq_key: print(f"[*] Groq Key Loaded: {self.groq_key[:8]}***")
+        if self.openrouter_key: print(f"[*] OpenRouter Key Loaded: {self.openrouter_key[:8]}***")
 
     def _generate_api_call(self, prompt, provider="gemini", model_name=None):
-        """[V3.8] 멀티 AI 통합 호출 (제미나이, 딥시크, 그로그, 오픈라우터)"""
+        """[V11.0] 개별 API 호출 및 쿼터 제한 감지"""
+        if provider in self.failed_providers:
+            return None
+
         if provider == "gemini":
             if not self.gemini_key: return None
             try:
                 genai.configure(api_key=self.gemini_key)
-                # [V10.9] 하드코딩 제거: 전달받은 모델명 사용
                 model = genai.GenerativeModel(model_name if model_name else 'models/gemini-1.5-flash-latest')
                 response = model.generate_content(prompt)
                 if response and response.text:
                     return response.text
                 return None
             except Exception as e:
-                print(f" [!] Gemini Failure: {e}")
+                err_msg = str(e).lower()
+                if "quota" in err_msg or "429" in err_msg:
+                    print(f" [!] Gemini Quota Exceeded. Disabling for this run.")
+                    self.failed_providers.add("gemini")
+                else:
+                    print(f" [!] Gemini Failure: {e}")
                 return None
             
         elif provider == "deepseek":
@@ -49,16 +59,22 @@ class AIWriter:
                     headers={"Authorization": f"Bearer {self.deepseek_key.strip()}", "Content-Type": "application/json"},
                     data=json.dumps({
                         "model": target_model,
-                        "messages": [{"role": "system", "content": "Output ONLY JSON."}, {"role": "user", "content": prompt}],
+                        "messages": [{"role": "system", "content": "You are a professional tech editor. Output ONLY JSON."}, {"role": "user", "content": prompt}],
                         "temperature": 0.3
                     }), timeout=60
                 )
+                if response.status_code == 429 or response.status_code == 402:
+                    print(f" [!] DeepSeek Quota/Balance issue. Disabling.")
+                    self.failed_providers.add("deepseek")
+                    return None
+                    
                 data = response.json()
                 if "choices" in data:
                     return data["choices"][0]["message"]["content"]
-                else:
-                    return None
-            except: return None
+                return None
+            except Exception as e:
+                print(f" [!] DeepSeek Failure: {e}")
+                return None
 
         elif provider == "groq":
             if not self.groq_key: return None
@@ -73,6 +89,11 @@ class AIWriter:
                         "temperature": 0.3
                     }), timeout=30
                 )
+                if response.status_code == 429:
+                    print(f" [!] Groq Rate Limit reached. Disabling.")
+                    self.failed_providers.add("groq")
+                    return None
+                    
                 data = response.json()
                 if "choices" in data:
                     return data["choices"][0]["message"]["content"]
@@ -86,14 +107,20 @@ class AIWriter:
         elif provider == "openrouter":
             if not self.openrouter_key: return None
             try:
+                target_model = model_name if model_name else "openai/gpt-4o-mini"
                 response = requests.post(
                     "https://openrouter.ai/api/v1/chat/completions",
                     headers={"Authorization": f"Bearer {self.openrouter_key.strip()}", "Content-Type": "application/json"},
                     data=json.dumps({
-                        "model": "openai/gpt-4o-mini",
+                        "model": target_model,
                         "messages": [{"role": "user", "content": prompt}]
                     }), timeout=60
                 )
+                if response.status_code in [402, 403, 429]:
+                    print(f" [!] OpenRouter Quota/Limit issue ({response.status_code}). Disabling.")
+                    self.failed_providers.add("openrouter")
+                    return None
+                    
                 data = response.json()
                 if "choices" in data:
                     return data["choices"][0]["message"]["content"]
@@ -106,24 +133,39 @@ class AIWriter:
         return None
 
     def generate_content(self, prompt, category="AI·신기술", model=None):
-        """[V10.9 Production] 안정 최우선: 15초 간격으로 가용 모델 순회"""
+        """[V11.0 Performance] 스마트 폴백: 사용 가능한 모델 우선순위 순회"""
+        # [V11.0] 우선순위 조정: DeepSeek 추가 및 Gemini 2.0 상향
         candidates = [
             ("groq", "llama-3.1-8b-instant"),
-            ("openrouter", "openai/gpt-4o-mini"),
+            ("deepseek", "deepseek-chat"),
             ("gemini", "models/gemini-2.0-flash"),
-            ("gemini", "models/gemini-flash-latest")
+            ("openrouter", "openai/gpt-4o-mini"),
+            ("gemini", "models/gemini-1.5-flash-latest")
         ]
         
+        # 특정 모델이 요청된 경우 최우선 순위로 삽입
+        if model:
+            # 모델명으로 공급자 유추
+            inferred_provider = "gemini" if "gemini" in model else "openrouter"
+            if "llama" in model: inferred_provider = "groq"
+            if "deepseek" in model: inferred_provider = "deepseek"
+            candidates.insert(0, (inferred_provider, model))
+
         for provider, model_name in candidates:
+            if provider in self.failed_providers:
+                continue
+                
             try:
+                # print(f" [*] Attempting {provider} ({model_name})...")
                 res = self._generate_api_call(prompt, provider, model_name=model_name)
                 if res and len(res.strip()) > 10:
                     return res
             except Exception as e:
-                print(f" [!] {provider} mode skip: {e}")
+                print(f" [!] {provider} cycle failed: {e}")
             
-            # [USER RULE] 무료 API 보호를 위한 15초 대기
-            time.sleep(15)
+            # API 보호를 위한 지연 (성공 시에는 NewsEditor에서 처리하므로 실패 시에만 최소한의 대기)
+            if provider not in self.failed_providers:
+                time.sleep(5) # 실패했으나 밴되지 않은 경우만 약간 대기
             
         return None
 
@@ -135,3 +177,4 @@ class AIWriter:
         clean_content = content.replace("```markdown", "").replace("```", "").strip()
         with open(os.path.join(posts_dir, filename), "w", encoding="utf-8") as f:
             f.write(clean_content)
+

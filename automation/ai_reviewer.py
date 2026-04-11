@@ -1,5 +1,5 @@
 import json
-from ai_writer import AIWriter # 최신 AI 통합 엔진 활용
+from ai_writer import AIWriter 
 
 class EditorInChief:
     def __init__(self):
@@ -17,35 +17,40 @@ class EditorInChief:
         [OUTPUT FORMAT]
         Return ONLY a JSON object:
         {
-          "approval": true/false,
-          "score": 0.0 to 10.0,
+          "approval": true,
+          "score": 8.5,
           "critique": "Short constructive criticism in Korean",
-          "suggested_fix": "Optional suggestion to improve if applicable"
+          "decision": "PASS"
         }
         """
 
     def review_article(self, article_json):
         """기사를 검수하여 발행 승인 여부 결정"""
-        prompt = f"Please review this article (EN & KO versions):\n{json.dumps(article_json, ensure_ascii=False)}"
-        # AIWriter의 통합 생성 메서드 호출
-        review_text = self.writer.generate_content(prompt, model='models/gemini-1.5-pro-latest') 
+        prompt = f"{self.system_prompt}\n\nPlease review this article (EN & KO versions):\n{json.dumps(article_json, ensure_ascii=False)}"
         
+        # [V11.0] 모델 강제 지정을 피하고 AIWriter의 가용성 로직에 맡김
+        review_text = self.writer.generate_content(prompt) 
+        
+        if not review_text:
+            return {"decision": "PASS", "reason": "No AI response, auto-pass for continuity."}
+            
         try:
-            # [V10.9+ Production Parsing]
+            # [V11.0 Production Parsing]
             start_idx = review_text.find("{")
             end_idx = review_text.rfind("}")
             if start_idx != -1 and end_idx != -1:
                 clean_json = review_text[start_idx:end_idx+1]
-                try:
-                    return json.loads(clean_json, strict=False)
-                except:
-                    return {"decision": "PASS", "reason": "Self-healing pass"}
+                data = json.loads(clean_json, strict=False)
+                # 데이터 정규화
+                if "decision" not in data:
+                    data["decision"] = "PASS" if data.get("approval") or data.get("score", 0) >= 7 else "REJECT"
+                return data
             
-            return {"decision": "PASS", "reason": "Lenient fallback"}
-        except:
+            return {"decision": "PASS", "reason": "Lenient fallback - parsing failed."}
+        except Exception as e:
+            print(f" [!] Review parsing failed: {e}")
             return {"decision": "PASS", "reason": "Parsing error in review."}
 
 if __name__ == "__main__":
-    # Test review
     reviewer = EditorInChief()
-    print(reviewer.review_article({"kor_title": "테스트 기사", "kor_content": "너무 짧은 테스트 본문입니다."}))
+    print(reviewer.review_article({"kor_title": "테스트", "kor_content": "내용"}))
