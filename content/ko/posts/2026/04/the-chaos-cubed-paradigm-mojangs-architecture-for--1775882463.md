@@ -3,7 +3,7 @@ title: "카오스 큐브드(Chaos Cubed)의 충격: 마인크래프트가 재정
 date: "2026-04-11T13:41:03+09:00"
 description: "1. 엔진 구조 개편: 정적인 블록 환경에서 동적 물리 변수가 상호작용하는 시뮬레이션 엔진으로의 완전한 전환."
 image: "/images/fallbacks/game.jpg"
-categories: ["game"]
+categories: ["gaming"]
 tags: ["Minecraft", "Mojang", "Chaos Cubed", "Gaming Infrastructure", "Voxel Engine"]
 featured: true
 ---

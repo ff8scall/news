@@ -3,7 +3,7 @@ title: "The Irreversible Cost of Virtual Agency: When A..."
 date: "2026-04-11T12:58:25+09:00"
 description: "In the fast-evolving landscape of April 2026, the intersection of autonomous NPC behavior and player-led narratives has reached a volatile tipping poi..."
 image: "/images/the-irreversible-cost-of-virtual-agency-when-algor.jpg"
-categories: ["game"]
+categories: ["gaming"]
 ---
 
 In the fast-evolving landscape of April 2026, the intersection of autonomous NPC behavior and player-led narratives has reached a volatile tipping point. Recent viral footage documenting a 'runaway' in-game sequence serves as a poignant cautionary tale for the industry. What began as a lighthearted experiment in emergent gameplay quickly cascaded into an irreversible state, illustrating the dangers of unchecked recursive logic within sandbox environments. As game design leans further into agent-driven interactions, we are seeing a shift where systems move beyond their intended constraints before the user can effectively intervene.

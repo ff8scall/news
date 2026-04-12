@@ -3,7 +3,7 @@ title: "디지털 시대의 '고스팅' 현상: 왜 노동력은 '업무'라는 
 date: "2026-04-11T12:45:57+09:00"
 description: "1. '업무(Work)'라는 단어에 대한 극심한 거부감으로 인해 플랫폼 노동 시장의 인력 이탈 현상이 가속화되고 있음."
 image: "/images/fallback-default.jpg"
-categories: ["game"]
+categories: ["gaming"]
 ---
 
 ## 📋 Executive Summary: 핵심 이슈 브리핑

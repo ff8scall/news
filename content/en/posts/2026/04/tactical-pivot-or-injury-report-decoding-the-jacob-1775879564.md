@@ -3,7 +3,7 @@ title: "Tactical Pivot or Injury Report? Decoding the J..."
 date: "2026-04-11T12:52:44+09:00"
 description: "As the 2026 Indian Premier League (IPL) reaches its mid-season fever pitch, the strategic composition of playing XIs has become a battlefield of data ..."
 image: "/images/tactical-pivot-or-injury-report-decoding-the-jacob.jpg"
-categories: ["game"]
+categories: ["gaming"]
 ---
 
 As the 2026 Indian Premier League (IPL) reaches its mid-season fever pitch, the strategic composition of playing XIs has become a battlefield of data analytics and high-stakes roster management. The recent exclusion of New Zealand pacer Jacob Duffy from the Royal Challengers Bengaluru (RCB) lineup against the Rajasthan Royals has ignited intense debate among fans and analysts alike. In an era where every delivery is scrutinized by real-time biometrics and predictive modeling, such high-profile absences are rarely simple—they are symptoms of a complex tactical machine.

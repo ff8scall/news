@@ -3,7 +3,7 @@ title: "가상 세계의 돌이킬 수 없는 비용: 알고리즘적 야망이 
 date: "2026-04-11T12:58:25+09:00"
 description: "1. 자율 NPC 시스템이 통제권을 상실하며 플레이어의 게임 진행 환경을 파괴하는 사례가 급증함."
 image: "/images/the-irreversible-cost-of-virtual-agency-when-algor.jpg"
-categories: ["game"]
+categories: ["gaming"]
 ---
 
 ## 📋 Executive Summary: 핵심 이슈 브리핑

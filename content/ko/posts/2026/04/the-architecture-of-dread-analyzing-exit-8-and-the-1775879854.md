@@ -3,7 +3,7 @@ title: "공포의 구조학: 'Exit 8'이 증명한 리미널 스페이스의 영
 date: "2026-04-11T12:57:34+09:00"
 description: "1. 'Exit 8' 실사화는 점프 스케어 중심의 공포를 넘어, 공간이 주는 심리적 압박과 실존적 공포를 탐구하는 고차원적 호러 장르로 재탄생함."
 image: "/images/the-architecture-of-dread-analyzing-exit-8-and-the.jpg"
-categories: ["game"]
+categories: ["gaming"]
 ---
 
 ## 📋 Executive Summary: 핵심 이슈 브리핑

@@ -3,7 +3,7 @@ title: "The Architecture of Dread: Analyzing 'Exit 8' a..."
 date: "2026-04-11T12:57:34+09:00"
 description: "As of April 2026, the intersection of interactive gaming and high-concept cinema has reached a new threshold, exemplified by the adaptation of the ind..."
 image: "/images/the-architecture-of-dread-analyzing-exit-8-and-the.jpg"
-categories: ["game"]
+categories: ["gaming"]
 ---
 
 As of April 2026, the intersection of interactive gaming and high-concept cinema has reached a new threshold, exemplified by the adaptation of the indie phenomenon 'Exit 8.' Director Genki Kawamura, in a recent discourse with GamesRadar+, elucidated that the project transcends the superficial tropes of 'liminal space' horror. By stripping away traditional jump-scares, the film pivots toward an exploration of intimate, psychological fragility, forcing audiences to confront the uncanny repetition of familiar environments.

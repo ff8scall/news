@@ -3,7 +3,7 @@ title: "The Chaos Cubed Paradigm: Mojang’s Architecture..."
 date: "2026-04-11T13:41:03+09:00"
 description: "As we navigate the second quarter of 2026, the gaming landscape is bracing for a tectonic shift with the unveiling of Mojang Studios’ ‘Chaos Cubed’ up..."
 image: "/images/fallbacks/game.jpg"
-categories: ["game"]
+categories: ["gaming"]
 tags: ["Minecraft", "Mojang", "Chaos Cubed", "Gaming Infrastructure", "Voxel Engine"]
 featured: true
 ---

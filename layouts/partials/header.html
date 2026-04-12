@@ -19,8 +19,20 @@
       <nav class="gnb" aria-label="주 메뉴">
         <ul class="gnb-list">
           {{ range .Site.Menus.main }}
-          <li class="gnb-item">
-            <a href="{{ .URL | relLangURL }}" class="gnb-link {{ if $.IsMenuCurrent "main" . }}is-active{{ end }}">{{ .Name }}</a>
+          <li class="gnb-item {{ if .HasChildren }}has-dropdown{{ end }}">
+            <a href="{{ if .URL }}{{ .URL | relLangURL }}{{ else }}#{{ end }}" class="gnb-link {{ if $.IsMenuCurrent "main" . }}is-active{{ end }}">
+              {{ .Name }}
+              {{ if .HasChildren }}
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="margin-left: 4px; opacity: 0.7;"><path d="m6 9 6 6 6-6"/></svg>
+              {{ end }}
+            </a>
+            {{ if .HasChildren }}
+            <ul class="dropdown-menu">
+              {{ range .Children }}
+              <li><a href="{{ .URL | relLangURL }}" class="dropdown-link">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+            {{ end }}
           </li>
           {{ end }}
         </ul>
@@ -47,7 +59,16 @@
   <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴" aria-hidden="true">
     <ul>
       {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relLangURL }}" class="{{ if $.IsMenuCurrent "main" . }}is-active{{ end }}">{{ .Name }}</a></li>
+      <li class="mobile-item">
+        <a href="{{ if .URL }}{{ .URL | relLangURL }}{{ else }}#{{ end }}" class="{{ if $.IsMenuCurrent "main" . }}is-active{{ end }}">{{ .Name }}</a>
+        {{ if .HasChildren }}
+        <ul class="mobile-submenu">
+          {{ range .Children }}
+          <li><a href="{{ .URL | relLangURL }}" class="mobile-sublink">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </li>
       {{ end }}
     </ul>
   </nav>

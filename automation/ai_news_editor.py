@@ -40,7 +40,7 @@ class NewsEditor:
                         # [V13.1] 분류 우선순위 고도화: 구체적 카테고리 우선 매칭
                         if any(k in text_pool for k in ['agent', '에이전트']): draft['category'] = 'ai-agents'
                         elif any(k in text_pool for k in ['hard', 'chip', 'hw', '컴퓨팅', '하드웨어', '반도체']): draft['category'] = 'hardware'
-                        elif any(k in text_pool for k in ['game', '플레이', '게임', 'gaming', 'unreal', '닌텐도']): draft['category'] = 'game'
+                        elif any(k in text_pool for k in ['game', '플레이', '게임', 'gaming', 'unreal', '닌텐도']): draft['category'] = 'gaming'
                         elif any(k in text_pool for k in ['strategy', '전략', '수익', 'monetization']): draft['category'] = 'monetization'
                         elif any(k in text_pool for k in ['biz', '비즈니스', 'trend', '시장', '동향']): draft['category'] = 'tech-biz'
                         elif any(k in text_pool for k in ['ai', '기술', 'insight', '인텔리전스']): draft['category'] = 'ai-tech'

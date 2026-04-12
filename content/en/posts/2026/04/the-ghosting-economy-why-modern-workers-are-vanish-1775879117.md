@@ -3,7 +3,7 @@ title: "The Ghosting Economy: Why Modern Workers Are Va..."
 date: "2026-04-11T12:45:37+09:00"
 description: "In April 2026, the gig economy has reached a paradoxical boiling point. While AI-driven talent matching platforms have made it easier than ever to lis..."
 image: "/images/fallback-default.jpg"
-categories: ["game"]
+categories: ["gaming"]
 ---
 
 In April 2026, the gig economy has reached a paradoxical boiling point. While AI-driven talent matching platforms have made it easier than ever to list tasks, we are witnessing a surge in 'workplace ghosting.' The viral sentiment circulating on platforms like 9GAG—where potential contractors flee the moment the word 'Work' is uttered—is more than just internet dark humor; it is a profound reflection of the current psychological state of the digital workforce. The barrier between professional obligation and personal autonomy has never been thinner, and for many, the mere mention of structured labor acts as a trigger for immediate disengagement.
