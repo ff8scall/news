@@ -24,7 +24,10 @@ class NewsHarvester:
             "gnews": os.getenv("GNEWS_API_KEY"),
             "newsdata": os.getenv("NEWSDATA_API_KEY")
         }
-        self.whitelist_path = "docs_private/rss_feeds.json"
+        # [V3.0] 절대 경로 기반 설정 로드
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        self.whitelist_path = os.path.join(os.path.dirname(current_dir), "docs_private", "rss_feeds.json")
+        
         self.test_mode = test_mode
         self.exhausted = set() 
         
@@ -153,6 +156,7 @@ class NewsHarvester:
         
         # 1. RSS 처리 (Tier 시스템 적용 및 카테고리별 수량 캡핑)
         rss_data = self._fetch_rss_v13()
+        print(f" [*] RSS Harvested: {len(rss_data)} items")
         for item in rss_data:
             cat = self._categorize_article(item['title'], item['description'])
             
@@ -239,10 +243,37 @@ class NewsHarvester:
                         feed = feedparser.parse(source["url"])
                         for entry in feed.entries[:8]:
                             img = None
-                            if 'links' in entry:
-                                for link in entry.links:
-                                    if 'image' in link.get('type', ''): img = link.href
+                            # 1. Look for media:content (Standard)
+                            if 'media_content' in entry and len(entry.media_content) > 0:
+                                img = entry.media_content[0].get('url')
                             
+                            # 2. Look for media:thumbnail
+                            if not img and 'media_thumbnail' in entry and len(entry.media_thumbnail) > 0:
+                                img = entry.media_thumbnail[0].get('url')
+                            
+                            # 3. Look for enclosure (common for images)
+                            if not img and 'enclosures' in entry:
+                                for encl in entry.enclosures:
+                                    if encl.get('type', '').startswith('image/'):
+                                        img = encl.get('url')
+                            
+                            # 4. Look for links with image type
+                            if not img and 'links' in entry:
+                                for link in entry.links:
+                                    if 'image' in link.get('type', ''): img = link.get('href')
+                            
+                            # 5. [V3.0.35] Content/Summary HTML Parsing Fallback
+                            if not img:
+                                html_search_targets = []
+                                if 'content' in entry: html_search_targets.append(entry.content[0].value)
+                                if 'summary' in entry: html_search_targets.append(entry.summary)
+                                
+                                for html in html_search_targets:
+                                    img_match = re.search(r'<img [^>]*src="([^"]+)"', html)
+                                    if img_match:
+                                        img = img_match.group(1)
+                                        break
+
                             articles.append({
                                 "title": entry.title,
                                 "description": entry.get('summary', ''),

@@ -105,6 +105,7 @@ class NewsEditor:
                 cat = draft.get('category', 'ai-tools')
                 draft['cluster'] = cluster_map.get(cat, "Intelligence")
                 draft['original_url'] = articles[0]['url']
+                draft['original_image_url'] = articles[0].get('image')
                 draft['source_name'] = articles[0].get('source_name', 'Global Sources')
                 return [draft]
                 

@@ -10,6 +10,7 @@ from difflib import SequenceMatcher
 from news_harvester import NewsHarvester
 from ai_news_editor import NewsEditor
 from ai_guide_editor import GuideEditor
+from ai_writer import AIWriter
 from history_manager import HistoryManager
 from indexnow_service import notify_indexnow
 
@@ -45,6 +46,13 @@ def sanitize_slug(text):
 def hash_slug(url):
     return hashlib.md5(url.encode()).hexdigest()[:6]
 
+CAT_MAP = {
+    "llm-tech": "LLM·생성AI", "ai-agent": "AI 에이전트", "ai-policy": "AI 규제/정책", "future-sw": "미래 SW/개발",
+    "semi-hbm": "차세대 반도체", "hpc-infra": "HPC/인프라", "robotics": "로보틱스",
+    "monetization": "수익화 전략", "startups-vc": "비지니스/VC", "market-trend": "시장 트렌드",
+    "game-tech": "게임 테크", "spatial-tech": "공간 컴퓨팅"
+}
+
 FALLBACK_MAP = {
     "llm-tech": "ai-tech", "ai-policy": "ai-tech",
     "ai-agent": "ai-agents", "future-sw": "ai-agents",
@@ -59,6 +67,9 @@ def download_image(url, category_slug, slug):
     fallback_key = FALLBACK_MAP.get(category_slug, "tech-biz")
     
     if not url: return f"/images/fallbacks/{fallback_key}.jpg"
+    
+    # [V3.0.31] Protocol-relative URL fix
+    if url.startswith('//'): url = 'https:' + url
     
     year_month = datetime.now().strftime('%Y/%m')
     img_dir = f"static/images/posts/{year_month}"
@@ -142,14 +153,20 @@ def main():
     parser.add_argument("--rss-only", action="store_true")
     args = parser.parse_args()
 
-    harvester = NewsHarvester(); editor = NewsEditor(); guide_editor = GuideEditor()
-    history = HistoryManager(); reviewer = EditorInChief(); telegram = TelegramRemote()
+    # [V3.0.30] Shared AI Logic: All components now share a single throttled writer
+    shared_writer = AIWriter()
+    harvester = NewsHarvester()
+    editor = NewsEditor(writer=shared_writer)
+    guide_editor = GuideEditor(writer=shared_writer)
+    history = HistoryManager()
+    reviewer = EditorInChief(writer=shared_writer)
+    telegram = TelegramRemote()
     
     start_time = datetime.now()
-    logger.info("Executive Intelligence Engine V3.0.15 Starting...")
+    logger.info("Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...")
     
-    # [V3.0.21] 배포 및 가동 가독성: 텔레그램 시작 알림 추가
-    telegram.send_resp("🚀 **ENGINE ACTIVATED (V3.0.21)**\n- Massive Sniper & Diversity Logic online.\n- Initializing 12-category intelligence harvest...")
+    # [V3.0.30] Initial Pulse: Ensure Telegram is reachable
+    telegram.send_resp("🚀 **ENGINE ACTIVATED (V3.0.30)**\n- Shared Throttled AI Writer online.\n- Initializing intelligence harvest...")
 
     cat_issued = {cat: 0 for cat in CATEGORY_BUDGETS}
     cancel_stats = {"duplicate": 0, "review": 0, "budget": 0, "draft_fail": 0}
@@ -197,10 +214,10 @@ def main():
             logger.info("Throttling for API integrity (15s wait)...")
             time.sleep(15)
         
-        # [V3.0.23] 서킷 브레이커: 모든 AI 공급자가 소진된 경우 즉시 종료 (Rescuing logic)
-        if editor.writer.is_all_exhausted():
-            logger.error("CRITICAL: All AI providers exhausted. Triggering Circuit Breaker.")
-            telegram.send_resp("⚠️ **CIRCUIT BREAKER TRIGGERED**\n- 모든 AI 할당량이 소진되었습니다.\n- 남은 기사들은 다음 기동 시 재시도됩니다.")
+        # [V3.0.30] Intelligent Circuit Breaker: Trigger only if essential core providers are down
+        if shared_writer.is_all_exhausted():
+            logger.error("CRITICAL: Essential AI providers (Gemini, GitHub, Groq) exhausted. Triggering Circuit Breaker.")
+            telegram.send_resp("⚠️ **CIRCUIT BREAKER TRIGGERED**\n- 핵심 AI (Gemini, GitHub) 할당량이 모두 소진되었습니다.\n- 남은 기사들은 다음 기동 시 재시도됩니다.")
             break
 
         # [V3.0.25] 가이드 트리거 확장: 벤치마크, 로드맵, 비교 분석 등 심층 분석 키워드 추가
