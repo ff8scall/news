@@ -159,12 +159,12 @@ class NewsHarvester:
         # [V13.0] 키워드 기반 지능형 카테고리 매핑
         text = f"{title} {desc}".lower()
         if any(k in text for k in ["ai", "llm", "gpt", "neural", "agent", "deep learning"]): 
-            if "agent" in text: return "AI-에이전트"
-            return "AI-기술"
-        if any(k in text for k in ["gpu", "processor", "chip", "semiconductor", "hbm", "hw", "hardware"]): return "하드웨어"
-        if any(k in text for k in ["game", "gaming", "unreal", "unity", "nintendo", "xbox", "ps5"]): return "게임"
-        if any(k in text for k in ["business", "startup", "vc", "founder", "ipo", "monetization"]): return "수익화-전략"
-        return "테크-비즈니스"
+            if "agent" in text: return "AI Agents"
+            return "AI Insight"
+        if any(k in text for k in ["gpu", "processor", "chip", "semiconductor", "hbm", "hw", "hardware"]): return "Computing HW"
+        if any(k in text for k in ["game", "gaming", "unreal", "unity", "nintendo", "xbox", "ps5"]): return "Next-Gen Game"
+        if any(k in text for k in ["business", "startup", "vc", "founder", "ipo", "monetization"]): return "Strategy & Biz"
+        return "Market Trend"
 
     def _fetch_rss_v13(self):
         # [V13.0] 화이트리스트 기반 광역 RSS 수집
@@ -207,13 +207,14 @@ class NewsHarvester:
         except: pass
         return articles
 
-    def fetch_all(self, limit_per_cat=8):
+    def fetch_all(self, limit_per_cat=8, rss_only=False):
         all_unique_news = []
         seen_urls = set()
         seen_titles = set() # [V13.0] 제목 기반 중복 제거용
         stats = {"NewsAPI": 0, "TheNewsAPI": 0, "GNews": 0, "Currents": 0, "NewsData": 0, "KR-RSS": 0, "RSS-V13": 0}
         
         print(f"[*] Starting Intelligent Hybrid Harvest (V13.0: RSS-First)...")
+        if rss_only: print("[!] RSS-ONLY MODE ACTIVATED. Skipping API Snipering.")
         
         # [STEP 1] RSS 그물망 수집 (The Net)
         print("[*] Stage 1: Harvesting from Global RSS Whitelist...")
@@ -233,7 +234,7 @@ class NewsHarvester:
                     seen_titles.add(title_norm)
                     seen_urls.add(art["url"])
 
-        # [STEP 3] 부족한 카테고리만 API 저격총(Sniper) 동원
+        # [STEP 3] 부족한 카메고리만 API 저격총(Sniper) 동원
         strategy_map = {
             "ai_tech": ["NewsAPI", "NewsData", "TheNewsAPI", "GNews", "Currents"],
             "ai_agent": ["NewsAPI", "NewsData", "TheNewsAPI", "Currents", "GNews"],
@@ -248,7 +249,7 @@ class NewsHarvester:
             current_count = len(category_pools[kor_name])
             
             # 기사가 부족할 때만 API 호출 (쿼터 절약)
-            if current_count < (limit_per_cat // 2):
+            if not rss_only and current_count < (limit_per_cat // 2):
                 print(f"[*] Stage 2: Snipering for {kor_name} (Current: {current_count})")
                 query = self._get_dynamic_query(internal_key)
                 nd_cat = config.get("newsdata_cat", "technology")

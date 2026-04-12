@@ -134,6 +134,12 @@ def get_api_quotas():
     return "\n".join(results) if results else "No quota data available."
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Lego-Sia Strategic News Engine V12.0")
+    parser.add_argument("--rss-only", action="store_true", help="Only fetch from RSS sources (Skip News APIs)")
+    parser.add_argument("--limit", type=int, default=8, help="Limit articles per category")
+    args = parser.parse_args()
+
     print(f"=== [V12.0 Hawk-Eye] Strategic Media Engine Initializing ===")
     harvester = NewsHarvester()
     from ai_writer import AIWriter
@@ -143,7 +149,7 @@ def main():
     reviewer = EditorInChief(writer=writer) 
     telegram = TelegramRemote()
     
-    raw_news, harvest_stats = harvester.fetch_all(limit_per_cat=8) 
+    raw_news, harvest_stats = harvester.fetch_all(limit_per_cat=args.limit, rss_only=args.rss_only) 
     new_articles = []
     seen_urls = set()
 
@@ -227,10 +233,16 @@ def main():
         h_detail = "\n".join([f"- {k}: {v}건" for k, v in harvest_stats.items()])
         total_h = sum(harvest_stats.values())
         
+        # AI 사용량 통계 추가
+        ai_usage = "\n".join([f"- {p.capitalize()}: {c}건" for p, c in writer.usage_stats.items() if c > 0])
+        ai_fails = ", ".join(writer.failed_providers) if writer.failed_providers else "None"
+        
         if published_count > 0:
             report_msg = f"✅ [STRATEGIC REPORT COMPLETE]\n\n" \
                          f"📦 [수집 통계]\n{h_detail}\n" \
                          f"📑 후보군: {total_h}건 -> 필터링: {len(new_articles)}건\n\n" \
+                         f"🤖 [AI 작업 통계]\n{ai_usage}\n" \
+                         f"⚠️ 소진된 API: {ai_fails}\n\n" \
                          f"🚀 [발행 규모]\n최종 발행: {published_count}건\n" \
                          f"성공률: {int(published_count/len(new_articles)*100)}%\n\n" \
                          f"[QUOTA]\n{quota_report}"

@@ -44,6 +44,9 @@ class AIWriter:
             except Exception as e:
                 print(f" [!] Failed to initialize Gemini Client: {e}")
 
+        # [V12.2] Usage Statistics
+        self.usage_stats = {p: 0 for p in ["github", "cloudflare", "gemini", "openrouter", "groq", "deepseek"]}
+
     def _generate_api_call(self, prompt, provider="gemini", model_name=None):
         """[V11.0] 개별 API 호출 및 쿼터 제한 감지"""
         if provider in self.failed_providers:
@@ -51,6 +54,10 @@ class AIWriter:
 
         if provider == "gemini":
             if not self.gemini_key or not self.client: return None
+            # [V12.3] 모델별 독립 쿼터 관리
+            model_key = f"gemini:{model_name}" if model_name else "gemini:gemini-2.0-flash"
+            if model_key in self.failed_providers: return None
+
             try:
                 target_model = model_name if model_name else 'gemini-2.0-flash'
                 response = self.client.models.generate_content(
@@ -63,10 +70,10 @@ class AIWriter:
             except Exception as e:
                 err_msg = str(e).lower()
                 if "quota" in err_msg or "429" in err_msg:
-                    print(f" [!] Gemini Quota Exceeded. Disabling for this run.")
-                    self.failed_providers.add("gemini")
+                    print(f" [!] Gemini Model {target_model} Quota Exceeded. Disabling this model.")
+                    self.failed_providers.add(model_key)
                 else:
-                    print(f" [!] Gemini Failure: {e}")
+                    print(f" [!] Gemini Failure ({target_model}): {e}")
                 return None
             
         elif provider == "deepseek":
@@ -207,12 +214,18 @@ class AIWriter:
         return None
 
     def generate_content(self, prompt, category="AI·신기술", model=None):
-        """[V11.0 Performance] 스마트 폴백: 사용 가능한 모델 우선순위 순회"""
-        # [V12.1] 최종 우선순위: GitHub -> Cloudflare -> Gemini -> OpenRouter -> Groq -> DeepSeek
+        # [V12.4 Verified] 검증된 고효율 모델 우선 배치 (Gemini Quota Maximization)
         candidates = [
-            ("github", "gpt-4o-mini"),
+            ("gemini", "gemini-3.1-flash-lite-preview"), # RPD 500 (최우선)
+            ("gemini", "gemini-3-flash-preview"),        # RPD 20
+            ("gemini", "gemini-2.5-flash"),              # Verified
+            ("gemini", "gemini-2.5-flash-lite"),         # Verified (429-aware)
+            ("gemini", "gemini-2.0-flash"),              # Verified (429-aware)
+            ("gemini", "gemini-2.0-flash-lite"),         # Verified (429-aware)
+            ("github", "gpt-4o-mini"),                   # 안정적인 백업
+            ("gemini", "gemini-3.1-pro-preview"),
+            ("gemini", "gemini-3-pro-preview"),
             ("cloudflare", "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b"),
-            ("gemini", "models/gemini-2.0-flash"),
             ("openrouter", "openai/gpt-4o-mini"),
             ("groq", "llama-3.1-8b-instant"),
             ("deepseek", "deepseek-chat")
@@ -227,27 +240,37 @@ class AIWriter:
             candidates.insert(0, (inferred_provider, model))
 
         for provider, model_name in candidates:
-            if provider in self.failed_providers:
+            # [V12.3] 모델별 실패 여부 체크 로직 정밀화
+            check_key = f"{provider}:{model_name}" if provider == "gemini" else provider
+            if check_key in self.failed_providers:
                 continue
                 
             try:
                 # print(f" [*] Attempting {provider} ({model_name})...")
                 res = self._generate_api_call(prompt, provider, model_name=model_name)
                 if res and len(res.strip()) > 10:
+                    self.usage_stats[provider] += 1
+                    print(f" [OK] Content generated via {provider} ({model_name})")
                     return res
             except Exception as e:
                 print(f" [!] {provider} cycle failed: {e}")
             
             # API 보호를 위한 지연 (성공 시에는 NewsEditor에서 처리하므로 실패 시에만 최소한의 대기)
             if provider not in self.failed_providers:
-                time.sleep(5) # 실패했으나 밴되지 않은 경우만 약간 대기
+                time.sleep(2) # 실패했으나 밴되지 않은 경우만 약간 대기
             
         return None
 
     def is_all_exhausted(self):
-        """[V12.0] 모든 공급자가 소진되었는지 확인"""
-        providers = ["github", "cloudflare", "gemini", "openrouter", "groq", "deepseek"]
-        return all(p in self.failed_providers for p in providers)
+        """[V12.4] 주요 모델 소진 여부 광범위 체크"""
+        core_providers = [
+            "github", 
+            "gemini:gemini-3.1-flash-lite-preview", 
+            "openrouter", 
+            "groq", 
+            "deepseek"
+        ]
+        return all(p in self.failed_providers for p in core_providers)
 
     def save_post(self, content, filename):
         if not content: return

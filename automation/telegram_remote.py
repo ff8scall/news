@@ -20,7 +20,7 @@ class TelegramRemote:
     def send_resp(self, text):
         try:
             url = f"https://api.telegram.org/bot{self.token}/sendMessage"
-            requests.post(url, json={"chat_id": self.chat_id, "text": text, "parse_mode": "Markdown"})
+            requests.post(url, json={"chat_id": self.chat_id, "text": text, "parse_mode": "Markdown"}, timeout=12)
         except Exception as e:
             print(f"[!] Send Error: {e}")
 
