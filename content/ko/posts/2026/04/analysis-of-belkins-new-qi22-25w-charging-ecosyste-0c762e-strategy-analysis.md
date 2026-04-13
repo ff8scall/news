@@ -3,8 +3,8 @@ title: "벨킨의 Qi2.2 25W 무선 충전 생태계 확장: 애플 독점 전략
 date: "2026-04-12T19:37:51+09:00"
 description: "벨킨이 Qi2.2 25W 무선 충전 표준을 활용한 신형 컴팩트 도크를 출시하며 충전 포트폴리오를 확장했습니다."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

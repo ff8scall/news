@@ -3,8 +3,8 @@ title: "록스타 게임즈, 데이터 유출: 심층 분석"
 date: "2026-04-13T08:28:59+09:00"
 description: "이번 보고서는 록스타 게임즈의 최근 데이터 유출 사건을 평가하며, 데이터 보안, 재정적 안정성 및 게임 산업 내 평판에 대한 함의를 다룹니다."
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

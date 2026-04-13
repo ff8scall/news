@@ -3,8 +3,8 @@ title: "노트북의 새로운 시대: ARM CPU 도입으로 더 나은 성능을
 date: "2026-04-12T22:24:08+09:00"
 description: "이 보고서는 노트북의 x86 아키텍처에서 ARM CPU로의 전환을 탐구하고, Nvidia의 N1 엔지니어링 마더보드를 주요 발전으로 조명합니다. 이러한 기술 전환에서 기대할 수 있는 성능, 효율성 및 잠재적 응용 프로그램에 대해 논의합니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

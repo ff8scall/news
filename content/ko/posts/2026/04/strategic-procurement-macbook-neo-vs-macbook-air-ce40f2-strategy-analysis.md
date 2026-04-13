@@ -3,8 +3,8 @@ title: "전략적 하드웨어 구매 가이드: MacBook Neo vs. MacBook Air 분
 date: "2026-04-12T19:27:39+09:00"
 description: "모바일 업무와 고성능 컴퓨팅 작업 간의 명확한 하드웨어 로드맵 구분"
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

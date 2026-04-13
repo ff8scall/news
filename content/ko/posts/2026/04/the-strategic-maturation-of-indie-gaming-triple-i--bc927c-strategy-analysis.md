@@ -3,8 +3,8 @@ title: "인디 게임 생태계의 전략적 고도화: Triple-i 이니셔티브
 date: "2026-04-12T19:34:38+09:00"
 description: "인디 게임 시장이 개별 프로젝트 단위를 넘어 'Triple-i'와 같은 연합 플랫폼을 통해 시장 지배력을 강화하고 있음"
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

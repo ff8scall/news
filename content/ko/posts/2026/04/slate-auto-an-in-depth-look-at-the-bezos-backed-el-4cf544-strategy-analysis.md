@@ -4,7 +4,7 @@ date: "2026-04-12T23:11:35+09:00"
 description: "슬레이트 오토는 2025년에 설립되어 제프 베조스와 같은 투자자의 지원을 받으며 전기차 시장의 혁신을 추구하고 있으며, 지속 가능성과 첨단 기술에 중점을 두고 있다. 이 보고서는 회사의 기반, 재정 지원, 제품 제공, 경쟁 환경 및 미래 전망을 탐구한다."
 image: "/images/fallbacks/tech-biz.jpg"
 clusters: ["intelligence"]
-categories: ["energy-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

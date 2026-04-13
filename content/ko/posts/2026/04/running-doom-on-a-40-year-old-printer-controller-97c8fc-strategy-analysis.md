@@ -3,8 +3,8 @@ title: "40년 된 프린터 컨트롤러에서 도쿄를 실행하는 기이한 
 date: "2026-04-12T22:26:26+09:00"
 description: "40년 된 Agfa Compugraphic 9000PS 프린터 컨트롤러에서 도쿄를 실행하는 기이한 업적"
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["digital"]
-categories: ["spatial-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

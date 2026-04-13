@@ -3,8 +3,8 @@ title: "라이브 서비스의 함정: 인디 게임 업계의 '완성형 제품
 date: "2026-04-12T17:13:28+09:00"
 description: "게임 개발사와 사용자 간의 '사후 지원' 기대를 둘러싼 갈등 심화"
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

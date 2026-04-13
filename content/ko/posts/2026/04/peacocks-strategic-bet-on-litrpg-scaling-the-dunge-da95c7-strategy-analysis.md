@@ -3,8 +3,8 @@ title: "피콕(Peacock)의 파격적 전략: 웹 소설 IP '던전 크롤러 칼
 date: "2026-04-12T17:14:31+09:00"
 description: "스트리밍 플랫폼 피콕이 인기 웹 소설 '던전 크롤러 칼(Dungeon Crawler Carl)'의 실사화 시리즈 제작을 공식 확정함."
 image: "/images/fallbacks/tech-industry.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

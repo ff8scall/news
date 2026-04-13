@@ -3,8 +3,8 @@ title: "스크린 타임 맥시멀리즘의 부상: '디지털 웰빙' 프레임
 date: "2026-04-12T19:37:01+09:00"
 description: "스크린 과몰입을 부정적으로 보는 기존 시각과 달리, 이를 고도의 디지털 유틸리티로 수용하는 '스크린 타임 맥시멀리스트' 계층이 등장함."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

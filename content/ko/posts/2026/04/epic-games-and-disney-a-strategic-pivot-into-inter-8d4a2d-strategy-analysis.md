@@ -3,8 +3,8 @@ title: "에픽게임즈-디즈니, '익스트랙션 슈터'로 여는 통합형 
 date: "2026-04-12T19:36:00+09:00"
 description: "에픽게임즈와 디즈니가 15억 달러 투자 이후 본격적인 협업 프로젝트에 착수함."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

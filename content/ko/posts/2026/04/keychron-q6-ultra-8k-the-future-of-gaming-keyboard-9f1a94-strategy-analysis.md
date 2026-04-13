@@ -4,7 +4,7 @@ date: "2026-04-12T23:15:40+09:00"
 description: "Keychron Q6 Ultra 8K은 경쟁력 있는 게이머를 위한 인상적인 무선 기계식 게이밍 키보드로, 8 kHz 폴링 레이트와 뛰어난 배터리 수명을 자랑합니다. 키 스위치 무게와 키캡 높이에 대한 개인적인 선호도를 고려해야 할 필요가 있습니다."
 image: "/images/fallbacks/gaming.jpg"
 clusters: ["intelligence"]
-categories: ["energy-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -3,8 +3,8 @@ title: "라이브 서비스 게임의 '실패 전염'과 전략적 회복탄력�
 date: "2026-04-12T17:41:56+09:00"
 description: "최근 잇따른 대작 라이브 서비스 게임의 조기 종료 현상을 분석"
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

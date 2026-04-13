@@ -3,8 +3,8 @@ title: "레거시 소프트웨어의 역습: 커뮤니티 주도형 '넷코드' 
 date: "2026-04-12T17:49:19+09:00"
 description: "격투 게임 커뮤니티가 1만 달러 규모의 바운티를 통해 고전 게임의 넷코드를 직접 개조하는 '크라우드소싱 R&D' 사례 등장"
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

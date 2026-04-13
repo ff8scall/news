@@ -3,8 +3,8 @@ title: "AI 개발: HumanX 컨퍼런스에서 윤리와 안전 강조"
 date: "2026-04-13T08:27:38+09:00"
 description: "HumanX 컨퍼런스에서는 AI의 중요한 발전, 특히 Anthropic의 Claude 모델에 중점을 두었습니다. 논의는 투명성과 책임을 포함한 윤리적 AI 개발을 강조하며, 산업의 책임 있는 혁신을 위한 장을 마련했습니다."
 image: "/images/fallbacks/ai-tech.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -3,8 +3,8 @@ title: "마블 라이벌즈의 '무빙 애니메이션' 전략: 차별화와 브
 date: "2026-04-12T17:48:12+09:00"
 description: "마블 라이벌즈의 '무빙 애니메이션(Moving Anime)' 기조는 기존 서구권 코믹스 화풍에서 탈피하려는 시도임."
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

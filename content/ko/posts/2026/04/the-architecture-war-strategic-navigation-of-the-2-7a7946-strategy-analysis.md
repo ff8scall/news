@@ -3,8 +3,8 @@ title: "아키텍처 전쟁: 2026년 모바일 컴퓨팅 시장의 전략적 지
 date: "2026-04-12T17:09:50+09:00"
 description: "x86(인텔/AMD)과 ARM(퀄컴)의 경쟁으로 재편된 2026년 노트북 시장 분석"
 image: "/images/fallbacks/pc-server-infra.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

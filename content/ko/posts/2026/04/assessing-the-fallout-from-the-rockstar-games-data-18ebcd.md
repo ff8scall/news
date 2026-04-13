@@ -3,8 +3,8 @@ title: "록스타 게임즈 데이터 유출의 여파 분석"
 date: "2026-04-13T08:27:02+09:00"
 description: "2023년 10월 록스타 게임즈는 ShinyHunters 그룹에 의해 발생한 심각한 데이터 유출을 확인하며, 게임 산업 내 사용자 프라이버시, 회사의 명성, 재무 안정성에 대한 우려가 고조되고 있다."
 image: "/images/posts/2026/04/assessing-the-fallout-from-the-rockstar-games-data-18ebcd.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

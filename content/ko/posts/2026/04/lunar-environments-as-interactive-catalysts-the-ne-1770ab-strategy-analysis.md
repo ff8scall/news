@@ -3,8 +3,8 @@ title: "인터랙티브 미디어의 새로운 화두: 게임 속 달(Lunar) 환
 date: "2026-04-12T17:41:03+09:00"
 description: "아르테미스 II 등 실세계 우주 탐사 성과와 연계된 게임 내 '달' 환경의 전략적 활용 분석"
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -3,8 +3,8 @@ title: "2026년 $500 이하로 구매 가능한 리퍼브 아이폰 분석"
 date: "2026-04-12T23:13:44+09:00"
 description: "2026년 소비자들에게 비용 효과적이고 신뢰할 수 있는 옵션으로서 리퍼브 아이폰의 중요성과 500달러 이하의 추천 모델 5종을 다룬 분석 보고서입니다."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

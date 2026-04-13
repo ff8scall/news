@@ -4,7 +4,7 @@ date: "2026-04-13T08:28:24+09:00"
 description: "바이오웨어의 드래곤 에이지: 인퀴지션이 온라인 서버 종료를 발표하면서 커뮤니티 참여에 미치는 영향과 산업 트렌드를 반영합니다."
 image: "/images/posts/2026/04/the-sunset-of-dragon-age-inquisitions-online-featu-912f5b.jpg"
 clusters: ["intelligence"]
-categories: ["bio-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

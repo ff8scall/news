@@ -3,8 +3,8 @@ title: "붉은 사막(Crimson Desert): '코지-하드코어' 하이브리드 전
 date: "2026-04-12T19:27:05+09:00"
 description: "펄어비스의 '붉은 사막'은 고강도 전투와 일상적 시뮬레이션(고양이 돌보기 등)을 결합한 독창적 게임 루프를 구축함"
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["digital"]
-categories: ["game-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

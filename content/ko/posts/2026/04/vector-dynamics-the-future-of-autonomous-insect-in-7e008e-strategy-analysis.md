@@ -4,7 +4,7 @@ date: "2026-04-12T19:28:36+09:00"
 description: "모기의 비행 경로와 감각 체계를 정량적으로 분석하여 차세대 포획 하드웨어 설계의 지표로 활용"
 image: "/images/fallbacks/ai-agents.jpg"
 clusters: ["intelligence"]
-categories: ["bio-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

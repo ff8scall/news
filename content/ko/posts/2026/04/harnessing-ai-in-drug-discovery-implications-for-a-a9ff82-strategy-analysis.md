@@ -4,7 +4,7 @@ date: "2026-04-12T19:46:57+09:00"
 description: "AI의 약물 발견 과정 통합은 제약 산업에 혁신적 변화를 가져다주고 있으며, 알츠하이머병과 같은 신경퇴행성 질환의 효과적인 치료제를 개발하는 데 여전히 큰 도전과제가 존재합니다."
 image: "/images/fallbacks/ai-tech.jpg"
 clusters: ["intelligence"]
-categories: ["bio-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

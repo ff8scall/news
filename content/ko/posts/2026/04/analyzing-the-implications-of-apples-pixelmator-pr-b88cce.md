@@ -3,8 +3,8 @@ title: "Apple의 Pixelmator Pro 통합에 따른 영향 분석"
 date: "2026-04-13T08:29:29+09:00"
 description: "이 보고서는 Apple Creator Studio에 통합된 Pixelmator Pro의 기능과 기존 사용자가 겪는 독점성 관련 문제를 살펴봅니다."
 image: "/images/posts/2026/04/analyzing-the-implications-of-apples-pixelmator-pr-b88cce.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

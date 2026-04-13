@@ -3,8 +3,8 @@ title: "유튜브에서 인디 애니메이션의 르네상스: 창의력의 급
 date: "2026-04-12T19:44:02+09:00"
 description: "유튜브에서 인디 애니메이션의 급증을 분석하며, 스토리텔링, 창작자에게 경제적 기회, 그리고 이 트렌드를 촉진하는 플랫폼의 핵심 역할에 대해 이야기합니다."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

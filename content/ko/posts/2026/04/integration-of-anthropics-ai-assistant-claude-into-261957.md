@@ -3,8 +3,8 @@ title: "앤트로픽의 AI 비서 클로드, 마이크로소프트 워드에 통
 date: "2026-04-13T08:24:11+09:00"
 description: "앤트로픽의 AI 비서 클로드가 마이크로소프트 워드에 통합되었습니다. 이 통합은 AI 도구를 일상 소프트웨어 작업 흐름에 도입하여 사용자 생산성을 향상시키려는 목적을 가지고 있습니다, 특히 법률 계약 검토 분야에서 중요한 역할을 합니다."
 image: "/images/posts/2026/04/integration-of-anthropics-ai-assistant-claude-into-261957.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

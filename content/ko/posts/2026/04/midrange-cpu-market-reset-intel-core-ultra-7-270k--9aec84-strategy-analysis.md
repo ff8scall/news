@@ -3,8 +3,8 @@ title: "메인스트림 CPU 시장의 격전: 인텔 코어 Ultra 7 270K Plus vs
 date: "2026-04-12T17:38:39+09:00"
 description: "300달러대 메인스트림 CPU 시장에서 인텔과 AMD의 점유율 경쟁이 심화됨"
 image: "/images/fallbacks/hardware.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

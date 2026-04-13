@@ -3,8 +3,8 @@ title: "디지털 건강 경관 탐색: 스크린 타임 패러독스 이해"
 date: "2026-04-13T08:25:55+09:00"
 description: "이 보고서는 극단적인 스크린 타임 활용, 정신 건강 및 디지털 정책 간의 복잡한 관계를 탐구합니다."
 image: "/images/fallbacks/ai-tech.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

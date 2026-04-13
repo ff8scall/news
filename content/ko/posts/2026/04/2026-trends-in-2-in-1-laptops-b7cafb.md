@@ -3,8 +3,8 @@ title: "2026년 2-in-1 노트북 트렌드"
 date: "2026-04-13T08:29:48+09:00"
 description: "이 보고서는 2026년 2-in-1 노트북 시장을 분석하며 Microsoft, Lenovo, Apple의 주요 제품을 중심으로 주요 기술 발전과 소비자 트렌드를 검토합니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

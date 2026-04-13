@@ -4,7 +4,7 @@ date: "2026-04-12T22:14:08+09:00"
 description: "전기 자전거의 인기가 높아짐에 따라 수리 가능성에 대한 도전 과제가 증가하고 있습니다. 기계적 복잡성, 품질 문제, 안전 위험, 산업 표준 부족 등 여러 중요한 사항을 다루며, 소비자와 제조업체를 위한 권장 사항을 제시합니다."
 image: "/images/fallbacks/tech-biz.jpg"
 clusters: ["intelligence"]
-categories: ["energy-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

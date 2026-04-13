@@ -3,8 +3,8 @@ title: "게임 경험을 보장하는 고품질 PC 투자"
 date: "2026-04-13T08:27:02+09:00"
 description: "게임 환경이 진화함에 따라, 하드웨어와 시스템의 투자 중요성을 분석합니다."
 image: "/images/posts/2026/04/future-proofing-your-gaming-experience-through-pc--659225.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

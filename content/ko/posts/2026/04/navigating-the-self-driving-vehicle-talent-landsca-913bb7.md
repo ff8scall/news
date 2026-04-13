@@ -4,7 +4,7 @@ date: "2026-04-13T08:28:14+09:00"
 description: "자율주행차 산업의 발전과 함께 AI, 머신러닝, 로보틱스 분야의 숙련된 전문가에 대한 치열한 경쟁이 벌어지고 있습니다. 이 보고서는 인재 확보의 주요 주체들과 그들의 전략, 그리고 자율 운송의 미래에 대한 시사점을 정리합니다."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["intelligence"]
-categories: ["robot-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

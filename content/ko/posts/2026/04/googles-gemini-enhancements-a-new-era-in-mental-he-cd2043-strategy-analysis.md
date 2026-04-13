@@ -3,8 +3,8 @@ title: "구글 제미니의 혁신: 정신 건강 AI 지원의 새로운 시대"
 date: "2026-04-12T22:23:29+09:00"
 description: "구글은 정신 건강 응용 프로그램을 위해 AI 모델 제미니에 많은 업데이트를 수행하였고, 전문적인 협업과 공감적 상호작용 프로토콜을 통합하여 사용자에게 믿을 수 있는 지원을 제공한다."
 image: "/images/fallbacks/ai-tech.jpg"
-clusters: ["digital"]
-categories: ["spatial-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

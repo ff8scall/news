@@ -3,8 +3,8 @@ title: "포켓몬 포코피아(Pokémon Pokopia)의 환경 붕괴 사고: 게임
 date: "2026-04-12T17:13:14+09:00"
 description: "게임 '포켓몬 포코피아'에서 특정 유저가 게임 엔진의 한계를 악용하여 전체 해양 생태계를 소멸시키는 대규모 환경 파괴 사고가 발생함."
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

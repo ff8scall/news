@@ -3,8 +3,8 @@ title: "2026년 노트북 수리 가능성 순위: 지속 가능성의 기준점
 date: "2026-04-12T22:21:54+09:00"
 description: "최근 발표된 노트북 수리 가능성에 대한 보고서에 따르면, Asus는 가장 높은 평가를 받았고 Apple과 Lenovo는 가장 낮은 수리 가능성 점수를 기록했습니다. 이러한 분석은 소비자들이 지속 가능성에 대한 관심을 더욱 높이고 있음을 보여줍니다."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -3,8 +3,8 @@ title: "AI 기반 개인 생산성 도구의 부상: 'PackGoat' 사례 분석"
 date: "2026-04-12T19:39:07+09:00"
 description: "여행 기술(Travel-tech) 분야에서 AI 기반 개인 생산성 도구의 중요성이 부각되고 있습니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

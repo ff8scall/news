@@ -3,8 +3,8 @@ title: "생산성 향상: 구글 노트북LM의 제미니 통합"
 date: "2026-04-12T22:21:35+09:00"
 description: "이 보고서는 구글의 최근 노트북LM을 제미니 플랫폼에 통합한 내용을 다루며, 이 개선이 메모 작성과 대화형 AI 상호작용을 통해 사용자 생산성을 어떻게 향상시키는지를 중심으로 합니다. 주요 기능, 혜택, 도전 과제 및 다양한 분야에서의 전략적 응용을 설명합니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -3,8 +3,8 @@ title: "OpenAI, 일론 머스크의 '혼란 야기' 소송 수정에 '격앙"
 date: "2026-04-12T19:41:51+09:00"
 description: "OpenAI는 일론 머스크가 재판 직전 소송을 수정하며 법적 분쟁에 '혼란을 야기하고 있다'고 공개적으로 비난했습니다."
 image: "/images/fallbacks/ai-tech.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

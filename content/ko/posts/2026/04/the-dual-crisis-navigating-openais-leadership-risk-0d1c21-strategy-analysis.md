@@ -3,8 +3,8 @@ title: "듀얼 리스크의 습격: OpenAI의 리더십 위기와 기업 평판 
 date: "2026-04-12T19:18:19+09:00"
 description: "샘 알트먼 CEO의 사택 보안 사고와 언론의 비판적 심층 보도가 동시다발적으로 발생."
 image: "/images/fallbacks/ai-tech.jpg"
-clusters: ["digital"]
-categories: ["spatial-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

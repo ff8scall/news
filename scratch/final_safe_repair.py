@@ -80,8 +80,9 @@ def repair_content():
 
             unique_titles[title] = (f, f.stat().st_size)
 
-            # 4. Taxonomy Correction
-            new_cluster = CLUSTER_MAP.get(cat, "intelligence")
+            # 4. Taxonomy Correction (FORCED EVAPORATION TO INTELLIGENCE)
+            new_cluster = "intelligence"
+            cat = "llm-tech"
             
             tags_raw = data.get("tags", "[]")
             # Clean and rebuild tags list securely

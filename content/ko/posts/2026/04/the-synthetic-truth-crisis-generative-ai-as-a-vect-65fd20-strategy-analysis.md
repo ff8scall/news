@@ -3,8 +3,8 @@ title: "합성된 진실의 위기: 생성형 AI가 가속화하는 알고리즘
 date: "2026-04-12T19:24:42+09:00"
 description: "전통적 검색 대신 대화형 AI가 정보 습득의 핵심 경로로 부상하며 허위 정보의 진원지가 되고 있음."
 image: "/images/fallbacks/ai-tech.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

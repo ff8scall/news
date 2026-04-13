@@ -3,8 +3,8 @@ title: "디지털 시대의 관음증 상업화: '페이즈 오브 데스(2026)'
 date: "2026-04-12T17:42:53+09:00"
 description: "1978년 컬트 고전의 2026년 리부트는 '그라인드하우스 타부'에서 '대중적 호러'로의 전략적 전환을 보여줌."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

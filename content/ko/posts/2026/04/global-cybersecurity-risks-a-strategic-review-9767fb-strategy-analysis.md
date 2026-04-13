@@ -4,7 +4,7 @@ date: "2026-04-12T22:24:20+09:00"
 description: "이번 보고서는 증가하는 세계 사이버 보안 위험을 분석하고, 사이버 전쟁 전략에서 국가 행위자의 역할과 변화하는 디지털 환경을 다룰 정책 프레임워크의 필요성을 강조합니다."
 image: "/images/fallbacks/ai-tech.jpg"
 clusters: ["intelligence"]
-categories: ["energy-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

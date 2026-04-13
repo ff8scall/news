@@ -4,7 +4,7 @@ date: "2026-04-12T19:30:20+09:00"
 description: "최근 캘리포니아에서 제기된 소송은 환자 데이터 주권과 AI 의료 기록 도구 간의 심각한 마찰을 시사함."
 image: "/images/fallbacks/ai-tech.jpg"
 clusters: ["intelligence"]
-categories: ["bio-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

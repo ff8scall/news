@@ -4,7 +4,7 @@ date: "2026-04-12T19:25:38+09:00"
 description: "닌텐도 스위치 2는 독자적인 무선 프로토콜과 USB-C 영상 출력 규격을 도입하여 하드웨어 보안 및 품질 제어를 강화함."
 image: "/images/fallbacks/ai-agents.jpg"
 clusters: ["intelligence"]
-categories: ["energy-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -3,8 +3,8 @@ title: "X의 전략적 발걸음 - XChat의 심층 분석"
 date: "2026-04-13T08:28:54+09:00"
 description: "X 소셜 미디어 플랫폼이 4월 17일에 출시할 새로운 메시징 앱 XChat에 대해 살펴봅니다. 이 보고서는 앱의 주요 기능, 대상 인구 통계 및 사용자 참여에 미칠 잠재적 영향을 탐구합니다."
 image: "/images/posts/2026/04/an-in-depth-look-at-xs-strategic-move-with-xchat-a9f124.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

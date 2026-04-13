@@ -4,7 +4,7 @@ date: "2026-04-12T19:27:58+09:00"
 description: "전기 화물 자전거가 단순 취미용을 넘어 도심형 물류 및 가족 이동 수단으로 진화"
 image: "/images/fallbacks/tech-biz.jpg"
 clusters: ["intelligence"]
-categories: ["energy-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

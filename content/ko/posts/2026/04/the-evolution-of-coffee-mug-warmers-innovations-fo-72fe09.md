@@ -3,8 +3,8 @@ title: "2026년 커피 머그 난방기의 진화: 혁신과 전망"
 date: "2026-04-13T08:26:29+09:00"
 description: "이 보고서는 2026년 커피 머그 난방기에 대한 최신 혁신을 탐구하며, 온도 조절의 중요성을 강조하고 커피 경험을 향상시키는 주요 제품들을 소개합니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

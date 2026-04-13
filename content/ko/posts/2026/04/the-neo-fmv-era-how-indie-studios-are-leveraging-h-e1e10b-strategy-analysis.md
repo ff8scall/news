@@ -3,8 +3,8 @@ title: "네오 FMV 시대의 도래: 인디 게임의 전략적 하이브리드 
 date: "2026-04-12T17:49:00+09:00"
 description: "인디 게임 스튜디오 '선셋 비지터(sunset visitor)'의 사례를 통해 본 FMV(실사 영상)의 전략적 재부상 분석"
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

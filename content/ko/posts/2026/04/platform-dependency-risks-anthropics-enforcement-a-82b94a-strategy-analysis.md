@@ -3,8 +3,8 @@ title: "플랫폼 종속성의 함정: 앤스로픽(Anthropic)의 '오픈클로(
 date: "2026-04-12T19:19:49+09:00"
 description: "앤스로픽이 제3자 인터페이스인 '오픈클로'의 API 접근을 차단하며 플랫폼 통제권을 강화함"
 image: "/images/fallbacks/ai-tech.jpg"
-clusters: ["digital"]
-categories: ["spatial-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

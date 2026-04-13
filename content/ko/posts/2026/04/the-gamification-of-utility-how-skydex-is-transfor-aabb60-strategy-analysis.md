@@ -3,8 +3,8 @@ title: "유틸리티의 게임화: 'SkyDex'가 제시하는 사용자 경험의 
 date: "2026-04-12T19:40:13+09:00"
 description: "SkyDex는 포켓몬 스타일의 수집 메커니즘을 날씨 데이터와 결합해 단순 유틸리티 앱을 고관여 서비스로 탈바꿈시켰습니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

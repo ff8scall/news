@@ -4,7 +4,7 @@ date: "2026-04-12T17:41:36+09:00"
 description: "레벨파이브가 장기간 유지해온 닌텐도 독점 전략을 폐기하고 신작 '레이튼 교수와 증기의 신세계'를 스위치, PC, PS5로 동시 출시 결정."
 image: "/images/fallbacks/gaming.jpg"
 clusters: ["intelligence"]
-categories: ["energy-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

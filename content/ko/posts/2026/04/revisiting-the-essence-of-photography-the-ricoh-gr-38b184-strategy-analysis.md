@@ -3,8 +3,8 @@ title: "사진의 본질을 재조명하다: 리코 GR IV 모노크롬 카메라
 date: "2026-04-12T22:13:12+09:00"
 description: "리코 GR IV 모노크롬 카메라는 예술가와 거리 사진작가를 위한 완벽한 흑백 사진 경험을 재조명합니다. 단순성과 창의적 탐구에 중점을 두어 주류 색채 중심 카메라들과는 다른 독특한 시장 위치를 차지하고 있습니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

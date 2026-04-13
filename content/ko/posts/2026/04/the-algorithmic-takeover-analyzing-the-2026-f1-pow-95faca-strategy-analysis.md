@@ -4,7 +4,7 @@ date: "2026-04-12T19:31:32+09:00"
 description: "2026년 F1의 대대적인 하이브리드 개편으로 전기 출력 비중이 50%까지 상승"
 image: "/images/fallbacks/ai-agents.jpg"
 clusters: ["intelligence"]
-categories: ["robot-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

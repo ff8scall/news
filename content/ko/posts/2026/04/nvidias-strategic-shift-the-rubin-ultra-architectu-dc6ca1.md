@@ -3,8 +3,8 @@ title: "NVIDIA의 전략적 전환: 루빈 울트라 아키텍처 변경"
 date: "2026-04-13T07:56:52+09:00"
 description: "NVIDIA는 루빈 울트라 아키텍처에서 4다이 구성에서 2다이 구성으로의 전환을 발표하며, 제조 가능성, 열 관리 및 GPU 시장에서의 경쟁 위치 강화에 중점을 두고 있습니다."
 image: "/images/fallbacks/hardware.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

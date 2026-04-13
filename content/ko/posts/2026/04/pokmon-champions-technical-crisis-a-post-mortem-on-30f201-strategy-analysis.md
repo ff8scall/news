@@ -3,8 +3,8 @@ title: "포켓몬 챔피언스 발매 초기 난항: 기술 부채와 라이브 
 date: "2026-04-12T19:23:06+09:00"
 description: "핵심 전투 메커니즘의 시스템적 불안정성으로 인한 게임 플레이 가치 훼손"
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

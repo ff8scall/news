@@ -3,8 +3,8 @@ title: "2-in-1 노트북: 다재다능한 컴퓨팅의 미래"
 date: "2026-04-12T22:14:37+09:00"
 description: "이 보고서는 2-in-1 노트북의 진화를 탐구하며, 주요 제조업체, 시장 동향, 사용자 선호도 및 향후 기술 발전을 강조합니다. 급변하는 컴퓨팅 환경에서 이러한 장치의 유연성과 적응력을 강조합니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

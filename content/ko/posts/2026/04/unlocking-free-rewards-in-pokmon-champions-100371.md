@@ -3,8 +3,8 @@ title: "포켓몬 차ンピ언즈의 무료 보상에 대한 완벽한 가이드
 date: "2026-04-13T08:30:46+09:00"
 description: "포켓몬 차ンピ언즈의 무료 보상에 대한 가이드"
 image: "/images/posts/2026/04/unlocking-free-rewards-in-pokmon-champions-100371.jpg"
-clusters: ["digital"]
-categories: ["game-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

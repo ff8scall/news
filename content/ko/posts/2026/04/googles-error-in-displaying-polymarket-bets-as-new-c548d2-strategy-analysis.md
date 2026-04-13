@@ -3,8 +3,8 @@ title: "구글, 폴리마켓 베팅을 뉴스로 오표시…알고리즘 취약
 date: "2026-04-12T19:42:05+09:00"
 description: "구글이 예측 시장 플랫폼 폴리마켓의 베팅 배당률을 실수로 뉴스 헤드라인으로 잘못 표시하는 사건이 발생했습니다."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

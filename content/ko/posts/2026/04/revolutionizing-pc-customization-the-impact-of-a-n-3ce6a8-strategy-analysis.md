@@ -3,8 +3,8 @@ title: "PC 커스터마이징의 혁신: 새 PCIe 어댑터의 영향"
 date: "2026-04-12T23:17:33+09:00"
 description: "이 보고서는 절반 높이 GPU를 전체 높이로 변환하고 M.2 SSD 슬롯을 추가하는 새로운 PCIe 어댑터의 출시를 탐구합니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -3,8 +3,8 @@ title: "실리콘밸리 엘리트를 향한 문화적 논평: 'The Audacity' 분
 date: "2026-04-12T22:13:50+09:00"
 description: "AMC의 블랙 코미디 'The Audacity'는 실리콘밸리 엘리트 문화와 부의 풍요로움, 그리고 산업 내 책임에 대한 비판을 다루고 있습니다."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

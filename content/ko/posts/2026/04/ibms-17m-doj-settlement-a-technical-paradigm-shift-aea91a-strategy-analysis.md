@@ -3,8 +3,8 @@ title: "IBM 1,700만 달러 합의가 불러온 기업 HR 소프트웨어의 전
 date: "2026-04-12T19:33:13+09:00"
 description: "IBM의 미 법무부(DOJ) DEI 관련 소송 합의는 기업 HR 시스템 내 알고리즘 편향성에 대한 강도 높은 규제 신호탄이 됨."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

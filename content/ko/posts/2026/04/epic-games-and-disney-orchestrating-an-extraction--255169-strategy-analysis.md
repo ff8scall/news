@@ -3,8 +3,8 @@ title: "에픽게임즈-디즈니의 승부수: 익스트랙션 슈터로 여는
 date: "2026-04-12T17:46:00+09:00"
 description: "에픽게임즈가 디즈니 IP를 결합한 신규 익스트랙션 슈터 개발에 착수하며 포트폴리오 다각화 시도"
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

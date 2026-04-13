@@ -4,7 +4,7 @@ date: "2026-04-12T19:45:12+09:00"
 description: "알틸리움, 영국 최초의 상업 전기차 배터리 정제소를 위한 자금 확보"
 image: "/images/fallbacks/tech-biz.jpg"
 clusters: ["intelligence"]
-categories: ["energy-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

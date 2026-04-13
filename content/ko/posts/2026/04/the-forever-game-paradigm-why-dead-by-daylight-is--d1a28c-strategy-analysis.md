@@ -3,8 +3,8 @@ title: "속편 없는 지속성: '데드 바이 데이데이라이트'가 증명
 date: "2026-04-12T17:12:57+09:00"
 description: "비헤이비어 인터랙티브가 '데드 바이 데이라이트 2' 개발을 포기하고 단일 플랫폼 유지 전략을 택한 배경 분석"
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

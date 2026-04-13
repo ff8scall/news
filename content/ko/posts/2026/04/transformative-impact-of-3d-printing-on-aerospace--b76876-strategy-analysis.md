@@ -3,8 +3,8 @@ title: "항공우주 제조 혁신을 위한 3D 프린팅의 전환적 영향"
 date: "2026-04-12T23:16:16+09:00"
 description: "최근 미 공군이 비벌 산업에 수여한 3D 프린팅 제트 엔진 계약에 대해 논의하며 항공우주 응용 분야에서의 발전, 비용 효율성 및 운영 이점을 강조합니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

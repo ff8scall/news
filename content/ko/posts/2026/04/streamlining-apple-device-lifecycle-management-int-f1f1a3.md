@@ -3,8 +3,8 @@ title: "기존 Mac 플릿을 ABM에 통합하여 Apple 기기 라이프사이클
 date: "2026-04-12T19:41:34+09:00"
 description: "기존 Mac 장치를 초기화 없이 Apple Business Manager(ABM)에 통합하여 IT 관리 효율성을 높이고 보안을 강화하는 실질적인 전략과 구현 방법을 안내합니다."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["physical"]
-categories: ["space-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: []
 featured: false
 ---

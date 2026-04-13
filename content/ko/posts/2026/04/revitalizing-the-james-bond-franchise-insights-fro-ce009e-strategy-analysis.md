@@ -4,7 +4,7 @@ date: "2026-04-12T19:44:38+09:00"
 description: "스티븐 소더버그 감독이 제임스 본드 시리즈를 1960년대의 뿌리로 되돌리려 하며, 원래의 미학, 깊이 있는 캐릭터 탐구, 현대적 주제 및 현대 기술의 통합을 통해 매력적인 내러티브를 창출하고자 한다."
 image: "/images/fallbacks/gaming.jpg"
 clusters: ["intelligence"]
-categories: ["energy-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

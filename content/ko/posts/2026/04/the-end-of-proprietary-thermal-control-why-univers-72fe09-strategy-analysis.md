@@ -4,7 +4,7 @@ date: "2026-04-12T19:26:49+09:00"
 description: "고가의 배터리 통합형 스마트 머그에서 범용 외부 온열기로 소비자 선호도 이동"
 image: "/images/fallbacks/tech-biz.jpg"
 clusters: ["intelligence"]
-categories: ["energy-tech"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

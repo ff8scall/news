@@ -3,8 +3,8 @@ title: "히상스 UR9: RGB LED TV 기술의 게임 체인저"
 date: "2026-04-12T23:12:09+09:00"
 description: "히상스 UR9는 첨단 RGB LED 백라이트 기술을 활용하여 색상 정확도와 밝기를 향상시키고 사용자 친화적인 인터페이스를 제공하며 OLED TV의 경쟁적인 대안으로 자리매김하고 있습니다. 이 보고서는 기존 디스플레이 기술과의 비교에서 UR9의 특징, 장점 및 한계를 평"
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

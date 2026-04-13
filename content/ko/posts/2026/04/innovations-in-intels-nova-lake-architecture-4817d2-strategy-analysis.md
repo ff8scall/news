@@ -3,8 +3,8 @@ title: "인텔 노바 레이크 아키텍처의 혁신"
 date: "2026-04-12T22:24:19+09:00"
 description: "인텔의 노바 레이크 아키텍처는 열 효율성과 성능을 향상시키기 위한 혁신적인 기능을 통해 CPU 설계를 향상시킬 예정입니다. 주요 혁신 사항으로는 이중 CPU 소켓 지지대, 개선된 열 전도, 낮아진 작동 온도가 포함되며 인텔이 CPU 시장에서의 경쟁 우위를 선점하게 될 "
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

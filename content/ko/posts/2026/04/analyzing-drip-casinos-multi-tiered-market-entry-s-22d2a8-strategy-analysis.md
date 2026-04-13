@@ -3,8 +3,8 @@ title: "캐나다 디지털 게이밍 시장의 신규 전략: '드립 카지노
 date: "2026-04-12T17:10:33+09:00"
 description: "신규 사용자 확보를 위한 3단계 보너스 아키텍처 설계"
 image: "/images/fallbacks/ai-business.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

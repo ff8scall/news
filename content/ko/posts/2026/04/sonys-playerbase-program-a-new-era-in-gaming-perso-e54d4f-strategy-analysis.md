@@ -3,8 +3,8 @@ title: "소니의 플레이베이스 프로그램: 게임 개인화의 새로운
 date: "2026-04-12T22:24:43+09:00"
 description: "소니의 새로운 플레이베이스 프로그램은 개인화된 아바타를 게임에 통합하여 플레이어 참여도와 몰입감을 높이는 것을 목표로 하며, Gran Turismo 7에서 시작하여 다른 타이틀로 확대될 예정입니다."
 image: "/images/fallbacks/gaming.jpg"
-clusters: ["digital"]
-categories: ["game-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

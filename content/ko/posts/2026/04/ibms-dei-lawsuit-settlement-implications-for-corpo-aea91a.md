@@ -3,8 +3,8 @@ title: "IBM의 DEI 소송 합의: 기업 포용성에 미치는 시사점"
 date: "2026-04-13T08:27:37+09:00"
 description: "이번 보고서는 IBM이 법무부와 체결한 DEI 관행에 관한 소송 합의에 대해 분석하고, 기업 전략과 법적 준수에 미치는 시사점을 강조합니다."
 image: "/images/posts/2026/04/ibms-dei-lawsuit-settlement-implications-for-corpo-aea91a.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

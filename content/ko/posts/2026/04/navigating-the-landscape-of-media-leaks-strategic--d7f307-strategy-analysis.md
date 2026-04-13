@@ -3,8 +3,8 @@ title: "미디어 유출의 복잡한 환경 탐색: 영화 마케팅에 대한 
 date: "2026-04-12T23:14:18+09:00"
 description: "파라마운트 영화 '아바타: 아앙, 마지막 공기압의 전사'의 유출 사건이 마케팅 전략에 미치는 영향과 기회를 분석합니다."
 image: "/images/fallbacks/tech-biz.jpg"
-clusters: ["strategy"]
-categories: ["market-trend"]
+clusters: ["intelligence"]
+categories: ["llm-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---
