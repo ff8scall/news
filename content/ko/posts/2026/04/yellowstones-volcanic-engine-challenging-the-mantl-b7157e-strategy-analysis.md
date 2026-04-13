@@ -4,7 +4,7 @@ date: "2026-04-12T19:30:50+09:00"
 description: "옐로스톤의 화산 활동 원인이 고정된 '맨틀 플룸'이 아닌, 과거 섭입된 판의 파편(슬래브)에 의한 지각 변동이라는 새로운 가설 등장"
 image: "/images/fallbacks/ai-agents.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

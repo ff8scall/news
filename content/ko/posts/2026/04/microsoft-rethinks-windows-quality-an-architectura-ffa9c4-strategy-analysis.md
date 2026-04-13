@@ -3,8 +3,8 @@ title: "마이크로소프트의 ‘윈도우 품질’ 회복 전략: 인사이
 date: "2026-04-12T19:32:15+09:00"
 description: "마이크로소프트가 기존의 기능 중심 개발 방식에서 벗어나 안정성 우선의 '윈도우 품질' 전략으로 전환 중입니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["strategy"]
+categories: ["market-trend"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -4,7 +4,7 @@ date: "2026-04-12T17:12:07+09:00"
 description: "전통적인 공급망 관리에서 벗어나 AI와 자동화 기술을 결합한 동적 가치 창출 시스템으로의 전환 가속화"
 image: "/images/fallbacks/tech-industry.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

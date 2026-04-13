@@ -4,7 +4,7 @@ date: "2026-04-12T17:10:07+09:00"
 description: "엔트리급 기계식 키보드 시장에서 하이퍼엑스 Eve 1800이 보인 기능 및 성능적 결함 분석"
 image: "/images/fallbacks/tech-industry.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

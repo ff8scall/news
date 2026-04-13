@@ -4,7 +4,7 @@ date: "2026-04-12T19:33:13+09:00"
 description: "IBM의 미 법무부(DOJ) DEI 관련 소송 합의는 기업 HR 시스템 내 알고리즘 편향성에 대한 강도 높은 규제 신호탄이 됨."
 image: "/images/fallbacks/ai-agents.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

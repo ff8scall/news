@@ -4,7 +4,7 @@ date: "2026-04-12T21:46:38+09:00"
 description: "수동적인 구문(Syntax) 작성에서 의도와 맥락 중심의 ‘바이브 코딩’으로 개발 방식 대전환"
 image: "/images/fallbacks/ai-agents.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

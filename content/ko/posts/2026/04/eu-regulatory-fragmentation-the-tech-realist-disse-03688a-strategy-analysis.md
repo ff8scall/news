@@ -3,8 +3,8 @@ title: "EU 디지털 정책의 균열: '유틀란트 선언'을 둘러싼 기술
 date: "2026-04-12T17:50:45+09:00"
 description: "유럽 내 소셜 미디어 연령 제한을 골자로 한 '유틀란트 선언'에 에스토니아와 벨기에가 반대하며 정책적 분절화가 가시화됨."
 image: "/images/fallbacks/ai-tech.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["digital"]
+categories: ["spatial-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

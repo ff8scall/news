@@ -4,7 +4,7 @@ date: "2026-04-12T19:19:00+09:00"
 description: "NASA '인테그리티(Integrity)' 호의 성공적인 해상 착수(Splashdown)로 재진입 시스템의 안정성 입증"
 image: "/images/fallbacks/ai-agents.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -4,7 +4,7 @@ date: "2026-04-12T19:35:27+09:00"
 description: "NASA의 아르테미스 II 유인 달 궤도 비행이 10일간의 여정을 마치고 성공적으로 종료됨."
 image: "/images/fallbacks/ai-agents.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

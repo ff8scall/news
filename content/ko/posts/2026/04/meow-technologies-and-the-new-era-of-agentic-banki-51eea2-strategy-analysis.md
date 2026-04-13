@@ -3,8 +3,8 @@ title: "미야우 테크놀로지스와 에이전틱 뱅킹의 새로운 시대"
 date: "2026-04-12T22:21:04+09:00"
 description: "미야우 테크놀로지스가 세계 최초의 에이전틱 뱅킹 플랫폼을 런칭하여 AI 에이전트가 자율적으로 뱅킹 기능을 관리할 수 있도록 하며, 금융 기술 분야에 혁신을 가져오고 있습니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["strategy"]
+categories: ["market-trend"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -4,7 +4,7 @@ date: "2026-04-12T17:13:39+09:00"
 description: "넷플릭스가 '피키 블라인더스'의 세대교체를 통해 단일 시리즈에서 거대 IP 세계관으로의 전환을 꾀하고 있음."
 image: "/images/fallbacks/tech-industry.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

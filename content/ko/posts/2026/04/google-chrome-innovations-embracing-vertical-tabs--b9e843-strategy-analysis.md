@@ -3,8 +3,8 @@ title: "구글 크롬 혁신: 수직 탭 및 몰입형 독서 모드 도입"
 date: "2026-04-12T23:14:51+09:00"
 description: "구글 크롬이 수직 탭 및 몰입형 독서 모드를 도입하며 사용자 생산성과 콘텐츠 참여를 강화하는 주요 업데이트를 발표했습니다. 이 기능들은 사용자 요구에 적응하기 위한 브라우저의 노력을 반영합니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["strategy"]
+categories: ["market-trend"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -4,7 +4,7 @@ date: "2026-04-12T19:30:17+09:00"
 description: "최근 유인 달 궤도 미션의 성공은 단순 시험 비행을 넘어 실질적인 심우주 거주 인프라로의 전환을 의미함."
 image: "/images/fallbacks/ai-agents.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

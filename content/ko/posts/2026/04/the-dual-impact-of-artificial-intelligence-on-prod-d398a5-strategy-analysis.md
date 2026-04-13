@@ -3,8 +3,8 @@ title: "인공지능이 생산성과 인지 능력에 미치는 이중적인 영
 date: "2026-04-12T19:46:11+09:00"
 description: "이 보고서는 AI 기술의 발전이 생산성을 향상시킬 수 있지만 인지 능력에는 위험을 초래할 수 있음을 조사하며, 균형 잡힌 통합과 지속적인 평가의 필요성을 강조합니다."
 image: "/images/fallbacks/ai-tech.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["strategy"]
+categories: ["energy-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

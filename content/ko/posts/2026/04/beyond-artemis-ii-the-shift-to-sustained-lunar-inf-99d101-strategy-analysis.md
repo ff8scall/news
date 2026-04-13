@@ -4,7 +4,7 @@ date: "2026-04-12T19:29:27+09:00"
 description: "NASA의 아르테미스 II 임무 성공은 달 탐사의 '개념 증명' 단계를 넘어섰음을 시사함."
 image: "/images/fallbacks/ai-agents.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

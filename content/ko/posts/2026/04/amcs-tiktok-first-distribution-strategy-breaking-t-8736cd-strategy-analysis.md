@@ -4,7 +4,7 @@ date: "2026-04-12T18:45:09+09:00"
 description: "AMC가 신작 '더 오대시티'를 틱톡에서 21부작으로 선공개하며 기존 유료 구독 서비스(SVOD) 관행을 탈피하는 파격적인 배급 실험을 단행함."
 image: "/images/fallbacks/tech-biz.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

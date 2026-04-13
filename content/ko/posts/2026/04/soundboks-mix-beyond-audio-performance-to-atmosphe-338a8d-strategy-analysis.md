@@ -3,8 +3,8 @@ title: "사운드복스(Soundboks) 믹스: 고출력 오디오를 넘어선 '분
 date: "2026-04-12T17:06:52+09:00"
 description: "단순한 스피커를 넘어 주변 환경을 제어하는 '사회적 인프라'로서의 하드웨어 분석"
 image: "/images/fallbacks/tech-industry.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["strategy"]
+categories: ["market-trend"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

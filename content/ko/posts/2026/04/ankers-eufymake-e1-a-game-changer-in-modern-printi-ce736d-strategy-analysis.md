@@ -3,8 +3,8 @@ title: "앙커의 EufyMake E1: 현대 인쇄 기술의 혁신"
 date: "2026-04-12T22:20:00+09:00"
 description: "앙커의 EufyMake E1은 전통적인 인쇄의 경계를 허물며 다양한 소재에 고품질의 인쇄를 가능하게 하는 혁신적인 자외선 인쇄기입니다."
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["strategy"]
+categories: ["market-trend"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

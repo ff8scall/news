@@ -4,7 +4,7 @@ date: "2026-04-12T19:44:21+09:00"
 description: "이 보고서는 월드 리버티 파이낸셜의 최근 암호화폐 대출 전략을 분석하며, FTX와의 유사성을 강조하고 투명성과 규제의 중요성을 설명한다."
 image: "/images/fallbacks/ai-tech.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

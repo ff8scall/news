@@ -3,8 +3,8 @@ title: "ASUS 젠북 A16으로 본 차세대 울트라포터블의 ARM 전환 전
 date: "2026-04-12T19:33:37+09:00"
 description: "ASUS 젠북 A16의 퀄컴 스냅드래곤 아키텍처 도입을 통한 포지셔닝 재정립"
 image: "/images/fallbacks/ai-agents.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["strategy"]
+categories: ["market-trend"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

@@ -3,8 +3,8 @@ title: "테크 리더의 보안 도전: 샘 올트먼 사건 분석"
 date: "2026-04-12T22:20:40+09:00"
 description: "본 보고서는 OpenAI의 CEO인 샘 올트먼과 관련된 최근 보안 사건을 분석하고, 기술 산업 내 안전 프로토콜에 대한 시사점을 논의합니다. 테크 리더의 개인 보안을 강화하기 위한 추천 사항도 포함됩니다."
 image: "/images/fallbacks/ai-tech.jpg"
-clusters: ["physical"]
-categories: ["chip-tech"]
+clusters: ["strategy"]
+categories: ["market-trend"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---

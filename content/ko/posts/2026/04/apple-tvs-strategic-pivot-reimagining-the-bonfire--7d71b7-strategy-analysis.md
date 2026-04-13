@@ -4,7 +4,7 @@ date: "2026-04-12T17:14:49+09:00"
 description: "애플 TV+가 톰 울프의 고전 소설 '허영의 불꽃'을 시리즈화하며 프리미엄 콘텐츠 전략을 가속화함"
 image: "/images/fallbacks/tech-industry.jpg"
 clusters: ["physical"]
-categories: ["chip-tech"]
+categories: ["space-tech"]
 tags: ["테크전략", "인사이트"]
 featured: false
 ---
