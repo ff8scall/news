@@ -9,11 +9,25 @@
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--p-accent); opacity: 0.3;"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
       </div>
       {{ end }}
-      <div class="card-category" style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); backdrop-filter: blur(5px); color: white; padding: 4px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: bold; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; display: flex; gap: 6px; align-items: center;">
-        {{ with .GetTerms "clusters" }}
-        <span style="color: var(--p-accent); border-right: 1px solid rgba(255,255,255,0.2); padding-right: 6px;">{{ (index . 0).LinkTitle }}</span>
-        {{ end }}
-        {{ with .GetTerms "categories" }}{{ (index . 0).LinkTitle }}{{ else }}NEWS{{ end }}
+      {{/* [V0.2.4 Hotfix] Defensive Taxonomy Indexing */}}
+      {{ $cluster := index (.GetTerms "clusters") 0 }}
+      {{ $category := index (.GetTerms "categories") 0 }}
+      
+      {{ $c_slug := "" }}{{ if $cluster }}{{ $c_slug = $cluster.Data.Term }}{{ end }}
+      {{ $cat_slug := "" }}{{ if $category }}{{ $cat_slug = $category.Data.Term }}{{ end }}
+      
+      {{ $c_map := dict "ai-models-tools" "AI" "gpu-hardware" "하드웨어" "ai-gaming" "게임 테크" "guides" "가이드" }}
+      {{ $clr_map := dict "ai-models-tools" "#3B82F6" "gpu-hardware" "#10B981" "ai-gaming" "#8B5CF6" "guides" "#F59E0B" }}
+      {{ $cat_map := dict "ai-models" "AI 모델" "ai-tools" "AI 도구" "gpu-chips" "반도체" "pc-robotics" "AI PC" "game-optimization" "최적화" "ai-gameplay" "게임 테크" "tutorials" "튜토리얼" "compare" "비교" }}
+      
+      {{ $c_name := "기타" }}{{ if $c_slug }}{{ $c_name = index $c_map $c_slug | default $cluster.LinkTitle }}{{ end }}
+      {{ $clr := "#3B82F6" }}{{ if $c_slug }}{{ $clr = index $clr_map $c_slug | default "#3B82F6" }}{{ end }}
+      {{ $cat_name := "일반" }}{{ if $cat_slug }}{{ $cat_name = index $cat_map $cat_slug | default $category.LinkTitle }}{{ end }}
+
+      <div class="card-category" style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.8); backdrop-filter: blur(8px); color: white; padding: 4px 14px; border-radius: 50px; font-size: 0.75rem; font-weight: bold; border: 1.5px solid {{ $clr }}; display: flex; gap: 8px; align-items: center; white-space: nowrap;">
+        <span style="color: {{ $clr }};">{{ $c_name }}</span>
+        <span style="opacity: 0.5;">|</span>
+        <span style="font-weight: 500;">{{ $cat_name }}</span>
       </div>
     </div>
     

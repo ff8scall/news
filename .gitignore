@@ -21,3 +21,9 @@ automation/archive/
 
 # Private Project Documentation
 docs_private/
+
+# Genesis Backups & Large DBs
+/backups/
+*.db
+*.log
+.news_cache

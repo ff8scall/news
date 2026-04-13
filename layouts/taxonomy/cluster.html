@@ -6,43 +6,38 @@
       <nav class="breadcrumb">
         <a href="{{ .Site.BaseURL | relLangURL }}">Home</a> 
         <span class="sep">/</span> 
-        <span class="active">{{ .Title }} Section</span>
+        <span class="active">{{ .Title }}</span>
       </nav>
       
       <div class="header-content">
         <h1 class="section-title">{{ .Title }}</h1>
-        {{ with .Description }}
+        {{ with .Params.description }}
           <p class="section-desc">{{ . | markdownify }}</p>
         {{ end }}
       </div>
 
-      <!-- 하위 카테고리 바로가기 배지 -->
-      {{ $currentCluster := .Data.Term | urlize }}
-      {{ if or (eq $currentCluster "intelligence") (eq $currentCluster "physical") (eq $currentCluster "strategy") (eq $currentCluster "digital") }}
+      {{/* [V0.2.9] Unique Category Navigation (Fixed Duplicates) */}}
       <div class="cluster-subtypes">
-        <span class="label">세부 분야:</span>
+        <span class="label">세부 카테고리:</span>
         <div class="badges">
-          {{ if eq $currentCluster "intelligence" }}
-            <a href="/categories/llm-tech" class="badge">LLM & 파운데이션 모델</a>
-            <a href="/categories/future-sw" class="badge">미래 소프트웨어 & 클라우드</a>
-            <a href="/categories/platform-biz" class="badge">빅테크 플랫폼 비즈니스</a>
-            <a href="/categories/security-tech" class="badge">사이버 보안 & 암호학</a>
-          {{ else if eq $currentCluster "physical" }}
-            <a href="/categories/chip-tech" class="badge">차세대 반도체 (HBM/PIM)</a>
-            <a href="/categories/robot-tech" class="badge">로보틱스 & 자율주행</a>
-            <a href="/categories/space-tech" class="badge">항공우주 & 위성 테크</a>
-          {{ else if eq $currentCluster "strategy" }}
-            <a href="/categories/bio-tech" class="badge">헬스케어 & 바이오 테크</a>
-            <a href="/categories/energy-tech" class="badge">차세대 에너지 & 배터리</a>
-            <a href="/categories/market-trend" class="badge">글로벌 마켓 트렌드</a>
-          {{ else if eq $currentCluster "digital" }}
-            <a href="/categories/meta-tech" class="badge">메타버스 & AR/VR</a>
-            <a href="/categories/game-tech" class="badge">게임 테크 & 엔진</a>
-            <a href="/categories/spatial-tech" class="badge">공간 컴퓨팅 (Spatial)</a>
+          {{ $uniqueCats := dict }}
+          {{ range .Pages }}
+            {{ with .GetTerms "categories" }}
+              {{ range . }}
+                {{ $uniqueCats = merge $uniqueCats (dict .Data.Term .) }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+          
+          {{ if gt (len $uniqueCats) 0 }}
+            {{ range $uniqueCats }}
+              <a href="{{ .RelPermalink }}" class="badge"># {{ .LinkTitle }}</a>
+            {{ end }}
+          {{ else }}
+            <span style="opacity:0.3; font-size: 0.8rem;">수집된 세부 데이터가 없습니다.</span>
           {{ end }}
         </div>
       </div>
-      {{ end }}
     </header>
 
     <div class="card-grid">

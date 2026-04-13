@@ -5,7 +5,6 @@ import time
 import hashlib
 import requests
 import logging
-import asyncio
 from datetime import datetime
 from dotenv import load_dotenv
 from news_harvester import NewsHarvester
@@ -37,10 +36,8 @@ TelegramRemote = safe_import_class("telegram_remote", "TelegramRemote")
 EditorInChief = safe_import_class("ai_reviewer", "EditorInChief")
 
 CATEGORY_BUDGETS = {
-    "llm-tech": 6, "ai-agent": 6, "ai-policy": 3, "future-sw": 5,
-    "semi-hbm": 6, "hpc-infra": 5, "robotics": 3,
-    "monetization": 4, "startups-vc": 5, "market-trend": 3,
-    "game-tech": 4, "spatial-tech": 5, "ai-tools": 3
+    "ai-models": 8, "ai-tools": 8, "gpu-chips": 8, "pc-robotics": 8,
+    "game-optimization": 8, "ai-gameplay": 8, "tutorials": 4, "compare": 4
 }
 
 def sanitize_slug(text):
@@ -52,29 +49,26 @@ def hash_slug(url):
     return hashlib.md5(url.encode()).hexdigest()[:6]
 
 CAT_MAP = {
-    "llm-tech": "LLM·생성AI", "ai-agent": "AI 에이전트", "ai-policy": "AI 규제/정책", "future-sw": "미래 SW/개발",
-    "semi-hbm": "차세대 반도체", "hpc-infra": "HPC/인프라", "robotics": "로보틱스",
-    "monetization": "수익화 전략", "startups-vc": "비지니스/VC", "market-trend": "시장 트렌드",
-    "game-tech": "게임 테크", "spatial-tech": "공간 컴퓨팅"
+    "ai-models": "AI 모델·트렌드", "ai-tools": "AI 도구·사용법",
+    "gpu-chips": "GPU·반도체", "pc-robotics": "AI PC & 로봇",
+    "game-optimization": "게임 최적화·엔진", "ai-gameplay": "AI 게임 기술",
+    "tutorials": "실전 튜토리얼", "compare": "성능 비교"
 }
 
+# [V0] Fallback mapping to Major Clusters
 FALLBACK_MAP = {
-    "llm-tech": "llm-tech", "ai-agent": "ai-agent", "ai-policy": "ai-policy", "future-sw": "future-sw",
-    "semi-hbm": "semi-hbm", "hpc-infra": "hpc-infra", "robotics": "robotics",
-    "monetization": "monetization", "startups-vc": "startups-vc", "market-trend": "market-trend",
-    "game-tech": "game-tech", "spatial-tech": "spatial-tech",
-    "LLM·생성AI": "llm-tech", "AI 에이전트": "ai-agent", "AI 규제/정책": "ai-policy", "미래 SW/개발": "future-sw",
-    "차세대 반도체": "semi-hbm", "HPC/인프라": "hpc-infra", "로보틱스": "robotics",
-    "수익화 전략": "monetization", "비지니스/VC": "startups-vc", "시장 트렌드": "market-trend",
-    "게임 테크": "game-tech", "공간 컴퓨팅": "spatial-tech"
+    "ai-models": "ai-models-tools", "ai-tools": "ai-models-tools",
+    "gpu-chips": "gpu-hardware", "pc-robotics": "gpu-hardware",
+    "game-optimization": "ai-gaming", "ai-gameplay": "ai-gaming",
+    "tutorials": "guides", "compare": "guides"
 }
 
 def download_image(url, category_slug, slug):
     """[V2.9.6] 카테고리별 매핑된 고화질 폴백 이미지 보장"""
     # [Fix] 카테고리에 맞는 폴백 이미지 키 찾기
-    fallback_key = FALLBACK_MAP.get(category_slug, "tech-biz")
+    fallback_key = FALLBACK_MAP.get(category_slug, "ai-models-tools")
     
-    if not url: return f"/images/fallbacks/{fallback_key}.jpg"
+    if not url: return f"/images/fallback/{fallback_key}.png"
     
     # [V3.0.31] Protocol-relative URL fix
     if url.startswith('//'): url = 'https:' + url
@@ -101,7 +95,7 @@ def create_hugo_post(article, lang='ko'):
     os.makedirs(base_path, exist_ok=True)
     
     slug = article['sync_slug']
-    cat_safe = sanitize_slug(article.get('category', 'ai-tools'))
+    cat_safe = sanitize_slug(article.get('category', 'ai-models'))
     img_url = download_image(article.get('original_image_url'), cat_safe, slug)
     
     is_featured = "true" if article.get('score', 0) >= 9.5 else "false"
@@ -109,31 +103,35 @@ def create_hugo_post(article, lang='ko'):
     if lang == 'ko':
         title = article.get('kor_title', '제목 없음')
         summary_list = article.get('kor_summary', [])
-        tags = json.dumps(article.get('kor_keywords', []), ensure_ascii=False)
         if not isinstance(summary_list, list): summary_list = [summary_list]
         summary_text = "\n".join([f"- {s}" for s in summary_list])
-        desc = summary_list[0] if summary_list else ""
+        desc_val = article.get('description', summary_list[0] if summary_list else title)
+        tags_val = json.dumps(article.get('kor_keywords', []), ensure_ascii=False)
+        date_str = datetime.now().strftime('%Y-%m-%dT%H:%M:%S+09:00')
         
-        # [V3.2] 동적 부제(Dynamic Subtitles) 반영: SEO 키워드 노출 극대화
+        # [V3.2] 동적 부제(Dynamic Subtitles) 반영
         analysis_title = article.get('kor_analysis_title', '기술 분석 및 상세')
         insight_title = article.get('kor_insight_title', '시사점 및 전망')
         content_body = f"## 핵심 요약\n{summary_text}\n\n## {analysis_title}\n{article.get('kor_content')}\n\n## {insight_title}\n{article.get('kor_insight')}"
     else:
         title = article.get('eng_title', 'Untitled')
-        desc = article.get('eng_summary', '')
-        tags = json.dumps(article.get('eng_keywords', []), ensure_ascii=False)
-        
-        # [V3.2] English Consistency: Use dynamic headers if possible, otherwise fallback
+        desc_val = article.get('eng_summary', title)
+        tags_val = json.dumps(article.get('eng_keywords', []), ensure_ascii=False)
+        date_str = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
         content_body = f"## Executive Summary\n{article.get('eng_summary')}\n\n## Strategic Deep-Dive\n{article.get('eng_content', 'Content not localized yet.')}"
 
+    # [V0.2.2 Fix] Essential YAML/Hugo Quote Escaping (Replace " with ')
+    safe_title = title.replace('"', "'")
+    safe_desc = desc_val[:150].replace('"', "'")
+
     post_md = f"""---
-title: "{title}"
-date: "{datetime.now().strftime('%Y-%m-%dT%H:%M:%S+09:00')}"
-description: "{desc[:150]}"
+title: "{safe_title}"
+date: "{date_str}"
+description: "{safe_desc}"
 image: "{img_url}"
-clusters: ["{article.get('cluster', 'Intelligence')}"]
+clusters: ["{article.get('cluster', 'ai-models-tools')}"]
 categories: ["{cat_safe}"]
-tags: {tags}
+tags: {tags_val}
 featured: {is_featured}
 ---
 {content_body}
@@ -159,15 +157,14 @@ categories: ["{guide_data.get('guide_type', 'ai-tools')}"]
         f.write(content)
     return True
 
-async def main():
+def main():
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=1)
+    parser.add_argument("--limit", type=int, default=4)
     parser.add_argument("--category", type=str, default=None)
     parser.add_argument("--rss-only", action="store_true")
     args = parser.parse_args()
 
-    # [V3.0.30] Shared AI Logic: All components now share a single throttled writer
     shared_writer = AIWriter()
     harvester = NewsHarvester()
     editor = NewsEditor(writer=shared_writer)
@@ -177,165 +174,68 @@ async def main():
     telegram = TelegramRemote()
     
     start_time = datetime.now()
-    logger.info("Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...")
+    logger.info(f"Executive Intelligence Engine V3.1 starting with limit={args.limit}...")
     
-    # [V3.0.30] Initial Pulse: Ensure Telegram is reachable
-    telegram.send_resp("🚀 **ENGINE ACTIVATED (V3.0.30)**\n- Shared Throttled AI Writer online.\n- Initializing intelligence harvest...")
+    telegram.send_resp("🚀 **ENGINE ACTIVATED (V3.1)**\n- Optimized Sync Engine.\n- Initializing intelligence harvest...")
 
     cat_issued = {cat: 0 for cat in CATEGORY_BUDGETS}
     cancel_stats = {"duplicate": 0, "review": 0, "budget": 0, "draft_fail": 0}
     
     target_cats = [args.category] if args.category else None
     
-    harvest_start = datetime.now()
+    # [Fix] Use args.limit correctly
     raw_news, harvest_stats = harvester.fetch_all(
         limit_per_cat=args.limit, 
         rss_only=args.rss_only, 
         target_cats=target_cats
     )
-    harvest_duration = (datetime.now() - harvest_start).total_seconds()
     
     new_articles = []
     for a in raw_news:
         if history.is_already_processed(a['url']):
             cancel_stats["duplicate"] += 1
-            logger.info(f"Skipped (Duplicate): {a['title'][:50]}")
         else:
             new_articles.append(a)
     
-    published_count = 0; published_guides = 0; ai_calls = 0
-    published_urls = []
+    published_count = 0; ai_calls = 0
     
     if not new_articles:
         logger.warning(f"Process ended: {cancel_stats['duplicate']} articles skipped as duplicates.")
-        report = f"✅ **INTELLIGENCE SCAN COMPLETE**\n\n- 소스 발견: {len(raw_news)}건\n- 중복 제외: {cancel_stats['duplicate']}건\n- 새로운 정보 없음 (0건 발행)"
-        telegram.send_resp(report)
         return
 
-    article_groups = [[a] for a in new_articles]
-    # [V3.0.25] 공평성 강화: 대량 범주(future-sw 등)가 다른 희소 범주를 밀어내지 않도록 전체 셔플
+    # [Strategic Shuffle]
     import random as rand
-    rand.shuffle(article_groups)
+    rand.shuffle(new_articles)
     
-    scored_groups = sorted([(9.0, g) for g in article_groups], key=lambda x: x[0], reverse=True)
+    for article in new_articles:
+        if published_count >= args.limit * len(CATEGORY_BUDGETS): break
 
-    for score, group in scored_groups:
-        limit_threshold = args.limit if (args.category or args.limit > 1) else 35
-        if published_count >= limit_threshold:
-            cancel_stats["budget"] = len(scored_groups) - published_count
-            logger.info(f"Stopped: Budget reached ({limit_threshold})")
-            break
-
-        # [V3.0.23] 15초 인터그리티 펄스: API 할당량 보호 및 집필 품질 보장 (Throttling)
         if published_count > 0:
-            logger.info("Throttling for API integrity (15s wait)...")
             time.sleep(15)
         
-        # [V3.0.30] Intelligent Circuit Breaker: Trigger only if essential core providers are down
-        if shared_writer.is_all_exhausted():
-            logger.error("CRITICAL: Essential AI providers (Gemini, GitHub, Groq) exhausted. Triggering Circuit Breaker.")
-            telegram.send_resp("⚠️ **CIRCUIT BREAKER TRIGGERED**\n- 핵심 AI (Gemini, GitHub) 할당량이 모두 소진되었습니다.\n- 남은 기사들은 다음 기동 시 재시도됩니다.")
-            cancel_stats["budget"] += (len(scored_groups) - (published_count + cancel_stats["review"] + cancel_stats["draft_fail"]))
-            break
-
-        # [V3.0.25] 가이드 트리거 확장: 벤치마크, 로드맵, 비교 분석 등 심층 분석 키워드 추가
-        guide_triggers = ['how to', '설치', '방법', 'optimize', 'benchmark', 'comparison', 'roadmap', 'tutorial', 'analysis', 'guide']
-        is_guide = score >= 8.5 and any(k in group[0]['title'].lower() for k in guide_triggers)
-        
-        drafts = editor.review_batch(group, recent_posts=history.get_recent_posts(limit=10))
+        # [V3.1] Simplified processing loop
+        drafts = editor.review_batch([article], recent_posts=history.get_recent_posts(limit=10))
         ai_calls += 2
         if not drafts:
             cancel_stats["draft_fail"] += 1
-            logger.warning(f"Cancelled (Draft Fail): {group[0]['title'][:50]}")
             continue
         
-        sync_slug = f"{sanitize_slug(drafts[0]['eng_title'])}-{hash_slug(group[0]['url'])}"
+        sync_slug = f"{sanitize_slug(drafts[0]['eng_title'])}-{hash_slug(article['url'])}"
 
         for draft in drafts:
-            cat = draft.get('category', 'ai-tools')
-            if cat not in CATEGORY_BUDGETS: cat = 'ai-tools' 
+            cat = draft.get('category', 'ai-models')
+            draft['sync_slug'] = sync_slug
             
-            draft['sync_slug'], draft['score'] = sync_slug, score
             if reviewer.review_article(draft).get('decision') != 'PASS':
                 cancel_stats["review"] += 1
-                logger.warning(f"Cancelled (Review Low Score): {sync_slug}")
                 continue
 
-            year_month = datetime.now().strftime('%Y/%m')
-            local_url = f"/posts/{year_month}/{sync_slug}/"
-
             if create_hugo_post(draft, lang='ko') and create_hugo_post(draft, lang='en'):
-                for a in group: history.add_to_history(a['url'], a['title'], local_url=local_url)
+                history.add_to_history(article['url'], article['title'], local_url=sync_slug)
                 cat_issued[cat] += 1; published_count += 1
-                
-                full_url = f"https://news.lego-sia.com{local_url}"
-                published_urls.append(full_url)
-                logger.info(f"Published: {sync_slug} ({cat}) -> {local_url}")
-                
-                # [V3.0.25] 가이드 트리거 정밀화: AI가 매긴 실제 점수와 키워드 결합
-                guide_triggers = ['how to', '설치', '방법', 'optimize', 'benchmark', 'comparison', 'roadmap', 'tutorial', 'analysis', 'guide']
-                is_guide = score >= 8.5 and any(k in draft.get('kor_title', '').lower() for k in guide_triggers)
-                
-                if is_guide and published_guides < 3:
-                    logger.info(f"Writing Strategic Guide for: {sync_slug}")
-                    g_ko = guide_editor.write_guide(draft, lang='ko')
-                    g_en = guide_editor.write_guide(draft, lang='en')
-                    ai_calls += 2
-                    if g_ko: 
-                        create_guide_post(g_ko, sync_slug, lang='ko')
-                        logger.info(f" -> KO Guide Published: {sync_slug}")
-                    if g_en: 
-                        create_guide_post(g_en, sync_slug, lang='en')
-                        logger.info(f" -> EN Guide Published: {sync_slug}")
-                    published_guides += 1
+                logger.info(f"Published: {sync_slug}")
 
-    # [V3.0.15 Strategic Report]
-    duration = (datetime.now() - start_time).seconds
-    quota_info = "\n".join([f"- {k}: {v}건" for k, v in harvest_stats.items() if v > 0])
-    
-    cancel_breakdown = f"""• 중복 기사: {cancel_stats['duplicate']}건
-• 리뷰 낙폭: {cancel_stats['review']}건
-• 예산 초과: {cancel_stats['budget']}건
-• 초안 실패: {cancel_stats['draft_fail']}건"""
-
-    # [V4.8] 최종 결과 리포트 생성 및 전송
-    CAT_MAP = {
-        "llm-tech": "LLM·생성AI", "ai-agent": "AI 에이전트", "ai-policy": "AI 윤리·정책",
-        "future-sw": "차세대 SW", "semi-hbm": "차세대 반도체", "hpc-infra": "HPC·인프라",
-        "robotics": "로보틱스", "monetization": "수익화 모델", "startups-vc": "스타트업·VC",
-        "market-trend": "시장 트렌드", "game-tech": "게임 테크", "spatial-tech": "공간 테크"
-    }
-
-    pub_list = "\n".join([f"- {CAT_MAP.get(k, k)}: {v}건" for k, v in cat_issued.items() if v > 0])
-    
-    report = f"""✅ **LEGISLATIVE V3 STRATEGIC REPORT**
-
-📦 **수집/발행 통계**
-{quota_info}
-- 수집 소요: {harvest_duration:.1f}s (고속 비동기 엔진)
----
-**🚀 최종 발행 내역**
-{pub_list}
-
-📑 후보군: {len(raw_news)}건 (중복 {cancel_stats['duplicate']}건 제외)
-📑 필터링 완수: {published_count + sum(cancel_stats.values())}건
-
-🚫 **취소 및 필터링 내역**
-{cancel_breakdown}
-
-🤖 **AI 작업 통계**
-- Gemini Calls: {ai_calls}회
-- 제작 성공률: {((published_count / len(new_articles) * 100) if new_articles else 0):.1f}% (새 소식 {len(new_articles)}건 대비)
-
-🚀 **발행 결과**
-- 최종 발행: {published_count}건 (가이드: {published_guides}건)
-- 소요 시간: {duration}초
-    """
-    telegram.send_resp(report)
     logger.info("Master execution cycle completed.")
 
 if __name__ == "__main__": 
-    try:
-        asyncio.run(main())
-    except KeyboardInterrupt:
-        print("\n [!] Execution interrupted by user.")
+    main()

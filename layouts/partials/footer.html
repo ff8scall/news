@@ -1,22 +1,23 @@
-<footer class="site-footer">
+<footer class="site-footer" style="padding: 15px 0 !important; margin-top: 0 !important; background: #07090d !important; border-top: 1px solid rgba(255,255,255,0.05) !important;">
   <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="{{ .Site.Home.RelPermalink }}" class="site-logo">
-          <span class="logo-accent">NEWS</span>.lego-sia.com
+    <div class="footer-inner" style="display: flex !important; justify-content: space-between !important; align-items: center !important; flex-wrap: wrap !important; gap: 15px !important; padding-bottom: 10px !important; margin-bottom: 0 !important;">
+      <div class="footer-brand" style="flex: 1 !important; min-width: 250px !important;">
+        <a href="{{ .Site.Home.RelPermalink }}" class="site-logo" style="font-size: 1.1rem !important; font-weight: 800 !important; text-decoration: none !important; color: white !important; display: block !important;">
+          <span class="logo-accent" style="color: #3B82F6 !important;">NEWS</span>.lego-sia.com
         </a>
-        <p class="footer-desc">{{ .Site.Params.description }}</p>
       </div>
 
-      <nav class="footer-nav" aria-label="바닥 메뉴">
+      <nav class="footer-nav" aria-label="바닥 메뉴" style="display: flex !important; flex-direction: row !important; gap: 15px !important; align-items: center !important;">
         {{ range .Site.Menus.main }}
-        <a href="{{ .URL | relLangURL }}" class="footer-nav-link">{{ .Name }}</a>
+        <a href="{{ .URL | relLangURL }}" class="footer-nav-link" style="color: rgba(255,255,255,0.4) !important; text-decoration: none !important; font-size: 0.8rem !important; font-weight: 500 !important; white-space: nowrap !important;">
+          {{ .Name }}
+        </a>
         {{ end }}
       </nav>
     </div>
 
-    <div class="footer-bottom">
-      <p class="copyright">&copy; {{ now.Year }} news.lego-sia.com. All rights reserved.</p>
+    <div class="footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.03) !important; padding-top: 8px !important; margin-top: 5px !important;">
+      <p class="copyright" style="opacity: 0.2 !important; font-size: 0.65rem !important; margin: 0 !important; letter-spacing: -0.02em !important;">&copy; {{ now.Year }} news.lego-sia.com. All rights reserved.</p>
     </div>
   </div>
 </footer>

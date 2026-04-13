@@ -15,9 +15,9 @@ class AIWriter:
     def __init__(self):
         load_dotenv()
         self.ollama_url = "http://localhost:11434/api/generate"
-        self.model = "gemma4:latest"  # User's target model
-        self.parallel_workers = 5
-        logger.info(f"AIWriter Initialized with {self.model} (Parallel: {self.parallel_workers})")
+        self.model = "gemma4:latest" 
+        self.parallel_workers = 4
+        logger.info(f"AIWriter Initialized with {self.model} (Optimized Parallel: {self.parallel_workers})")
 
     def _generate_api_call(self, prompt, model_name=None):
         """[V3.5] Native Ollama Connector with Resilient Retries"""
@@ -31,7 +31,7 @@ class AIWriter:
                     "stream": False,
                     "options": {"num_predict": 4096, "temperature": 0.7}
                 },
-                timeout=120
+                timeout=300
             )
             if response.status_code == 200:
                 return response.json().get("response")

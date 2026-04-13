@@ -1,5 +1,5 @@
 baseURL = 'https://news.lego-sia.com'
-title = '레고-시아 전략 매거진'
+title = '레고-시아 AI 테크 인텔리전스'
 defaultContentLanguage = 'ko'
 hasCJKLanguage = true
 
@@ -15,96 +15,50 @@ hasCJKLanguage = true
     weight = 1
     [languages.ko.menu]
       [[languages.ko.menu.main]]
-        name = "인텔리전스 (AI/SW)"
-        identifier = "intelligence"
-        url = "/clusters/intelligence"
+        name = "AI"
+        identifier = "ai"
+        url = "/clusters/ai-models-tools/"
         weight = 1
       [[languages.ko.menu.main]]
-        parent = "intelligence"
-        name = "LLM & 파운데이션 모델"
-        url = "/categories/llm-tech"
-        weight = 1
-      [[languages.ko.menu.main]]
-        parent = "intelligence"
-        name = "미래 소프트웨어 & 클라우드"
-        url = "/categories/future-sw"
+        name = "하드웨어"
+        identifier = "hardware"
+        url = "/clusters/gpu-hardware/"
         weight = 2
       [[languages.ko.menu.main]]
-        parent = "intelligence"
-        name = "빅테크 플랫폼 비즈니스"
-        url = "/categories/platform-biz"
+        name = "게임 테크"
+        identifier = "gaming"
+        url = "/clusters/ai-gaming/"
         weight = 3
       [[languages.ko.menu.main]]
-        parent = "intelligence"
-        name = "사이버 보안 & 암호학"
-        url = "/categories/security-tech"
-        weight = 4
-
-      [[languages.ko.menu.main]]
-        name = "피지컬 (반도체/로봇)"
-        identifier = "physical"
-        url = "/clusters/physical"
-        weight = 2
-      [[languages.ko.menu.main]]
-        parent = "physical"
-        name = "차세대 반도체 (HBM/PIM)"
-        url = "/categories/chip-tech"
-        weight = 1
-      [[languages.ko.menu.main]]
-        parent = "physical"
-        name = "로보틱스 & 자율주행"
-        url = "/categories/robot-tech"
-        weight = 2
-      [[languages.ko.menu.main]]
-        parent = "physical"
-        name = "항공우주 & 위성 테크"
-        url = "/categories/space-tech"
-        weight = 3
-
-      [[languages.ko.menu.main]]
-        name = "라이프 전략 (에너지/바이오)"
-        identifier = "strategy"
-        url = "/clusters/strategy"
-        weight = 3
-      [[languages.ko.menu.main]]
-        parent = "strategy"
-        name = "헬스케어 & 바이오 테크"
-        url = "/categories/bio-tech"
-        weight = 1
-      [[languages.ko.menu.main]]
-        parent = "strategy"
-        name = "차세대 에너지 & 배터리"
-        url = "/categories/energy-tech"
-        weight = 2
-      [[languages.ko.menu.main]]
-        parent = "strategy"
-        name = "글로벌 마켓 트렌드"
-        url = "/categories/market-trend"
-        weight = 3
-
-      [[languages.ko.menu.main]]
-        name = "디지털 (게임/가상세계)"
-        identifier = "digital"
-        url = "/clusters/digital"
-        weight = 4
-      [[languages.ko.menu.main]]
-        parent = "digital"
-        name = "메타버스 & AR/VR"
-        url = "/categories/meta-tech"
-        weight = 1
-      [[languages.ko.menu.main]]
-        parent = "digital"
-        name = "게임 테크 & 엔진"
-        url = "/categories/game-tech"
-        weight = 2
-      [[languages.ko.menu.main]]
-        parent = "digital"
-        name = "공간 컴퓨팅 (Spatial)"
-        url = "/categories/spatial-tech"
-        weight = 3
-
-      [[languages.ko.menu.main]]
-        name = "전략 가이드"
+        name = "가이드"
         identifier = "guides"
-        url = "/guides"
-        weight = 5
+        url = "/clusters/guides/"
+        weight = 4
+
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    weight = 2
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "AI"
+        url = "/en/clusters/ai-models-tools/"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Hardware"
+        url = "/en/clusters/gpu-hardware/"
+        weight = 2
+      [[languages.en.menu.main]]
+        name = "Gaming"
+        url = "/en/clusters/ai-gaming/"
+        weight = 3
+      [[languages.en.menu.main]]
+        name = "Guides"
+        url = "/en/clusters/guides/"
+        weight = 4
+
+[params]
+  ui_version = "V0"
+  [params.ui]
+    badge_colors = { "AI" = "#3B82F6", "하드웨어" = "#10B981", "게임 테크" = "#8B5CF6", "가이드" = "#F59E0B" }
+    tag_prefix = true
