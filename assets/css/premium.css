@@ -145,3 +145,58 @@ body[data-theme="dark"] {
 @media (max-width: 768px) {
   .hero-title { font-size: 2.5rem !important; }
 }
+
+/* 🖋️ 아티클 본문 스타일 고도화 */
+.post-content h2 {
+  position: relative;
+  padding-left: 20px;
+  border-left: 4px solid var(--p-accent);
+  background: linear-gradient(90deg, rgba(0, 210, 255, 0.05) 0%, transparent 100%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0 8px 8px 0;
+  margin-top: 60px !important;
+}
+
+.post-content h3 {
+  color: var(--p-text-main);
+  font-weight: 700;
+  margin-top: 40px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-content h3::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--p-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--p-accent-glow);
+}
+
+/* 🖱️ 커스텀 스크롤바 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--p-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+  border: 2px solid var(--p-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--p-accent);
+}
+
+/* 💎 모바일 버튼 액센트 */
+.btn-icon-mobile:active {
+  background: var(--p-accent-glow) !important;
+  transform: scale(0.95);
+}

@@ -54,11 +54,18 @@ CAT_MAP = {
 }
 
 FALLBACK_MAP = {
-    "llm-tech": "ai-tech", "ai-policy": "ai-tech",
-    "ai-agent": "ai-agents", "future-sw": "ai-agents",
-    "semi-hbm": "hardware", "hpc-infra": "hardware", "robotics": "hardware",
-    "monetization": "tech-biz", "startups-vc": "tech-biz", "market-trend": "tech-biz",
-    "game-tech": "gaming", "spatial-tech": "gaming"
+    "llm-tech": "llm-tech",
+    "ai-agent": "ai-agent",
+    "ai-policy": "ai-policy",
+    "future-sw": "future-sw",
+    "semi-hbm": "semi-hbm",
+    "hpc-infra": "hpc-infra",
+    "robotics": "robotics",
+    "monetization": "monetization",
+    "startups-vc": "startups-vc",
+    "market-trend": "market-trend",
+    "game-tech": "game-tech",
+    "spatial-tech": "spatial-tech"
 }
 
 def download_image(url, category_slug, slug):
@@ -105,12 +112,18 @@ def create_hugo_post(article, lang='ko'):
         if not isinstance(summary_list, list): summary_list = [summary_list]
         summary_text = "\n".join([f"- {s}" for s in summary_list])
         desc = summary_list[0] if summary_list else ""
-        content_body = f"## Executive Summary\n{summary_text}\n\n## Strategic Analysis\n{article.get('kor_content')}\n\n## Insights\n{article.get('kor_insight')}"
+        
+        # [V3.2] 동적 부제(Dynamic Subtitles) 반영: SEO 키워드 노출 극대화
+        analysis_title = article.get('kor_analysis_title', '기술 분석 및 상세')
+        insight_title = article.get('kor_insight_title', '시사점 및 전망')
+        content_body = f"## 핵심 요약\n{summary_text}\n\n## {analysis_title}\n{article.get('kor_content')}\n\n## {insight_title}\n{article.get('kor_insight')}"
     else:
         title = article.get('eng_title', 'Untitled')
         desc = article.get('eng_summary', '')
         tags = json.dumps(article.get('eng_keywords', []), ensure_ascii=False)
-        content_body = article.get('eng_content', 'Content not localized yet.')
+        
+        # [V3.2] English Consistency: Use dynamic headers if possible, otherwise fallback
+        content_body = f"## Executive Summary\n{article.get('eng_summary')}\n\n## Strategic Deep-Dive\n{article.get('eng_content', 'Content not localized yet.')}"
 
     post_md = f"""---
 title: "{title}"

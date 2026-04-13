@@ -13,15 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ── 1.1 검색 모달 토글 ──────────────────────
-  const btnSearch      = document.getElementById('btn-search');
-  const btnSearchClose = document.getElementById('btn-search-close');
-  const searchModal    = document.getElementById('search-modal');
+  const btnSearch       = document.getElementById('btn-search');
+  const btnSearchMobile = document.querySelector('.btn-search-mobile');
+  const btnSearchClose  = document.getElementById('btn-search-close');
+  const searchModal     = document.getElementById('search-modal');
 
   const toggleSearch = (state) => {
     if (searchModal) {
       searchModal.classList.toggle('is-open', state);
       searchModal.setAttribute('aria-hidden', String(!state));
       if (state) {
+        // 모바일 메뉴가 열려있다면 닫기
+        if (mobileNav?.classList.contains('is-open')) {
+          btnHamburger?.click();
+        }
         setTimeout(() => {
           searchModal.querySelector('input')?.focus();
         }, 100);
@@ -30,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   if (btnSearch) btnSearch.addEventListener('click', () => toggleSearch(true));
+  if (btnSearchMobile) btnSearchMobile.addEventListener('click', () => toggleSearch(true));
   if (btnSearchClose) btnSearchClose.addEventListener('click', () => toggleSearch(false));
   searchModal?.querySelector('.search-modal-overlay')?.addEventListener('click', () => toggleSearch(false));
 
@@ -66,31 +72,46 @@ document.addEventListener('DOMContentLoaded', () => {
       btnHamburger.classList.toggle('is-open', isOpen);
       btnHamburger.setAttribute('aria-expanded', String(isOpen));
       mobileNav.setAttribute('aria-hidden', String(!isOpen));
+      // 메뉴 열 때 스크롤 방지
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    // 링크 클릭 시 메뉴 닫기
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('is-open');
+        btnHamburger.classList.remove('is-open');
+        document.body.style.overflow = '';
+      });
     });
   }
 
   // ── 3. 다크/라이트 모드 토글 ─────────────────
   const btnTheme  = document.getElementById('btn-theme');
-  const iconMoon  = btnTheme?.querySelector('.icon-moon');
-  const iconSun   = btnTheme?.querySelector('.icon-sun');
+  const btnThemeMobile = document.querySelector('.btn-theme-mobile');
+  const iconMoon  = document.querySelectorAll('.icon-moon');
+  const iconSun   = document.querySelectorAll('.icon-sun');
   const savedTheme = localStorage.getItem('theme') || 'dark';
+  
   document.documentElement.setAttribute('data-theme', savedTheme);
-  if (savedTheme === 'light' && iconMoon && iconSun) {
-    iconMoon.style.display = 'none';
-    iconSun.style.display  = 'block';
-  }
-  if (btnTheme) {
-    btnTheme.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme');
-      const next    = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-      if (iconMoon && iconSun) {
-        iconMoon.style.display = next === 'dark' ? 'block' : 'none';
-        iconSun.style.display  = next === 'light' ? 'block' : 'none';
-      }
-    });
-  }
+  
+  const updateIcons = (theme) => {
+    iconMoon.forEach(icon => icon.style.display = theme === 'dark' ? 'block' : 'none');
+    iconSun.forEach(icon => icon.style.display = theme === 'light' ? 'block' : 'none');
+  };
+
+  updateIcons(savedTheme);
+
+  const toggleTheme = () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next    = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateIcons(next);
+  };
+
+  if (btnTheme) btnTheme.addEventListener('click', toggleTheme);
+  if (btnThemeMobile) btnThemeMobile.addEventListener('click', toggleTheme);
 
   // ── 4. TOC 스크롤 하이라이트 ─────────────────
   const tocLinks = document.querySelectorAll('#toc-nav a');

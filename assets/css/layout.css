@@ -21,7 +21,7 @@
   height: var(--header-height);
   display: flex;
   align-items: center;
-  gap: var(--sp-6);
+  justify-content: space-between; /* 양 끝 정렬로 변경하여 모바일에서도 여백 최적화 */
 }
 
 /* ── 로고 ── */
@@ -131,35 +131,87 @@
   border-radius: 2px;
   transition: transform var(--transition), opacity var(--transition);
 }
-.btn-hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.btn-hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); background: var(--p-accent); }
 .btn-hamburger.is-open span:nth-child(2) { opacity: 0; }
-.btn-hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.btn-hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); background: var(--p-accent); }
 
 /* ── 모바일 드로어 ── */
 .mobile-nav {
   display: none;
-  padding: var(--sp-4) var(--sp-6);
-  border-top: 1px solid var(--border-color);
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: calc(100vh - var(--header-height));
+  padding: var(--sp-6) var(--sp-6) var(--sp-10);
+  background: rgba(7, 9, 13, 0.98); /* 거의 불투명하게 하여 가독성 증대 */
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border-top: 1px solid var(--glass-border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  z-index: 150;
 }
-.mobile-nav.is-open { display: block; }
-.mobile-nav ul { display: flex; flex-direction: column; gap: var(--sp-2); }
+.mobile-nav.is-open { display: block; animation: slideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-nav ul { display: flex; flex-direction: column; gap: 8px; } /* 항목 간의 간격을 넓힘 */
+.mobile-nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--sp-6);
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px solid var(--glass-border);
+}
+.mobile-nav-label {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--p-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.mobile-nav-actions {
+  display: flex;
+  gap: var(--sp-2);
+}
+.mobile-nav-actions .btn-icon {
+  width: 42px;
+  height: 42px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  color: #fff;
+}
 .mobile-nav a {
   display: block;
-  padding: var(--sp-3) var(--sp-4);
-  border-radius: var(--radius-md);
-  color: var(--text-secondary);
-  font-weight: var(--fw-medium);
-  transition: background var(--transition), color var(--transition);
+  padding: 18px 20px; /* 패딩을 더 넓게 */
+  border-radius: 12px;
+  color: #fff; /* 가독성을 위해 순백색에 가깝게 */
+  font-weight: 800; /* 더 굵게 */
+  font-size: 1.15rem;
+  line-height: 1.2; /* 줄간격 조정 */
+  transition: all var(--transition);
+  border: 1px solid transparent;
+  letter-spacing: -0.01em;
 }
 .mobile-nav a:hover,
 .mobile-nav a.is-active {
-  background: rgba(255,255,255,0.06);
-  color: var(--accent-primary);
+  background: linear-gradient(90deg, rgba(0, 210, 255, 0.15) 0%, transparent 100%);
+  color: var(--p-accent);
+  border-left: 4px solid var(--p-accent);
 }
-.mobile-submenu { padding-left: var(--sp-6); margin-bottom: var(--sp-2); }
-.mobile-sublink { font-size: 0.9em; opacity: 0.8; }
+.mobile-submenu { padding-left: 20px; margin-top: 5px; margin-bottom: 15px; }
+.mobile-sublink { 
+  font-size: 1rem !important; 
+  opacity: 0.9 !important; 
+  font-weight: 600 !important; 
+  padding: 12px 20px !important;
+  color: var(--p-text-muted) !important;
+}
 
 /* ── HERO ────────────────────────────────────── */
 .hero {
@@ -595,11 +647,12 @@
   .post-sidebar { display: none; }
 }
 @media (max-width: 768px) {
-  .gnb, .btn-search, .btn-theme { display: none; }
+  .gnb, #btn-search, #btn-theme { display: none; }
   .btn-hamburger { display: flex; }
   .card-grid { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; }
   .hero { padding: var(--sp-12) 0 var(--sp-8); }
+  .mobile-nav { border-top: 1px solid var(--p-border); }
 }
 @media (max-width: 480px) {
   .container { padding-inline: var(--sp-4); }

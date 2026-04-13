@@ -1367,3 +1367,41 @@
 2026-04-12 23:22:33,835 [INFO] Throttling for API integrity (15s wait)...
 2026-04-12 23:22:48,841 [ERROR] CRITICAL: All AI providers exhausted. Triggering Circuit Breaker.
 2026-04-12 23:22:50,744 [INFO] Master execution cycle completed.
+2026-04-13 08:56:10,684 [INFO] Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...
+2026-04-13 08:56:29,519 [INFO] Skipped (Duplicate): Slate Auto: Everything you need to know about the 
+2026-04-13 08:56:29,520 [INFO] Skipped (Duplicate): Walmart-owned Flipkart, Amazon are squeezing India
+2026-04-13 08:56:29,522 [INFO] Skipped (Duplicate): The Hisense UR9 is a great first shot against OLED
+2026-04-13 08:56:29,525 [INFO] Skipped (Duplicate): The AI code wars are heating up
+2026-04-13 08:56:29,525 [INFO] Skipped (Duplicate): Allow me to explain why I love this camera that ca
+2026-04-13 08:56:29,526 [INFO] Skipped (Duplicate): ‘The Audacity’ Is the Broligarchy Takedown You Wer
+2026-04-13 08:56:29,527 [INFO] Skipped (Duplicate): Why Is It So Hard to Fix an Electric Bike? (2026)
+2026-04-13 08:56:29,527 [INFO] Skipped (Duplicate): Best 2-in-1 Laptops (2026): Microsoft, Lenovo, and
+2026-04-13 08:56:29,528 [INFO] Skipped (Duplicate): There’s a Secret Ingredient to Making Luxury Ice a
+2026-04-13 08:56:29,529 [INFO] Skipped (Duplicate): The Screen Time Maximalists Who Spend an Ungodly A
+2026-04-13 08:56:29,529 [INFO] Skipped (Duplicate): Mammotion Spino E1 Review: A Budget Pool Bot That 
+2026-04-13 08:56:29,530 [INFO] Skipped (Duplicate): The 3 Best Mug Warmers of 2026: Better Than the Em
+2026-04-13 08:56:29,531 [INFO] Skipped (Duplicate): ‘Crimson Desert’ Is a Cat Dad Simulator
+2026-04-13 08:56:29,531 [INFO] Skipped (Duplicate): Shock from Iran war has Trump's vision for US ener
+2026-04-13 08:56:29,533 [INFO] Skipped (Duplicate): Rockstar Games has confirmed it was hit by third-p
+2026-04-13 08:56:29,534 [INFO] Skipped (Duplicate): The first European country to get Tesla’s Full Sel
+2026-04-13 08:56:29,535 [INFO] Skipped (Duplicate): IBM settles its DEI lawsuit with the DOJ for $17 m
+2026-04-13 08:56:29,535 [INFO] Skipped (Duplicate): Engadget review recap: ASUS ZenBook A16, AirPods M
+2026-04-13 08:56:29,536 [INFO] Skipped (Duplicate): X's messaging app, XChat, may be available soon
+2026-04-13 08:56:29,537 [INFO] Skipped (Duplicate): This accessory lets you play Switch 2 games on you
+2026-04-13 08:56:29,537 [INFO] Skipped (Duplicate): These are the best new MacBook deals right now: Ap
+2026-04-13 08:56:29,538 [INFO] Skipped (Duplicate): Indie App Spotlight: ‘PackGoat’ intelligently help
+2026-04-13 08:56:29,539 [INFO] Skipped (Duplicate): At least for now, Liquid Glass in Pixelmator Pro r
+2026-04-13 08:56:29,539 [INFO] Skipped (Duplicate): The World Is Basically Begging for Another iPod
+2026-04-13 08:56:29,540 [INFO] Skipped (Duplicate): OpenAI Says Elon Musk Is ‘Injecting Chaos’ with Re
+2026-04-13 08:56:29,543 [INFO] Skipped (Duplicate): SaaS on the Beach returns to Barcelona with a foun
+2026-04-13 08:56:29,543 [INFO] Skipped (Duplicate): UK startup Altilium bags £18.5m to build Britain’s
+2026-04-13 08:56:29,544 [INFO] Skipped (Duplicate): Nvidia N1 Engineering Motherboard Shows ARM CPUs C
+2026-04-13 08:56:29,545 [INFO] Skipped (Duplicate): Intel Nova Lake to Introduce Dual CPU Socket Retai
+2026-04-13 08:56:29,560 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:56:29,869 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:56:39,879 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:56:40,176 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:56:44,384 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:56:44,678 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:56:54,682 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:56:54,984 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"

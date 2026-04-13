@@ -1,0 +1,147 @@
+2026-04-13 07:52:35,855 [INFO] Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...
+2026-04-13 07:52:48,767 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:52:49,123 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:52:59,130 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:52:59,480 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:53:19,491 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:53:19,846 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:53:23,995 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:53:24,298 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:53:34,301 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:53:34,635 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:53:54,008 [INFO] Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...
+2026-04-13 07:54:06,926 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:54:07,251 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:54:17,254 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:54:17,571 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:54:37,584 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:54:37,893 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:54:42,096 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:54:42,390 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:54:52,391 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:54:52,693 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:55:12,230 [INFO] Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...
+2026-04-13 07:55:24,672 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:55:25,020 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:55:35,032 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:55:35,453 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:55:39,545 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:55:39,688 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:55:49,704 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 07:55:50,038 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 07:56:19,630 [INFO] Published: development-and-implications-of-junco-a-local-codi-14c00d (llm-tech) -> /posts/2026/04/development-and-implications-of-junco-a-local-codi-14c00d/
+2026-04-13 07:56:19,631 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 07:56:52,596 [INFO] Published: nvidias-strategic-shift-the-rubin-ultra-architectu-dc6ca1 (hpc-infra) -> /posts/2026/04/nvidias-strategic-shift-the-rubin-ultra-architectu-dc6ca1/
+2026-04-13 07:56:52,596 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:10:07,389 [INFO] Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...
+2026-04-13 08:10:20,537 [WARNING] Process ended: 0 articles skipped as duplicates.
+2026-04-13 08:10:41,897 [INFO] Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...
+2026-04-13 08:10:59,157 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:10:59,488 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:11:09,493 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:11:09,823 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:11:13,994 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:11:14,295 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:11:24,301 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:22:04,874 [INFO] Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...
+2026-04-13 08:22:21,865 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:22:22,217 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:22:32,230 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:22:32,577 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:22:36,732 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:22:37,029 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:22:47,037 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:22:47,385 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:23:02,272 [INFO] Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...
+2026-04-13 08:23:18,307 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:23:18,666 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:23:28,674 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:23:29,016 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:23:33,175 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:23:33,317 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:23:43,328 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:23:43,687 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:24:11,494 [INFO] Published: integration-of-anthropics-ai-assistant-claude-into-261957 (ai-agent) -> /posts/2026/04/integration-of-anthropics-ai-assistant-claude-into-261957/
+2026-04-13 08:24:11,494 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:24:43,578 [WARNING] Cancelled (Review Low Score): the-future-of-home-ice-making-blending-artistry-an-1f0eab
+2026-04-13 08:24:43,579 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:25:04,714 [INFO] Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...
+2026-04-13 08:25:16,729 [INFO] Published: analysis-of-the-mammotion-spino-e1-pool-robot-affo-e318b4 (robotics) -> /posts/2026/04/analysis-of-the-mammotion-spino-e1-pool-robot-affo-e318b4/
+2026-04-13 08:25:16,729 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:25:21,767 [INFO] Skipped (Duplicate): Mammotion Spino E1 Review: A Budget Pool Bot That 
+2026-04-13 08:25:21,779 [INFO] Skipped (Duplicate): Anthropic brings Claude into Microsoft Word, and l
+2026-04-13 08:25:21,796 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:25:22,091 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:25:32,094 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:25:32,350 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:25:36,603 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:25:36,881 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:25:46,890 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:25:47,190 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:25:55,616 [INFO] Published: navigating-the-digital-health-landscape-understand-9d0c3c (ai-policy) -> /posts/2026/04/navigating-the-digital-health-landscape-understand-9d0c3c/
+2026-04-13 08:25:55,616 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:26:26,144 [INFO] Published: the-fusion-of-music-and-technology-in-experimental-c69b96 (future-sw) -> /posts/2026/04/the-fusion-of-music-and-technology-in-experimental-c69b96/
+2026-04-13 08:26:26,144 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:26:29,495 [INFO] Published: the-evolution-of-coffee-mug-warmers-innovations-fo-72fe09 (future-sw) -> /posts/2026/04/the-evolution-of-coffee-mug-warmers-innovations-fo-72fe09/
+2026-04-13 08:26:29,495 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:27:02,352 [INFO] Published: future-proofing-your-gaming-experience-through-pc--659225 (game-tech) -> /posts/2026/04/future-proofing-your-gaming-experience-through-pc--659225/
+2026-04-13 08:27:02,352 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:27:02,473 [INFO] Published: assessing-the-fallout-from-the-rockstar-games-data-18ebcd (ai-policy) -> /posts/2026/04/assessing-the-fallout-from-the-rockstar-games-data-18ebcd/
+2026-04-13 08:27:02,473 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:27:38,146 [INFO] Published: ibms-dei-lawsuit-settlement-implications-for-corpo-aea91a (ai-policy) -> /posts/2026/04/ibms-dei-lawsuit-settlement-implications-for-corpo-aea91a/
+2026-04-13 08:27:38,146 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:27:38,949 [INFO] Published: ai-development-emphasizing-ethics-and-safety-at-th-72ce90 (ai-policy) -> /posts/2026/04/ai-development-emphasizing-ethics-and-safety-at-th-72ce90/
+2026-04-13 08:27:38,950 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:28:14,500 [INFO] Published: navigating-the-self-driving-vehicle-talent-landsca-913bb7 (robotics) -> /posts/2026/04/navigating-the-self-driving-vehicle-talent-landsca-913bb7/
+2026-04-13 08:28:14,501 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:28:24,550 [INFO] Published: the-sunset-of-dragon-age-inquisitions-online-featu-912f5b (game-tech) -> /posts/2026/04/the-sunset-of-dragon-age-inquisitions-online-featu-912f5b/
+2026-04-13 08:28:24,550 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:28:54,964 [INFO] Published: an-in-depth-look-at-xs-strategic-move-with-xchat-a9f124 (ai-agent) -> /posts/2026/04/an-in-depth-look-at-xs-strategic-move-with-xchat-a9f124/
+2026-04-13 08:28:54,964 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:28:59,972 [INFO] Published: rockstar-games-faces-data-breach-an-in-depth-analy-52a343 (game-tech) -> /posts/2026/04/rockstar-games-faces-data-breach-an-in-depth-analy-52a343/
+2026-04-13 08:28:59,972 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:29:30,055 [INFO] Published: analyzing-the-implications-of-apples-pixelmator-pr-b88cce (ai-policy) -> /posts/2026/04/analyzing-the-implications-of-apples-pixelmator-pr-b88cce/
+2026-04-13 08:29:30,055 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:29:48,731 [INFO] Published: 2026-trends-in-2-in-1-laptops-b7cafb (future-sw) -> /posts/2026/04/2026-trends-in-2-in-1-laptops-b7cafb/
+2026-04-13 08:29:48,731 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:30:10,753 [WARNING] Cancelled (Draft Fail): ChatGPT will praise the mood and 'bedroom/DIY text
+2026-04-13 08:30:10,753 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:30:24,147 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:30:24,539 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:30:34,553 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:30:34,880 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:30:46,195 [INFO] Published: unlocking-free-rewards-in-pokmon-champions-100371 (game-tech) -> /posts/2026/04/unlocking-free-rewards-in-pokmon-champions-100371/
+2026-04-13 08:30:46,195 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:31:01,529 [INFO] Published: adguard-family-plan-enhancing-online-experience-th-4fa0d2 (llm-tech) -> /posts/2026/04/adguard-family-plan-enhancing-online-experience-th-4fa0d2/
+2026-04-13 08:31:01,529 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:31:16,536 [ERROR] CRITICAL: Essential AI providers (Gemini, GitHub, Groq) exhausted. Triggering Circuit Breaker.
+2026-04-13 08:31:18,425 [INFO] Master execution cycle completed.
+2026-04-13 08:31:24,941 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:31:25,307 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:31:35,316 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 08:31:35,683 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-13 08:31:59,726 [INFO] Published: unlocking-the-world-of-ai-terminology-a-comprehens-977748 (ai-policy) -> /posts/2026/04/unlocking-the-world-of-ai-terminology-a-comprehens-977748/
+2026-04-13 08:31:59,726 [INFO] Throttling for API integrity (15s wait)...
+2026-04-13 08:32:14,735 [ERROR] CRITICAL: Essential AI providers (Gemini, GitHub, Groq) exhausted. Triggering Circuit Breaker.
+2026-04-13 08:32:16,587 [INFO] Master execution cycle completed.
+2026-04-13 09:30:01,888 [INFO] Executive Intelligence Engine V3.0.30 starting with Shared Throttled Writer...
+2026-04-13 09:30:20,672 [INFO] Skipped (Duplicate): TechCrunch Mobility: Who is poaching all the self-
+2026-04-13 09:30:20,673 [INFO] Skipped (Duplicate): From LLMs to hallucinations, here’s a simple guide
+2026-04-13 09:30:20,675 [INFO] Skipped (Duplicate): At the HumanX conference, everyone was talking abo
+2026-04-13 09:30:20,678 [INFO] Skipped (Duplicate): Room for the Moon is thrillingly weird experimenta
+2026-04-13 09:30:20,679 [INFO] Skipped (Duplicate): Rockstar Games says hack will have ‘no impact’
+2026-04-13 09:30:20,687 [INFO] Skipped (Duplicate): Best 2-in-1 Laptops (2026): Microsoft, Lenovo, and
+2026-04-13 09:30:20,689 [INFO] Skipped (Duplicate): The Screen Time Maximalists Who Spend an Ungodly A
+2026-04-13 09:30:20,690 [INFO] Skipped (Duplicate): Mammotion Spino E1 Review: A Budget Pool Bot That 
+2026-04-13 09:30:20,691 [INFO] Skipped (Duplicate): The 3 Best Mug Warmers of 2026: Better Than the Em
+2026-04-13 09:30:20,695 [INFO] Skipped (Duplicate): Rockstar Games has confirmed it was hit by third-p
+2026-04-13 09:30:20,697 [INFO] Skipped (Duplicate): IBM settles its DEI lawsuit with the DOJ for $17 m
+2026-04-13 09:30:20,698 [INFO] Skipped (Duplicate): X's messaging app, XChat, may be available soon
+2026-04-13 09:30:20,702 [INFO] Skipped (Duplicate): At least for now, Liquid Glass in Pixelmator Pro r
+2026-04-13 09:30:20,707 [INFO] Skipped (Duplicate): Anthropic brings Claude into Microsoft Word, and l
+2026-04-13 09:30:20,720 [INFO] Skipped (Duplicate): Block Ads & Trackers Across 9 Devices for Just $16
+2026-04-13 09:30:20,722 [INFO] Skipped (Duplicate): All Free Mystery Gifts In Pokemon Champions
+2026-04-13 09:30:20,723 [INFO] Skipped (Duplicate): As Gaming Grows More Expensive, Investing In A PC 
+2026-04-13 09:30:20,728 [INFO] Skipped (Duplicate): The Dragon Age: Inquisition Servers Are Finally Go
+2026-04-13 09:30:20,731 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-13 09:30:21,105 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"

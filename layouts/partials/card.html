@@ -1,10 +1,13 @@
 <article class="premium-card">
   <a href="{{ .RelPermalink }}" class="card-link" aria-label="{{ .Title }} {{ if eq .Lang "en" }}Read more{{ else }}읽기{{ end }}">
-    <div class="card-image-wrap" style="position: relative; aspect-ratio: 16/9; overflow: hidden;">
+    <div class="card-image-wrap" style="position: relative; aspect-ratio: 16/9; overflow: hidden; background: #0f172a;">
       {{ if .Params.image }}
       <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
       {{ else }}
-      <div style="width: 100%; height: 100%; background: var(--p-gradient); opacity: 0.2;"></div>
+      <div class="card-placeholder" style="width: 100%; height: 100%; background: linear-gradient(135deg, #1e293b 0%, #07090d 100%); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+        <div style="position: absolute; width: 200%; height: 200%; background-image: radial-gradient(var(--p-accent) 1px, transparent 1px); background-size: 30px 30px; opacity: 0.1; transform: rotate(15deg);"></div>
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--p-accent); opacity: 0.3;"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+      </div>
       {{ end }}
       <div class="card-category" style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.6); backdrop-filter: blur(5px); color: white; padding: 4px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: bold; border: 1px solid rgba(255,255,255,0.1); text-transform: uppercase; display: flex; gap: 6px; align-items: center;">
         {{ with .GetTerms "clusters" }}
