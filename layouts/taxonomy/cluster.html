@@ -23,20 +23,21 @@
         <span class="label">세부 분야:</span>
         <div class="badges">
           {{ if eq $currentCluster "intelligence" }}
-            <a href="/categories/llm-tech" class="badge">LLM & 모델링</a>
-            <a href="/categories/ai-agent" class="badge">자율 에이전트</a>
-            <a href="/categories/ai-policy" class="badge">AI 규제 · 정책</a>
-            <a href="/categories/future-sw" class="badge">미래 SW</a>
+            <a href="/categories/llm-tech" class="badge">LLM & 파운데이션 모델</a>
+            <a href="/categories/future-sw" class="badge">미래 소프트웨어 & 클라우드</a>
+            <a href="/categories/platform-biz" class="badge">빅테크 플랫폼 비즈니스</a>
+            <a href="/categories/security-tech" class="badge">사이버 보안 & 암호학</a>
           {{ else if eq $currentCluster "physical" }}
-            <a href="/categories/semi-hbm" class="badge">차세대 반도체</a>
-            <a href="/categories/hpc-infra" class="badge">고성능 컴퓨팅 (HPC)</a>
-            <a href="/categories/robotics" class="badge">로보틱스</a>
+            <a href="/categories/chip-tech" class="badge">차세대 반도체 (HBM/PIM)</a>
+            <a href="/categories/robot-tech" class="badge">로보틱스 & 자율주행</a>
+            <a href="/categories/space-tech" class="badge">항공우주 & 위성 테크</a>
           {{ else if eq $currentCluster "strategy" }}
-            <a href="/categories/monetization" class="badge">수익화 전략</a>
-            <a href="/categories/startups-vc" class="badge">스타트업 & VC</a>
-            <a href="/categories/market-trend" class="badge">글로벌 트렌드</a>
+            <a href="/categories/bio-tech" class="badge">헬스케어 & 바이오 테크</a>
+            <a href="/categories/energy-tech" class="badge">차세대 에너지 & 배터리</a>
+            <a href="/categories/market-trend" class="badge">글로벌 마켓 트렌드</a>
           {{ else if eq $currentCluster "digital" }}
-            <a href="/categories/game-tech" class="badge">게임 테크</a>
+            <a href="/categories/meta-tech" class="badge">메타버스 & AR/VR</a>
+            <a href="/categories/game-tech" class="badge">게임 테크 & 엔진</a>
             <a href="/categories/spatial-tech" class="badge">공간 컴퓨팅 (Spatial)</a>
           {{ end }}
         </div>

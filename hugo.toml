@@ -15,198 +15,96 @@ hasCJKLanguage = true
     weight = 1
     [languages.ko.menu]
       [[languages.ko.menu.main]]
-        name = "인공지능 (AI)"
+        name = "인텔리전스 (AI/SW)"
         identifier = "intelligence"
         url = "/clusters/intelligence"
         weight = 1
       [[languages.ko.menu.main]]
-        name = "전략 가이드"
-        identifier = "guides"
-        url = "/guides"
-        weight = 5
-      [[languages.ko.menu.main]]
-        name = "기술 비교"
-        identifier = "compare"
-        url = "/compare"
-        weight = 6
-
-      # 하위 카테고리 (생략 가능하지만 메뉴 가독성을 위해 유지)
-      [[languages.ko.menu.main]]
         parent = "intelligence"
-        name = "LLM & 모델링"
+        name = "LLM & 파운데이션 모델"
         url = "/categories/llm-tech"
         weight = 1
       [[languages.ko.menu.main]]
         parent = "intelligence"
-        name = "자율 에이전트"
-        url = "/categories/ai-agent"
+        name = "미래 소프트웨어 & 클라우드"
+        url = "/categories/future-sw"
         weight = 2
       [[languages.ko.menu.main]]
         parent = "intelligence"
-        name = "AI 규제 · 정책"
-        url = "/categories/ai-policy"
+        name = "빅테크 플랫폼 비즈니스"
+        url = "/categories/platform-biz"
         weight = 3
       [[languages.ko.menu.main]]
         parent = "intelligence"
-        name = "미래 소프트웨어"
-        url = "/categories/future-sw"
+        name = "사이버 보안 & 암호학"
+        url = "/categories/security-tech"
         weight = 4
-        
+
       [[languages.ko.menu.main]]
-        name = "하드웨어 & 로봇"
+        name = "피지컬 (반도체/로봇)"
         identifier = "physical"
         url = "/clusters/physical"
         weight = 2
       [[languages.ko.menu.main]]
         parent = "physical"
-        name = "차세대 반도체"
-        url = "/categories/semi-hbm"
+        name = "차세대 반도체 (HBM/PIM)"
+        url = "/categories/chip-tech"
         weight = 1
       [[languages.ko.menu.main]]
         parent = "physical"
-        name = "고성능 컴퓨팅(HPC)"
-        url = "/categories/hpc-infra"
+        name = "로보틱스 & 자율주행"
+        url = "/categories/robot-tech"
         weight = 2
       [[languages.ko.menu.main]]
         parent = "physical"
-        name = "로봇 & 자동화"
-        url = "/categories/robotics"
+        name = "항공우주 & 위성 테크"
+        url = "/categories/space-tech"
         weight = 3
 
       [[languages.ko.menu.main]]
-        name = "비즈니스 전략"
+        name = "라이프 전략 (에너지/바이오)"
         identifier = "strategy"
         url = "/clusters/strategy"
         weight = 3
       [[languages.ko.menu.main]]
         parent = "strategy"
-        name = "수익화 전략"
-        url = "/categories/monetization"
+        name = "헬스케어 & 바이오 테크"
+        url = "/categories/bio-tech"
         weight = 1
       [[languages.ko.menu.main]]
         parent = "strategy"
-        name = "스타트업 & 투자"
-        url = "/categories/startups-vc"
+        name = "차세대 에너지 & 배터리"
+        url = "/categories/energy-tech"
         weight = 2
       [[languages.ko.menu.main]]
         parent = "strategy"
-        name = "글로벌 트렌드"
+        name = "글로벌 마켓 트렌드"
         url = "/categories/market-trend"
         weight = 3
 
       [[languages.ko.menu.main]]
-        name = "게임 & 공간 컴퓨팅"
+        name = "디지털 (게임/가상세계)"
         identifier = "digital"
         url = "/clusters/digital"
         weight = 4
       [[languages.ko.menu.main]]
         parent = "digital"
-        name = "게임 테크"
-        url = "/categories/game-tech"
+        name = "메타버스 & AR/VR"
+        url = "/categories/meta-tech"
         weight = 1
+      [[languages.ko.menu.main]]
+        parent = "digital"
+        name = "게임 테크 & 엔진"
+        url = "/categories/game-tech"
+        weight = 2
       [[languages.ko.menu.main]]
         parent = "digital"
         name = "공간 컴퓨팅 (Spatial)"
         url = "/categories/spatial-tech"
-        weight = 2
-
-  [languages.en]
-    languageName = "English"
-    contentDir = "content/en"
-    weight = 2
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        name = "INTELLIGENCE (AI)"
-        identifier = "intelligence-en"
-        url = "/en/clusters/intelligence"
-        weight = 1
-      [[languages.en.menu.main]]
-        parent = "intelligence-en"
-        name = "LLM & Architecture"
-        url = "/en/categories/llm-tech"
-        weight = 1
-      [[languages.en.menu.main]]
-        parent = "intelligence-en"
-        name = "Autonomous Agents"
-        url = "/en/categories/ai-agent"
-        weight = 2
-      [[languages.en.menu.main]]
-        parent = "intelligence-en"
-        name = "Global AI Policy"
-        url = "/en/categories/ai-policy"
-        weight = 3
-      [[languages.en.menu.main]]
-        parent = "intelligence-en"
-        name = "Future Software"
-        url = "/en/categories/future-sw"
-        weight = 4
-
-      [[languages.en.menu.main]]
-        name = "PHYSICAL (HW/ROBOT)"
-        identifier = "physical-en"
-        url = "/en/clusters/physical"
-        weight = 2
-      [[languages.en.menu.main]]
-        parent = "physical-en"
-        name = "Semiconductors & HBM"
-        url = "/en/categories/semi-hbm"
-        weight = 1
-      [[languages.en.menu.main]]
-        parent = "physical-en"
-        name = "HPC Infrastructure"
-        url = "/en/categories/hpc-infra"
-        weight = 2
-      [[languages.en.menu.main]]
-        parent = "physical-en"
-        name = "Robotics & Automation"
-        url = "/en/categories/robotics"
         weight = 3
 
-      [[languages.en.menu.main]]
-        name = "STRATEGY (BIZ)"
-        identifier = "strategy-en"
-        url = "/en/clusters/strategy"
-        weight = 3
-      [[languages.en.menu.main]]
-        parent = "strategy-en"
-        name = "Monetization Strategy"
-        url = "/en/categories/monetization"
-        weight = 1
-      [[languages.en.menu.main]]
-        parent = "strategy-en"
-        name = "Startups & VC"
-        url = "/en/categories/startups-vc"
-        weight = 2
-      [[languages.en.menu.main]]
-        parent = "strategy-en"
-        name = "Global Market Trends"
-        url = "/en/categories/market-trend"
-        weight = 3
-
-      [[languages.en.menu.main]]
-        name = "DIGITAL (GAME/XR)"
-        identifier = "digital-en"
-        url = "/en/clusters/digital"
-        weight = 4
-      [[languages.en.menu.main]]
-        parent = "digital-en"
-        name = "Game Tech"
-        url = "/en/categories/game-tech"
-        weight = 1
-      [[languages.en.menu.main]]
-        parent = "digital-en"
-        name = "Spatial Computing"
-        url = "/en/categories/spatial-tech"
-        weight = 2
-
-[params]
-  description = 'AI 전략, 수익화, 고성능 하드웨어를 다루는 프리미엄 테크 매거진'
-  author = 'Antigravity Senior Editor'
-  showRSSButton = true
-  latestPostTitle = "최신 인텔리전스"
-  
-  [params.fuji]
-    headerTitle = "LEGO-SIA STRATEGIC"
-    mainSections = ["posts", "guides", "compare"]
-    search = true
-    darkMode = true
+      [[languages.ko.menu.main]]
+        name = "전략 가이드"
+        identifier = "guides"
+        url = "/guides"
+        weight = 5
