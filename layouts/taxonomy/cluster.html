@@ -17,10 +17,11 @@
       </div>
 
       <!-- 하위 카테고리 바로가기 배지 -->
+      {{ $currentCluster := .Data.Term | urlize }}
+      {{ if or (eq $currentCluster "intelligence") (eq $currentCluster "physical") (eq $currentCluster "strategy") (eq $currentCluster "digital") }}
       <div class="cluster-subtypes">
-        <span class="label">Categories:</span>
+        <span class="label">세부 분야:</span>
         <div class="badges">
-          {{ $currentCluster := .Data.Term }}
           {{ if eq $currentCluster "intelligence" }}
             <a href="/categories/llm-tech" class="badge">LLM & 모델링</a>
             <a href="/categories/ai-agent" class="badge">자율 에이전트</a>
@@ -40,6 +41,7 @@
           {{ end }}
         </div>
       </div>
+      {{ end }}
     </header>
 
     <div class="card-grid">

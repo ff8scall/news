@@ -20,12 +20,12 @@ hasCJKLanguage = true
         url = "/clusters/intelligence"
         weight = 1
       [[languages.ko.menu.main]]
-        name = "STRATEGIC GUIDES"
+        name = "전략 가이드"
         identifier = "guides"
         url = "/guides"
         weight = 5
       [[languages.ko.menu.main]]
-        name = "TECH COMPARE"
+        name = "기술 비교"
         identifier = "compare"
         url = "/compare"
         weight = 6

@@ -41,12 +41,15 @@
   gap: var(--sp-1);
 }
 .gnb-link {
+  display: inline-flex;
+  align-items: center;
   padding: var(--sp-2) var(--sp-3);
   border-radius: var(--radius-md);
   font-size: var(--text-sm);
   font-weight: var(--fw-medium);
   color: var(--text-secondary);
   transition: color var(--transition), background var(--transition);
+  min-height: 40px; /* 모든 메뉴의 높이를 고정하여 정렬 일치 */
 }
 .gnb-link:hover,
 .gnb-link.is-active {
