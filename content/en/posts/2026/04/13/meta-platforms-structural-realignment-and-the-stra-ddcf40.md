@@ -3,7 +3,7 @@ title: "Meta Platforms: Structural Realignment and the Strategic Pivot from Meta
 date: "2026-04-13T23:06:59+09:00"
 description: ""
 image: "/images/posts/2026/04/13/meta-platforms-structural-realignment-and-the-stra-ddcf40.jpg"
-clusters: ["Intelligence"]
+clusters: ["ai-models-tools"]
 categories: ["ai"]
 tags: ["Meta Platforms", "Generative AI", "Metaverse", "Corporate Restructuring", "AI Infrastructure"]
 featured: false

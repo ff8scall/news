@@ -1,0 +1,26 @@
+{
+  "hardware": [
+    "HBM4 Breakthrough: 12+ Tbps Interconnect Redefines AI Compute Density for Next-Gen Accelerators",
+    "Beyond Silicon: Chiplet Architecture Dominates Next-Gen GPU Design, Boosting Yield and Scalability",
+    "UE5.5 Unveiled: Real-Time Neural Radiance Fields (NeRFs) Set New Benchmark for Photorealistic Virtual Worlds",
+    "The 2nm Race: Semiconductor Giants Target Breakthrough Process Nodes to Power Exascale AI Models",
+    "AI-Driven Gaming Tech: Procedural Content Generation (PCG) Engines Achieve Cinematic Fidelity with Generative AI",
+    "Sustained Teraflops: New GPU Architectures Optimize for Low-Power, High-Efficiency Edge AI Deployment",
+    "Memory Bottleneck Solved? Advanced Interposer Packaging Drives Co-Design of Compute and HBM Stacks",
+    "Path Tracing Revolution: Hardware Acceleration Breakthrough Promises Photorealism Without Performance Penalty",
+    "Heterogeneous Compute: How Specialized Tensor Cores Are Shifting the Paradigm of AI Workloads",
+    "Quantum-Inspired Computing: Early Hardware Prototypes Show Promise for Solving NP-Hard Optimization Problems"
+  ],
+  "gaming": [
+    "HBM4 Bandwidth Breakthrough: How Next-Gen Memory Architecture Redefines GPU Throughput in AAA Gaming",
+    "Generative AI in Real-Time Rendering: New Pipelines Achieving Photorealism from Procedural Assets",
+    "Beyond DLSS: Deep Learning Super-Resolution Techniques Slash Latency in Next-Gen Console Titles",
+    "UE 5.5 Deep Dive: Optimizing Lumen and Nanite for Sub-Millisecond Global Illumination Fidelity",
+    "The Compute Shift: Analyzing Specialized Tensor Cores for AI-Driven Physics and NPC Behavior",
+    "Power Efficiency Paradox: How Next-Gen GPU Architectures Balance Teraflops with Thermal Limits",
+    "From Code to Canvas: Streamlining the Game Engine Pipeline with Automated AI Asset Generation",
+    "Ray Tracing 2.0: Achieving Perfect Material Fidelity and Dynamic Reflections in High-Fidelity Environments",
+    "The Simulation Ceiling: Implementing Massive Scale Fluid and Particle Dynamics Using GPU Compute Shaders",
+    "Multi-Modal Gaming Tech: Integrating Neuroscience Data for Hyper-Realistic Player Interaction and Adaptation"
+  ]
+}

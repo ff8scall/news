@@ -3,7 +3,7 @@ title: "Hyper Photonix 1.6T Silicon Photonics Transceiver: Solving the Bandwidth
 date: "2026-04-13T23:14:00+09:00"
 description: ""
 image: "/images/posts/2026/04/13/hyper-photonix-16t-silicon-photonics-transceiver-s-812f43.jpg"
-clusters: ["Intelligence"]
+clusters: ["ai-models-tools"]
 categories: ["data-center-networking"]
 tags: ["Silicon Photonics (SiPh)", "Data Center Interconnect", "1.6 Tbps", "Multicore Fiber", "Exascale AI"]
 featured: false

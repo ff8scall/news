@@ -3,7 +3,7 @@ title: "BYD 덴자 Z9 GT: 충전 기술의 혁신과 시장 가치 제안의 전
 date: "2026-04-14T00:50:47+09:00"
 description: "9분 충전의 초고속 성능은 EV 사용 경험의 패러다임을 바꿀 혁신적인 기술적 성과입니다."
 image: "/images/posts/2026/04/13/analysis-of-byd-denza-z9-gt-balancing-revolutionar-104eaa.jpg"
-clusters: ["ai-models-tools"]
+clusters: ["guides"]
 categories: ["compare"]
 tags: ["BYD", "덴자 Z9 GT", "초고속 충전 기술", "배터리 관리 시스템(BMS)", "가치 제안(Value Proposition)"]
 featured: false

@@ -3,7 +3,7 @@ title: "India's AI Growth Trajectory: Shifting Focus from Models to Utility"
 date: "2026-04-13T23:10:12+09:00"
 description: ""
 image: "/images/posts/2026/04/13/indias-ai-growth-trajectory-shifting-focus-from-mo-e6af3c.jpg"
-clusters: ["Intelligence"]
+clusters: ["ai-models-tools"]
 categories: ["ai"]
 tags: ["AI Utility", "Application Layer", "Vernacular AI", "Global Capability Centres (GCCs)", "Enterprise SaaS"]
 featured: false
