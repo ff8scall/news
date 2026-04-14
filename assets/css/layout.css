@@ -436,8 +436,14 @@
 .post-layout {
   display: grid;
   grid-template-columns: 1fr var(--sidebar-width);
-  gap: var(--sp-10);
+  gap: var(--sp-12);
   align-items: start;
+  max-width: 100%;
+}
+.post-article {
+  max-width: 900px; /* 본문 가독성을 위해 최대폭 제한 */
+  width: 100%;
+  justify-self: start; /* 왼쪽 정렬 느낌을 위해 시작점 고정 */
 }
 .post-header { margin-bottom: var(--sp-8); }
 .post-category {
@@ -473,8 +479,15 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   margin-bottom: var(--sp-8);
+  border: 1px solid var(--border-color);
 }
-.post-thumbnail img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+.post-thumbnail img { 
+  width: 100%; 
+  height: auto; 
+  max-height: 600px;
+  object-fit: contain; /* 잘림 방지 */
+  background: #000; /* 이미지 비율 다를 시 배경 채움 */
+}
 
 /* ── 본문 컨텐츠 ── */
 .post-content {

@@ -88,9 +88,9 @@
   --transition: var(--duration-normal) var(--ease-default);
 
   /* 레이아웃 */
-  --container-max:  1200px;
-  --container-wide: 1400px;
-  --sidebar-width:  280px;
+  --container-max:  1400px;
+  --container-wide: 1600px;
+  --sidebar-width:  300px;
   --header-height:  64px;
 }
 

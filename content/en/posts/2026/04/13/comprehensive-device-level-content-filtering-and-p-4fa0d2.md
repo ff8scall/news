@@ -8,8 +8,6 @@ categories: ["ai-tools"]
 tags: ["AdGuard", "네트워크 레벨 필터링", "디지털 프라이버시", "추적 스크립트", "가정용 보안 솔루션"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Report: AdGuard Family Plan Analysis

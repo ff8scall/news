@@ -8,8 +8,6 @@ categories: ["gpu-chips"]
 tags: ["AMD", "Samsung", "HBM4", "MI455X", "AI Accelerator", "Data Center"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: Semiconductor & AI Hardware

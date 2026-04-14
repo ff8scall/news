@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["AI 에이전트", "행동 프로파일링", "적합성 점수(CSM)", "관계 예측", "생성형 AI"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: AI-DRIVEN SOCIAL OPTIMIZATION AND THE EVOLUTION OF HUMAN INTERACTION

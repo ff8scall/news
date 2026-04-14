@@ -1,44 +1,10 @@
 {{ define "main" }}
 <div class="home-page">
 
-  {{/* ── [V2.0 추가] 실시간 핫토픽 티커 ── */}}
-  {{ partial "hot-topic.html" . }}
-
-  {{/* ── 히어로 섹션 (미니멀리즘 개편) ── */}}
-  <section class="hero-minimal" style="padding: 40px 0 20px; text-align: center;">
-    <div class="container">
-      <div class="intelligence-status" style="display: inline-flex; align-items: center; background: rgba(0,198,255,0.05); border: 1px solid rgba(0,198,255,0.1); padding: 5px 15px; border-radius: 4px; gap: 10px;">
-        <span class="status-dot" style="width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88; animation: pulse 2s infinite;"></span>
-        <h1 style="color: var(--p-text-muted); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin: 0;">
-          {{ if eq .Site.Language.Lang "ko" }}레고-시아 전략 지능: 글로벌 테크 매거진{{ else }}Lego-Sia: Global Strategic Intelligence{{ end }}
-        </h1>
-      </div>
-    </div>
-  </section>
-
-  {{/* ── 트렌딩 핫토픽 그리드 (V2.1 추가) ── */}}
-  <section class="trending-section" style="padding: 0 0 60px;">
-    <div class="container">
-      <div class="trending-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-        {{/* featured가 true인 글을 우선적으로 가져오고, 부족하면 최신글로 채움 */}}
-        {{ $featured := where (where .Site.RegularPages "Section" "posts") "Params.featured" true }}
-        {{ $latest := where .Site.RegularPages "Section" "posts" }}
-        {{ $trending := (union $featured $latest) | first 3 }}
-        {{ range $trending }}
-        <div class="trending-card-wrapper" style="position: relative;">
-          <div style="position: absolute; top: 15px; right: 15px; background: #FF3B30; color: white; padding: 4px 10px; font-size: 0.7rem; font-weight: bold; border-radius: 4px; z-index: 50; box-shadow: 0 4px 10px rgba(255, 59, 48, 0.4);">HOT</div>
-          {{ partial "card.html" . }}
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-
   {{/* ── 최신 글 카드 그리드 ── */}}
-  <section class="posts-section" style="padding-bottom: 100px;">
+  <section class="posts-section" style="padding-top: 40px; padding-bottom: 100px;">
     <div class="container">
-      <h2 class="section-title" style="margin-bottom: 40px; display: flex; align-items: center;">
-        <span style="width: 4px; height: 24px; background: var(--p-gradient); display: inline-block; margin-right: 12px; border-radius: 2px;"></span>
+      <h2 class="section-title" style="margin-bottom: 40px; font-size: 1.5rem; font-weight: 700; color: var(--text-primary);">
         {{ .Site.Params.latestPostTitle }}
       </h2>
 
@@ -56,11 +22,4 @@
   </section>
 
 </div>
-<style>
-  @keyframes pulse {
-    0% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.4); opacity: 0.4; }
-    100% { transform: scale(1); opacity: 0.8; }
-  }
-</style>
 {{ end }}

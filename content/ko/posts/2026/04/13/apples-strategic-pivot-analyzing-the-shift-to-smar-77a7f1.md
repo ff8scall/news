@@ -2,7 +2,6 @@
 title: "애플의 AR/MR 전략 재조명: 스마트 글래스를 통한 공간 컴퓨팅의 진화"
 date: "2026-04-14T01:23:39+09:00"
 description: "애플이 복잡한 다중 장치 생태계 대신 스마트 글래스에 집중하며 시장 진입 전략을 '프래그머티즘(실용주의)'으로 전환하고 있음."
-image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
 categories: ["ai-tools"]
 tags: ["애플", "스마트 글래스", "공간 컴퓨팅", "폼 팩터", "사용자 경험(UX)"]

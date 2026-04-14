@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["나냐 테크놀로지 (NTC)", "메모리 반도체", "평균 판매 가격 (ASP)", "가격 결정력", "반도체 사이클", "수요 회복"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Industry Financial Analysis Report

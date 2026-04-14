@@ -8,8 +8,6 @@ categories: ["compare"]
 tags: ["eGPU", "CopprLink", "RTX 5090", "PCIe Bandwidth", "External GPU"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Technical Performance Assessment Report: CopprLink eGPU Standard

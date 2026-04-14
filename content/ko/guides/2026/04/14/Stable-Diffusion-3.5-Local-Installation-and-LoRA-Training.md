@@ -1,15 +1,14 @@
 ﻿---
 title: "실용 가이드: Stable Diffusion 3.5 로컬 설치 및 LoRA 학습 구현"
 date: "2026-04-14T09:28:20+09:00"
-image: "/images/posts/2026/04/14/guide-Stable-Diffusion-3.5-Local-Installation-and-LoRA-Training.jpg"
 description: "ComfyUI/Forge를 사용하여 SD 3.5를 위한 견고한 로컬 환경을 구축하고 LoRA를 이용해 모델을 미세 조정합니다."
+image: "/images/posts/2026/04/14/guide-Stable-Diffusion-3.5-Local-Installation-and-LoRA-Training.jpg"
 type: "posts"
 clusters: ["guides"]
 categories: ["tutorials"]
 tags: ["guide", "tutorial"]
 difficulty: "Advanced"
 time_to_complete: "45 minutes"
-image: "Interconnected geometric tensors flowing through a dark void, representing complex data transformations."
 ---
 
 ## 🎯 개요 (Overview)

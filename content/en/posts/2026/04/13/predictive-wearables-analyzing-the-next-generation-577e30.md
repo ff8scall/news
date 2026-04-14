@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["웨어러블 기술", "생체 지표", "AI 알고리즘", "예측 분석", "건강 관리", "HRV"]
 featured: true
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 ***Note: This report synthesizes the stated scope and expertise of the source material, structuring it into a formal, analytical tech report format.***

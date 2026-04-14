@@ -2,7 +2,6 @@
 title: "AI 모델의 책임론 심화: 생성형 AI 남용에 대한 법적 공백 분석"
 date: "2026-04-14T02:09:46+09:00"
 description: "단순한 콘텐츠 필터링을 넘어선 '개발자 책임론'이 핵심 쟁점입니다. LLM이 악용되어 심리적/범죄적 피해를 줄 경우, 플랫폼의 방어권(면책 조항)에 대한 근본적인 의문이 제기되고 있습니다."
-image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
 categories: ["ai-models"]
 tags: ["생성형 AI", "LLM 책임 소재", "개발자 책임론", "플랫폼 안전장치", "윤리적 AI 거버넌스"]

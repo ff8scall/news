@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["AI Simulation", "In-Situ Resource Utilization (ISRU)", "Deep Space Network", "Lunar Colony", "System Interoperability"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: POST-ARTEMIS II ARCHITECTURE AND THE SUSTAINMENT OF LUNAR EXPLORATION

@@ -8,8 +8,6 @@ categories: ["game-optimization"]
 tags: ["게임 디자인", "사용자 경험(UX)", "엔드게임 콘텐츠", "점진적 난이도 스케일링", "플레이어 리텐션", "인지 부하"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: Player-Driven Design Optimization for High-Complexity Endgame Content

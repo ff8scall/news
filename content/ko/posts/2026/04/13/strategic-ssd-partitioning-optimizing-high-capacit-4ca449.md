@@ -2,7 +2,6 @@
 title: "고용량 SSD 최적화를 위한 전략적 디스크 파티션 설계 방안"
 date: "2026-04-14T01:48:53+09:00"
 description: "대용량 SSD(4TB 이상) 환경에서 단일 파티션 방식은 데이터 무결성 및 성능 관점에서 한계를 노출합니다."
-image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
 categories: ["ai-models"]
 tags: ["SSD", "디스크 파티션", "워크로드 격리", "데이터 무결성", "ZFS"]

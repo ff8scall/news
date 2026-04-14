@@ -2,14 +2,11 @@
 title: "Strategic SSD Partitioning: Optimizing High-Capacity Volumes for Modern Workloads"
 date: "2026-04-14T01:48:53Z"
 description: "Strategic SSD Partitioning: Optimizing High-Capacity Volumes for Modern Workloads"
-image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
 categories: ["ai-models"]
 tags: ["SSD", "Disk Partitioning", "High-Capacity Storage", "Workload Isolation", "ZFS"]
 featured: true
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Report: Optimizing High-Capacity Solid State Drives (SSDs)

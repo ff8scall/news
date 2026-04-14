@@ -8,8 +8,6 @@ categories: ["game-optimization"]
 tags: ["엔비디아", "생성형 AI", "게임 최적화", "그래픽 파이프라인", "창의적 무결성"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH INDUSTRY ANALYSIS REPORT: AI GENERATIVE GRAPHICS AND THE GAMING PARADIGM SHIFT

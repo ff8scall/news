@@ -8,8 +8,6 @@ categories: ["compare"]
 tags: []
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 ***(Note: This report synthesizes the provided minimal source material into a comprehensive, highly technical format suitable for a scientific journal or internal research briefing, maintaining the academic tone expected from an Ars Technica-style analysis.)***

@@ -8,8 +8,6 @@ categories: ["game-optimization"]
 tags: ["리눅스 커널", "VRAM 관리", "GPU 최적화", "자원 우선순위", "게임 성능 안정성"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Technical Report: Optimization of VRAM Resource Allocation in Linux Environments for Low-Memory GPUs

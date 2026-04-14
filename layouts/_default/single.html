@@ -15,15 +15,15 @@
           <h1 class="post-title">{{ .Title }}</h1>
           <p class="post-description">{{ .Description }}</p>
           <div class="post-meta">
-            <time datetime="{{ .Date.Format "2006-01-02" }}">
-              {{ if eq .Lang "en" }}{{ .Date.Format "Jan 02, 2006" }}{{ else }}{{ .Date.Format "2006년 01월 02일" }}{{ end }}
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
+              {{ if eq .Lang "en" }}{{ .Date.Format "Jan 02, 2006 15:04:05" }}{{ else }}{{ .Date.Format "2006년 01월 02일 15시 04분 05초" }}{{ end }}
             </time>
             <span class="read-time">· {{ if eq .Lang "en" }}{{ div (len .RawContent) 500 }} min read{{ else }}약 {{ div (len .RawContent) 500 }}분 읽기{{ end }}</span>
           </div>
         </header>
 
         {{/* ── 대표 이미지 ── */}}
-        {{ with .Params.thumbnail }}
+        {{ with .Params.image }}
         <div class="post-thumbnail">
           <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" width="1200" height="630">
         </div>

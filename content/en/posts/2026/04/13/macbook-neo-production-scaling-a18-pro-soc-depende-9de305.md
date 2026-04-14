@@ -8,8 +8,6 @@ categories: ["gpu-chips"]
 tags: ["MacBook Neo", "A18 Pro SoC", "A19 Pro", "TSMC", "Laptop Architecture"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Industry Market Analysis Report

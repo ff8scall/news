@@ -8,8 +8,6 @@ categories: ["compare"]
 tags: ["BYD", "덴자 Z9 GT", "초고속 충전 기술", "배터리 관리 시스템(BMS)", "가치 제안(Value Proposition)"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: Analysis of BYD Denza Z9 GT Performance and Market Viability

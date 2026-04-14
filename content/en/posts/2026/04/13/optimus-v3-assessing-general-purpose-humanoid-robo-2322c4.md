@@ -8,8 +8,6 @@ categories: ["pc-robotics"]
 tags: ["휴머노이드 로봇", "옵티머스 V3", "구동기 시스템", "범용 AI", "산업 자동화", "로보틱스"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 ***[Disclaimer: This report is a synthesis based on the provided source metadata and utilizes professional technical language to structure the findings. The detailed technical specifications are extrapolated to create a comprehensive, actionable report.]***

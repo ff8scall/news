@@ -2,7 +2,6 @@
 title: "파워포인트의 진화: 생산성 도구를 넘어선 AI 기반 전문 디자인 자산 제작 플랫폼으로"
 date: "2026-04-14T03:05:53+09:00"
 description: "마이크로소프트 파워포인트에 내재화된 고급 이미지 처리 기능은 단순한 발표 자료 제작 도구의 경계를 넘어섰으며, 전문적인 디지털 자산 제작 환경을 구축하고 있다."
-image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
 categories: ["ai-tools"]
 tags: ["파워포인트", "AI 기반 편집", "슈퍼 레졸루션", "OCR", "콘텐츠 인식 채우기"]

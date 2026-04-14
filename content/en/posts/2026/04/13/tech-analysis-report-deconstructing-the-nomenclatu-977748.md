@@ -2,14 +2,11 @@
 title: "Tech Analysis Report: Deconstructing the Nomenclature of Generative AI"
 date: "2026-04-14T01:29:14+09:00"
 description: "AI 기술의 폭발적 성장에 따라 LLM, 생성형 AI 등의 전문 용어 사용이 증가하고 있으나, 이 기술의 본질적인 작동 원리와 한계점을 구조적으로 이해하는 것이 중요합니다."
-image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
 categories: ["ai-models"]
 tags: ["거대 언어 모델 (LLMs)", "생성형 AI (Generative AI)", "환각 현상 (Hallucination)", "편향성 (Bias)", "트랜스포머 아키텍처 (Transformer Architecture)"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Analysis Report: Deconstructing the Nomenclature of Generative AI

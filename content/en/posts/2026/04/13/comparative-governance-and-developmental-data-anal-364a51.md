@@ -8,8 +8,6 @@ categories: ["compare"]
 tags: ["Governance", "Data Integrity", "AI/LLMs", "Comparative Analysis", "Public Policy"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: Comparative Governance and Development Analysis

@@ -2,14 +2,11 @@
 title: "Anthropic's Claude Dominance: The Shift from Raw Power to Enterprise Safety in LLMs"
 date: "2026-04-14T03:00:39+09:00"
 description: "LLM 시장의 핵심 트렌드가 단순한 모델 규모(Scale)에서 안전성(Safety)과 신뢰성(Reliability)으로 근본적으로 전환되고 있음."
-image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
 categories: ["ai-models"]
 tags: ["앤트로픽", "클로드", "생성형 AI", "헌법적 AI", "엔터프라이즈 LLM"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 ***Note: Given the extreme brevity of the source material, this report synthesizes the available facts into a professional, detailed format, inferring industry context and significance to create a comprehensive "Tech Report" structure.***

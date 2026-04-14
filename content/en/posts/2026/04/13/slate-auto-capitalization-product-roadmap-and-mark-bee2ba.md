@@ -8,8 +8,6 @@ categories: ["pc-robotics"]
 tags: ["Slate Auto", "Electric Utility Vehicle (EV)", "Market Disruption", "Low-Cost Mobility", "Capital Expenditure (CapEx)"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: Slate Auto Investment and Market Viability Assessment

@@ -2,7 +2,6 @@
 title: "앤트로픽 클로드(Claude)의 부상: LLM(대규모 언어 모델) 시장의 '안전성' 중심 전략 변화 분석"
 date: "2026-04-14T03:00:39+09:00"
 description: "LLM 시장의 핵심 트렌드가 단순한 모델 규모(Scale)에서 안전성(Safety)과 신뢰성(Reliability)으로 근본적으로 전환되고 있음."
-image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
 categories: ["ai-models"]
 tags: ["앤트로픽", "클로드", "생성형 AI", "헌법적 AI", "엔터프라이즈 LLM"]

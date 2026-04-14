@@ -2,7 +2,6 @@
 title: "궤도 컴퓨팅 인프라 혁신: 우주 기반 지리공간 데이터 처리의 새로운 장"
 date: "2026-04-14T01:36:00+09:00"
 description: "Kepler Communications가 궤도상에 대규모 GPU 클러스터를 상용화하며 지리공간 데이터 처리의 패러다임을 근본적으로 변화시켰습니다."
-image: "/images/fallback/gpu-hardware.png"
 clusters: ["gpu-hardware"]
 categories: ["gpu-chips"]
 tags: ["Kepler Communications", "GPU", "지리공간 컴퓨팅", "엣지 컴퓨팅", "저지연성", "우주 인프라"]

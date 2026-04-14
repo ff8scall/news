@@ -14,7 +14,7 @@
 <meta property="og:url"         content="{{ .Permalink }}">
 <meta property="og:title"       content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.siteDescription }}{{ end }}">
-<meta property="og:image"       content="{{ with .Params.thumbnail }}{{ . | absURL }}{{ else }}{{ .Site.Params.ogImage | absURL }}{{ end }}">
+<meta property="og:image"       content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ .Site.Params.ogImage | absURL }}{{ end }}">
 <meta property="og:site_name"   content="{{ .Site.Params.siteName }}">
 <meta property="og:locale"      content="{{ if eq .Lang "en" }}en_US{{ else }}ko_KR{{ end }}">
 {{ if .IsPage }}
@@ -29,7 +29,7 @@
 <meta name="twitter:card"        content="summary_large_image">
 <meta name="twitter:title"       content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.siteDescription }}{{ end }}">
-<meta name="twitter:image"       content="{{ with .Params.thumbnail }}{{ . | absURL }}{{ else }}{{ .Site.Params.ogImage | absURL }}{{ end }}">
+<meta name="twitter:image"       content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ .Site.Params.ogImage | absURL }}{{ end }}">
 {{ with .Site.Params.twitterHandle }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
 
 {{/* ── JSON-LD 구조화 데이터 ── */}}
@@ -52,7 +52,7 @@
     }
   },
   "url": {{ .Permalink | jsonify }},
-  "image": {{ with .Params.thumbnail }}{{ . | absURL | jsonify }}{{ else }}{{ .Site.Params.ogImage | absURL | jsonify }}{{ end }},
+  "image": {{ with .Params.image }}{{ . | absURL | jsonify }}{{ else }}{{ .Site.Params.ogImage | absURL | jsonify }}{{ end }},
   "keywords": {{ .Params.tags | jsonify }},
   "articleSection": {{ with .Params.categories }}{{ index . 0 | jsonify }}{{ else }}"Tech"{{ end }},
   "mainEntityOfPage": { "@type": "WebPage", "@id": {{ .Permalink | jsonify }} }

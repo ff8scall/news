@@ -8,8 +8,6 @@ categories: ["ai"]
 tags: ["AI Utility", "Application Layer", "Vernacular AI", "Global Capability Centres (GCCs)", "Enterprise SaaS"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Report: The Application Layer Advantage

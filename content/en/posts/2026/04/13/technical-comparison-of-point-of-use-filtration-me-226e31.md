@@ -8,8 +8,6 @@ categories: ["compare"]
 tags: ["PFAS", "이온 교환 수지", "미세플라스틱", "생활용수", "필터링 기술"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Report: Analysis of Point-of-Use Filtration Systems for Advanced Contaminant Mitigation

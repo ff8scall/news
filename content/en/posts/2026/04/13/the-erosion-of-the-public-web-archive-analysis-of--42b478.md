@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["디지털 보존", "정보 무결성", "웹 크롤링", "데이터 게이트키핑", "AI 학습 데이터"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: Digital Preservation & Information Integrity

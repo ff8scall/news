@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["궤도 역학 모델", "생명 유지 시스템(ECLSS)", "예측 유지보수(Predictive Maintenance)", "심우주 AI", "아르테미스 프로그램"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: LUNAR ORBITAL COMPLETION AND HUMAN CAPITAL ASSESSMENT

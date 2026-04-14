@@ -8,8 +8,6 @@ categories: ["ai-tools"]
 tags: ["PHI (보호 건강 정보)", "HIPAA", "AI 녹취 도구", "데이터 유출", "엣지 컴퓨팅"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: AI-MEDIATED HEALTHCARE DATA PRIVACY

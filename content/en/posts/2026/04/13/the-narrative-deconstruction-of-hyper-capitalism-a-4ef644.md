@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["AI 거버넌스", "하이퍼-자본주의", "블랙박스 모델", "시스템적 위험", "윤리적 AI"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH ANALYTICS REPORT: Cultural Critique & Socio-Economic Media Forecasting

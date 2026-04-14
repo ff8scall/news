@@ -2,7 +2,6 @@
 title: "가격 구조 조정을 통한 통제권 강화: LLM(대규모 언어 모델) 제공사의 거버넌스 전략 분석"
 date: "2026-04-14T03:01:10+09:00"
 description: "LLM 제공사(Anthropic)가 핵심 모델(Claude)의 가격 정책 변경을 이유로 제3자 개발자(OpenClaw)의 접근 권한을 일시적으로 제한하는 사례가 발생했습니다."
-image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
 categories: ["ai-models"]
 tags: ["앤트로픽", "클로드", "LLM 거버넌스", "API 가격 정책", "개발자 종속성"]

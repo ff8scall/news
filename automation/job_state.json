@@ -7,6 +7,9 @@
         "Stable-Diffusion-3.5-Local-Installation-and-LoRA-Training": [
             "en",
             "ko"
+        ],
+        "Claude-3-API-Integration-with-Local-RAG-Systems": [
+            "en"
         ]
     },
     "news": {}

@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["테슬라", "TSLA", "FSD", "옵티머스", "AI 인프라", "기업가치", "자율주행", "로보틱스"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 ***Disclaimer: This report is a synthesis of provided source material and is intended for informational purposes only. It does not constitute financial advice, and readers should conduct their own due diligence before making investment decisions.***

@@ -8,8 +8,6 @@ categories: ["gpu-chips"]
 tags: ["Export Control", "AI Accelerators", "BIS", "Nvidia", "Geopolitics"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Policy and Market Analysis Report

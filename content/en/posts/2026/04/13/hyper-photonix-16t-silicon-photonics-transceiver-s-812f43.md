@@ -8,8 +8,6 @@ categories: ["data-center-networking"]
 tags: ["Silicon Photonics (SiPh)", "Data Center Interconnect", "1.6 Tbps", "Multicore Fiber", "Exascale AI"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 ***

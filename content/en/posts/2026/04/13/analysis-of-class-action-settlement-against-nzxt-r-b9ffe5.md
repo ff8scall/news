@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["HaaS (Hardware-as-a-Service)", "소비자 권리", "반경쟁적 관행", "법적 선례", "총소유비용(TCO)"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH INDUSTRY ANALYSIS REPORT: MARKET FAIRNESS AND CONSUMER PROTECTION

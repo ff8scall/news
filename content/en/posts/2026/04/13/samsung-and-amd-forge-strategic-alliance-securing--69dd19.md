@@ -8,8 +8,6 @@ categories: ["gpu-chips"]
 tags: ["High-Bandwidth Memory (HBM4)", "AMD Instinct MI455X", "EPYC Processors", "HPC", "AI Acceleration"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Report: Strategic Alliance for High-Performance Computing (HPC) and AI Acceleration

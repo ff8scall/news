@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["대규모 언어 모델 (LLM)", "예측 모델링", "인과적 추론", "비선형 역학", "확률적 변수"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Report: Limitations of Large Language Models in Complex Predictive Modeling – The Case of Soccer Analysis

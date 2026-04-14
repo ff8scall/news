@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["거대언어모델(LLM)", "교육학적 위기", "평가 시스템", "비판적 사고", "프롬프트 엔지니어링"]
 featured: true
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # Tech Report: The Pedagogical Disruption of Generative AI in Higher Education

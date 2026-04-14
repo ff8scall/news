@@ -8,8 +8,6 @@ categories: ["compare"]
 tags: ["PSU", "SFX 폼팩터", "전력 밀도", "효율성(80 PLUS)", "시스템 통합"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 # TECH REPORT: POWER DELIVERY ANALYSIS

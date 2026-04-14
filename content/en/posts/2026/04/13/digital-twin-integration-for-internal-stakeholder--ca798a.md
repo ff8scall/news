@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["메타 플랫폼", "LLM", "디지털 트윈", "권위형 AI", "기업 교육/커뮤니케이션"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 ***Disclaimer: This report is a synthesis and extrapolation of the provided source material, adopting the formal structure and technical language appropriate for a corporate technology analysis.***

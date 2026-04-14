@@ -8,8 +8,6 @@ categories: ["ai-models"]
 tags: ["Mini PC", "SFF Computing", "AI Inference", "Edge Computing", "Workstation Performance"]
 featured: false
 ---
-## Executive Summary
-None
 
 ## Strategic Deep-Dive
 ## Technical Assessment Report: Geekom Mini PC Performance Evaluation

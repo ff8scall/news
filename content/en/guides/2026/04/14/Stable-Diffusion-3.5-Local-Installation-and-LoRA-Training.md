@@ -1,8 +1,8 @@
 ﻿---
 title: "Practical Guide: Stable Diffusion 3.5 Local Installation and LoRA Training Implementation"
 date: "2026-04-14T09:25:28Z"
-image: "/images/posts/2026/04/14/guide-Stable-Diffusion-3.5-Local-Installation-and-LoRA-Training.jpg"
 description: "Establishing a robust local environment for SD 3.5 and fine-tuning models using LoRA via ComfyUI/Forge."
+image: "/images/posts/2026/04/14/guide-Stable-Diffusion-3.5-Local-Installation-and-LoRA-Training.jpg"
 type: "posts"
 clusters: ["guides"]
 categories: ["tutorials"]
