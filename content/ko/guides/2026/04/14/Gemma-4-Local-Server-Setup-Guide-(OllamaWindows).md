@@ -1,15 +1,14 @@
 ﻿---
 title: "[실용 가이드] Gemma 4 로컬 서버 설정 가이드 (Ollama/Windows) 구현"
 date: "2026-04-14T09:22:59+09:00"
-image: "/images/posts/2026/04/14/guide-Gemma-4-Local-Server-Setup-Guide-(OllamaWindows).jpg"
 description: "Ollama와 REST API를 사용하여 Windows 환경에서 Gemma 4 모델을 로컬에 배포하고 액세스하는 포괄적인 가이드입니다."
+image: "/images/posts/2026/04/14/guide-Gemma-4-Local-Server-Setup-Guide-(OllamaWindows).jpg"
 type: "posts"
 clusters: ["guides"]
 categories: ["tutorials"]
 tags: ["guide", "tutorial"]
 difficulty: "Advanced"
 time_to_complete: "15 minutes"
-image: "Interconnected, glowing crystalline neural nodes forming complex, abstract data pathways across a dark, metallic plane."
 ---
 
 ## 🎯 개요 (Overview)

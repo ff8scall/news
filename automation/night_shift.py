@@ -151,9 +151,9 @@ def save_guide_file(markdown_content, news_draft, lang='ko'):
     # [V7.5] Generate Thumbnail and link in Markdown
     img_path = generate_and_save_thumbnail(markdown_content, f"guide-{safe_filename}")
     
-    # [Hotfix] Use 'image' singular field
+    # [V9.1] Replace AI Prompt with Real Image Path (Fix Duplicate Key)
     if img_path:
-        markdown_content = markdown_content.replace('description: "', f'image: "{img_path}"\ndescription: "')
+        markdown_content = re.sub(r'image_prompt_core:\s*".*"', f'image: "{img_path}"', markdown_content)
     
     # Force Timestamp Update in Frontmatter
     markdown_content = re.sub(r'date: ".*"', f'date: "{current_time}"', markdown_content)

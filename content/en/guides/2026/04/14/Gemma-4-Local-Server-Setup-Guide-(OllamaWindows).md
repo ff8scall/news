@@ -1,15 +1,14 @@
 ﻿---
 title: "[Practical Guide] Gemma 4 Local Server Setup Guide (Ollama/Windows) Implementation"
 date: "2026-04-14T09:21:07Z"
-image: "/images/posts/2026/04/14/guide-Gemma-4-Local-Server-Setup-Guide-(OllamaWindows).jpg"
 description: "A comprehensive guide to deploying and accessing the Gemma 4 model locally on Windows using Ollama and its REST API."
+image: "/images/posts/2026/04/14/guide-Gemma-4-Local-Server-Setup-Guide-(OllamaWindows).jpg"
 type: "posts"
 clusters: ["guides"]
 categories: ["tutorials"]
 tags: ["guide", "tutorial"]
 difficulty: "Advanced"
 time_to_complete: "15 minutes"
-image: "Interconnected, glowing crystalline neural nodes forming complex, abstract data pathways across a dark, metallic plane."
 ---
 
 ## 🎯 Overview

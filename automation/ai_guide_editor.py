@@ -40,7 +40,7 @@ categories: ["tutorials"]
 tags: ["guide", "tutorial"]
 difficulty: "Advanced"
 time_to_complete: "15 minutes"
-image: "Glowing crystalline neural nodes connected by thin data streams, neon blue and deep purple"
+image_prompt_core: "Glowing crystalline neural nodes connected by thin data streams, neon blue and deep purple"
 ---
 
 ## 🎯 Overview
