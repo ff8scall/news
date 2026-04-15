@@ -4,7 +4,7 @@ date: "2026-04-15T09:19:43Z"
 description: "Analyzes Google's shift of the Gemini large language model from a web-based chatbot to a deep, integrated native Windows application, reshaping AI utility in professional workflows."
 image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
-categories: ["ai-models"]
+categories: ["ai-tools"]
 tags: ["Gemini AI", "LLM Integration", "Windows Desktop", "AI Workflow", "Generative AI"]
 featured: false
 ---

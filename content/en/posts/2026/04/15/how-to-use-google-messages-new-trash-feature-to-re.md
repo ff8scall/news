@@ -4,7 +4,7 @@ date: "2026-04-15T08:56:16Z"
 description: "This paper analyzes the technical implementation of 'Trash' functionality in Google Messages, detailing data lifecycle management, state transitions, and the strategic implications for future AI context retrieval."
 image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
-categories: ["ai-models"]
+categories: ["ai-tools"]
 tags: ["Data Persistence", "UX Architecture", "Messaging APIs", "AI Context Retrieval"]
 featured: false
 ---

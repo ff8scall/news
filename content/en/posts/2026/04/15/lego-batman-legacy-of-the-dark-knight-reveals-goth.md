@@ -3,8 +3,8 @@ title: "Modular Design Analysis: Integrating Diverse Lore into Gaming Engines"
 date: "2026-04-15T09:37:05Z"
 description: "An expert analysis of the technical architectural requirements for integrating vastly disparate cinematic and comic canons into a single cohesive game engine."
 image: "/images/fallback/ai-models-tools.png"
-clusters: ["ai-models-tools"]
-categories: ["ai-models"]
+clusters: ["ai-gaming"]
+categories: ["ai-gameplay"]
 tags: ["Modular Design", "Game Engine Architecture", "Lore Integration", "Technical Design Analysis"]
 featured: false
 ---

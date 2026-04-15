@@ -4,7 +4,7 @@ date: "2026-04-15T08:51:07+09:00"
 description: "구글 크롬 브라우저에 도입된 '스킬(Skills)' 기능은 최적화된 프롬프트 라이브러리를 제공하여 AI와의 상호 작용 방식을 근본적으로 변화시킵니다. 이 기능은 사용자의 인지적 마찰을 최소화하고 다양한 전문 작업 흐름에서의 생산성을 극대화하는 구조적 접근법을 제시합니다."
 image: "/images/fallback/ai-models-tools.png"
 clusters: ["ai-models-tools"]
-categories: ["ai-models"]
+categories: ["ai-tools"]
 tags: ["AI 프롬프트 엔지니어링", "작업 흐름 자동화", "LLM 통합", "브라우저 기반 AI", "생산성 향상"]
 featured: false
 ---

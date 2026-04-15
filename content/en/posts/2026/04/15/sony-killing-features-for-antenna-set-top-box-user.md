@@ -3,8 +3,8 @@ title: "Analysis of Sony Bravia Smart TV Feature Deprecation for Antenna and STB
 date: "2026-04-15T08:38:21Z"
 description: "Experts analyze the strategic deprecation of traditional broadcast features on new Sony Bravia Smart TVs, warning about potential compatibility issues for users relying on dedicated antennae or set-top boxes."
 image: "/images/fallback/ai-models-tools.png"
-clusters: ["ai-models-tools"]
-categories: ["ai-models"]
+clusters: ["gpu-hardware"]
+categories: ["pc-robotics"]
 tags: ["Sony Bravia", "Feature Deprecation", "Broadcast TV", "Smart TV OS", "IP Streaming"]
 featured: false
 ---

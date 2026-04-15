@@ -3,8 +3,8 @@ title: "최첨단 AI 모델의 기술적 완벽성과 인위적 희소성 분석
 date: "2026-04-15T09:45:14+09:00"
 description: "본 보고서는 고성능 AI 시스템에서 '제한적 할당 모델'이 어떻게 시장 가치를 결정하는지 전략적으로 분석하며, 산업계의 공급망 통제 메커니즘을 깊이 있게 다룹니다."
 image: "/images/fallback/ai-models-tools.png"
-clusters: ["ai-models-tools"]
-categories: ["ai-models"]
+clusters: ["guides"]
+categories: ["tutorials"]
 tags: ["AI 시장 전략", "인위적 희소성", "고성능 컴퓨팅", "제품 할당 모델"]
 featured: false
 ---
