@@ -1,0 +1,39 @@
+{
+  "ai-models": [
+    {"name": "Ars Technica AI", "url": "https://feeds.arstechnica.com/arstechnica/index"},
+    {"name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/"},
+    {"name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/"},
+    {"name": "Wired AI", "url": "https://www.wired.com/category/science/artificial-intelligence/feed/"}
+  ],
+  "ai-tools": [
+    {"name": "The Verge Tech", "url": "https://www.theverge.com/rss/front-page/index.xml"},
+    {"name": "ZDNet AI", "url": "https://www.zdnet.com/topic/artificial-intelligence/rss.xml"}
+  ],
+  "gpu-chips": [
+    {"name": "Tom's Hardware", "url": "https://www.tomshardware.com/feeds/all"},
+    {"name": "TechPowerUp", "url": "https://www.techpowerup.com/rss/news"},
+    {"name": "AnandTech", "url": "https://www.anandtech.com/rss/"},
+    {"name": "ExtremeTech", "url": "https://www.extremetech.com/feed"}
+  ],
+  "pc-robotics": [
+    {"name": "Engadget Gear", "url": "https://www.engadget.com/rss.xml"},
+    {"name": "IEEE Spectrum AI", "url": "https://spectrum.ieee.org/rss/robotics/fulltext"}
+  ],
+  "game-optimization": [
+    {"name": "PC Gamer News", "url": "https://www.pcgamer.com/rss/"},
+    {"name": "Eurogamer", "url": "https://www.eurogamer.net/feed/news"},
+    {"name": "Digital Foundry", "url": "https://www.eurogamer.net/feed/news/digitalfoundry"}
+  ],
+  "ai-gameplay": [
+    {"name": "IGN AI", "url": "https://feeds.feedburner.com/ign/news"},
+    {"name": "Kotaku", "url": "https://kotaku.com/rss"}
+  ],
+  "tutorials": [
+    {"name": "How-To Geek", "url": "https://www.howtogeek.com/feed/"},
+    {"name": "MakeUseOf AI", "url": "https://www.makeuseof.com/category/artificial-intelligence/feed/"}
+  ],
+  "compare": [
+    {"name": "Hardware Times", "url": "https://www.hardwaretimes.com/feed/"},
+    {"name": "UserBenchmark News", "url": "https://www.userbenchmark.com/resources/rss.xml"}
+  ]
+}
