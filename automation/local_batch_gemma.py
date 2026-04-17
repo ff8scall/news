@@ -8,16 +8,16 @@ from ai_writer import AIWriter
 from news_main import StateTracker, sanitize_slug, create_hugo_post
 from common_utils import send_telegram_report
 
-# [V1.0] Local Ultra-Fast Gemma4 Synchronizer
+# [V1.1] Local Ultra-Fast Qwen2.5-Coder Synchronizer
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
-logger = logging.getLogger("LegoSia.LocalGemma")
+logger = logging.getLogger("LegoSia.LocalQwen")
 
 def process_category_local(cat, items, editor, tracker):
     """[Local Only] Forced Parallel Gemma4 Worker"""
     if not items: return None
     
-    # 로컬은 스로틀링 없이 젬마4:latest만 타겟팅
-    model_name = "gemma4:latest"
+    # 로컬은 스로틀링 없이 qwen2.5-coder:14b만 타겟팅
+    model_name = "qwen2.5-coder:14b"
     
     for item in items:
         safe_slug = sanitize_slug(item['title'])
@@ -27,7 +27,7 @@ def process_category_local(cat, items, editor, tracker):
             logger.info(f"🚀 [LOCAL_START] [{cat}] Inference: {item['title'][:50]}")
             
             t0 = time.time()
-            # NewsEditor.review_batch에서 내부적으로 AIWriter.generate_content(model='gemma4:latest') 호출
+            # NewsEditor.review_batch에서 내부적으로 AIWriter.generate_content(model='qwen2.5-coder:14b') 호출
             article_data_list = editor.review_batch([item], model=model_name)
             
             if article_data_list:
@@ -49,7 +49,7 @@ def process_category_local(cat, items, editor, tracker):
     return None
 
 def main():
-    logger.info("--- ⚡ Starting Local Ultra-Stable Gemma4 Sync (2 Workers) ---")
+    logger.info("--- ⚡ Starting Local Ultra-Stable Qwen2.5-Coder Sync (2 Workers) ---")
     logger.info("--- [NOTE] Parallelism set to 2 to ensure smooth multitasking. ---")
     
     harvester = HarvesterV3()
@@ -78,7 +78,7 @@ def main():
             res = future.result()
             if res: published_results.append(res)
 
-    report = f"⚡ [Gemma4 Local Sync Complete]\nSuccessfully Synchronized: {len(published_results)}/8\n\n" + "\n".join(published_results)
+    report = f"⚡ [Qwen2.5-Coder Local Sync Complete]\nSuccessfully Synchronized: {len(published_results)}/8\n\n" + "\n".join(published_results)
     logger.info(report)
     
     # 텔레그램 발송

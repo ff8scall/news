@@ -37,11 +37,11 @@ NEWS_JSON_SCHEMA = """
     "kor_description": "SEO 최적화된 1-2문장 한국어 설명",
     "kor_summary": ["핵심 포인트 1", "핵심 포인트 2"],
     "kor_keywords": ["키워드1", "키워드2"],
-    "kor_analysis_title": "Dynamic subtitle (e.g., 'HBM4 기술의 성능 병목 해결')",
-    "kor_content": "## 세부 부제\n\n본문...",
+    "kor_analysis_title": "Dynamic subtitle for analysis",
+    "kor_content": "## Section Subtitle\n\nFull Korean analysis body...",
     "kor_insight_title": "인사이트 비평",
-    "kor_insight": "## 시사점\n\n전문적인 통찰...",
-    "image_prompt_core": "A symbolic tech visual description (e.g., 'A glowing neural network on a silicon wafer')"
+    "kor_insight": "## 시사점\n\nDeep analytical insight (minimum 3 sentences)...",
+    "image_prompt_core": "A symbolic tech visual description"
 }
 """
 
@@ -146,9 +146,10 @@ class NewsEditor:
 
     def _get_full_event_analysis(self, articles, model=None):
         query_sig = articles[0]['title'][:30]
-        if self._is_cached(query_sig):
-            logger.info(f" [CACHE HIT] Already analyzed: {query_sig}")
-            return None
+        # [DISABLED] Forcing re-generation for quality tuning
+        # if self._is_cached(query_sig):
+        #     logger.info(f" [CACHE HIT] Already analyzed: {query_sig}")
+        #     return None
 
         selected = self._score_articles(articles, model=model)
         if not selected: return None
@@ -157,7 +158,15 @@ class NewsEditor:
             content = a.get('description', a.get('content', ''))[:1000]
             truncated.append(f"Source: {a.get('source_name')}\nTitle: {a['title']}\nContent: {content}")
         combined_text = "\n---\n".join(truncated)
-        prompt = f"[TASK]: Create a detailed English Tech Report synthesize from these: \n{combined_text}"
+        prompt = f"""
+        [TASK]: Create a professional English Tech Analysis Report.
+        [REQUIREMENTS]: 
+         - Go beyond simple summary. Explain the "Why" and "So What".
+         - Identify specific technical specs, market competitors, and potential business risks.
+         - Use a cold, analytical tone like a Bloomberg or Reuters tech analyst.
+        [INPUT DATA]: 
+        {combined_text}
+        """
         return self.writer.generate_content(prompt, role="processing", model=model)
 
     def _extract_json_safe(self, text):
@@ -185,26 +194,14 @@ class NewsEditor:
             [TASK]: Localize the English report into a professional Korean tech article.
             {hint_str}
             {history_context}
+            [QUALITY & TONE]:
+             - **NO AI FILLER**: "매우 중요한 전환점이다", "기대를 모으고 있다", "성장이 기대된다" 같은 뻔한 문구는 절대 사용 금지.
+             - **CRITICAL PERSPECTIVE**: 기사 내용의 이면을 파고들 것. 예를 들어, 소비자에게 이득이지만 기업에게는 독이 되는 구조나, 경쟁사(AMD, NVIDIA, Apple 등)와의 구체적인 대결 구도를 언급할 것.
+             - **PROFESSIONAL DEPTH**: 기술 용어를 정확히 사용하되(예: 리소그래피, IPC 향상, 수율 등), 그 기술이 실제 사용자 경험에 어떻게 직결되는지 서술할 것.
             [STRICT RULES]: 
-             1. TOPIC FAITHFULNESS & LANGUAGE SEPARATION:
-                - ALL 'eng_' fields MUST BE IN ENGLISH.
-                - ALL 'kor_' fields MUST BE IN KOREAN.
-                - CRITICAL: Maintain original subject (e.g., Cars/Mona Lisa/Hospitals).
-             2. CATEGORY & CLUSTER SELECTION (STRICT):
-                - [CLUSTERS]: Choose from [ai-models-tools, gpu-hardware, ai-gaming, guides].
-                - [CATEGORIES]: Choose EXACTLY ONE from: [ai-models, ai-tools, gpu-chips, pc-robotics, game-optimization, ai-gameplay, tutorials, compare].
-                
-                [MAPPING RULES]:
-                - Broad AI/LLM -> ai-models-tools / ai-models
-                - App/Software/Tools -> ai-models-tools / ai-tools
-                - Chips/Semicon/HBM -> gpu-hardware / gpu-chips
-                - Robotics/EV/Gadgets/Hardware -> gpu-hardware / pc-robotics
-                - AI in Games/Metaverse -> ai-gaming / ai-gameplay
-                - Benchmarks/Drivers/Optimization -> ai-gaming / game-optimization
-                - Step-by-Step How-To -> guides / tutorials
-                - Comparison Reports -> guides / compare
-             3. FORMATTING: Use '## ' for headers. MAX 2 SENTENCES PER PARAGRAPH.
-             4. THUMBNAIL: 'image_prompt_core' should be a concrete 3D tech-aesthetic description.
+             1. KOREAN ONLY: 'kor_' 필드에는 100% 한글(Hangul)만 사용. (영어 병기 금지, 한자 금지)
+             2. PARAGRAPH STRUCTURE: 문장을 짧게 끊지 말고, 3~4문장이 논리적으로 연결된 하나의 완성된 문단(Paragraph)을 구성할 것.
+             3. CONCLUSION: "앞으로 지켜봐야 할 것이다" 식의 모호한 결론 대신, 독자가 얻어갈 수 있는 명확한 '인사이트 한 줄'로 마무리할 것.
 
             [OUTPUT STRUCTURE]: {NEWS_JSON_SCHEMA}
             [REPORT CONTEXT]: {event_report_en}

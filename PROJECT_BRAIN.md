@@ -53,17 +53,20 @@
 - [x] 다중 클라우드 폴백 시스템 구축 (OpenRouter, GitHub Models 연동)
 
 ### **V2: 안정화 및 상시 가동 시스템**
-- [ ] 2시간 주기 뉴스 수집-분석-배포 파이프라인 상시 운영
+- [x] DB 경로 표준화 (절대 경로 도입) 및 파편화된 DB 병합 완료
+- [x] NotebookLM MCP Integration (V2.1): 히스토리 DB 기반 소스 추출 기능 추가
+- [/] 2시간 주기 뉴스 수집-분석-배포 파이프라인 상시 운영 (진행 중)
 - [ ] 무료 API 쿼터 자동 모니터링 및 모델 스위칭 로직 강화
-- [ ] 로컬 개발 환경(Gemma 4)과 서버 배포 환경(Online APIs) 완전 분리 운영
+- [ ] 로컬 개발 환경(Qwen 2.5 14B)과 서버 배포 환경(Online APIs) 완전 분리 운영
 
 ---
 
 ## 📁 주요 디렉토리 맵
 - `content/ko/clusters/`: 뉴스 기사 저장소
 - `content/ko/guides/`: 튜토리얼 및 비교 리포트
-- `backups/archive_vLegacy/`: 구 버전 유산 보관함
+- `automation/`: 자동화 스크립트 엔진
+- `scratch/`: 임시 리포트 및 분석 데이터
 
 ---
 **기록자**: Antigravity (AI Assistant)  
-**동기화**: V0 초기화 완료. 다음 단계(`hugo.toml`) 대기 중.
+**동기화**: V2 파이프라인 고도화 진행 중. DB 표준화 완료.

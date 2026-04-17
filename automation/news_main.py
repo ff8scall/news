@@ -124,16 +124,16 @@ CAT_MAP = {
     "tutorials": "실전 튜토리얼", "compare": "성능 비교"
 }
 
-# [V1.0] Alignment with PROJECT_BRAIN clusters
+# [V1.1] Alignment with actual fallback filenames in static/images/fallbacks/
 FALLBACK_MAP = {
-    "ai-models": "ai-models-tools",
-    "ai-tools": "ai-models-tools",
-    "gpu-chips": "gpu-hardware",
-    "pc-robotics": "gpu-hardware",
-    "game-optimization": "ai-gaming",
-    "ai-gameplay": "ai-gaming",
-    "tutorials": "guides",
-    "compare": "guides"
+    "ai-models": "ai-models",
+    "ai-tools": "ai-tools",
+    "gpu-chips": "semi-hbm",
+    "pc-robotics": "robotics",
+    "game-optimization": "game-tech",
+    "ai-gameplay": "gaming",
+    "tutorials": "ai-tech",
+    "compare": "ai-tech"
 }
 
 def download_image(url, category_slug, slug):
@@ -158,8 +158,8 @@ def download_image(url, category_slug, slug):
     
     return None
 
-def generate_and_save_thumbnail(image_prompt_core, slug_name):
-    """[V8.0] 일자별 이미지 폴더 구조 (YYYY/MM/DD)"""
+def generate_and_save_thumbnail(image_prompt_core, slug_name, retries=2):
+    """[V8.1] Pollinations.ai 이미지 생성 (재시도 포함)"""
     aesthetic_base = ", high-tech minimalism, cinematic 3D render, dark metallic texture, neon accents, isometric perspective, Unreal Engine 5 aesthetic, 8k resolution --no text, no faces, no humans"
     final_prompt = (image_prompt_core if image_prompt_core else "Abstract futuristic technology concept") + aesthetic_base
     logger.info(f"[IMAGE] Creating thumbnail for {slug_name}")
@@ -167,18 +167,83 @@ def generate_and_save_thumbnail(image_prompt_core, slug_name):
     encoded_prompt = urllib.parse.quote(final_prompt)
     image_url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1200&height=630&nologo=true"
     
-    try:
-        response = requests.get(image_url, timeout=30)
-        if response.status_code == 200:
-            date_dir = datetime.now().strftime("%Y/%m/%d")
-            save_dir = f"static/images/posts/{date_dir}"
-            os.makedirs(save_dir, exist_ok=True)
-            save_path = f"{save_dir}/{slug_name}_gen.jpg"
-            with open(save_path, 'wb') as f: f.write(response.content)
-            return f"/images/posts/{date_dir}/{slug_name}_gen.jpg"
-    except Exception as e:
-        logger.error(f"[IMAGE] Failed: {e}")
+    for attempt in range(retries + 1):
+        try:
+            response = requests.get(image_url, timeout=45)
+            if response.status_code == 200 and len(response.content) > 5000:
+                date_dir = datetime.now().strftime("%Y/%m/%d")
+                save_dir = f"static/images/posts/{date_dir}"
+                os.makedirs(save_dir, exist_ok=True)
+                save_path = f"{save_dir}/{slug_name}_gen.jpg"
+                with open(save_path, 'wb') as f: f.write(response.content)
+                return f"/images/posts/{date_dir}/{slug_name}_gen.jpg"
+            else:
+                logger.warning(f"[IMAGE] Bad response (attempt {attempt+1}/{retries+1}): status={response.status_code}, size={len(response.content)}")
+        except Exception as e:
+            logger.warning(f"[IMAGE] Attempt {attempt+1}/{retries+1} failed: {e}")
+        if attempt < retries:
+            time.sleep(2)
     return None
+
+
+def _format_readable_content(text):
+    """[V8.1] 본문 텍스트의 가독성을 향상시키는 포매터.
+    - 마크다운 헤더(##) 앞뒤에 빈 줄 보장
+    - 긴 문단을 3~4문장 단위로 분할하여 빈 줄 삽입
+    - 이미 잘 포맷된 텍스트는 건드리지 않음
+    """
+    if not text:
+        return text
+    
+    lines = text.split('\n')
+    formatted = []
+    
+    for line in lines:
+        stripped = line.strip()
+        
+        # 빈 줄은 그대로 유지
+        if not stripped:
+            formatted.append('')
+            continue
+        
+        # 마크다운 헤더 앞에 빈 줄 보장
+        if stripped.startswith('#'):
+            if formatted and formatted[-1] != '':
+                formatted.append('')
+            formatted.append(stripped)
+            formatted.append('')
+            continue
+        
+        # 리스트 아이템은 그대로
+        if stripped.startswith('- ') or stripped.startswith('* ') or re.match(r'^\d+\.\s', stripped):
+            formatted.append(stripped)
+            continue
+        
+        # 긴 문단(200자 초과)은 문장 단위로 분할
+        if len(stripped) > 200:
+            sentences = re.split(r'(?<=[.!?다요음됩니다])\s+', stripped)
+            chunk = []
+            for sent in sentences:
+                chunk.append(sent)
+                if len(chunk) >= 3:
+                    formatted.append(' '.join(chunk))
+                    formatted.append('')
+                    chunk = []
+            if chunk:
+                formatted.append(' '.join(chunk))
+                formatted.append('')
+        else:
+            formatted.append(stripped)
+            formatted.append('')
+    
+    # 연속된 빈 줄 제거 (최대 1개만)
+    result = []
+    for line in formatted:
+        if line == '' and result and result[-1] == '':
+            continue
+        result.append(line)
+    
+    return '\n'.join(result).strip()
 
 def create_hugo_post(article, lang='ko'):
     date_path = datetime.now().strftime("%Y/%m/%d")
@@ -187,17 +252,21 @@ def create_hugo_post(article, lang='ko'):
     slug = article['sync_slug']
     cat_safe = sanitize_slug(article.get('category', 'ai-models'))
     
-    # [V3.6] Triple-Layer Fallback: 1. Article Image, 2. AI Generated, 3. Category Default
-    img_url = download_image(article.get('original_image_url'), cat_safe, slug)
+    # [V8.1] 이미지: _shared_image가 있으면 재생성 없이 바로 사용 (한/영 공유)
+    img_url = article.get('_shared_image')
     
     if not img_url:
-        img_url = generate_and_save_thumbnail(article.get('image_prompt_core'), slug)
-        if img_url:
-            logger.info(f"[IMAGE] Using AI Generated image for {slug}")
-        else:
-            fallback_key = FALLBACK_MAP.get(cat_safe, "ai-tech")
-            img_url = f"/images/fallbacks/{fallback_key}.jpg"
-            logger.info(f"[IMAGE] Using Category Level-3 fallback for {slug}")
+        # 기존 Triple-Layer Fallback: 1. Article Image, 2. AI Generated, 3. Category Default
+        img_url = download_image(article.get('original_image_url'), cat_safe, slug)
+        
+        if not img_url:
+            img_url = generate_and_save_thumbnail(article.get('image_prompt_core'), slug)
+            if img_url:
+                logger.info(f"[IMAGE] Using AI Generated image for {slug}")
+            else:
+                fallback_key = FALLBACK_MAP.get(cat_safe, "ai-tech")
+                img_url = f"/images/fallbacks/{fallback_key}.jpg"
+                logger.info(f"[IMAGE] Using Category Level-3 fallback for {slug}")
     
     filepath = os.path.join(target_dir, f"{slug}.md")
     if lang == 'ko':
@@ -208,16 +277,22 @@ def create_hugo_post(article, lang='ko'):
         analysis_title = article.get('kor_analysis_title', '상세 분석')
         insight_title = article.get('kor_insight_title', '인사이트 비평')
         summary_text = "\n".join([f"- {s}" for s in article.get('kor_summary', [])])
-        content_body = f"## 핵심 요약\n{summary_text}\n\n## {analysis_title}\n{article.get('kor_content')}\n\n## {insight_title}\n{article.get('kor_insight')}"
+        formatted_content = _format_readable_content(article.get('kor_content', ''))
+        formatted_insight = _format_readable_content(article.get('kor_insight', ''))
+        content_body = f"## 핵심 요약\n{summary_text}\n\n## {analysis_title}\n{formatted_content}\n\n## {insight_title}\n{formatted_insight}"
     else:
         title = article.get('eng_title', 'Untitled')
         eng_desc = article.get('eng_description')
         desc_val = eng_desc if eng_desc else (article.get('eng_summary') if article.get('eng_summary') else title)
         tags_val = json.dumps(article.get('eng_keywords', []), ensure_ascii=False)
-        date_str = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+        # Fix: Use local time with offset or UTC time correctly. 
+        # Here we use +00:00 or Z with utcnow
+        from datetime import timezone
+        date_str = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
         summary_val = article.get('eng_summary', '')
         summary_section = f"## Executive Summary\n{summary_val}\n\n" if summary_val else ""
-        content_body = f"{summary_section}## Strategic Deep-Dive\n{article.get('eng_content', 'Content not localized yet.')}"
+        formatted_eng_content = _format_readable_content(article.get('eng_content', 'Content not localized yet.'))
+        content_body = f"{summary_section}## Strategic Deep-Dive\n{formatted_eng_content}"
 
     # [V3.1] Frontmatter Generation
     
@@ -244,7 +319,7 @@ def process_category(cat, items, editor, tracker, use_local=False, limit=1):
     """[Helper] Thread-safe category processing worker - returns number of processed items"""
     if not items: return 0
     
-    model_name = "gemma4:latest" if use_local else None
+    model_name = "gemma4:26b" if use_local else None
     processed_count = 0
     
     for item in items:

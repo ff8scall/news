@@ -3,3 +3,4 @@ feedparser
 google-genai
 python-dotenv
 pyyaml
+notebooklm-mcp-cli

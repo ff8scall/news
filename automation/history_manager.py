@@ -2,8 +2,13 @@ import sqlite3
 import os
 
 class HistoryManager:
-    def __init__(self, db_path="automation/news_history.db"):
-        self.db_path = db_path
+    def __init__(self, db_path=None):
+        if db_path is None:
+            # 기본 경로는 스크립트 위치 기준으로 자동 계산 (c:/.../automation/news_history.db)
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+            self.db_path = os.path.join(base_dir, "news_history.db")
+        else:
+            self.db_path = db_path
         self._init_db()
 
     def _init_db(self):

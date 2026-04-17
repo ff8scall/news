@@ -112,12 +112,12 @@ class AIWriter:
         except Exception as e: logger.warning(f"GitHub API Error: {e}")
         return None
 
-    def _call_ollama_api(self, prompt, model="gemma4:latest"):
+    def _call_ollama_api(self, prompt, model="qwen2.5-coder:14b"):
         """[V4.6] Local Inference: Ollama (localhost:11434)"""
         try:
-            url = "http://localhost:11434/api/generate"
+            url = "http://100.112.163.11:11434/api/generate"
             payload = {"model": model, "prompt": prompt, "stream": False}
-            res = requests.post(url, json=payload, timeout=300) # Local can be slow
+            res = requests.post(url, json=payload, timeout=900) # Local can be very slow for 26B+ models
             if res.status_code == 200:
                 return res.json().get('response')
         except Exception as e:
@@ -126,12 +126,12 @@ class AIWriter:
 
     def generate_content(self, prompt, model=None, role=None):
         # 1. 모델이 'gemma4'나 'local'로 시작하면 로컬 Ollama 호출
-        if model and (model.startswith("gemma") or "local" in model.lower()):
-             return self._call_ollama_api(prompt, model if ":" in model else "gemma4:latest")
+        if model and (model.startswith("qwen") or "local" in model.lower()):
+             return self._call_ollama_api(prompt, model if ":" in model else "qwen2.5-coder:14b")
 
         # 15초 휴식 룰 (V4.5) - 로컬 요청 시에는 휴식 제외할 수도 있으나 일관성을 위해 유지하거나 로컬일때만 스킵 가능
         # 여기서는 클라우드 API 호출 시에만 휴식하도록 조정
-        if not (model and (model.startswith("gemma") or "local" in model.lower())):
+        if not (model and (model.startswith("qwen") or "local" in model.lower())):
             self._wait_for_quota(15)
 
         # 2. 특정 모델 지정 시
