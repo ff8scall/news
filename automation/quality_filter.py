@@ -41,10 +41,11 @@ class QualityFilter:
             if any(blk in text for blk in self.blacklist_keywords):
                 continue
                 
-            # 2. Length Check (At least 150 chars in description for depth)
-            if len(a.description) < 150:
+            # 2. Length Check (At least 80 chars in description for depth)
+            if len(a.description) < 80:
                 logger.debug(f" [SKIP] Content too short: {a.title[:30]}...")
                 continue
+
             
             # 3. Keyword/Source Weight Check
             keywords = self.category_keywords.get(category, [])

@@ -116,7 +116,9 @@ class NotebookLMPublisher:
             logger.info(f"Batch publishing completed. Total {published_count} jobs updated.")
             
         summary["published"] = published_count
+        summary["urls"] = all_published_urls
         return summary
+
 
 
     def _pre_generate_image(self, article, slug):
@@ -139,7 +141,7 @@ class NotebookLMPublisher:
         
         # 이미지 1회 생성 후 한/영 공유
         img_url = self._pre_generate_image(article, article["sync_slug"])
-        article["_shared_image"] = img_url
+        article["thumbnail_image"] = img_url
         
         # 한국어 포스트 생성
         nm.create_hugo_post(article, lang='ko')
@@ -205,11 +207,11 @@ class NotebookLMPublisher:
         # [V4.4] 중복 발행 건너뛰기 로직
         if nm.is_already_published(slug):
             logger.info(f"  [SKIP] Article already exists: {slug}")
-            return
+            return None, None
         
         # 이미지 1회 생성 후 한/영 공유
         img_url = self._pre_generate_image(article, slug)
-        article["_shared_image"] = img_url
+        article["thumbnail_image"] = img_url
         
         try:
             nm.create_hugo_post(article, lang='ko')
@@ -231,6 +233,7 @@ class NotebookLMPublisher:
         if "eng_title" in article: eng["title"] = article["eng_title"]
         if "eng_content" in article: eng["content"] = article["eng_content"]
         if "eng_summary" in article: eng["summary"] = article["eng_summary"]
+        if "thumbnail_image" in article: eng["thumbnail_image"] = article["thumbnail_image"]
         return eng
 
 

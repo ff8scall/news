@@ -1,14 +1,30 @@
 {
-    "hardware": {
-        "notebook_id": "c32b8328-af49-440b-ae21-e65b8db86340",
-        "title": "2026-04-19 hardware Mode-A",
-        "mode": "A",
+    "ai": {
+        "notebook_id": "3f2ae7d7-7e29-478a-9866-97a96006c09d",
+        "title": "2026-04-19 ai Mode-B",
+        "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-19T23:39:48.769305",
+        "triggered_at": "2026-04-19T23:46:05.026737",
+        "published_at": "2026-04-20T00:25:00"
+    },
+    "hardware": {
+        "notebook_id": "e7b6fe45-4651-4fa1-83e6-ef2b650e7601",
+        "title": "2026-04-19 hardware Mode-B",
+        "mode": "B",
+        "status": "published",
+        "triggered_at": "2026-04-19T23:46:13.877179",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/19/megatrend-hardware-2026-04-19/",
-            "https://news.lego-sia.com/en/posts/2026/04/19/megatrend-hardware-2026-04-19/"
+            "https://news.lego-sia.com/posts/2026/04/20/ai-new-hudimm-memory-standard-aimed-at-reducing-dd/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-new-hudimm-memory-standard-aimed-at-reducing-dd/",
+            "https://news.lego-sia.com/posts/2026/04/20/ai-jeyi-archerx-flat-m2-adapter-unlocks-blocked-pc/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-jeyi-archerx-flat-m2-adapter-unlocks-blocked-pc/",
+            "https://news.lego-sia.com/posts/2026/04/20/ai-using-xbox-series-xs-storage-expansion-cards-on/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-using-xbox-series-xs-storage-expansion-cards-on/",
+            "https://news.lego-sia.com/posts/2026/04/20/ai-toshiba-warranty-policy-controversy-refunds-off/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-toshiba-warranty-policy-controversy-refunds-off/",
+            "https://news.lego-sia.com/posts/2026/04/20/ai-from-trash-to-treasure-20000-worth-of-server-ra/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-from-trash-to-treasure-20000-worth-of-server-ra/"
         ],
-        "published_at": "2026-04-19T23:40:52.198381"
+        "published_at": "2026-04-20T00:25:06.150068"
     }
 }
