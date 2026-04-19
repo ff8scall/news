@@ -45,14 +45,12 @@ class HarvesterV3:
         }
 
         self.categories_config = {
-            "ai-models": {"kor_name": "AI 모델·트렌드"},
-            "ai-tools": {"kor_name": "AI 도구·사용법"},
-            "gpu-chips": {"kor_name": "GPU·반도체"},
-            "pc-robotics": {"kor_name": "AI PC·로봇"},
-            "game-optimization": {"kor_name": "게임 최적화·엔진"},
-            "ai-gameplay": {"kor_name": "AI 게임 기술"},
-            "tutorials": {"kor_name": "실전 튜토리얼"},
-            "compare": {"kor_name": "성능 비교"}
+            "models": {"kor_name": "AI 모델"},
+            "apps": {"kor_name": "AI 활용"},
+            "chips": {"kor_name": "반도체"},
+            "high-end": {"kor_name": "하이엔드 PC"},
+            "analysis": {"kor_name": "비교·분석"},
+            "guide": {"kor_name": "개발·팁"}
         }
 
     def _load_cache(self):

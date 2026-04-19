@@ -33,6 +33,7 @@ FIELD_MAP = {
     "ENG_CONTENT": "eng_content",
     "ENGLISH_CONTENT": "eng_content",
     "ENGLISH_CONTENT_SYNTHESIS": "eng_content",
+    "SYNTHESIS": "eng_content",
     "KOR_CONTENT": "kor_content",
     "KOREAN_CONTENT": "kor_content",
     "CONTENT": "eng_content",
@@ -166,8 +167,8 @@ def _parse_single_block(block_text):
     # 후처리: 필수 필드 검증 및 보완
     article = _post_process(article)
     
-    if not article.get("eng_title"):
-        logger.warning("Skipping article block: missing eng_title")
+    if not article.get("eng_title") and not article.get("kor_title"):
+        logger.warning("Skipping article block: missing both titles")
         return None
     
     return article
@@ -259,6 +260,12 @@ def _post_process(article):
     if cluster not in VALID_CLUSTERS:
         cluster = CLUSTER_MAP.get(cat, "ai")
     article["cluster"] = cluster
+    
+    # 3. 제목 상호 보완 (Untitled 방지)
+    if not article.get("eng_title") and article.get("kor_title"):
+        article["eng_title"] = article["kor_title"]
+    if not article.get("kor_title") and article.get("eng_title"):
+        article["kor_title"] = article["eng_title"]
     
     # [V3.13] 제목 누락 시 본문 첫 줄 추출
     if not article.get("eng_title") and article.get("eng_content"):
@@ -356,7 +363,7 @@ def parse_editorial_markdown(raw_text, category="ai-models"):
         "kor_insight_title": "에디터 인사이트",
         "kor_insight": "",  # 사설 자체가 인사이트이므로 비워둠
         "category": category,
-        "cluster": CLUSTER_MAP.get(category, "ai-models-tools"),
+        "cluster": CLUSTER_MAP.get(category, "ai"),
         "image_prompt_core": f"Abstract futuristic {category} technology concept",
         "featured": True,
     }

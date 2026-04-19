@@ -61,10 +61,19 @@ class NotebookLMPublisher:
             
             logger.info(f"Checking status for {cat} (Mode {mode}, {nb_id})...")
             
-            # 1. NotebookLM 리포트 생성 여부 확인
-            report = self.app.get_latest_report(nb_id)
-            if not report:
-                logger.info(f" [SKIP] Report not ready yet for {cat}")
+            # [V4.5] 리포트 완료 대기 로직 (최대 5분)
+            report = None
+            for attempt in range(30): # 10초 * 30 = 300초(5분)
+                report = self.app.get_latest_report(nb_id)
+                if report and report.get("status") == "completed":
+                    break
+                
+                status_str = report.get("status", "unknown") if report else "not_found"
+                logger.info(f"  ...Report {status_str}. Waiting 10s (Attempt {attempt+1}/30)...")
+                time.sleep(10)
+            
+            if not report or report.get("status") != "completed":
+                logger.warning(f" [SKIP] Report timed out or not ready for {cat}")
                 continue
                 
             report_id = report["id"]
@@ -98,17 +107,9 @@ class NotebookLMPublisher:
             logger.info(f"Batch publishing completed. Total {published_count} jobs updated.")
 
     def _pre_generate_image(self, article, slug):
-        """AI 이미지를 미리 생성하고 경로 반환 (옵션)"""
-        if os.environ.get("SKIP_AI_IMAGE") == "1":
-            return None
-            
-        # ai_writer의 이미지 생성 기능 활용
-        img_url = nm.generate_and_save_thumbnail(
-            article.get("image_prompt_core", article.get("eng_title")), 
-            slug
-        )
-            
-        return img_url
+        """[V10.0] Tiered Image Strategy: 원본/라이브러리/생성 계층적 처리"""
+        from image_manager import get_tiered_image
+        return get_tiered_image(article, slug)
 
     def _publish_mode_a(self, raw_content, category, job_info):
         """모드 A: 마크다운 사설 → 단일 프리미엄 기사"""
@@ -158,15 +159,29 @@ class NotebookLMPublisher:
 
     def _publish_single_article(self, article):
         """[Helper] 단일 기사 처리 (병렬용)"""
-        # [V3.11] 제목 선택 우선순위: ENG_TITLE -> KOR_TITLE -> Default
+        # [V4.8] 슬러그 정규화: {cluster}-{slug} 형식 강제 및 50자 제한
         raw_title = article.get("eng_title") or article.get("kor_title") or f"Article {article.get('id', 'Unknown')}"
-        slug = nm.sanitize_slug(raw_title)
+        cluster = article.get("cluster", "tech")
+        raw_slug = nm.sanitize_slug(raw_title)
+        
+        if raw_slug and not raw_slug.isdigit():
+            # 대분류 접두사 추가 및 전체 50자 제한
+            slug = f"{cluster}-{raw_slug}"[:50].strip('-')
+        else:
+            # 제목이 부실한 경우: {cluster}-{category}-{id}
+            article_id = str(article.get("id", "0")).zfill(2)
+            category = article.get("category", "news")
+            slug = f"{cluster}-{category}-{article_id}"
         
         article["sync_slug"] = slug
         article["original_url"] = article.get("original_url", "")
         article["original_image_url"] = article.get("original_image")
         article["source_name"] = "NotebookLM Premium"
-        print(f"DEBUG: Processing article {slug}, img={article['original_image_url']}", flush=True)
+        
+        # [V4.4] 중복 발행 건너뛰기 로직
+        if nm.is_already_published(slug):
+            logger.info(f"  [SKIP] Article already exists: {slug}")
+            return
         
         # 이미지 1회 생성 후 한/영 공유
         img_url = self._pre_generate_image(article, slug)

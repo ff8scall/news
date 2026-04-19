@@ -262,6 +262,18 @@ def _format_readable_content(text):
         result.append(line)
     return '\n'.join(result).strip()
 
+def is_already_published(slug):
+    """[V4.4] 기사가 이미 발행되었는지 파일 시스템 전수 조사 (중복 방지용)"""
+    base_dir = "content/ko/posts"
+    if not os.path.exists(base_dir):
+        return False
+    
+    # 해당 슬러그로 끝나는 .md 파일이 있는지 검색
+    for root, dirs, files in os.walk(base_dir):
+        if f"{slug}.md" in files:
+            return True
+    return False
+
 def create_hugo_post(article, lang='ko'):
     global POST_TIME_OFFSET
     pub_date = datetime.now() + timedelta(seconds=POST_TIME_OFFSET)
@@ -272,32 +284,15 @@ def create_hugo_post(article, lang='ko'):
     slug = article['sync_slug']
     cat_safe = sanitize_slug(article.get('category', 'ai-models'))
     
-    # [V8.1] 이미지 전략: thumbnail_image(원본 우선)와 _shared_image(AI 생성) 분리
-    # _shared_image: AI가 생성한 고품질 시각화 이미지 (본문 내부용)
-    # thumbnail_image: 원문에서 가져온 실제 이미지 (목록/썸네일용)
-    ai_img_url = article.get('_shared_image')
-    thumbnail_url = article.get('thumbnail_image', ai_img_url)
+    # [V10.0] Tiered Image Strategy 통합
+    from image_manager import get_tiered_image
     
-    if not ai_img_url and not thumbnail_url:
-        # [V3.6] 필드명 호환성 확보 (original_image_url 또는 original_image)
-        orig_img_path = article.get('original_image_url') or article.get('original_image')
-        thumbnail_url = download_image(orig_img_path, cat_safe, slug)
-        
-        if not thumbnail_url:
-            if os.environ.get("SKIP_AI_IMAGE") == "1":
-                thumbnail_url = None
-            else:
-                logger.info(f"[IMAGE] No original image for {slug}. Falling back to AI Generation...")
-                thumbnail_url = generate_and_save_thumbnail(article.get('image_prompt_core'), slug)
-            
-            if thumbnail_url:
-                logger.info(f"[IMAGE] Using image for {slug}")
-            else:
-                # [V3.30] 카테고리 실패 시 클러스터 기반 폴백 시도
-                fallback_key = FALLBACK_MAP.get(cat_safe) or FALLBACK_MAP.get(article.get('cluster'), "ai-tech")
-                thumbnail_url = f"/images/fallbacks/{fallback_key}.jpg"
-                logger.info(f"[IMAGE] Using Fallback ({fallback_key}) for {slug}")
-        ai_img_url = thumbnail_url 
+    thumbnail_url = article.get('thumbnail_image')
+    if not thumbnail_url:
+        thumbnail_url = get_tiered_image(article, slug)
+        article['thumbnail_image'] = thumbnail_url # 캐싱
+    
+    ai_img_url = article.get('_shared_image') or thumbnail_url
     
     filepath = os.path.join(target_dir, f"{slug}.md")
     
