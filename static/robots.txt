@@ -15,5 +15,4 @@ Sitemap: https://news.lego-sia.com/en/index.xml
 Allow: /naver*.html
 Allow: /google*.html
 Allow: /bing*.xml
-
-Disallow: /5ab061f17ab14049b6b3377c527b939c.txt
+Allow: /bbd0d9a6843c450eb3e9d811a0fd504a.txt

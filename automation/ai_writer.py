@@ -154,7 +154,11 @@ class AIWriter:
         if role in ['writing', 'analysis', 'processing']:
             for m in self.ultra_online_models:
                 res = None
-                if "gemini" in m: res = self._call_gemini_api(prompt, m)
+                # 슬래시('/')가 포함된 모델은 OpenRouter 모델로 간주 (예: google/gemini-3-flash:preview)
+                if "/" in m:
+                    res = self._call_openrouter_api(prompt, m)
+                elif "gemini" in m:
+                    res = self._call_gemini_api(prompt, m)
                 elif "llama" in m: res = self._call_groq_api(prompt, m)
                 elif "gpt-4o" in m: res = self._call_github_api(prompt, m)
                 else: res = self._call_openrouter_api(prompt, m)
