@@ -52,6 +52,11 @@ class NotebookLMPublisher:
             return
 
         published_count = 0
+        all_published_urls = []
+        
+        # [V1.6] 결과 요약 객체
+        summary = {"published": 0, "indexed": 0, "urls": []}
+        
         for cat, job in jobs.items():
             if job.get("status") == "published":
                 continue
@@ -101,10 +106,18 @@ class NotebookLMPublisher:
                 job["status"] = "published"
                 job["published_at"] = datetime.now().isoformat()
                 published_count += 1
+                
+                # [V1.5] URL 수집 (IndexNow용)
+                if "urls" in job:
+                    all_published_urls.extend(job["urls"])
         
         if published_count > 0:
             self.save_jobs(jobs)
             logger.info(f"Batch publishing completed. Total {published_count} jobs updated.")
+            
+        summary["published"] = published_count
+        return summary
+
 
     def _pre_generate_image(self, article, slug):
         """[V10.0] Tiered Image Strategy: 원본/라이브러리/생성 계층적 처리"""
@@ -139,7 +152,15 @@ class NotebookLMPublisher:
             nm.create_hugo_post(eng_article, lang='en')
             logger.info(f" [EN] English version saved for {category}")
         
+        # [V1.5] URL 기록
+        date_path = datetime.now().strftime("%Y/%m/%d")
+        job_info["urls"] = [
+            f"https://news.lego-sia.com/posts/{date_path}/{article['sync_slug']}/",
+            f"https://news.lego-sia.com/en/posts/{date_path}/{article['sync_slug']}/"
+        ]
+        
         return True
+
 
     def _publish_mode_b(self, content, category, job_info):
         """모드 B: 구조화 데이터 기반 다건 기사 발행"""
@@ -151,8 +172,11 @@ class NotebookLMPublisher:
         logger.info(f"Successfully parsed {len(articles)} articles.")
         
         # 순차 처리 (병렬화 가능하지만 안정성 우선)
+        job_info["urls"] = []
         for article in articles:
-            self._publish_single_article(article)
+            url_ko, url_en = self._publish_single_article(article)
+            if url_ko: job_info["urls"].append(url_ko)
+            if url_en: job_info["urls"].append(url_en)
             
         logger.info(f"Mode B: Published {len(articles)} articles for {category}")
         return True
@@ -190,8 +214,15 @@ class NotebookLMPublisher:
         try:
             nm.create_hugo_post(article, lang='ko')
             nm.create_hugo_post(article, lang='en')
+            
+            # URL 생성 규칙 (news_main과 동일)
+            date_path = datetime.now().strftime("%Y/%m/%d")
+            url_ko = f"https://news.lego-sia.com/posts/{date_path}/{slug}/"
+            url_en = f"https://news.lego-sia.com/en/posts/{date_path}/{slug}/"
+            return url_ko, url_en
         except Exception as e:
             logger.error(f"Failed to create Hugo post for {slug}: {e}")
+            return None, None
 
     def _generate_english_from_korean(self, article):
         """[Draft] 한국어 기사를 바탕으로 영문 버전 생성 (Gemini 활용 가능)"""

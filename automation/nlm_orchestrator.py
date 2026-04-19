@@ -1,136 +1,173 @@
 # -*- coding: utf-8 -*-
-"""
-[nlm_orchestrator.py] NotebookLM 하이브리드 뉴스 파이프라인 오케스트레이터
-=====================================================================
-전체 플로우를 한 번에 실행하거나, Phase별로 분리 실행할 수 있습니다.
-
-사용법:
-  # 전체 실행 (수확 → NLM 트리거 → 대기 → 다운로드 → 게시)
-  py nlm_orchestrator.py --mode A --full
-
-  # Phase 1만 (수확 → NLM 트리거)
-  py nlm_orchestrator.py --mode B --phase 1
-
-  # Phase 2만 (다운로드 → 게시)  
-  py nlm_orchestrator.py --phase 2
-"""
-
 import os
 import sys
+import json
 import time
 import logging
 import argparse
+import subprocess
+import traceback
 from datetime import datetime
 
 # 현재 디렉토리를 경로에 추가
 current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(current_dir)
 
-from notebooklm_prep import process_macro_synthesis
+from notebooklm_prep import process_macro_synthesis, NotebookLMApp
 from notebooklm_publisher import NotebookLMPublisher
 from common_utils import send_telegram_report
+from indexnow_service import notify_indexnow
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.StreamHandler(sys.stdout),
-        logging.FileHandler(os.path.join(current_dir, "nlm_orchestrator.log"), encoding='utf-8')
+        logging.FileHandler("automation/nlm_orchestrator.log", encoding="utf-8"),
+        logging.StreamHandler()
     ]
 )
 logger = logging.getLogger("LegoSia.NLM_Orchestrator")
 
 
+def git_sync():
+    """변경된 기사 파일을 GitHub에 커밋하고 푸시하여 배포 트리거"""
+    logger.info(" [GIT] Syncing changes to GitHub...")
+    try:
+        # 1. Add
+        subprocess.run(["git", "add", "."], check=True)
+        # 2. Commit
+        commit_msg = f"chore: premium news update {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        subprocess.run(["git", "commit", "-m", commit_msg], check=False) # 변경사항 없을 수 있음
+        # 3. Pull (Rebase)
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
+        # 4. Push
+        subprocess.run(["git", "push"], check=True)
+        logger.info(" [GIT] Successfully pushed to GitHub.")
+        return True
+    except Exception as e:
+        logger.error(f" [GIT] Sync failed: {e}")
+        return False
+
+
 def run_phase1(mode="A", limit=15, source="rss"):
     """Phase 1: 뉴스 데이터 준비 → NotebookLM 리포트 트리거"""
     logger.info("=" * 60)
-    logger.info(f"  PHASE 1: Data Prep & Trigger (Mode {mode}, Source {source}, limit={limit})")
-    logger.info("=" * 60)
+    logger.info(f" [PHASE 1] Preparing Data (Mode {mode}, Limit {limit})...")
     
-    t0 = time.time()
-    success = process_macro_synthesis(limit_per_cat=limit, mode=mode, source=source)
-    t1 = time.time()
-    
-    if success:
-        logger.info(f"[PHASE 1 OK] Completed in {t1-t0:.1f}s. Reports are generating in NotebookLM.")
-    else:
-        logger.error("[PHASE 1 FAIL] No categories were processed.")
-    
-    return success
+    # 1. 인증 체크
+    app = NotebookLMApp()
+    if not app.verify_auth():
+        logger.error(" [AUTH] NotebookLM session expired. Please run 'nlm login' manually.")
+        return None
+        
+    # 2. 파이프라인 실행
+    jobs = process_macro_synthesis(limit_per_cat=limit, mode=mode, source=source)
+    if not jobs:
+        logger.error(" [PHASE 1 FAIL] No articles were processed.")
+        return None
+        
+    logger.info(f" [PHASE 1 OK] Triggered {len(jobs)} reports in NotebookLM.")
+    return jobs
 
 
 def run_phase2():
-    """Phase 2: NotebookLM 결과물 다운로드 → 파싱 → Hugo 포스트 게시"""
+    """Phase 2: 상태 확인 및 결과물 게시 (수동 호출용)"""
     logger.info("=" * 60)
-    logger.info("  PHASE 2: Download & Publish")
-    logger.info("=" * 60)
+    logger.info(" [PHASE 2] Checking Status & Publishing...")
     
     t0 = time.time()
     publisher = NotebookLMPublisher()
-    publisher.process_pending_jobs()
+    summary = publisher.process_pending_jobs()
     t1 = time.time()
     
     logger.info(f"[PHASE 2 OK] Completed in {t1-t0:.1f}s.")
+    return summary
 
 
-def run_full_pipeline(mode="A", limit=15, source="rss", poll_interval=60, max_wait=600):
+def run_full_pipeline(mode="A", limit=15, source="rss", poll_interval=60, max_wait=900):
     """
-    전체 파이프라인: Phase 1 → 대기 → Phase 2
-    
-    Args:
-        mode: 운영 모드 (A/B/C)
-        limit: 카테고리당 수집 기사 수
-        source: 데이터 소스 (rss/db)
-        poll_interval: 상태 확인 간격 (초)
-        max_wait: 최대 대기 시간 (초)
+    [V2.0] Full Automated Pipeline with Stage-wise Telegram Notifications
     """
-    logger.info("╔" + "═" * 58 + "╗")
-    logger.info("║  NotebookLM Full Pipeline Orchestrator                   ║")
-    logger.info(f"║  Mode: {mode} | Source: {source} | Limit: {limit} ║")
-    logger.info(f"║  Started: {datetime.now().strftime('%H:%M:%S')}                                    ║")
-    logger.info("╚" + "═" * 58 + "╝")
-    
-    # [START NOTIFICATION]
-    send_telegram_report(f"🚀 <b>[Premium Pipeline]</b> Start\nMode: {mode} | Source: {source} | Limit: {limit}")
-    
-    # Phase 1
-    success = run_phase1(mode=mode, limit=limit, source=source)
-    if not success:
-        logger.error("Pipeline aborted: Phase 1 failed.")
-        return
-    
-    # 대기: NotebookLM이 리포트를 생성할 시간을 줌
-    logger.info(f"\n[WAITING] NotebookLM is generating reports...")
-    logger.info(f"[WAITING] Will poll every {poll_interval}s, max wait: {max_wait}s")
-    
-    waited = 0
-    while waited < max_wait:
-        time.sleep(poll_interval)
-        waited += poll_interval
-        logger.info(f"[POLL] {waited}s elapsed. Checking status...")
+    try:
+        # [START NOTIFICATION]
+        send_telegram_report(f"🚀 <b>[Premium Pipeline]</b> Start\nMode: {mode} | Source: {source} | Limit: {limit}")
         
-        # Phase 2 시도 (완료된 것부터 게시)
+        start_time_total = time.time()
+        total_published = 0
+        total_indexed = 0
+        
+        # Phase 1: 데이터 수집 및 NLM 전송
+        active_jobs = run_phase1(mode=mode, limit=limit, source=source)
+        if not active_jobs:
+            logger.error("Pipeline aborted: Phase 1 failed.")
+            return
+
+        # [STEP 1&2 NOTIFICATION]
+        job_count = len(active_jobs)
+        send_telegram_report(
+            f"📥 <b>[Step 1&2] Done</b>\n"
+            f"• RSS Harvested & Filtered\n"
+            f"• {job_count} Notebooks created\n"
+            f"• NLM Reports triggered. Polling status..."
+        )
+        
+        # Phase 2: 폴링 및 배포
+        logger.info(f" [PHASE 2] Starting polling every {poll_interval}s (Max {max_wait}s)...")
         publisher = NotebookLMPublisher()
-        jobs = publisher.load_jobs()
+        waited = 0
         
-        # 모든 Job이 published 상태인지 확인
-        all_done = all(j.get("status") == "published" for j in jobs.values()) if jobs else False
+        while waited < max_wait:
+            time.sleep(poll_interval)
+            waited += poll_interval
+            logger.info(f" [POLL] {waited}s elapsed. Checking status...")
+            
+            # 일부만 완료된 경우에도 게시 시도
+            summary = publisher.process_pending_jobs()
+            if summary:
+                new_p = summary.get("published", 0)
+                if new_p > 0:
+                    total_published += new_p
+                    # 배포 및 인덱싱
+                    if git_sync():
+                        urls = summary.get("urls", [])
+                        if urls:
+                            logger.info(f" [IndexNow] Notifying for {len(urls)} URLs...")
+                            notify_indexnow(urls)
+                            total_indexed += len(urls)
+            
+            # 모든 Job이 published 상태인지 확인
+            try:
+                with open("automation/premium_jobs.json", "r", encoding="utf-8") as f:
+                    jobs_data = json.load(f)
+                    all_done = all(j.get("status") == "published" for j in jobs_data.values())
+                    if all_done:
+                        logger.info("[DONE] All jobs published successfully!")
+                        break
+            except Exception as e:
+                logger.debug(f"Error checking jobs status: {e}")
         
-        if all_done:
-            logger.info("[DONE] All jobs published successfully!")
-            break
+        if waited >= max_wait:
+            logger.warning(f"[TIMEOUT] Max wait ({max_wait}s) reached.")
+
+        logger.info("\n[PIPELINE COMPLETE]")
         
-        # 일부만 완료된 경우에도 게시 시도
-        publisher.process_pending_jobs()
-    
-    if waited >= max_wait:
-        logger.warning(f"[TIMEOUT] Max wait ({max_wait}s) reached. Some jobs may still be pending.")
-        logger.info("Run 'py nlm_orchestrator.py --phase 2' later to publish remaining jobs.")
-    
-    logger.info("\n[PIPELINE COMPLETE]")
-    
-    # [FINISH NOTIFICATION]
-    send_telegram_report(f"✅ <b>[Premium Pipeline]</b> Finished!\nStatus: Processed {limit} articles per category.")
+        # [FINISH NOTIFICATION]
+        report_msg = (
+            f"✅ <b>[Premium Pipeline]</b> Finished!\n\n"
+            f"• Mode: {mode}\n"
+            f"• Published: {total_published} articles\n"
+            f"• Indexed: {total_indexed} URLs\n"
+            f"• Time Taken: {int((time.time() - start_time_total)/60)}m"
+        )
+        send_telegram_report(report_msg)
+
+    except Exception as e:
+        err_trace = traceback.format_exc()
+        logger.error(f" [CRITICAL ERROR] Pipeline crashed: {e}\n{err_trace}")
+        
+        # [ERROR NOTIFICATION]
+        error_msg = f"❌ <b>[Premium Pipeline] CRASHED</b>\n\n<b>Error:</b> {str(e)}\n\n파이프라인이 예기치 않게 종료되었습니다. 로그 요약을 확인해 주세요."
+        send_telegram_report(error_msg)
 
 
 def main():
@@ -157,8 +194,8 @@ Examples:
                         help="전체 파이프라인 실행 (Phase 1 → 대기 → Phase 2)")
     parser.add_argument("--poll", type=int, default=60,
                         help="Phase 2 상태 확인 간격 (초, 기본: 60)")
-    parser.add_argument("--max-wait", type=int, default=600,
-                        help="Phase 2 최대 대기 시간 (초, 기본: 600)")
+    parser.add_argument("--max-wait", type=int, default=900,
+                        help="Phase 2 최대 대기 시간 (초, 기본: 900)")
     
     args = parser.parse_args()
     

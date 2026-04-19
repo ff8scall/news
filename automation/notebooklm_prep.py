@@ -107,6 +107,24 @@ class NotebookLMApp:
         except Exception as e:
             logger.error(f" [AUTH] Login failed: {e}")
         return False
+
+    def verify_auth(self):
+        """[V2.7] 현재 세션의 유효성을 검사합니다."""
+        logger.info(" [AUTH] Verifying NotebookLM session...")
+        # studio status는 인증이 필요하므로 유효성 체크용으로 적합
+        # 존재하지 않는 ID라도 인증 에러는 먼저 뜸. 
+        # subprocess.run을 직접 호출하여 상세 제어
+        cmd = self.cmd_base + ["studio", "status", "verify-session-dummy-id"]
+        try:
+            res = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8")
+            err_msg = res.stderr or res.stdout or ""
+            if "Authentication expired" in err_msg or "Authentication Error" in err_msg:
+                return False
+            # NOT_FOUND나 다른 에러가 나더라도 '인증 에러'가 아니면 유효한 세션으로 간주
+            return True
+        except:
+            return False
+
     
     def run_cmd(self, args, use_json=False):
         cmd = self.cmd_base + args
@@ -120,11 +138,21 @@ class NotebookLMApp:
                 return json.loads(output)
             return output
         except subprocess.CalledProcessError as e:
-            logger.error(f"[NLM ERROR] Command failed: {' '.join(cmd)}\n{e.stderr}")
+            err_msg = e.stderr or e.stdout or ""
+            logger.error(f"[NLM ERROR] Command failed: {' '.join(cmd)}\n{err_msg}")
+            
+            # [V2.6] 인증 만료 감지 및 텔레그램 알림
+            if "Authentication expired" in err_msg or "Authentication Error" in err_msg:
+                from common_utils import send_telegram_report
+                alert_msg = "⚠️ <b>[NotebookLM 인증 만료]</b>\n세션이 종료되었습니다. 터미널에서 <code>nlm login</code>을 실행하여 재인증해 주세요."
+                send_telegram_report(alert_msg)
+                logger.error("Authentication expired notification sent to Telegram.")
+            
             return None
         except Exception as e:
             logger.error(f"[NLM ERROR] {e}")
             return None
+
 
     def create_notebook(self, title):
         logger.info(f"Creating notebook: {title}")
@@ -313,7 +341,7 @@ def process_macro_synthesis(limit_per_cat=15, mode="A", source="rss"):
         
     logger.info(f"\n[PHASE 1 COMPLETE] {len(active_jobs)} reports generating (Mode {mode.upper()}).")
     logger.info("Next: Run notebooklm_publisher.py to download and publish results.")
-    return True
+    return active_jobs # [V2.0] 생성된 Job 정보를 반환하여 오케스트레이터가 알림에 사용하도록 함
 
 
 if __name__ == "__main__":

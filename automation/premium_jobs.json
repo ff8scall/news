@@ -1,32 +1,14 @@
 {
-    "ai": {
-        "notebook_id": "ab39ea49-2e06-4c31-8083-31f4a352e203",
-        "title": "LEGO-SIA AI Intelligence",
-        "categories": [
-            "models",
-            "apps"
-        ],
-        "mode": "B",
-        "status": "pending"
-    },
     "hardware": {
-        "notebook_id": "f469fdd5-b948-4e9c-8d19-52def61f5da1",
-        "title": "LEGO-SIA Hardware Intelligence",
-        "categories": [
-            "chips",
-            "high-end"
+        "notebook_id": "c32b8328-af49-440b-ae21-e65b8db86340",
+        "title": "2026-04-19 hardware Mode-A",
+        "mode": "A",
+        "status": "published",
+        "triggered_at": "2026-04-19T23:39:48.769305",
+        "urls": [
+            "https://news.lego-sia.com/posts/2026/04/19/megatrend-hardware-2026-04-19/",
+            "https://news.lego-sia.com/en/posts/2026/04/19/megatrend-hardware-2026-04-19/"
         ],
-        "mode": "B",
-        "status": "pending"
-    },
-    "insights": {
-        "notebook_id": "6b5c6055-9571-4166-b1b7-f564eddb9445",
-        "title": "LEGO-SIA Insights Intelligence",
-        "categories": [
-            "analysis",
-            "guide"
-        ],
-        "mode": "B",
-        "status": "pending"
+        "published_at": "2026-04-19T23:40:52.198381"
     }
 }
