@@ -462,14 +462,20 @@ def main():
                         help="Choose 'premium' to run the NotebookLM Mega-Trend Macro Synthesis.")
     args = parser.parse_args()
     
-    if args.mode == "premium":
-        logger.info("[MODE: PREMIUM] Redirecting to NotebookLM Synthesis Pipeline...")
-        from notebooklm_prep import process_macro_synthesis
-        process_macro_synthesis(limit_per_cat=args.limit)
-        report = "Premium Pipeline Phase 1 (NotebookLM Sync) Completed Successfully."
-    else:
-        logger.info("[MODE: LEGACY] Starting standard daily pipeline...")
-        report = manage_news_pipeline(limit_per_cat=args.limit, use_local=args.local)
+    try:
+        if args.mode == "premium":
+            logger.info("[MODE: PREMIUM] Redirecting to NotebookLM Synthesis Pipeline...")
+            send_telegram_report("🚀 [PREMIUM] 뉴스 파이프라인 합성이 시작되었습니다.")
+            from notebooklm_prep import process_macro_synthesis
+            process_macro_synthesis(limit_per_cat=args.limit)
+            report = "✅ Premium Pipeline Phase 1 Completed Successfully."
+        else:
+            logger.info("[MODE: LEGACY] Starting standard daily pipeline...")
+            send_telegram_report("🚀 [LEGACY] 표준 뉴스 파이프라인이 시작되었습니다.")
+            report = manage_news_pipeline(limit_per_cat=args.limit, use_local=args.local)
+    except Exception as e:
+        report = f"❌ 파이프라인 중단 에러 발생: {str(e)}"
+        logger.error(report)
         
     try:
         send_telegram_report(report)
