@@ -443,13 +443,41 @@ def manage_news_pipeline(limit_per_cat=1, use_local=False):
     
     categories = ["ai", "hardware", "insights"]
     total_published = 0
+    published_urls = []
     
     # 정기 배치는 안정성을 위해 순차 처리 (Throttling 준수)
     for cat in categories:
         count = process_category(cat, items_by_cat.get(cat, []), editor, tracker, use_local, limit=limit_per_cat)
         total_published += count
+    
+    # [V11.5] URL 수집 로직 (발행 직후 최신 슬러그 기반으로 URL 생성)
+    for cat in categories:
+        items = items_by_cat.get(cat, [])
+        for item in items:
+            cluster = item.get('cluster') or cat
+            raw_slug = sanitize_slug(item['title'])
+            if raw_slug and not raw_slug.isdigit():
+                safe_slug = f"{cluster}-{raw_slug}"[:50].strip('-')
+            else:
+                # hash_slug는 news_main.py에 정의되어 있음
+                article_id = hashlib.md5(item.get('url', '').encode()).hexdigest()[:8]
+                safe_slug = f"{cluster}-{cat}-{article_id}"
+            
+            # 오늘 날짜 기반 경로 생성 (create_hugo_post와 동일한 로직)
+            date_path = datetime.now().strftime('%Y/%m/%d')
+            
+            # 이번 세션에 새로 완료된 것만 URL 리스트에 추가 (is_done 체크)
+            if tracker.is_done("news", safe_slug, "ko"):
+                published_urls.append(f"https://news.lego-sia.com/posts/{date_path}/{safe_slug}/")
+            if tracker.is_done("news", safe_slug, "en"):
+                published_urls.append(f"https://news.lego-sia.com/en/posts/{date_path}/{safe_slug}/")
 
-    summary_msg = f"✅ Production Pipeline Cycle Completed!\nSuccessfully Published: {total_published} articles."
+    # IndexNow 알림 발송
+    if published_urls:
+        unique_urls = list(set(published_urls))
+        notify_indexnow(unique_urls)
+
+    summary_msg = f"✅ Production Pipeline Cycle Completed!\nSuccessfully Published: {total_published} articles.\nIndexed: {len(unique_urls) if published_urls else 0} URLs."
     logger.info(summary_msg)
     return summary_msg
 
