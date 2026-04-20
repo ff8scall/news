@@ -77,13 +77,22 @@ class NotebookLMApp:
         self.cmd_base = [self._find_nlm_cmd()]
     
     def _find_nlm_cmd(self):
-        """nlm 명령어가 PATH에 없으면 윈도우 기본 설치 경로 확인"""
+        """[V2.8] venv 환경 대응: nlm 명령어가 PATH에 없으면 파이썬 실행 파일 경로 주변 확인"""
         import shutil
+        import sys
+        
+        # 1. PATH에서 먼저 확인
         cmd = shutil.which("nlm")
         if cmd:
-            return "nlm"
+            return cmd
         
-        # Windows fallback
+        # 2. 현재 가상환경(venv/bin) 내 확인 (Linux/Ubuntu 최우선)
+        bin_dir = os.path.dirname(sys.executable)
+        venv_nlm = os.path.join(bin_dir, "nlm")
+        if os.path.exists(venv_nlm):
+            return venv_nlm
+            
+        # 3. Windows fallback
         fallback = r"C:\Users\ff8sc\AppData\Local\Programs\Python\Python313\Scripts\nlm.exe"
         if os.path.exists(fallback):
             return fallback

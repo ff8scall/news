@@ -1,0 +1,20 @@
+# ==============================================================================
+# NEWS INTELLIGENCE SYSTEM - CRONTAB CONFIGURATION (Ubuntu Cloud)
+# ==============================================================================
+# Path: /home/ubuntu/AI/News/automation/crontab_config.txt
+# To apply: crontab /home/ubuntu/AI/News/automation/crontab_config.txt
+# ==============================================================================
+
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# 1. Premium News Pipeline (Every hour at 0 min)
+# 수집 -> NLM 분석 -> 발행 -> 배포 -> 인덱싱 전체 자동화
+0 * * * * cd /home/ubuntu/AI/News && ./automation/venv/bin/python3 automation/nlm_orchestrator.py --mode B --limit 15 --full >> /home/ubuntu/AI/News/automation/logs/cron_pipeline.log 2>&1
+
+# 2. NLM Session Stay-alive (Every hour at 30 min)
+# 구글 세션 만료 방지를 위한 활성 유지 스크립트 실행
+30 * * * * /home/ubuntu/AI/News/automation/nlm_keep_alive.sh >> /home/ubuntu/AI/News/automation/logs/cron_stay_alive_error.log 2>&1
+
+# 3. Disk Space Monitoring (Every day at 00:00) - Optional/Maintenance
+0 0 * * * df -h >> /home/ubuntu/AI/News/automation/logs/disk_usage.log 2>&1

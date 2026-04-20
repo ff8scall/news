@@ -1,40 +1,26 @@
 {
     "ai": {
-        "notebook_id": "3f2ae7d7-7e29-478a-9866-97a96006c09d",
-        "title": "2026-04-19 ai Mode-B",
+        "notebook_id": "4931a402-6d59-4b9b-9dda-b5a533877abf",
+        "title": "2026-04-20 ai Mode-B",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-19T23:46:05.026737",
-        "published_at": "2026-04-20T00:25:00"
+        "triggered_at": "2026-04-20T01:23:27.240063",
+        "urls": [
+            "https://news.lego-sia.com/posts/2026/04/20/ai-blue-origin-validates-booster-reuse-via-autonom/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-blue-origin-validates-booster-reuse-via-autonom/"
+        ],
+        "published_at": "2026-04-20T01:25:02.231762"
     },
     "hardware": {
-        "notebook_id": "e7b6fe45-4651-4fa1-83e6-ef2b650e7601",
-        "title": "2026-04-19 hardware Mode-B",
+        "notebook_id": "858f30f5-dc9a-44e0-922c-d4273ee31826",
+        "title": "2026-04-20 hardware Mode-B",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-19T23:46:13.877179",
+        "triggered_at": "2026-04-20T01:23:34.757230",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/20/insights-russian-shahed-drone-clones-face-severe-q/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/insights-russian-shahed-drone-clones-face-severe-q/",
-            "https://news.lego-sia.com/posts/2026/04/20/hardware-bambu-lab-claims-top-spot-in-global-budge/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/hardware-bambu-lab-claims-top-spot-in-global-budge/",
-            "https://news.lego-sia.com/posts/2026/04/20/hardware-celebrating-the-40th-anniversary-of-ibms/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/hardware-celebrating-the-40th-anniversary-of-ibms/",
-            "https://news.lego-sia.com/posts/2026/04/20/insights-sudokoo-sk620v-and-sk700v-review-high-per/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/insights-sudokoo-sk620v-and-sk700v-review-high-per/",
-            "https://news.lego-sia.com/posts/2026/04/20/ai-rice-university-researchers-develop-microwave-a/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/ai-rice-university-researchers-develop-microwave-a/",
-            "https://news.lego-sia.com/posts/2026/04/20/ai-new-hudimm-memory-standard-aimed-at-reducing-dd/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/ai-new-hudimm-memory-standard-aimed-at-reducing-dd/",
-            "https://news.lego-sia.com/posts/2026/04/20/insights-jeyi-archerx-flat-m2-adapter-unlocks-bloc/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/insights-jeyi-archerx-flat-m2-adapter-unlocks-bloc/",
-            "https://news.lego-sia.com/posts/2026/04/20/insights-using-xbox-series-xs-storage-expansion-ca/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/insights-using-xbox-series-xs-storage-expansion-ca/",
-            "https://news.lego-sia.com/posts/2026/04/20/hardware-toshiba-warranty-policy-controversy-refun/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/hardware-toshiba-warranty-policy-controversy-refun/",
-            "https://news.lego-sia.com/posts/2026/04/20/ai-from-trash-to-treasure-20000-worth-of-server-ra/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/ai-from-trash-to-treasure-20000-worth-of-server-ra/"
+            "https://news.lego-sia.com/posts/2026/04/20/ai-russian-made-shahed-drones-are-disintegrating-i/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-russian-made-shahed-drones-are-disintegrating-i/"
         ],
-        "published_at": "2026-04-20T00:39:46.024655"
+        "published_at": "2026-04-20T01:25:04.339784"
     }
 }

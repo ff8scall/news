@@ -31,3 +31,6 @@ __pycache__/
 automation/__pycache__/
 scratch/
 automation/cache/
+automation/venv/
+.gravityBrain/
+node_modules/
