@@ -1,26 +1,70 @@
 {
     "ai": {
-        "notebook_id": "4931a402-6d59-4b9b-9dda-b5a533877abf",
+        "notebook_id": "cbb8ff7b-4744-4633-a9e5-b16d1b0eec0c",
         "title": "2026-04-20 ai Mode-B",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-20T01:23:27.240063",
+        "triggered_at": "2026-04-20T13:16:11.979405",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/20/ai-blue-origin-validates-booster-reuse-via-autonom/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/ai-blue-origin-validates-booster-reuse-via-autonom/"
+            "https://news.lego-sia.com/posts/2026/04/20/ai-assetmaxxing-ai/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-assetmaxxing-ai/"
         ],
-        "published_at": "2026-04-20T01:25:02.231762"
+        "published_at": "2026-04-20T13:18:16.583643"
     },
     "hardware": {
-        "notebook_id": "858f30f5-dc9a-44e0-922c-d4273ee31826",
+        "notebook_id": "c1978736-aeeb-4cc5-8377-519c1cda1569",
         "title": "2026-04-20 hardware Mode-B",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-20T01:23:34.757230",
+        "triggered_at": "2026-04-20T13:16:19.443222",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/20/ai-russian-made-shahed-drones-are-disintegrating-i/",
-            "https://news.lego-sia.com/en/posts/2026/04/20/ai-russian-made-shahed-drones-are-disintegrating-i/"
+            "https://news.lego-sia.com/posts/2026/04/20/ai-bambu-lab-overtakes-creality-the-new-era-of-bud/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-bambu-lab-overtakes-creality-the-new-era-of-bud/",
+            "https://news.lego-sia.com/posts/2026/04/20/ai-microwave-powered-filament-heating-high-precisi/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-microwave-powered-filament-heating-high-precisi/",
+            "https://news.lego-sia.com/posts/2026/04/20/ai-hudimm-standard-debuts-a-strategic-response-to/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-hudimm-standard-debuts-a-strategic-response-to/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-minisforum-n5-max-the-2899-ai-nas-powered/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-minisforum-n5-max-the-2899-ai-nas-powered/",
+            "https://news.lego-sia.com/posts/2026/04/20/hardware-jensen-huang-defends-china-market-strateg/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/hardware-jensen-huang-defends-china-market-strateg/",
+            "https://news.lego-sia.com/posts/2026/04/20/hardware-legislative-nuances-us-lawmakers-amend-ma/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/hardware-legislative-nuances-us-lawmakers-amend-ma/"
         ],
-        "published_at": "2026-04-20T01:25:04.339784"
+        "published_at": "2026-04-20T13:19:05.598293"
+    },
+    "insights": {
+        "notebook_id": "070a926b-f8b7-4d29-9c1f-be071480b95b",
+        "title": "2026-04-20 insights Mode-B",
+        "mode": "B",
+        "status": "published",
+        "triggered_at": "2026-04-20T13:16:27.520954",
+        "urls": [
+            "https://news.lego-sia.com/posts/2026/04/20/ai-why-hardware-and-tech-publishers-are-investing/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-why-hardware-and-tech-publishers-are-investing/",
+            "https://news.lego-sia.com/posts/2026/04/20/ai-how-advanced-manufacturing-technology-is-redefi/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/ai-how-advanced-manufacturing-technology-is-redefi/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-investigating-split-locks-on-x86-64-archi/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-investigating-split-locks-on-x86-64-archi/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-analyzing-nvidia-gb10s-integrated-gpu-per/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-analyzing-nvidia-gb10s-integrated-gpu-per/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-arms-cortex-a725-ft-dells-pro-max-featuri/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-arms-cortex-a725-ft-dells-pro-max-featuri/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-ces-2026-taking-the-lids-off-amds-venice/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-ces-2026-taking-the-lids-off-amds-venice/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-diving-into-qualcomms-upcoming-adreno-x2/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-diving-into-qualcomms-upcoming-adreno-x2/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-inside-nvidia-gb10s-memory-subsystem-from/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-inside-nvidia-gb10s-memory-subsystem-from/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-sc25-the-present-and-future-of-hpc-networ/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-sc25-the-present-and-future-of-hpc-networ/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-nvidias-b200-keeping-the-cuda-juggernaut/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-nvidias-b200-keeping-the-cuda-juggernaut/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-sc25-estimating-amds-upcoming-mi430xs-fp6/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-sc25-estimating-amds-upcoming-mi430xs-fp6/",
+            "https://news.lego-sia.com/posts/2026/04/20/insights-evaluating-uniform-memory-access-mode-on/",
+            "https://news.lego-sia.com/en/posts/2026/04/20/insights-evaluating-uniform-memory-access-mode-on/"
+        ],
+        "published_at": "2026-04-20T13:21:06.020653"
     }
 }
