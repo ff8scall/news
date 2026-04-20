@@ -1,6 +1,6 @@
 ﻿---
 title: "니치 스포츠의 주류화: 넷플릭스와 HBO Max가 선택한 마니아 서사"
-date: "2026-04-20T20:10:49Z"
+date: "2026-04-20T19:00:00Z"
 description: "니치 스포츠의 주류화: 넷플릭스와 HBO Max가 선택한 마니아 서사"
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

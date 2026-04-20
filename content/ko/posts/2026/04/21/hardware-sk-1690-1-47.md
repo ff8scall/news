@@ -1,6 +1,6 @@
 ﻿---
 title: "SK하이닉스 '1,690억 달러' 이익 전망... '1인당 47만 달러' 성과급 지급 시나리오"
-date: "2026-04-21T05:07:53+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "HBM 시장 독점에 힘입어 연간 영업이익 1,690억 달러(약 230조 원) 달성 가시화"
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

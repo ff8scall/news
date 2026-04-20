@@ -1,6 +1,6 @@
 ﻿---
 title: "텍사스 AI 원자력 기업 '페르미(Fermi)', 핵심 경영진 사퇴로 사업 불투명성 고조"
-date: "2026-04-21T05:06:17+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "AI 데이터 센터 전용 원자력 발전을 추진하던 스타트업 '페르미(Fermi)'의 CEO와 CFO가 돌연 동반 사퇴했습니다."
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

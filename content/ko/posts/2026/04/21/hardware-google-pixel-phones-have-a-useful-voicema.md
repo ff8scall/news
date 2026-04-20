@@ -1,6 +1,6 @@
 ﻿---
 title: "구글 픽셀의 숨겨진 보석: '테이크 어 메시지' 기능으로 스마트한 통화 관리하기"
-date: "2026-04-21T05:06:37+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "구글 픽셀 스마트폰의 기본 설정 뒤에 숨겨진 유용한 기능인 '테이크 어 메시지(Take A Message)'를 소개합니다."
 image: "/images/defaults/hardware/ai.jpg"
 clusters: ["hardware"]

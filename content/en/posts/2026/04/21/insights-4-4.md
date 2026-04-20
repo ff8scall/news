@@ -1,6 +1,6 @@
 ﻿---
 title: "4월 4주차 넷플릭스 신작 가이드: 기술적 몰입감과 향수의 결합"
-date: "2026-04-20T20:09:25Z"
+date: "2026-04-20T19:00:00Z"
 description: "4월 4주차 넷플릭스 신작 가이드: 기술적 몰입감과 향수의 결합"
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

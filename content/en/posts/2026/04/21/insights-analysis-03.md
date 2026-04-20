@@ -1,6 +1,6 @@
 ﻿---
 title: "안드로이드용 페이스타임의 의도적 결함과 생태계 방어 전략"
-date: "2026-04-20T20:09:36Z"
+date: "2026-04-20T19:00:00Z"
 description: "안드로이드용 페이스타임의 의도적 결함과 생태계 방어 전략"
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

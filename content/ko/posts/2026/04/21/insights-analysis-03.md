@@ -1,6 +1,6 @@
 ﻿---
 title: "안드로이드용 페이스타임의 의도적 결함과 생태계 방어 전략"
-date: "2026-04-21T05:09:31+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "애플이 안드로이드 사용자에게 제공하는 페이스타임 웹 버전의 기술적 제약을 분석하고, 이를 통한 '폐쇄적 생태계' 유지 전략 비판."
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

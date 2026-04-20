@@ -1,6 +1,6 @@
 ﻿---
 title: "아마존 프라임 비디오의 전략적 선택: '여운'을 남기는 큐레이션의 미학"
-date: "2026-04-21T05:10:13+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "방대한 양의 넷플릭스와 대조되는 아마존 프라임 비디오의 질적 큐레이션 전략과 내러티브 중심의 신작 분석."
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

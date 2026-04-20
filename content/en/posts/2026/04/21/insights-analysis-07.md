@@ -1,6 +1,6 @@
 ﻿---
 title: "아마존 프라임 비디오의 전략적 선택: '여운'을 남기는 큐레이션의 미학"
-date: "2026-04-20T20:10:18Z"
+date: "2026-04-20T19:00:00Z"
 description: "아마존 프라임 비디오의 전략적 선택: '여운'을 남기는 큐레이션의 미학"
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

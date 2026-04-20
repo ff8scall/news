@@ -1,6 +1,6 @@
 ﻿---
 title: "ARM 기반 안드로이드의 PC 게임 점령 가능성: FEX 번역 레이어의 기술적 현주소"
-date: "2026-04-21T05:07:22+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "x86 기반 PC 소프트웨어를 ARM64 환경에서 구동하는 하이엔드 번역 기술"
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

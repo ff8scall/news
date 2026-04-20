@@ -1,6 +1,6 @@
 ﻿---
 title: "고가 메쉬 Wi-Fi의 마케팅 함정과 라우터 재배치의 물리적 근거"
-date: "2026-04-20T20:10:28Z"
+date: "2026-04-20T19:00:00Z"
 description: "고가 메쉬 Wi-Fi의 마케팅 함정과 라우터 재배치의 물리적 근거"
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

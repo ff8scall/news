@@ -1,6 +1,6 @@
 ﻿---
 title: "로쿠 시티(Roku City)의 변신: 화면보호기를 넘어선 인터랙티브 게임의 탄생"
-date: "2026-04-21T05:06:48+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "로쿠(Roku)가 자사의 상징적인 '로쿠 시티' 화면보호기를 '로쿠 시티 대시'라는 인터랙티브 게임으로 탈바꿈시켰습니다."
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

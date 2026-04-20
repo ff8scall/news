@@ -1,6 +1,6 @@
 ﻿---
 title: "포르자 호라이즌 6 출시 임박: 한정판 하드웨어 번들로 극대화되는 몰입감"
-date: "2026-04-21T05:08:57+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "포르자 호라이즌 6 공식 출시에 맞춘 한정판 무선 컨트롤러 및 헤드셋 번들 발표"
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

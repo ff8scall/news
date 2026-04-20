@@ -1,6 +1,6 @@
 ﻿---
 title: "버셀(Vercel) 보안 붕괴 사고: 'AI 권한 오남용'이 불러온 200만 달러의 위협"
-date: "2026-04-21T05:07:43+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "직원이 AI 도구에 구글 워크스페이스 전권한을 부여하며 내부망 침투 경로 허용"
 image: "/images/defaults/hardware/ai.jpg"
 clusters: ["hardware"]

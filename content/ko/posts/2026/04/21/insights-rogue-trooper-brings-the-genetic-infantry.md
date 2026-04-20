@@ -1,6 +1,6 @@
 ﻿---
 title: "영화 '로그 트루퍼': 유전공학 보병이 그리는 미래 전쟁의 디스토피아"
-date: "2026-04-21T05:05:24+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "영화 '더 문'으로 유명한 던칸 존스 감독이 영국 만화 '로그 트루퍼'를 기반으로 유전자 보병의 이야기를 영화화합니다."
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

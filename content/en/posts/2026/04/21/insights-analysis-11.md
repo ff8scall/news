@@ -1,6 +1,6 @@
 ﻿---
 title: "일본의 60억 달러 자원 안보 베팅: '도시 광산'과 순환경제의 기술적 전략"
-date: "2026-04-20T20:11:00Z"
+date: "2026-04-20T19:00:00Z"
 description: "일본의 60억 달러 자원 안보 베팅: '도시 광산'과 순환경제의 기술적 전략"
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

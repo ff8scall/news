@@ -1,6 +1,6 @@
 ﻿---
 title: "리눅스 7.1 커널 업데이트: 내장형 NTFS 드라이버로 스토리지 장벽 허문다"
-date: "2026-04-21T05:08:04+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "리눅스 7.1, 커널 수준에서 공식 지원되는 고성능 NTFS 드라이버 탑재"
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

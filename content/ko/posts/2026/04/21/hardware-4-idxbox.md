@@ -1,6 +1,6 @@
 ﻿---
 title: "엑스박스, 4월 'ID@Xbox' 쇼케이스 개최... 인디 생태계 강화 전략 시동"
-date: "2026-04-21T05:08:35+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "년 4월 23일, IGN과 협업하여 차세대 인디 게임 쇼케이스 생중계"
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

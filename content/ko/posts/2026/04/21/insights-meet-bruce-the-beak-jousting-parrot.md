@@ -1,6 +1,6 @@
 ﻿---
 title: "앵무새 '브루스'의 도구 사용: 신체적 장애를 극복한 지능적 혁신의 사례"
-date: "2026-04-21T05:05:35+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "윗부리가 소실된 뉴질랜드 케아 앵무새 '브루스'가 조약돌을 도구 삼아 깃털을 관리하는 놀라운 모습이 포착되었습니다."
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

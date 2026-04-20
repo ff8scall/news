@@ -1,6 +1,6 @@
 ﻿---
 title: "넷플릭스 심해 스릴러가 선사하는 공포의 기술: 촬영과 음향의 조화"
-date: "2026-04-21T05:10:02+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "상어와 심해를 소재로 한 넷플릭스 신작 스릴러들을 통해, 몰입감을 극대화하는 수중 촬영 및 입체 음향 기술 분석."
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

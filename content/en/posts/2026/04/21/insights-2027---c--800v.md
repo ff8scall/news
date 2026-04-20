@@ -1,6 +1,6 @@
 ﻿---
 title: "2027 메르세데스-벤츠 전기 C-클래스: 800V 아키텍처와 역대 최강의 퍼포먼스"
-date: "2026-04-20T20:09:46Z"
+date: "2026-04-20T19:00:00Z"
 description: "2027 메르세데스-벤츠 전기 C-클래스: 800V 아키텍처와 역대 최강의 퍼포먼스"
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

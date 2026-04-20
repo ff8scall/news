@@ -1,6 +1,6 @@
 ﻿---
 title: "인텔 파운드리, 장비 발주 50% 급증... 고객 부재 속 던진 '1,000억 달러의 승부수'"
-date: "2026-04-21T05:08:25+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "인텔 파운드리, 전년 대비 반도체 제조 장비 발주량 50% 대폭 확대"
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

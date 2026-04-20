@@ -1,6 +1,6 @@
 ﻿---
 title: "노지마의 히타치 가전 부문 인수: 제조 주도권이 유통으로 이동하는 신호탄"
-date: "2026-04-20T20:11:10Z"
+date: "2026-04-20T19:00:00Z"
 description: "노지마의 히타치 가전 부문 인수: 제조 주도권이 유통으로 이동하는 신호탄"
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

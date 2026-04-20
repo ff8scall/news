@@ -1,6 +1,6 @@
 ﻿---
 title: "내 폰 안의 일급비밀: 'OpenKeychain'을 활용한 안드로이드 파일 암호화 가이드"
-date: "2026-04-21T05:06:27+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "안드로이드 사용자들을 위해 오픈소스 앱인 'OpenKeychain'을 이용한 파일 암호화 및 안전한 공유 방법을 상세히 안내합니다."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

@@ -1,6 +1,6 @@
 ﻿---
 title: "Deezer says 44% of new music uploads are AI-generated, most streams are fraudulent"
-date: "2026-04-20T20:05:19Z"
+date: "2026-04-20T19:00:00Z"
 description: "Streaming giant Deezer reveals that nearly half of all new tracks are created by AI, with the majority designed to commit streaming fraud. The platform is shifting toward a user-centric payment model to protect human artists from synthetic dilution."
 image: "/images/fallbacks/ai-tech.jpg"
 clusters: ["ai"]

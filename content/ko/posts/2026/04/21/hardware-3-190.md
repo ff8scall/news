@@ -1,6 +1,6 @@
 ﻿---
 title: "글로벌 장비 3사, 중국서 '190억 달러' 역대급 매출... 규제 속 수익성 둔화는 과제"
-date: "2026-04-21T05:07:33+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "어플라이드 머티어리얼즈, 램리서치, KLA 등 글로벌 3사, 중국 내 합산 매출 190억 달러 달성"
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

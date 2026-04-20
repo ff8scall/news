@@ -1,6 +1,6 @@
 ﻿---
 title: "하이엔드 장비를 무력화하는 치명적인 카메라 설정 오류와 광학적 분석"
-date: "2026-04-20T20:09:14Z"
+date: "2026-04-20T19:00:00Z"
 description: "하이엔드 장비를 무력화하는 치명적인 카메라 설정 오류와 광학적 분석"
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

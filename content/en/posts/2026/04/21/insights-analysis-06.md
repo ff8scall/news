@@ -1,6 +1,6 @@
 ﻿---
 title: "넷플릭스 심해 스릴러가 선사하는 공포의 기술: 촬영과 음향의 조화"
-date: "2026-04-20T20:10:07Z"
+date: "2026-04-20T19:00:00Z"
 description: "넷플릭스 심해 스릴러가 선사하는 공포의 기술: 촬영과 음향의 조화"
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

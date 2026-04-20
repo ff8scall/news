@@ -1,6 +1,6 @@
 ﻿---
 title: "게임서(GameSir) T7 프로 '슈가 월': 게이밍 기어에 입힌 파스텔 감성"
-date: "2026-04-21T05:08:46+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "'파스텔 컬렉션'의 첫 번째 라인업, 솜사탕 테마의 '슈가 월' 에디션 공개"
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

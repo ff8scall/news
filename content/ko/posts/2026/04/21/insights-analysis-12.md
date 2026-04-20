@@ -1,6 +1,6 @@
 ﻿---
 title: "노지마의 히타치 가전 부문 인수: 제조 주도권이 유통으로 이동하는 신호탄"
-date: "2026-04-21T05:11:05+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "일본 대형 유통업체 노지마의 히타치 가전 부문 인수(6억 3천만 달러)를 통해 본 제조-유통 통합 트렌드 분석."
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

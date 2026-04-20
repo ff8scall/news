@@ -1,6 +1,6 @@
 ﻿---
 title: "디저(Deezer)의 경고: 신규 음원 44%가 AI 생성물, 스트리밍 생태계의 교란"
-date: "2026-04-21T05:05:14+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "음악 플랫폼 디저(Deezer) 조사에 따르면 신규 업로드 음원의 44%가 AI로 생성된 곡으로 나타났습니다."
 image: "/images/fallbacks/ai-tech.jpg"
 clusters: ["ai"]

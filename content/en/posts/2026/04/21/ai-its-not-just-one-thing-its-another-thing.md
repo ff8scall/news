@@ -1,6 +1,6 @@
 ﻿---
 title: "It’s not just one thing — it’s another thing"
-date: "2026-04-20T20:06:01Z"
+date: "2026-04-20T19:00:00Z"
 description: "The rhetorical structure 'It’s not just X — it’s Y' has become a ubiquitous hallmark of AI-generated text. Its overuse highlights the predictable nature of LLM outputs and the need for more diverse linguistic training."
 image: "/images/fallbacks/ai-tech.jpg"
 clusters: ["ai"]

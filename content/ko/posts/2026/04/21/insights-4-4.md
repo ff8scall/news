@@ -1,6 +1,6 @@
 ﻿---
 title: "4월 4주차 넷플릭스 신작 가이드: 기술적 몰입감과 향수의 결합"
-date: "2026-04-21T05:09:20+09:00"
+date: "2026-04-21T04:00:00+09:00"
 description: "정글 어드벤처, 브루스 윌리스의 SF, 고난도 애니메이션 등 넷플릭스의 주간 신작 라인업에 투영된 기술적 렌더링 가치 분석."
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

@@ -1,6 +1,6 @@
 ﻿---
 title: "NSA spies are reportedly using Anthropic’s Mythos, despite Pentagon feud"
-date: "2026-04-20T20:06:11Z"
+date: "2026-04-20T19:00:00Z"
 description: "The National Security Agency is reportedly deploying Anthropic's powerful Mythos AI model for high-stakes intelligence work. This move comes despite internal resistance within the Pentagon regarding the model's safety and strategic control."
 image: "/images/fallbacks/ai-tech.jpg"
 clusters: ["ai"]
