@@ -8,7 +8,9 @@
     {"name": "The Rundown AI", "url": "https://www.therundown.ai/feed"},
     {"name": "The Verge Tech", "url": "https://www.theverge.com/rss/front-page/index.xml"},
     {"name": "ZDNet AI", "url": "https://www.zdnet.com/topic/artificial-intelligence/rss.xml"},
-    {"name": "SiliconAngle AI", "url": "https://siliconangle.com/category/ai/feed/"}
+    {"name": "SiliconAngle AI", "url": "https://siliconangle.com/category/ai/feed/"},
+    {"name": "The Register AI", "url": "https://www.theregister.com/software/ai_ml/headlines.atom"},
+    {"name": "The Next Web", "url": "https://thenextweb.com/feed"}
   ],
   "hardware": [
     {"name": "Tom's Hardware", "url": "https://www.tomshardware.com/feeds/all"},
@@ -18,7 +20,9 @@
     {"name": "SemiAnalysis", "url": "https://www.semianalysis.com/feed"},
     {"name": "Overclock3D", "url": "https://www.overclock3d.net/news/rss"},
     {"name": "Hexus", "url": "https://www.hexus.net/rss/"},
-    {"name": "Hardware Canucks", "url": "https://hardwarecanucks.com/feed/"}
+    {"name": "Hardware Canucks", "url": "https://hardwarecanucks.com/feed/"},
+    {"name": "The Register Systems", "url": "https://www.theregister.com/on_prem/systems/headlines.atom"},
+    {"name": "DigiTimes", "url": "https://www.digitimes.com/rss/daily.xml"}
   ],
   "insights": [
     {"name": "Hardware Times", "url": "https://www.hardwaretimes.com/feed/"},
@@ -26,6 +30,8 @@
     {"name": "Chips and Cheese", "url": "https://chipsandcheese.com/feed/"},
     {"name": "How-To Geek", "url": "https://www.howtogeek.com/feed/"},
     {"name": "MakeUseOf AI", "url": "https://www.makeuseof.com/category/artificial-intelligence/feed/"},
-    {"name": "Analytics Vidhya", "url": "https://www.analyticsvidhya.com/blog/category/ai/feed/"}
+    {"name": "Analytics Vidhya", "url": "https://www.analyticsvidhya.com/blog/category/ai/feed/"},
+    {"name": "Nikkei Asia Tech", "url": "https://asia.nikkei.com/rss/feed/nar"},
+    {"name": "Japan Times Tech", "url": "https://www.japantimes.co.jp/news_category/tech/feed/"}
   ]
 }

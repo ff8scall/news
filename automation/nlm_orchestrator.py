@@ -189,7 +189,7 @@ Examples:
     )
     parser.add_argument("--mode", type=str, default="A", choices=["A", "B", "C"],
                         help="운영 모드: A=메가트렌드, B=개별기사, C=하이브리드")
-    parser.add_argument("--limit", type=int, default=15,
+    parser.add_argument("--limit", type=int, default=12,
                         help="카테고리당 수집할 기사 수 (기본: 15)")
     parser.add_argument("--phase", type=int, default=0, choices=[0, 1, 2],
                         help="실행할 Phase (0=전체, 1=수확만, 2=게시만)")

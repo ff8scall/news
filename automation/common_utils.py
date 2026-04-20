@@ -60,19 +60,25 @@ def send_telegram_report(message: str) -> bool:
         payload = {
             "chat_id": chat_id,
             "text": message,
-            "parse_mode": "HTML" # Using HTML for better formatting of links/bold
+            "parse_mode": "HTML"
         }
         response = requests.post(url, json=payload, timeout=10)
         
         if response.status_code == 200:
-            msg_snippet = message.split('\n')[0][:30] # 첫 줄 30자만 로그에 표시
-            print(f"[Telegram] Report dispatched successfully. ({msg_snippet}...)")
+            msg_snippet = message.split('\n')[0][:30]
+            try:
+                print(f"[Telegram] Report dispatched successfully. ({msg_snippet}...)")
+            except UnicodeEncodeError:
+                print(f"[Telegram] Report dispatched successfully. (Encoding error in snippet)")
             return True
         else:
-            print(f"[Telegram] Failed to send report. Status: {response.status_code}, Response: {response.text}")
+            print(f"[Telegram] Failed to send report. Status: {response.status_code}")
             return False
     except Exception as e:
-        print(f"[Telegram] Connection Error: {e}")
+        try:
+            print(f"[Telegram] Connection Error: {e}")
+        except UnicodeEncodeError:
+            print(f"[Telegram] Connection Error: (Encoding error in message)")
         return False
 
 def sanitize_slug(text: str) -> str:
