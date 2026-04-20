@@ -1,6 +1,6 @@
 ﻿---
 title: "How Advanced Manufacturing Technology Is Redefining Supply Chain Strategy"
-date: "2026-04-20T08:43:43Z"
+date: "2026-04-20T10:19:04Z"
 description: "The paradigm of supply chain management has shifted from simple logistics optimization to a technology-driven design process. In 2026, advanced manufacturing technologies are enabling companies to build more resilient, responsive, and data-centric supply chains that move beyond traditional cost-reduction models. This evolution focuses on the integration of real-time manufacturing data to mitigate risks and enhance competitive advantages in a volatile global market."
 image: "/images/defaults/ai/supply_chain.jpg"
 clusters: ["ai"]

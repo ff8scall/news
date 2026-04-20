@@ -1,8 +1,8 @@
 ﻿---
 title: "엔비디아 B200: 베르다(Verda)와 함께 이어가는 쿠다(CUDA) 독주 체제 분석"
-date: "2026-04-20T17:46:18+09:00"
+date: "2026-04-20T19:20:23+09:00"
 description: "엔비디아 B200 블랙웰 GPU의 성능 분석과 AI 연산 시장에서의 압도적 지배력 확인"
-image: "/images/fallbacks/market-trend.jpg"
+image: "/images/posts/2026/04/20/insights-nvidias-b200-keeping-the-cuda-juggernaut_gen.jpg"
 clusters: ["insights"]
 categories: ["analysis"]
 tags: ["엔비디아 B200", "블랙웰 GPU", "쿠다 생태계", "베르다", "FP4 정밀도", "AI 학습", "클라우드 인프라"]

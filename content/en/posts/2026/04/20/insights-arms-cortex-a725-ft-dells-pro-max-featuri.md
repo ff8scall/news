@@ -1,6 +1,6 @@
 ﻿---
 title: "Arm’s Cortex A725 ft. Dell’s Pro Max featuring GB10"
-date: "2026-04-20T08:44:13Z"
+date: "2026-04-20T10:19:34Z"
 description: "This report examines the high-performance synergy between Arm's Cortex A725 cores and the Nvidia GB10 iGPU within Dell's new Pro Max laptop. Initially designed as a top-tier performance offering, the Arm 7-series continues to push the boundaries of mobile computing efficiency. The collaboration between Dell, Arm, and Nvidia represents a significant shift in the 2026 laptop market, blending world-class CPU efficiency with Blackwell-based graphics power."
 image: "/images/defaults/market/nvidia_gb10.jpg"
 clusters: ["insights"]

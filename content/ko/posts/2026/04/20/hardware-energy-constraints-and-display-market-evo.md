@@ -1,6 +1,6 @@
 ﻿---
 title: "에너지 제약과 디스플레이의 진화: E Ink가 제시하는 '표면(Surfaces)'의 시대"
-date: "2026-04-20T17:47:52+09:00"
+date: "2026-04-20T19:22:43+09:00"
 description: "E Ink 홀딩스 존슨 리 회장, 에너지 및 환경적 제약이 디스플레이 산업의 새로운 표준이 될 것이라 강조."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

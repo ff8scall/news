@@ -1,6 +1,6 @@
 ﻿---
 title: "CPU 관점에서 본 엔비디아 GB10의 메모리 서브시스템 분석"
-date: "2026-04-20T17:44:39+09:00"
+date: "2026-04-20T19:20:01+09:00"
 description: "엔비디아와 미디어텍의 협력으로 탄생한 GB10 메모리 서브시스템의 설계 구조 분석"
 image: "/images/defaults/market/nvidia_gb10.jpg"
 clusters: ["insights"]

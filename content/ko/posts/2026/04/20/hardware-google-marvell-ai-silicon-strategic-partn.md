@@ -1,8 +1,8 @@
 ﻿---
 title: "구글-마벨 AI 실리콘 동맹: 추론 중심의 반(反) 엔비디아 전선 구축"
-date: "2026-04-20T17:47:10+09:00"
+date: "2026-04-20T19:22:00+09:00"
 description: "구글과 마벨 테크놀로지, AI 추론 워크로드 최적화를 위한 맞춤형 ASIC 개발 협력 강화."
-image: "/images/defaults/hardware/ai.jpg"
+image: "/images/posts/2026/04/20/hardware-google-marvell-ai-silicon-strategic-partn_gen.jpg"
 clusters: ["hardware"]
 categories: ["chips"]
 tags: ["구글", "마벨 테크놀로지", "AI 칩", "추론 워크로드", "엔비디아", "맞춤형 ASIC", "데이터센터 효율성"]

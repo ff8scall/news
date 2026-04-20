@@ -1,6 +1,6 @@
 ﻿---
 title: "Energy Constraints and Display Market Evolution (E Ink)"
-date: "2026-04-20T08:47:57Z"
+date: "2026-04-20T10:22:48Z"
 description: "E Ink Chairman Johnson Lee argues that increasing energy and environmental constraints will redefine the display industry. The future lies in transforming everyday 'surfaces' into low-power information hubs, moving beyond traditional smartphone and TV endpoints."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

@@ -5,22 +5,16 @@ from telegram_bridge import TelegramBridge
 def main():
     bridge = TelegramBridge()
     
-    if len(sys.argv) < 2:
-        # 인자 없으면 Pull 모드
-        print(bridge.pull_instructions())
-        return
-
-    # 첫 번째 인자가 'pull'이면 수신 모드
-    cmd = sys.argv[1].lower()
-    if cmd == "pull":
-        print(bridge.pull_instructions())
-    else:
-        # 그 외에는 메시지 전송
+    # 인자가 있으면 해당 내용을 보내고, 없으면 기본 완료 메시지 전송
+    if len(sys.argv) > 1:
         message = sys.argv[1]
-        if bridge.send_report(message):
-            print(f"Message sent: {message[:30]}...")
-        else:
-            print("Failed to send message.")
+    else:
+        message = "✅ [Antigravity] 요청하신 모든 작업이 완료되었습니다."
+        
+    if bridge.send_report(message):
+        print(f"Notification sent successfully.")
+    else:
+        print("Failed to send notification.")
 
 if __name__ == "__main__":
     main()

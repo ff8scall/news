@@ -1,6 +1,6 @@
 ﻿---
 title: "AMD 튜린(Turin)의 균일 메모리 액세스(UMA) 모드 성능 평가 및 분석"
-date: "2026-04-20T17:46:39+09:00"
+date: "2026-04-20T19:21:29+09:00"
 description: "AMD 튜린(Turin) 서버 CPU에서 지원하는 UMA 모드가 실제 성능과 메모리 레이턴시에 미치는 영향 분석"
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

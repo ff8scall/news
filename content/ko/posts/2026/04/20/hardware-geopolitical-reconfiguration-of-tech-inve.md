@@ -1,6 +1,6 @@
 ﻿---
 title: "지정학적 리스크와 기술 투자의 재편: 대만 기업의 탈중국 가속화"
-date: "2026-04-20T17:47:20+09:00"
+date: "2026-04-20T19:22:11+09:00"
 description: "미국의 대중국 억제 정책 장기화에 따른 대만 기업들의 제조 기반 본국 회귀(Repatriation) 및 제3국 이전 심화."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

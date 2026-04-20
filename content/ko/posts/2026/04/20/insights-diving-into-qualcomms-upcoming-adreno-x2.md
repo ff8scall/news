@@ -1,6 +1,6 @@
 ﻿---
 title: "에릭 데머스(Eric Demers)와 함께 분석한 퀄컴의 차세대 아드레노(Adreno) X2 GPU"
-date: "2026-04-20T17:44:29+09:00"
+date: "2026-04-20T19:19:51+09:00"
 description: "모바일 그래픽의 한계를 넘어서는 퀄컴의 차세대 아드레노(Adreno) X2 GPU 아키텍처 심층 분석"
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]

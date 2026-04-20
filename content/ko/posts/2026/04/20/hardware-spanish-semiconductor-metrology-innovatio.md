@@ -1,6 +1,6 @@
 ﻿---
 title: "스페인 반도체 계측의 선봉: 웁틱스(Wooptix)와 Phemet 시스템의 부상"
-date: "2026-04-20T17:47:31+09:00"
+date: "2026-04-20T19:22:21+09:00"
 description: "웁틱스, 1세대 광학 검사 시스템 'Phemet' 공개 및 유럽 주요 파운드리와 협력 강화."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

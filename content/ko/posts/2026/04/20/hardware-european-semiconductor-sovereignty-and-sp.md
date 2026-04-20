@@ -1,6 +1,6 @@
 ﻿---
 title: "유럽 반도체 자립의 꿈: 스페인 IC 설계 생태계와 '자국산 실리콘'의 도전"
-date: "2026-04-20T17:48:02+09:00"
+date: "2026-04-20T19:22:53+09:00"
 description: "지정학적 불안정성 속에서 유럽 내 독자적인 컴퓨팅 아키텍처 및 칩 설계 역량 강화 요구 급증."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

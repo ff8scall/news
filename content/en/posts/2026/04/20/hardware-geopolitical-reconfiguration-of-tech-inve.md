@@ -1,6 +1,6 @@
 ﻿---
 title: "Geopolitical Reconfiguration of Tech Investments"
-date: "2026-04-20T08:47:25Z"
+date: "2026-04-20T10:22:16Z"
 description: "US-led containment of China is forcing Taiwanese firms to aggressively shift their investment patterns. This strategic repatriation and supply chain diversification represent a fundamental decoupling from Chinese manufacturing ecosystems to mitigate long-term geopolitical risks."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

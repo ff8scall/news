@@ -1,6 +1,6 @@
 ﻿---
 title: "India's Advancement in 3D Chip Packaging"
-date: "2026-04-20T08:47:46Z"
+date: "2026-04-20T10:22:37Z"
 description: "India has officially entered the high-end semiconductor race with the groundbreaking of its first 3D packaging unit in Odisha. Focusing on heterogeneous integration, this facility positions India as a strategic hub for AI, defense, and aerospace hardware."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

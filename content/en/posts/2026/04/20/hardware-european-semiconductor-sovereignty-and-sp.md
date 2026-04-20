@@ -1,6 +1,6 @@
 ﻿---
 title: "European Semiconductor Sovereignty and Spain's IC Design"
-date: "2026-04-20T08:48:07Z"
+date: "2026-04-20T10:22:58Z"
 description: "Rising demand for EU semiconductor sovereignty is revitalizing Spain's IC design ecosystem. Startups like Semidynamics and Openchip are developing independent architectures to serve local computing needs, aiming to reduce strategic reliance on US and Asian technology."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

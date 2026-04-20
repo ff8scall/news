@@ -1,6 +1,6 @@
 ﻿---
 title: "첨단 제조 기술이 공급망 전략을 재정의하는 방식"
-date: "2026-04-20T17:43:38+09:00"
+date: "2026-04-20T19:18:59+09:00"
 description: "단순 물류 효율화를 넘어 기술 기반의 설계 및 최적화로 공급망 관리 패러다임이 전환됨"
 image: "/images/defaults/ai/supply_chain.jpg"
 clusters: ["ai"]

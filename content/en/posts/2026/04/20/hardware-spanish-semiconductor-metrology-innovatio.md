@@ -1,6 +1,6 @@
 ﻿---
 title: "Spanish Semiconductor Metrology Innovation (Wooptix)"
-date: "2026-04-20T08:47:36Z"
+date: "2026-04-20T10:22:26Z"
 description: "Spanish startup Wooptix is challenging the metrology market with its 'Phemet' optical inspection system. Targeting 2028 for full foundry integration, the firm aims to enhance yield in advanced nodes through innovative European-made toolsets."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

@@ -1,6 +1,6 @@
 ﻿---
 title: "Smartphone Market Contraction and Sunny Optical"
-date: "2026-04-20T08:47:05Z"
+date: "2026-04-20T10:21:55Z"
 description: "Sunny Optical projects a 9% global smartphone market decline in 2026. While camera upgrades in the mass market segment have paused, the company is pivoting toward high-margin, high-end component replacements to sustain profitability."
 image: "/images/posts/2026/04/20/hardware-smartphone-market-contraction-and-sunny-o_gen.jpg"
 clusters: ["hardware"]

@@ -1,8 +1,8 @@
 ﻿---
 title: "Nvidia’s B200: Keeping the CUDA Juggernaut Rolling ft. Verda"
-date: "2026-04-20T08:46:23Z"
+date: "2026-04-20T10:20:28Z"
 description: "The Nvidia B200 Blackwell GPU continues to dominate the AI compute market, supported by the maturing CUDA ecosystem and partnerships with cloud providers like Verda (formerly DataCrunch). This analysis examines how the B200 leverages the Blackwell architecture to set new benchmarks in AI training and inference. The deep integration with CUDA ensures that Nvidia remains the preferred choice for enterprises scaling their AI infrastructure in 2026."
-image: "/images/fallbacks/market-trend.jpg"
+image: "/images/posts/2026/04/20/insights-nvidias-b200-keeping-the-cuda-juggernaut_gen.jpg"
 clusters: ["insights"]
 categories: ["analysis"]
 tags: ["Nvidia B200", "Blackwell GPU", "CUDA Ecosystem", "Verda", "FP4 Precision", "AI Training", "Cloud Infrastructure"]

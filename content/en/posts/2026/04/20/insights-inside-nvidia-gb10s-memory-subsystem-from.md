@@ -1,6 +1,6 @@
 ﻿---
 title: "Inside Nvidia GB10’s Memory Subsystem, from the CPU Side"
-date: "2026-04-20T08:44:44Z"
+date: "2026-04-20T10:20:06Z"
 description: "This deep dive explores the collaborative engineering between Nvidia and Mediatek that defines the GB10's memory subsystem. By integrating Blackwell architecture into a mobile-ready SoC, the GB10 utilizes a high-bandwidth, low-latency memory interface that bridges the gap between CPU and GPU tasks. The design focuses on maximizing the efficiency of shared memory pools to ensure that integrated graphics can compete with discrete solutions."
 image: "/images/defaults/market/nvidia_gb10.jpg"
 clusters: ["insights"]

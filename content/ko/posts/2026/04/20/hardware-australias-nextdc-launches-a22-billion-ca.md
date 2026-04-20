@@ -1,6 +1,6 @@
 ﻿---
 title: "호주 NEXTDC, AI 데이터센터 인프라 확장을 위한 22억 호주 달러 규모 자본 확충 계획 발표"
-date: "2026-04-20T17:46:49+09:00"
+date: "2026-04-20T19:21:39+09:00"
 description: "NEXTDC, AI 인프라 수요 대응을 위해 총 22억 호주 달러(약 2조 원) 규모의 대규모 자본 확충 실시."
 image: "/images/defaults/hardware/nextdc.jpg"
 clusters: ["hardware"]

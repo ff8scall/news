@@ -1,6 +1,6 @@
 ﻿---
 title: "SC25: 코넬리스 네트웍스(Cornelis Networks) CEO 리사 스펠만과 논의한 HPC 네트워킹의 미래"
-date: "2026-04-20T17:45:23+09:00"
+date: "2026-04-20T19:20:12+09:00"
 description: "SC25 컨퍼런스에서 코넬리스 네트웍스 CEO 리사 스펠만이 제시한 차세대 HPC 네트워킹 비전 분석"
 image: "/images/posts/2026/04/20/insights-sc25-the-present-and-future-of-hpc-networ_gen.jpg"
 clusters: ["insights"]

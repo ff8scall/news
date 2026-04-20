@@ -8,13 +8,15 @@ from datetime import datetime
 
 logger = logging.getLogger("ImageManager")
 
-# 기본 경로 설정
-DEFAULT_LIB_ROOT = "static/images/defaults"
-POST_IMAGE_ROOT = "static/images/posts"
+# [V3.0] 프로젝트 루트 기준 경로 자동 탐색
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, "static")
+
+DEFAULT_LIB_ROOT = os.path.join(STATIC_ROOT, "images/defaults")
+POST_IMAGE_ROOT = os.path.join(STATIC_ROOT, "images/posts")
 FALLBACK_WEB_PATH = "/images/fallbacks"
 
 # 클러스터 정규화 및 폴백 매핑
-# static/images/fallbacks 디렉토리의 실제 파일명과 일치해야 함
 CLUSTER_MAP = {
     "ai": "ai-tech",
     "hardware": "hardware",
@@ -53,14 +55,20 @@ def download_image(url, slug):
     web_path = f"/images/posts/{date_dir}/{filename}"
     
     try:
-        headers = {'User-Agent': 'Mozilla/5.0'}
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
         resp = requests.get(url, timeout=(5, 15), headers=headers)
         if resp.status_code == 200:
-            with open(save_path, 'wb') as f: f.write(resp.content)
-            logger.info(f" [Tier 1] Downloaded: {web_path}")
-            return web_path
+            content = resp.content
+            if len(content) > 1000: # 최소 1KB 이상이어야 정상 이미지로 간주
+                with open(save_path, 'wb') as f: f.write(content)
+                logger.info(f" [Tier 1] [OK] Original Image Downloaded: {web_path}")
+                return web_path
+            else:
+                logger.warning(f" [Tier 1] [FAIL] Image content too small from: {url}")
+        else:
+            logger.warning(f" [Tier 1] [FAIL] HTTP {resp.status_code} for: {url}")
     except Exception as e:
-        logger.warning(f" [Tier 1] Failed: {e}")
+        logger.warning(f" [Tier 1] [ERROR] Download Failed {url}: {e}")
     
     return None
 
@@ -99,37 +107,43 @@ def generate_and_cache(prompt, cluster, keywords, slug):
     api_url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1200&height=630&nologo=true"
     
     try:
-        logger.info(f" [Tier 3] Calling API for: {slug}")
+        logger.info(f" [Tier 3] [START] Requesting AI Generation for: {slug}")
         resp = requests.get(api_url, timeout=45)
-        if resp.status_code == 200 and len(resp.content) > 5000:
+        if resp.status_code == 200:
             content = resp.content
-            
-            # (A) 포스트용 저장
-            date_dir = datetime.now().strftime("%Y/%m/%d")
-            post_dir = os.path.join(POST_IMAGE_ROOT, date_dir)
-            os.makedirs(post_dir, exist_ok=True)
-            post_save_path = os.path.join(post_dir, f"{slug}_gen.jpg")
-            with open(post_save_path, 'wb') as f: f.write(content)
-            
-            # (B) 라이브러리용 저장 (첫 번째 유효 키워드 기준)
-            target_cluster = CLUSTER_MAP.get(cluster.lower(), "ai-tech").split('-')[0]
-            if keywords:
-                for kw in keywords:
-                    safe_kw = sanitize_name(kw)
-                    if not safe_kw or len(safe_kw) < 2: continue
-                    
-                    lib_dir = os.path.join(DEFAULT_LIB_ROOT, target_cluster)
-                    os.makedirs(lib_dir, exist_ok=True)
-                    lib_save_path = os.path.join(lib_dir, f"{safe_kw}.jpg")
-                    
-                    if not os.path.exists(lib_save_path):
-                        with open(lib_save_path, 'wb') as f: f.write(content)
-                        logger.info(f" [CACHE] Saved to library: {target_cluster}/{safe_kw}.jpg")
-                        break # 하나만 저장
-            
-            return f"/images/posts/{date_dir}/{slug}_gen.jpg"
+            # 최소 10KB 이상이어야 유효한 AI 생성 이미지로 간주 (너무 작으면 엑박일 확률 높음)
+            if len(content) > 10240: 
+                # (A) 포스트용 저장
+                date_dir = datetime.now().strftime("%Y/%m/%d")
+                post_dir = os.path.join(POST_IMAGE_ROOT, date_dir)
+                os.makedirs(post_dir, exist_ok=True)
+                post_save_path = os.path.join(post_dir, f"{slug}_gen.jpg")
+                with open(post_save_path, 'wb') as f: f.write(content)
+                
+                # (B) 라이브러리용 저장 (첫 번째 유효 키워드 기준)
+                target_cluster = CLUSTER_MAP.get(cluster.lower(), "ai-tech").split('-')[0]
+                if keywords:
+                    for kw in keywords:
+                        safe_kw = sanitize_name(kw)
+                        if not safe_kw or len(safe_kw) < 2: continue
+                        
+                        lib_dir = os.path.join(DEFAULT_LIB_ROOT, target_cluster)
+                        os.makedirs(lib_dir, exist_ok=True)
+                        lib_save_path = os.path.join(lib_dir, f"{safe_kw}.jpg")
+                        
+                        if not os.path.exists(lib_save_path):
+                            with open(lib_save_path, 'wb') as f: f.write(content)
+                            logger.info(f" [Tier 3] [CACHE] New Keyword Image Saved: {target_cluster}/{safe_kw}.jpg")
+                            break 
+                
+                logger.info(f" [Tier 3] [OK] AI Generation Successful: {slug}_gen.jpg")
+                return f"/images/posts/{date_dir}/{slug}_gen.jpg"
+            else:
+                logger.warning(f" [Tier 3] [FAIL] API returned invalid/tiny image: {len(content)} bytes")
+        else:
+            logger.warning(f" [Tier 3] [FAIL] API HTTP Status: {resp.status_code}")
     except Exception as e:
-        logger.error(f" [Tier 3] API Fail: {e}")
+        logger.error(f" [Tier 3] [ERROR] AI Generation Failed: {e}")
     
     return None
 

@@ -1,6 +1,6 @@
 ﻿---
 title: "x86-64 아키텍처의 스플릿 락(Split Locks) 심층 조사"
-date: "2026-04-20T17:43:48+09:00"
+date: "2026-04-20T19:19:09+09:00"
 description: "원자적 연산이 두 개의 캐시 라인에 걸쳐 실행될 때 발생하는 스플릿 락의 성능 저하 문제 분석"
 image: "/images/defaults/market/split_lock.jpg"
 clusters: ["insights"]

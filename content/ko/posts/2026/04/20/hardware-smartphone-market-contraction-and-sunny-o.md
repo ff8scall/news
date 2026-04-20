@@ -1,6 +1,6 @@
 ﻿---
 title: "스마트폰 시장의 수축과 써니옵티컬의 하이엔드 집중 전략"
-date: "2026-04-20T17:47:00+09:00"
+date: "2026-04-20T19:21:50+09:00"
 description: "2026년 글로벌 스마트폰 출하량 전년 대비 9% 감소 전망에 따른 공급망 위기 고조."
 image: "/images/posts/2026/04/20/hardware-smartphone-market-contraction-and-sunny-o_gen.jpg"
 clusters: ["hardware"]

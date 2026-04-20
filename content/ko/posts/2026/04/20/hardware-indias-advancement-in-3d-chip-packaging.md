@@ -1,6 +1,6 @@
 ﻿---
 title: "인도의 반도체 굴기: 오디샤주 3D 칩 패키징 시설과 이기종 통합의 서막"
-date: "2026-04-20T17:47:41+09:00"
+date: "2026-04-20T19:22:32+09:00"
 description: "2026년 4월 19일, 인도 오디샤주에서 국가 최초의 첨단 3D 칩 패키징 공장 착공."
 image: "/images/fallbacks/hardware.jpg"
 clusters: ["hardware"]

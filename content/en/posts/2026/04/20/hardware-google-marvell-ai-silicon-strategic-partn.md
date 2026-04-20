@@ -1,8 +1,8 @@
 ﻿---
 title: "Google-Marvell AI Silicon Strategic Partnership"
-date: "2026-04-20T08:47:15Z"
+date: "2026-04-20T10:22:05Z"
 description: "Google is partnering with Marvell Technology to develop custom AI silicon optimized for inference workloads. This strategic move aims to challenge Nvidia's dominance by shifting the focus to high-efficiency deployment and reducing data center operational costs."
-image: "/images/defaults/hardware/ai.jpg"
+image: "/images/posts/2026/04/20/hardware-google-marvell-ai-silicon-strategic-partn_gen.jpg"
 clusters: ["hardware"]
 categories: ["chips"]
 tags: []

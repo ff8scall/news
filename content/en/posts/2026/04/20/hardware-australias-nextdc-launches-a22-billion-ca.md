@@ -1,6 +1,6 @@
 ﻿---
 title: "Australia’s NEXTDC Launches A$2.2 Billion Capital Plan for Data Center Expansion"
-date: "2026-04-20T08:46:54Z"
+date: "2026-04-20T10:21:44Z"
 description: "NEXTDC has announced a massive A$2.2 billion capital raising program to accelerate its AI-ready infrastructure rollout across Australia. The plan integrates a A$1.5 billion fully underwritten equity offering with a A$700 million expansion of its hybrid securities program. These funds are primarily allocated to fast-track the S4 Western Sydney campus, targeting the unprecedented demand from hyperscale cloud providers and generative AI workloads."
 image: "/images/defaults/hardware/nextdc.jpg"
 clusters: ["hardware"]

@@ -1,6 +1,6 @@
 ﻿---
 title: "SC25: Estimating AMD’s Upcoming MI430X’s FP64 Performance and the Discovery Supercomputer"
-date: "2026-04-20T08:46:34Z"
+date: "2026-04-20T10:21:23Z"
 description: "At SC25, the focus on AMD’s upcoming MI430X accelerator highlighted its potential to dominate high-precision scientific computing. With specialized hardware for FP64 workloads, the MI430X is set to power the Discovery supercomputer, pushing the boundaries of simulation and modeling. This report explores the estimated performance gains and the strategic importance of AMD's focus on the FP64 format in the 2026 HPC landscape."
 image: "/images/fallbacks/market-trend.jpg"
 clusters: ["insights"]
