@@ -57,6 +57,7 @@ buildFuture = true
 
 [params]
   ui_version = "V0"
+  bingSiteVerification = "048AB450B6B91E03CAF13FDE8415F954"
   [params.ui]
     badge_colors = { "AI" = "#3B82F6", "하드웨어" = "#10B981", "인사이트" = "#F59E0B" }
     tag_prefix = true
