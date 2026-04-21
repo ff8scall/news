@@ -226,6 +226,7 @@ class HarvesterV3:
                         f.write(f"- **Source:** {a.source_name}\n")
                         f.write(f"- **Date:** {a.publishedAt[:10]}\n")
                         f.write(f"- **URL:** {a.url}\n")
+                        f.write(f"- **Image URL:** {a.image if a.image else 'None'}\n")
                         f.write(f"- **Quality Score:** {a.quality_score if a.quality_score else 'N/A'}/10\n")
                         f.write(f"- **Tags:** {tags_str}\n\n")
                         
