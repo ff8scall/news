@@ -1,128 +1,95 @@
 {
     "hardware_part1": {
-        "notebook_id": "0f4aa8d7-edac-4f99-b7ca-50141b9f1682",
+        "notebook_id": "1caea76b-819b-4957-a355-7e2587e567dc",
         "title": "2026-04-22 hardware Analysis (part1)",
         "mode": "B",
-        "status": "published",
-        "triggered_at": "2026-04-22T17:42:26.920883",
-        "urls": [
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-project-helix-xboxs-strategic-transition/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-project-helix-xboxs-strategic-transition/",
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-framework-laptop-16-oculink-dev-kit-engin/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-framework-laptop-16-oculink-dev-kit-engin/",
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-catls-energy-ecosystem-strategy-advancing/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-catls-energy-ecosystem-strategy-advancing/",
-            "https://news.lego-sia.com/posts/2026/04/22/insights-the-ternus-era-apples-strategic-shift-tow/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/insights-the-ternus-era-apples-strategic-shift-tow/",
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-infrastructure-as-the-ultimate-weapon-sca/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-infrastructure-as-the-ultimate-weapon-sca/",
-            "https://news.lego-sia.com/posts/2026/04/22/insights-engineering-the-ai-era-why-apples-success/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/insights-engineering-the-ai-era-why-apples-success/"
-        ],
-        "published_at": "2026-04-22T17:45:38.511572"
+        "status": "pending",
+        "triggered_at": "2026-04-22T21:01:00.416476"
     },
     "hardware_part2": {
-        "notebook_id": "7e3eaedc-6159-42fe-8dc3-9a68bb41d6b3",
+        "notebook_id": "3bacceb5-8289-488f-9baf-ffac5c3e28e4",
         "title": "2026-04-22 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-22T17:42:34.563419",
+        "triggered_at": "2026-04-22T21:01:08.203076",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-recovery-tpu/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-recovery-tpu/",
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-recovery-2nm/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-recovery-2nm/",
-            "https://news.lego-sia.com/posts/2026/04/22/ai-recovery-1d-dram/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/ai-recovery-1d-dram/",
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-recovery-ai-asm-1/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-recovery-ai-asm-1/"
+            "https://news.lego-sia.com/posts/2026/04/22/insights-valve-vram-hack-delivers-3x-fps-gain-for/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-valve-vram-hack-delivers-3x-fps-gain-for/",
+            "https://news.lego-sia.com/posts/2026/04/22/ai-amd-sdk-update-4x-and-6x-ml-based-frame-generat/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/ai-amd-sdk-update-4x-and-6x-ml-based-frame-generat/",
+            "https://news.lego-sia.com/posts/2026/04/22/ai-iran-alleges-us-led-deep-sabotage-via-networkin/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/ai-iran-alleges-us-led-deep-sabotage-via-networkin/",
+            "https://news.lego-sia.com/posts/2026/04/22/hardware-dr-semiconductor-fabs-first-ever-home-mad/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-dr-semiconductor-fabs-first-ever-home-mad/"
         ],
-        "published_at": "2026-04-22T17:45:41.895199"
+        "published_at": "2026-04-22T21:07:58.690777"
     },
     "ai_part1": {
-        "notebook_id": "1ae4f174-4753-4463-aa89-7a8ab3496e40",
+        "notebook_id": "7418a4b9-56a9-468e-a90e-5099b106d5f0",
         "title": "2026-04-22 ai Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-22T17:42:11.759506",
+        "triggered_at": "2026-04-22T21:00:44.973903",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/22/ai-the-54-billion-drone-gamble-how-the-pentagon-is/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/ai-the-54-billion-drone-gamble-how-the-pentagon-is/",
-            "https://news.lego-sia.com/posts/2026/04/22/ai-beyond-human-auditing-anthropics-mythos-ai-expo/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/ai-beyond-human-auditing-anthropics-mythos-ai-expo/",
-            "https://news.lego-sia.com/posts/2026/04/22/insights-a-constitutional-reckoning-the-supreme-co/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/insights-a-constitutional-reckoning-the-supreme-co/",
-            "https://news.lego-sia.com/posts/2026/04/22/insights-excavating-the-apocalypse-silo-season-3-a/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/insights-excavating-the-apocalypse-silo-season-3-a/",
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-resisting-planned-obsolescence-framework/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-resisting-planned-obsolescence-framework/",
-            "https://news.lego-sia.com/posts/2026/04/22/insights-the-algorithmic-witness-floridas-investig/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/insights-the-algorithmic-witness-floridas-investig/"
+            "https://news.lego-sia.com/posts/2026/04/22/insights-recovery-7/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-recovery-7/",
+            "https://news.lego-sia.com/posts/2026/04/22/insights-recovery-3d-v-cache/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-recovery-3d-v-cache/"
         ],
-        "published_at": "2026-04-22T17:45:45.558210"
+        "published_at": "2026-04-22T21:08:01.591612"
     },
     "ai_part2": {
-        "notebook_id": "828ff229-8d5d-4373-94c1-d1bda26665ce",
+        "notebook_id": "104dd8fd-5d6b-41cf-82e4-f4e2768695be",
         "title": "2026-04-22 ai Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-22T17:42:19.410420",
+        "triggered_at": "2026-04-22T21:00:52.632134",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/22/ai-metas-interactive-ai-training-methodology-overc/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/ai-metas-interactive-ai-training-methodology-overc/",
-            "https://news.lego-sia.com/posts/2026/04/22/ai-microsofts-game-pass-strategic-pivot-assessing/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/ai-microsofts-game-pass-strategic-pivot-assessing/",
-            "https://news.lego-sia.com/posts/2026/04/22/insights-framework-laptop-13-pro-modular-evolution/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/insights-framework-laptop-13-pro-modular-evolution/",
-            "https://news.lego-sia.com/posts/2026/04/22/insights-framework-laptop-16-strategic-mainstream/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/insights-framework-laptop-16-strategic-mainstream/",
-            "https://news.lego-sia.com/posts/2026/04/22/ai-amazons-algorithmic-price-fixing-unveiling-the/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/ai-amazons-algorithmic-price-fixing-unveiling-the/",
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-the-5b-anthropic-amazon-strategic-allianc/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-the-5b-anthropic-amazon-strategic-allianc/"
+            "https://news.lego-sia.com/posts/2026/04/22/insights-the-resilient-standard-why-aes-128-remain/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-the-resilient-standard-why-aes-128-remain/",
+            "https://news.lego-sia.com/posts/2026/04/22/insights-entering-the-age-of-electricity-the-unpre/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-entering-the-age-of-electricity-the-unpre/",
+            "https://news.lego-sia.com/posts/2026/04/22/hardware-strategic-setback-pentagon-terminates-cri/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-strategic-setback-pentagon-terminates-cri/",
+            "https://news.lego-sia.com/posts/2026/04/22/insights-leadership-shift-at-apple-john-ternus-to/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-leadership-shift-at-apple-john-ternus-to/"
         ],
-        "published_at": "2026-04-22T17:53:24.202011"
+        "published_at": "2026-04-22T21:08:04.910594"
     },
     "insights_part1": {
-        "notebook_id": "898eb275-1a6b-4882-8587-6e32d1c7207e",
+        "notebook_id": "d2823351-0c66-4516-822b-5f804d4d9a21",
         "title": "2026-04-22 insights Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-22T17:42:41.949139",
+        "triggered_at": "2026-04-22T21:01:15.904428",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-the-zen-5-silicon-revolution-deciphering/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-the-zen-5-silicon-revolution-deciphering/",
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-colorful-cvn-b850m-gaming-frozen-v14-revi/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-colorful-cvn-b850m-gaming-frozen-v14-revi/",
-            "https://news.lego-sia.com/posts/2026/04/22/insights-the-algorithmic-blindspot-why-2026s-smart/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/insights-the-algorithmic-blindspot-why-2026s-smart/",
-            "https://news.lego-sia.com/posts/2026/04/22/insights-engineering-the-lag-free-spin-technical-o/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/insights-engineering-the-lag-free-spin-technical-o/",
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-high-stakes-hardware-how-2026s-low-latenc/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-high-stakes-hardware-how-2026s-low-latenc/",
-            "https://news.lego-sia.com/posts/2026/04/22/insights-the-great-fragmentation-mapping-the-speci/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/insights-the-great-fragmentation-mapping-the-speci/"
+            "https://news.lego-sia.com/posts/2026/04/22/insights-the-diagnostic-power-of-microbenchmarking/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-the-diagnostic-power-of-microbenchmarking/",
+            "https://news.lego-sia.com/posts/2026/04/22/hardware-nvidia-gb10-the-emergence-of-the-big-igpu/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-nvidia-gb10-the-emergence-of-the-big-igpu/",
+            "https://news.lego-sia.com/posts/2026/04/22/insights-arm-cortex-x925-challenging-the-x86-domin/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-arm-cortex-x925-challenging-the-x86-domin/",
+            "https://news.lego-sia.com/posts/2026/04/22/insights-arm-cortex-a725-dell-pro-max-redefining-t/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-arm-cortex-a725-dell-pro-max-redefining-t/"
         ],
-        "published_at": "2026-04-22T17:59:24.514962"
+        "published_at": "2026-04-22T21:08:10.815409"
     },
     "insights_part2": {
-        "notebook_id": "cb7f43dd-7773-46f6-b0fe-6693ed304abd",
+        "notebook_id": "e2c128fe-c597-4305-a6d1-193165df905a",
         "title": "2026-04-22 insights Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-22T17:42:50.044361",
+        "triggered_at": "2026-04-22T21:01:23.980191",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/22/ai-drip-casino-canada-strategic-market-entry-regul/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/ai-drip-casino-canada-strategic-market-entry-regul/",
-            "https://news.lego-sia.com/posts/2026/04/22/hardware-counter-strike-2-analyzing-source-2-engin/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-counter-strike-2-analyzing-source-2-engin/",
-            "https://news.lego-sia.com/posts/2026/04/22/ai-the-high-cost-of-chaos-why-technical-record-kee/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/ai-the-high-cost-of-chaos-why-technical-record-kee/",
-            "https://news.lego-sia.com/posts/2026/04/22/ai-digital-asset-management-the-new-infrastructure/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/ai-digital-asset-management-the-new-infrastructure/",
-            "https://news.lego-sia.com/posts/2026/04/22/ai-embracing-ai-with-claudes-c-compiler-the-evolut/",
-            "https://news.lego-sia.com/en/posts/2026/04/22/ai-embracing-ai-with-claudes-c-compiler-the-evolut/"
+            "https://news.lego-sia.com/posts/2026/04/22/insights-amds-venice-zen-6-architecture-and-mi400/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-amds-venice-zen-6-architecture-and-mi400/",
+            "https://news.lego-sia.com/posts/2026/04/22/insights-the-adreno-x2-revolution-qualcomms-archit/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-the-adreno-x2-revolution-qualcomms-archit/",
+            "https://news.lego-sia.com/posts/2026/04/22/insights-blackwell-meets-dimensity-a-technical-ana/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/insights-blackwell-meets-dimensity-a-technical-ana/",
+            "https://news.lego-sia.com/posts/2026/04/22/hardware-sc25-fabric-innovation-and-the-fight-agai/",
+            "https://news.lego-sia.com/en/posts/2026/04/22/hardware-sc25-fabric-innovation-and-the-fight-agai/"
         ],
-        "published_at": "2026-04-22T18:00:54.702139"
+        "published_at": "2026-04-22T21:09:49.611348"
     }
 }
