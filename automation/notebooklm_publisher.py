@@ -70,10 +70,16 @@ class NotebookLMPublisher:
             report = None
             for attempt in range(30): # 10초 * 30 = 300초(5분)
                 report = self.app.get_latest_report(nb_id)
-                if report and report.get("status") == "completed":
+                status_str = report.get("status", "unknown") if report else "not_found"
+                
+                if report and status_str == "completed":
                     break
                 
-                status_str = report.get("status", "unknown") if report else "not_found"
+                # [V6.5] 리포트 실패 시 즉시 중단
+                if report and status_str == "failed":
+                    logger.error(f"  [!] Report FAILED for {cat}. Aborting attempt.")
+                    break
+                
                 logger.info(f"  ...Report {status_str}. Waiting 10s (Attempt {attempt+1}/30)...")
                 time.sleep(10)
             

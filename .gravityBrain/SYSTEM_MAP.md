@@ -47,9 +47,9 @@ graph TD
 - **`automation/ai_writer.py`**: AI 텍스트 생성 및 번역 핵심 엔진. [v6.4] 다중 모델 폴백 및 초정밀 쓰로틀링(Throttling) 정책이 적용되었습니다.
 
 ## 🚀 특이사항
-- **버전**: v6.4 (Smart Split Max & Job Protected)
+- **버전**: v6.5 (Anti-Infinite Loop & Cron Optimized)
 - **상태**: Green (안정 운영 중)
-- **최근 주요 변경**: Threshold=5 강화, Job Merging 패치, Cache Reset 프로토콜.
+- **최근 주요 변경**: 리포트 실패 즉시 중단 패치, 크론탭 5/11/17/21시 조정.
 - **Real-time Recovery**: 영문 서비스의 '빈 페이지' 발생을 원천 차단하는 지능형 번역 폴백 시스템 운영.
 - **Full Automation**: 수확부터 리포트 대기, 발행, Git Push(배포), IndexNow까지 단일 명령으로 처리.
 - **IndexNow v1.3**: Naver Search Advisor 통합 및 도메인별 개별 키(News 전용) 매핑 로직 추가.

@@ -8,9 +8,9 @@
 SHELL=/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-# 1. Premium News Pipeline (Specific Hours: 05, 11, 17, 21, 23)
+# 1. Premium News Pipeline (Specific Hours: 05, 11, 17, 21)
 # 수집 -> NLM 분석 -> 발행 -> 배포 -> 인덱싱 전체 자동화
-0 5,11,17,21,23 * * * cd /home/ubuntu/AI/News && ./automation/venv/bin/python3 automation/nlm_orchestrator.py --mode B --limit 8 --full >> /home/ubuntu/AI/News/automation/logs/cron_pipeline.log 2>&1
+0 5,11,17,21 * * * cd /home/ubuntu/AI/News && ./automation/venv/bin/python3 automation/nlm_orchestrator.py --mode B --limit 8 --full >> /home/ubuntu/AI/News/automation/logs/cron_pipeline.log 2>&1
 
 # 2. NLM Session Stay-alive (Every hour at 30 min)
 # 구글 세션 만료 방지를 위한 활성 유지 스크립트 실행
