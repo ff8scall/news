@@ -49,7 +49,7 @@ graph TD
 ## 🚀 특이사항
 - **버전**: v6.5 (Anti-Infinite Loop & Cron Optimized)
 - **상태**: Green (안정 운영 중)
-- **최근 주요 변경**: 리포트 실패 즉시 중단 패치, 크론탭 5/11/17/21시 조정.
+- **최근 주요 변경**: 리포트 실패 즉시 중단 패치, 크론탭 5/11/17/23시 최종 확정.
 - **Real-time Recovery**: 영문 서비스의 '빈 페이지' 발생을 원천 차단하는 지능형 번역 폴백 시스템 운영.
 - **Full Automation**: 수확부터 리포트 대기, 발행, Git Push(배포), IndexNow까지 단일 명령으로 처리.
 - **IndexNow v1.3**: Naver Search Advisor 통합 및 도메인별 개별 키(News 전용) 매핑 로직 추가.
