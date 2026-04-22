@@ -290,8 +290,8 @@ def _split_articles_into_batches(category_files, threshold=8):
             with open(filepath, "r", encoding="utf-8") as f:
                 lines = f.readlines()
             
-            # 기사 구분선(---)을 기준으로 기사 분리 시도
-            articles_text = "".join(lines).split("--------------------------------------------------")
+            # [V6.3] 기사 구분선(---)을 기준으로 기사 분리 시도 (유연한 매칭 지원)
+            articles_text = "".join(lines).split("\n---\n")
             # 헤더 제외 실질 기사 추출
             content_articles = [a.strip() for a in articles_text if "## " in a]
             
@@ -340,8 +340,9 @@ def process_macro_synthesis(limit_per_cat=15, mode="A", source="rss"):
         logger.error(" [!] No category files generated.")
         return False
 
-    # [V6.2] 기사 수에 따른 자동 분할 로직 (Job Splitting)
-    final_category_files = _split_articles_into_batches(category_files, threshold=8)
+    # [V6.3] 기사 수에 따른 자동 분할 로직 (Job Splitting)
+    # NLM 안정성을 위해 임계값을 8에서 5로 하향 (기사가 6개 이상이면 분할)
+    final_category_files = _split_articles_into_batches(category_files, threshold=5)
     
     jobs_file = "automation/premium_jobs.json"
     active_jobs = {}
@@ -389,7 +390,17 @@ def process_macro_synthesis(limit_per_cat=15, mode="A", source="rss"):
             }
     
     # Job 상태 저장
-    # 기존 Job이 있으면 유지하거나 새로 덮어쓰기 (orchestrator가 제어)
+    # [V6.4] 기존 Job이 있으면 유지하면서 병합(Merge)
+    try:
+        if os.path.exists(jobs_file):
+            with open(jobs_file, "r", encoding="utf-8") as f:
+                existing_jobs = json.load(f)
+                # 새로운 작업으로 업데이트 (기존 다른 카테고리는 보존)
+                existing_jobs.update(active_jobs)
+                active_jobs = existing_jobs
+    except Exception as e:
+        logger.warning(f"Failed to merge existing jobs: {e}")
+
     with open(jobs_file, "w", encoding="utf-8") as f:
         json.dump(active_jobs, f, indent=4, ensure_ascii=False)
         
