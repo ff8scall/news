@@ -109,9 +109,9 @@ def safe_import_class(module_name, class_name):
 TelegramRemote = safe_import_class("telegram_remote", "TelegramRemote")
 EditorInChief = safe_import_class("ai_reviewer", "EditorInChief")
 
-CATEGORY_BUDGETS = {
-    "ai-models": 8, "ai-tools": 8, "gpu-chips": 8, "pc-robotics": 8,
-    "game-optimization": 8, "ai-gameplay": 8, "tutorials": 4, "compare": 4
+# [V5.0] 신규 클러스터 체제 통합
+CLUSTER_BUDGETS = {
+    "ai": 10, "hardware": 10, "insights": 10, "markets": 10
 }
 
 def sanitize_slug(text):
@@ -122,18 +122,12 @@ def sanitize_slug(text):
 def hash_slug(url):
     return hashlib.md5(url.encode()).hexdigest()[:6]
 
-CAT_MAP = {
-    "ai": "인공지능·소프트웨어",
-    "hardware": "컴퓨팅·하드웨어",
-    "insights": "기술 분석·인사이트"
-}
-
-# [V1.1] Alignment with actual fallback filenames in static/images/fallbacks/
-# [V4.0] 초정예 폴백 이미지 매핑
+# [V5.0] 클러스터 폴백 이미지 매핑
 FALLBACK_MAP = {
-    "ai": "ai-tech",
+    "ai": "ai",
     "hardware": "hardware",
-    "insights": "market-trend"
+    "insights": "insights",
+    "markets": "markets"
 }
 
 def download_image(url, category_slug, slug):
@@ -366,7 +360,6 @@ date: "{date_str}"
 description: "{safe_desc}"
 image: "{thumbnail_url}"
 clusters: ["{article.get('cluster', 'ai')}"]
-categories: ["{article.get('category', 'ai')}"]
 tags: {tags_json}
 featured: {is_featured}
 ---
@@ -472,13 +465,13 @@ def manage_news_pipeline(limit_per_cat=1, use_local=False):
         if cat not in items_by_cat: items_by_cat[cat] = []
         items_by_cat[cat].append(item)
     
-    categories = ["ai", "hardware", "insights"]
+    clusters = ["ai", "hardware", "insights", "markets"]
     total_published = 0
     published_urls = []
     
     # 정기 배치는 안정성을 위해 순차 처리 (Throttling 준수)
-    for cat in categories:
-        count = process_category(cat, items_by_cat.get(cat, []), editor, tracker, use_local, limit=limit_per_cat)
+    for cl in clusters:
+        count = process_category(cl, items_by_cat.get(cl, []), editor, tracker, use_local, limit=limit_per_cat)
         total_published += count
     
     # [V11.5] URL 수집 로직 (발행 직후 최신 슬러그 기반으로 URL 생성)

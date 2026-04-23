@@ -6,28 +6,6 @@
       <h1 class="section-title">{{ .Title }}</h1>
       {{ with .Params.description }}<p class="section-desc" style="opacity: 0.7; margin-bottom: 24px;">{{ . }}</p>{{ end }}
       
-      {{/* [V0.2.9] Unique Category Navigation (Fixed Duplicates) */}}
-      <div class="category-nav" style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; border-bottom: 1.5px solid rgba(255,255,255,0.05); padding-bottom: 24px;">
-        {{ $uniqueCats := dict }}
-        {{ range .Pages }}
-          {{ with .GetTerms "categories" }}
-            {{ range . }}
-              {{ $uniqueCats = merge $uniqueCats (dict .Data.Term .) }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
-        
-        {{ if gt (len $uniqueCats) 0 }}
-          {{ $cat_map := dict "models" "AI 모델" "apps" "AI 활용" "high-end" "하이엔드 PC" "chips" "반도체" "analysis" "비교·분석" "guide" "개발·팁" }}
-          {{ range $uniqueCats }}
-            {{ $t := .Data.Term }}
-            <a href="{{ .RelPermalink }}" class="category-chip" style="background: rgba(255,255,255,0.05); border: 1.5px solid rgba(255,255,255,0.1); color: var(--p-text-muted); padding: 6px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: all 0.3s ease;">
-              # {{ index $cat_map $t | default .LinkTitle }}
-            </a>
-          {{ end }}
-        {{ end }}
-      </div>
-
       <p class="section-count" style="margin-bottom: 24px; font-size: 0.9rem; color: var(--p-text-muted);">총 {{ .Paginator.TotalNumberOfElements }}개의 뉴스 인텔리전스</p>
     </header>
 

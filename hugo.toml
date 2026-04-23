@@ -68,5 +68,7 @@ buildFuture = true
   ui_version = "V0"
   bingSiteVerification = "048AB450B6B91E03CAF13FDE8415F954" # Bing SEO Verification Tag (Last updated: 2026-04-21 14:16)
   [params.ui]
-    badge_colors = { "AI" = "#3B82F6", "하드웨어" = "#10B981", "인사이트" = "#F59E0B" }
+    # Cluster UI Mapping (Centralized management)
+    badge_colors = { "ai" = "#3B82F6", "hardware" = "#10B981", "insights" = "#F59E0B", "markets" = "#EC4899" }
+    cluster_names = { "ai" = "AI", "hardware" = "Hardware", "insights" = "Insights", "markets" = "Markets" }
     tag_prefix = true

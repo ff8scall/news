@@ -229,3 +229,21 @@ NLM의 영문 본문 출력 누락(Token Limit 또는 분석 실패) 시 '제목
 - `notebooklm_prep.py` -> `_split_articles_into_batches` (출력 안정성 의존)
 - `notebooklm_publisher.py` -> `AIWriter.translate_to_english` (데이터 무결성 의존)
 - `image_manager.py` -> `requests.headers` (이미지 원본 보전 의존)
+
+## 21. 중메뉴 폐지 및 4대 클러스터 자동 분류 체계 (v1.1) (2026-04-23)
+### [설계 의도]
+사용자 내비게이션 복잡도를 낮추기 위해 '중메뉴(Category)'를 폐지하고, 기사 성격에 맞춘 4대 '대메뉴(Cluster)' 체제로 시스템을 최적화합니다.
+
+### [핵심 로직: `nlm_parser.py`]
+1. **스코어링 기반 자동 분류 (Scoring Classifier)**:
+   - 각 클러스터(`ai`, `hardware`, `insights`, `markets`)별로 고유 키워드 맵을 구축합니다.
+   - 기사의 제목, 요약, 본문에서 해당 키워드가 출현하는 빈도를 계산하여 가장 높은 점수를 얻은 클러스터로 자동 배정합니다.
+2. **중앙 집중식 UI 관리**:
+   - `hugo.toml`의 `params.ui` 영역에 `badge_colors`와 `cluster_names`를 정의하여, UI 템플릿(`card.html` 등)에서 하드코딩 없이 동적으로 설정을 로드합니다.
+3. **폴더 구조 동기화**:
+   - 기본 이미지 라이브러리(`static/images/defaults/`) 폴더명을 클러스터 명칭과 일치하도록 정비(`market` -> `markets`)하여 이미지 매핑 오류를 원천 차단합니다.
+
+### [의존성 변화]
+- `hugo.toml` -> `layouts/partials/card.html` (UI 파라미터 공급)
+- `nlm_parser.py` -> `CLUSTER_MAP` 기반 분류
+- `news_main.py` -> `categories` 필드 제거 및 `clusters` 필드 강화

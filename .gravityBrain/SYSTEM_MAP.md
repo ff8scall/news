@@ -55,6 +55,7 @@ graph TD
 - **IndexNow v1.3**: Naver Search Advisor 통합 및 도메인별 개별 키(News 전용) 매핑 로직 추가.
 - **Git Sync**: 로컬에서 생성된 기사를 자동으로 GitHub에 반영하여 라이브 사이트 실시간 업데이트.
 
-## 🏷️ 대분류 및 태그 체계 (Standard v3.0)
+## 🏷️ 대분류 체계 (Standard v4.0)
 - **Clusters (대분류)**: `ai`, `hardware`, `insights`, `markets`
-- **Categories (중분류)**: [DEPRECATED] 사용자 편의를 위해 전면 폐지 및 대분류 통합 (2026-04-23)
+- **Categories (중분류)**: [REMOVED] 내비게이션 단순화를 위해 전면 폐지 (2026-04-23)
+- **UI Colors**: `hugo.toml` 내 `params.ui.badge_colors`에서 중앙 관리

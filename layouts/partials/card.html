@@ -2,8 +2,8 @@
 {{ $cluster := index (.GetTerms "clusters") 0 }}
 {{ $c_slug := "" }}{{ if $cluster }}{{ $c_slug = $cluster.Data.Term }}{{ end }}
 
-{{ $c_map := dict "ai" "AI" "hardware" "Hardware" "insights" "Insights" "markets" "Markets" }}
-{{ $clr_map := dict "ai" "#3B82F6" "hardware" "#10B981" "insights" "#F59E0B" "markets" "#EC4899" }}
+{{ $c_map := .Site.Params.ui.cluster_names }}
+{{ $clr_map := .Site.Params.ui.badge_colors }}
 
 {{ $c_name := "Tech" }}{{ if $c_slug }}{{ $c_name = index $c_map $c_slug | default $cluster.LinkTitle }}{{ end }}
 {{ $clr := "#3B82F6" }}{{ if $c_slug }}{{ $clr = index $clr_map $c_slug | default "#3B82F6" }}{{ end }}

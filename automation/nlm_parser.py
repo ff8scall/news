@@ -57,8 +57,27 @@ FIELD_MAP = {
     "ORIGINAL_IMAGE_URL": "original_image",
 }
 
-# [V5.0] 신규 4대 대메뉴 체제
+# [V5.0] 신규 4대 대메뉴 체제 및 자동 분류 키워드 맵
 VALID_CLUSTERS = ["ai", "hardware", "insights", "markets"]
+
+CLUSTER_MAP = {
+    "ai": [
+        "모델", "llm", "gpt", "gemini", "claude", "에이전트", "ai", "model", "agent", 
+        "software", "챗봇", "인공지능", "딥러닝", "머신러닝", "neural", "open source", "llama", "huggingface"
+    ],
+    "hardware": [
+        "반도체", "칩", "gpu", "cpu", "생산", "공정", "하드웨어", "chip", "hardware", 
+        "infrastructure", "데스크탑", "파운드리", "tsmc", "nvidia", "intel", "amd", "server", "data center"
+    ],
+    "insights": [
+        "전략", "분석", "미래", "전망", "혁신", "심층", "insight", "strategy", "trend", 
+        "보고서", "트렌드", "리서치", "가이드", "튜토리얼", "사례연구"
+    ],
+    "markets": [
+        "ipo", "투자", "펀딩", "인수", "합병", "매출", "실적", "vc", "시장 규모", 
+        "business", "market", "startup", "비즈니스", "수익", "주식", "경제", "나스닥", "테크 거물"
+    ]
+}
 
 
 def parse_structured_articles(raw_text):
@@ -218,21 +237,29 @@ def _post_process(article):
     article["kor_description"] = article.get("kor_summary", [""])[0] if article.get("kor_summary") else ""
     article["eng_description"] = article.get("eng_summary", [""])[0] if article.get("eng_summary") else ""
 
-    # 1. 클러스터 자동 분류
+    # 1. 클러스터 자동 분류 (V1.1 고도화 로직)
     content_text = (article.get("kor_title", "") + " " + article.get("kor_description", "") + " " + (article.get("kor_content", "") or "")).lower()
-    cluster = "ai"
-    if any(k in content_text for k in ["ipo", "투자", "펀딩", "인수", "합병", "매출", "실적", "vc", "시장 규모", "business", "market", "startup", "비즈니스"]):
-        cluster = "markets"
-    elif any(k in content_text for k in ["전략", "분석", "미래", "전망", "혁신", "심층", "insight", "strategy", "trend"]):
-        cluster = "insights"
-    elif any(k in content_text for k in ["반도체", "칩", "gpu", "cpu", "생산", "공정", "하드웨어", "chip", "hardware", "infrastructure", "데스크탑"]):
-        cluster = "hardware"
-    elif any(k in content_text for k in ["모델", "llm", "gpt", "gemini", "claude", "에이전트", "ai", "model", "agent", "software", "챗봇"]):
-        cluster = "ai"
+    
+    # 기본값 설정
+    detected_cluster = article.get("cluster", "").lower().replace(" ", "-")
+    if detected_cluster not in VALID_CLUSTERS:
+        detected_cluster = "ai" # 기본값
+        
+        # 키워드 점수 기반 재분류
+        scores = {c: 0 for c in VALID_CLUSTERS}
+        for cluster_id, keywords in CLUSTER_MAP.items():
+            for kw in keywords:
+                if kw in content_text:
+                    scores[cluster_id] += 1
+        
+        # 가장 높은 점수를 받은 클러스터 선택
+        max_score = 0
+        for cluster_id, score in scores.items():
+            if score > max_score:
+                max_score = score
+                detected_cluster = cluster_id
 
-    raw_cluster = article.get("cluster", "").lower().replace(" ", "-")
-    if raw_cluster in VALID_CLUSTERS: cluster = raw_cluster
-    article["cluster"] = cluster
+    article["cluster"] = detected_cluster
     if "category" in article: del article["category"]
     
     # 2. 제목 복구
