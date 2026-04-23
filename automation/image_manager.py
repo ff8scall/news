@@ -16,17 +16,12 @@ DEFAULT_LIB_ROOT = os.path.join(STATIC_ROOT, "images/defaults")
 POST_IMAGE_ROOT = os.path.join(STATIC_ROOT, "images/posts")
 FALLBACK_WEB_PATH = "/images/fallbacks"
 
-# 클러스터 정규화 및 폴백 매핑
+# [V5.0] 신규 4대 대메뉴 체제 이미지 매핑 (static/images/defaults 하위 폴더와 매칭)
 CLUSTER_MAP = {
     "ai": "ai-tech",
-    "hardware": "hardware",
-    "insights": "market-trend",
-    "news": "tech-biz",
-    "tech": "ai-tech",
-    "guides": "ai-tools",
-    "ai-models-tools": "ai-models",
-    "gpu-hardware": "semi-hbm",
-    "ai-gaming": "game-tech",
+    "hardware": "hardware-infra",
+    "insights": "insights-analysis",
+    "markets": "markets-biz"
 }
 
 # [V6.0] AI 이미지 스타일 셔플링을 위한 리스트

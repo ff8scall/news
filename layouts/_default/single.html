@@ -8,9 +8,9 @@
 
         {{/* ── 헤더 ── */}}
         <header class="post-header">
-          {{ with .GetTerms "categories" }}
-          {{ $category := index . 0 }}
-          <a href="{{ $category.RelPermalink }}" class="post-category">{{ $category.LinkTitle }}</a>
+          {{ with .GetTerms "clusters" }}
+          {{ $cluster := index . 0 }}
+          <a href="{{ $cluster.RelPermalink }}" class="post-category">{{ $cluster.LinkTitle }}</a>
           {{ end }}
           <h1 class="post-title">{{ .Title }}</h1>
           <p class="post-description">{{ .Description }}</p>

@@ -1,24 +1,17 @@
-{{/* [V2.0] Dynamic Fallback & Category Mapping Logic */}}
+{{/* [V5.0] Cluster-Only Branding Logic */}}
 {{ $cluster := index (.GetTerms "clusters") 0 }}
-{{ $category := index (.GetTerms "categories") 0 }}
-
 {{ $c_slug := "" }}{{ if $cluster }}{{ $c_slug = $cluster.Data.Term }}{{ end }}
-{{ $cat_slug := "" }}{{ if $category }}{{ $cat_slug = $category.Data.Term }}{{ end }}
 
-{{ $c_map := dict "ai" "AI" "hardware" "하드웨어" "insights" "인사이트" }}
-{{ $clr_map := dict "ai" "#3B82F6" "hardware" "#10B981" "insights" "#F59E0B" }}
-{{ $cat_map := dict "models" "AI 모델" "apps" "AI 활용" "high-end" "하이엔드 PC" "chips" "반도체" "analysis" "비교·분석" "guide" "개발·팁" }}
+{{ $c_map := dict "ai" "AI" "hardware" "Hardware" "insights" "Insights" "markets" "Markets" }}
+{{ $clr_map := dict "ai" "#3B82F6" "hardware" "#10B981" "insights" "#F59E0B" "markets" "#EC4899" }}
 
-{{ $c_name := "기타" }}{{ if $c_slug }}{{ $c_name = index $c_map $c_slug | default $cluster.LinkTitle }}{{ end }}
+{{ $c_name := "Tech" }}{{ if $c_slug }}{{ $c_name = index $c_map $c_slug | default $cluster.LinkTitle }}{{ end }}
 {{ $clr := "#3B82F6" }}{{ if $c_slug }}{{ $clr = index $clr_map $c_slug | default "#3B82F6" }}{{ end }}
-{{ $cat_name := "일반" }}{{ if $cat_slug }}{{ $cat_name = index $cat_map $cat_slug | default $category.LinkTitle }}{{ end }}
 
 {{/* [V0.2.6] Fallback Path Logic */}}
 {{ $fallback_img := "" }}
-{{ if $cat_slug }}
-  {{ if (fileExists (printf "static/images/fallbacks/%s.jpg" $cat_slug)) }}
-    {{ $fallback_img = printf "/images/fallbacks/%s.jpg" $cat_slug }}
-  {{ else if (fileExists (printf "static/images/fallbacks/%s.jpg" $c_slug)) }}
+{{ if $c_slug }}
+  {{ if (fileExists (printf "static/images/fallbacks/%s.jpg" $c_slug)) }}
     {{ $fallback_img = printf "/images/fallbacks/%s.jpg" $c_slug }}
   {{ end }}
 {{ end }}
@@ -39,8 +32,6 @@
 
       <div class="card-category" style="position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.8); backdrop-filter: blur(8px); color: white; padding: 4px 14px; border-radius: 50px; font-size: 0.75rem; font-weight: bold; border: 1.5px solid {{ $clr }}; display: flex; gap: 8px; align-items: center; white-space: nowrap;">
         <span style="color: {{ $clr }};">{{ $c_name }}</span>
-        <span style="opacity: 0.5;">|</span>
-        <span style="font-weight: 500;">{{ $cat_name }}</span>
       </div>
     </div>
     

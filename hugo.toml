@@ -8,7 +8,6 @@ buildFuture = true
   pagerSize = 18
 
 [taxonomies]
-  category = 'categories'
   tag = 'tags'
   cluster = 'clusters'
 
@@ -24,15 +23,20 @@ buildFuture = true
         url = "/clusters/ai/"
         weight = 1
       [[languages.ko.menu.main]]
-        name = "하드웨어"
+        name = "Hardware"
         identifier = "hardware"
         url = "/clusters/hardware/"
         weight = 2
       [[languages.ko.menu.main]]
-        name = "인사이트"
+        name = "Insights"
         identifier = "insights"
         url = "/clusters/insights/"
         weight = 3
+      [[languages.ko.menu.main]]
+        name = "Markets"
+        identifier = "markets"
+        url = "/clusters/markets/"
+        weight = 4
 
   [languages.en]
     languageName = "English"
@@ -54,6 +58,11 @@ buildFuture = true
         identifier = "insights"
         url = "/en/clusters/insights/"
         weight = 3
+      [[languages.en.menu.main]]
+        name = "Markets"
+        identifier = "markets"
+        url = "/en/clusters/markets/"
+        weight = 4
 
 [params]
   ui_version = "V0"

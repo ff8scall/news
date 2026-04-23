@@ -10,38 +10,12 @@
       </nav>
       
       <div class="header-content">
-        {{ $c_map := dict "ai" "AI" "hardware" "하드웨어" "insights" "인사이트" }}
+        {{ $c_map := dict "ai" "AI" "hardware" "Hardware" "insights" "Insights" "markets" "Markets" }}
         {{ $c_slug := .Data.Term }}
         <h1 class="section-title">{{ index $c_map $c_slug | default .Title }}</h1>
         {{ with .Params.description }}
           <p class="section-desc">{{ . | markdownify }}</p>
         {{ end }}
-      </div>
-
-      {{/* [V0.2.9] Unique Category Navigation (Fixed Duplicates) */}}
-      <div class="cluster-subtypes">
-        <span class="label">세부 카테고리:</span>
-        <div class="badges">
-          {{ $uniqueCats := dict }}
-          {{ range .Pages }}
-            {{ with .GetTerms "categories" }}
-              {{ range . }}
-                {{ $uniqueCats = merge $uniqueCats (dict .Data.Term .) }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
-          
-          {{ if gt (len $uniqueCats) 0 }}
-            {{ $c_map := dict "ai" "AI" "hardware" "하드웨어" "insights" "인사이트" }}
-            {{ $cat_map := dict "models" "AI 모델" "apps" "AI 활용" "high-end" "하이엔드 PC" "chips" "반도체" "analysis" "비교·분석" "guide" "개발·팁" }}
-            {{ range $uniqueCats }}
-              {{ $t := .Data.Term }}
-              <a href="{{ .RelPermalink }}" class="badge"># {{ index $cat_map $t | default .LinkTitle }}</a>
-            {{ end }}
-          {{ else }}
-            <span style="opacity:0.3; font-size: 0.8rem;">수집된 세부 데이터가 없습니다.</span>
-          {{ end }}
-        </div>
       </div>
     </header>
 
