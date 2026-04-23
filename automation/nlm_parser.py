@@ -139,7 +139,8 @@ def _parse_single_block(block_text):
     for line in lines:
         # 필드 추출 정규식: 시작 부분부터 매칭하며, 필드명 앞뒤의 마크다운 기호를 유연하게 처리
         # [V12.1] 콜론이 없거나 마크다운 헤더(#) 형태인 경우에도 필드명(FIELD_MAP)이면 매칭되도록 유연화
-        match = re.match(r'(?i)^\s*(?:\d+[\.)]\s*)?[#\*\*_\[]*([A-Z\s/_]{2,})[#\*\*_\]]*\s*[:：]?\s*(.*)', line)
+        # [V12.3] 필드 추출 정규식: 하이픈(-) 및 슬래시(/) 등 필드명 특수문자 대응 강화
+        match = re.match(r'(?i)^\s*(?:\d+[\.)]\s*)?[#\*\*_\[]*([A-Z\s/_-]{2,})[#\*\*_\]]*\s*[:：]?\s*(.*)', line)
         
         found_key = None
         if match:
@@ -231,7 +232,12 @@ def _store_field(article, field_name, value):
         value = re.sub(pattern, "", value, flags=re.MULTILINE).strip()
 
     if "keywords" in mapped_key:
-        value = [k.replace("**", "").strip().strip("*").strip().rstrip(".") for k in value.split(",") if k.strip()]
+        # [V12.3] 태그 길이 제한 (최대 40자) 및 비정상 텍스트 필터링 (빌드 정지 방지)
+        raw_keywords = [k.replace("**", "").strip().strip("*").strip().rstrip(".") for k in value.split(",") if k.strip()]
+        value = []
+        for kw in raw_keywords:
+            if 1 < len(kw) < 100: # 100자 이상의 텍스트는 오탐으로 간주하여 제외
+                value.append(kw[:40]) # 혹시 모를 상황 대비 40자로 최종 절단
     if mapped_key == "kor_summary" and "\n" in value:
         value = [line.strip().lstrip("- ").lstrip("· ") for line in value.split("\n") if line.strip()]
     

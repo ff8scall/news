@@ -5,7 +5,7 @@ description: "In the industrial landscape of 2026, the integration of AI, IoT, a
 image: "/images/posts/2026/04/19/hardware-redefining-supply-chain-strategy-via-adva_gen.jpg"
 clusters: ["hardware"]
 categories: ["models"]
-tags: ["Supply Chain (공급망)\n* Advanced Manufacturing (첨단 제조)\n* Digital Twin (디지털 트윈)\n* AI Forecasting (AI 예측)\n* Real-time Data (실시간 데이터)"]
+tags: []
 featured: false
 ---
 ## Executive Summary

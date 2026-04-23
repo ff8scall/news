@@ -5,7 +5,7 @@ description: "As of April 2026, systemic manufacturing failures at Russia's Alab
 image: "/images/fallbacks/ai-tech.jpg"
 clusters: ["ai"]
 categories: ["models"]
-tags: ["Drone Warfare", "Manufacturing Defect", "Shahed-136", "Alabuga SEZ", "Structural Failure", "Delamination", "드론 전쟁", "제조 결함", "샤헤드-136", "알라부가 특별경제구역", "구조적 결함", "층간 분리\n\n### 6. 시각 자료 및 출처 (Visuals & Source)"]
+tags: ["Drone Warfare", "Manufacturing Defect", "Shahed-136", "Alabuga SEZ", "Structural Failure", "Delamination", "드론 전쟁", "제조 결함", "샤헤드-136", "알라부가 특별경제구역", "구조적 결함"]
 featured: false
 ---
 ## Executive Summary

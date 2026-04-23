@@ -5,7 +5,7 @@ description: "As hardware journalism undergoes a seismic shift from text-centric
 image: "/images/posts/2026/04/19/insights-the-strategic-imperative-of-video-dam-orc_gen.jpg"
 clusters: ["insights"]
 categories: ["apps"]
-tags: ["Video DAM (비디오 자산 관리)\n* Metadata (메타데이터)\n* Workflow Efficiency (워크플로우 효율성)\n* Version Control (버전 관리)\n* Tech Media (테크 미디어)"]
+tags: []
 featured: false
 ---
 ## Executive Summary
