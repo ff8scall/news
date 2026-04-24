@@ -1,6 +1,6 @@
 ﻿---
 title: "뉴타닉스(Nutanix), ‘에이전틱 인프라스트럭처’로 엔터프라이즈 컴퓨팅의 패러다임 재정의"
-date: "2026-04-24T08:20:37+09:00"
+date: "2026-04-24T09:04:34+09:00"
 description: "뉴타닉스 CEO 라지브 라마스와미는 기업용 컴퓨팅 스택이 지능형 에이전트를 호스팅하고 오케스트레이션하는 ‘에이전틱 인프라’로 전환되고 있다고 밝혔다."
 image: "/images/posts/2026/04/24/ai-nutanix-vision-agentic-infrastructure-as-the-ne.jpg"
 clusters: ["ai"]

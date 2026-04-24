@@ -1,6 +1,6 @@
 ﻿---
 title: "홍콩 당국, 에버그란데 회계 부정 관련 PwC에 수백만 달러 추가 벌금 부과: 글로벌 감사 표준의 중대 분기점"
-date: "2026-04-24T08:21:46+09:00"
+date: "2026-04-24T09:06:02+09:00"
 description: "홍콩 규제 당국이 헝다 그룹(Evergrande)의 회계 부실과 관련해 PwC에 부과된 벌금을 대폭 증액하며 강력한 규제 의지 표명."
 image: "/images/fallbacks/tech-biz.jpg"
 clusters: ["markets"]

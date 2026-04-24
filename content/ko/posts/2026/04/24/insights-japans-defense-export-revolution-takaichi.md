@@ -1,6 +1,6 @@
 ﻿---
 title: "일본 방위 장비 수출 정책의 대전환: 다카이치 보좌관, 구형 무기 수요 급증에 따른 시장 공략 시사"
-date: "2026-04-24T08:22:20+09:00"
+date: "2026-04-24T09:06:36+09:00"
 description: "일본 정부의 방위 장비 이전 규제 완화 이후, 퇴역 예정인 구형(Legacy) 무기 체계에 대한 해외 국가들의 도입 문의 폭증."
 image: "/images/fallbacks/monetization.jpg"
 clusters: ["insights"]

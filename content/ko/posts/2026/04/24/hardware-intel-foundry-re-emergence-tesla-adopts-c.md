@@ -1,6 +1,6 @@
 ﻿---
 title: "테슬라, 인텔 '14A' 공정 기반 테라팹 프로젝트 가동: 글로벌 파운드리 지각변동의 서막"
-date: "2026-04-24T08:21:00+09:00"
+date: "2026-04-24T09:04:56+09:00"
 description: "테슬라가 자사의 초대형 하드웨어 인프라인 '테라팹(Terafab)'에 인텔의 최첨단 14A(1.4nm급) 제조 공정을 전격 도입하며 전략적 파트너십을 체결했습니다."
 image: "/images/defaults/hardware/intel_foundry_4.jpg"
 clusters: ["hardware"]

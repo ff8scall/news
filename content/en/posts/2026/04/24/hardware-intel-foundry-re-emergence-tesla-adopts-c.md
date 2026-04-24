@@ -1,6 +1,6 @@
 ﻿---
 title: "Intel Foundry Re-Emergence: Tesla Adopts Cutting-Edge 14A Node for Terafab Infrastructure Breakthrough"
-date: "2026-04-23T23:21:05Z"
+date: "2026-04-24T00:05:01Z"
 description: "Tesla has officially selected Intel's advanced 14A semiconductor process for its ambitious Terafab project. This partnership represents a watershed moment for Intel Foundry Services, providing the critical strategic validation needed to challenge the existing foundry duopoly of TSMC and Samsung while fueling Tesla's pursuit of hardware sovereignty."
 image: "/images/defaults/hardware/intel_foundry_4.jpg"
 clusters: ["hardware"]

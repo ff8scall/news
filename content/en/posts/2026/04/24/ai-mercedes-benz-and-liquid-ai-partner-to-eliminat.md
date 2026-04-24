@@ -1,6 +1,6 @@
 ﻿---
 title: "Mercedes-Benz and Liquid AI Partner to Eliminate Cloud Dependency: Faster, Private On-Device Voice Control for Future Cockpits"
-date: "2026-04-23T23:22:35Z"
+date: "2026-04-24T00:06:51Z"
 description: "Mercedes-Benz is integrating Liquid AI's cutting-edge on-device architecture to deliver a voice control experience that is not only faster due to zero cloud latency but also inherently private, as user data never leaves the vehicle."
 image: "/images/posts/2026/04/24/ai-mercedes-benz-and-liquid-ai-partner-to-eliminat.jpg"
 clusters: ["ai"]

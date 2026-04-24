@@ -1,6 +1,6 @@
 ﻿---
 title: "메르세데스-벤츠, Liquid AI와 협력하여 클라우드 없는 '온디바이스' 음성 인식 도입: 프라이버시와 속도의 혁신"
-date: "2026-04-24T08:22:30+09:00"
+date: "2026-04-24T09:06:46+09:00"
 description: "메르세데스-벤츠가 Liquid AI의 기술을 도입하여 외부 클라우드 서버 연결 없이 작동하는 고성능 온디바이스 음성 제어 시스템 구현."
 image: "/images/posts/2026/04/24/ai-mercedes-benz-and-liquid-ai-partner-to-eliminat.jpg"
 clusters: ["ai"]

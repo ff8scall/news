@@ -1,8 +1,8 @@
 ﻿---
 title: "삼성·SK하이닉스, AI 특수에 맞춘 중국 생산 기지 전면 개편: 낸드 전략의 고도화와 수급 관리"
-date: "2026-04-24T08:21:10+09:00"
+date: "2026-04-24T09:05:13+09:00"
 description: "인공지능(AI) 열풍으로 인해 DRAM과 낸드 플래시의 전 세계적 수급이 타이트해지며, 삼성전자와 SK하이닉스가 중국 내 생산 시설의 최첨단 공정 전환을 가속화하고 있습니다."
-image: "/images/defaults/hardware/ai.jpg"
+image: "/images/posts/2026/04/24/hardware-ai-driven-memory-restructuring-samsung-an_gen.jpg"
 clusters: ["hardware"]
 tags: ["삼성전자", "SK하이닉스", "낸드 플래시", "중국 반도체 공장", "AI 서버", "eSSD", "공급망 재편"]
 featured: false

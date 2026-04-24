@@ -1,6 +1,6 @@
 ﻿---
 title: "Hong Kong Imposes Additional Multimillion-Dollar Penalties on PwC Over Evergrande Audit Failures: A Crisis in Global Accounting Integrity"
-date: "2026-04-23T23:21:51Z"
+date: "2026-04-24T00:06:07Z"
 description: "In a decisive regulatory move, Hong Kong authorities have increased financial penalties against PwC for its critical failures in auditing the debt-laden Evergrande, signaling a zero-tolerance policy toward systemic accounting negligence in the region's capital markets."
 image: "/images/fallbacks/tech-biz.jpg"
 clusters: ["markets"]

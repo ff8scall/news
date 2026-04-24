@@ -1,6 +1,6 @@
 ﻿---
 title: "SK하이닉스, HBM 공급 부족 '장기 국면' 진입 경고: AI 하드웨어 생태계의 구조적 제약과 대응 전략"
-date: "2026-04-24T08:20:50+09:00"
+date: "2026-04-24T09:04:46+09:00"
 description: "SK하이닉스가 고대역폭 메모리(HBM)의 수요 폭증으로 인한 수년간의 공급 부족 가능성을 공식화하며, AI 메모리 시장의 구조적 불균형을 경고했습니다."
 image: "/images/defaults/hardware/ai.jpg"
 clusters: ["hardware"]

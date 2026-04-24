@@ -1,6 +1,6 @@
 ﻿---
 title: "Japan’s Defense Export Revolution: Takaichi Aide Highlights Surging Demand for Legacy Arms Amid Regulatory Easing"
-date: "2026-04-23T23:22:25Z"
+date: "2026-04-24T00:06:41Z"
 description: "A senior aide to Sanae Takaichi has revealed a significant uptick in international demand for Japan's legacy defense hardware, marking a strategic pivot as Japan systematically dismantles its long-standing barriers to arms exports."
 image: "/images/fallbacks/monetization.jpg"
 clusters: ["insights"]

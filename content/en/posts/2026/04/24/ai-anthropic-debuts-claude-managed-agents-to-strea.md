@@ -1,6 +1,6 @@
 ﻿---
 title: "Anthropic Debuts Claude Managed Agents to Streamline Production-Grade AI Agent Deployment"
-date: "2026-04-23T23:20:32Z"
+date: "2026-04-24T00:04:28Z"
 description: "Anthropic has launched Claude Managed Agents, a cloud-based service designed to eliminate the engineering overhead of building 'scaffolding' for AI agents, effectively reducing deployment timelines from months to weeks."
 image: "/images/posts/2026/04/24/ai-anthropic-debuts-claude-managed-agents-to-strea.jpg"
 clusters: ["ai"]
