@@ -30,38 +30,36 @@
         "published_at": "2026-04-25T17:03:03.329658"
     },
     "ai_part1": {
-        "notebook_id": "12306803-b68a-4619-b729-900e44a04e5a",
-        "title": "2026-04-25 ai Analysis (part1)",
+        "notebook_id": "031d0699-2be8-41b1-b566-ea0dacc4aeda",
+        "title": "2026-04-26 ai Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-25T11:01:36.856694",
+        "triggered_at": "2026-04-26T05:01:45.291011",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/25/ai-comfyui-commands-500m-valuation-as-ai-media-shi/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/ai-comfyui-commands-500m-valuation-as-ai-media-shi/",
-            "https://news.lego-sia.com/posts/2026/04/25/markets-googles-40b-commitment-to-anthropic-strate/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/markets-googles-40b-commitment-to-anthropic-strate/",
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-apples-ternus-era-begins-as-elon-musk-eye/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-apples-ternus-era-begins-as-elon-musk-eye/",
-            "https://news.lego-sia.com/posts/2026/04/25/insights-curbing-automation-waste-through-physical/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/insights-curbing-automation-waste-through-physical/"
+            "https://news.lego-sia.com/posts/2026/04/26/ai-openai-ceo-sam-altman-issues-apology-over-fatal/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/ai-openai-ceo-sam-altman-issues-apology-over-fatal/",
+            "https://news.lego-sia.com/posts/2026/04/26/ai-cohere-and-aleph-alpha-merge-to-create-sovereig/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/ai-cohere-and-aleph-alpha-merge-to-create-sovereig/",
+            "https://news.lego-sia.com/posts/2026/04/26/hardware-apple-under-john-ternus-prioritizing-hard/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/hardware-apple-under-john-ternus-prioritizing-hard/"
         ],
-        "published_at": "2026-04-25T11:07:19.643763"
+        "published_at": "2026-04-26T05:04:00.221359"
     },
     "ai_part2": {
-        "notebook_id": "d1c4a2e4-1d12-4806-abcc-e54de2cd565e",
-        "title": "2026-04-25 ai Analysis (part2)",
+        "notebook_id": "495eed84-d284-4c1d-8d90-3950c1984f2c",
+        "title": "2026-04-26 ai Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-25T11:01:44.751196",
+        "triggered_at": "2026-04-26T05:01:53.895145",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/25/markets-us-government-realizes-massive-gains-as-ch/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/markets-us-government-realizes-massive-gains-as-ch/",
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-softbanks-strategic-pivot-repurposing-sha/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-softbanks-strategic-pivot-repurposing-sha/",
-            "https://news.lego-sia.com/posts/2026/04/25/ai-googles-40b-anthropic-hedge-validating-the-30x/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/ai-googles-40b-anthropic-hedge-validating-the-30x/"
+            "https://news.lego-sia.com/posts/2026/04/26/hardware-the-match-act-escalation-us-china-semicon/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/hardware-the-match-act-escalation-us-china-semicon/",
+            "https://news.lego-sia.com/posts/2026/04/26/insights-deciphering-the-ai-rally-shiller-cape-rat/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/insights-deciphering-the-ai-rally-shiller-cape-rat/",
+            "https://news.lego-sia.com/posts/2026/04/26/hardware-oracles-163b-stargate-financing-pimco-ste/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/hardware-oracles-163b-stargate-financing-pimco-ste/"
         ],
-        "published_at": "2026-04-25T11:08:23.151381"
+        "published_at": "2026-04-26T05:05:28.203299"
     },
     "insights_part1": {
         "notebook_id": "3d8d39c2-46d1-404f-b2dc-666d437c2810",
@@ -112,39 +110,33 @@
         "published_at": "2026-04-25T23:04:49.387938"
     },
     "hardware": {
-        "notebook_id": "b93b1cc4-a076-4147-b7da-f97dced84d47",
-        "title": "2026-04-25 hardware Analysis",
+        "notebook_id": "9c53740f-c143-4bd8-9c8f-8a07eb488fff",
+        "title": "2026-04-26 hardware Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-25T23:01:33.470149",
+        "triggered_at": "2026-04-26T05:02:02.729999",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-intels-discrete-gpu-pivot-xe3p-celestial/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-intels-discrete-gpu-pivot-xe3p-celestial/",
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-intel-vp-reveals-30-performance-overhead/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-intel-vp-reveals-30-performance-overhead/",
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-amd-expo-12-expansion-integrating-chinese/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-amd-expo-12-expansion-integrating-chinese/",
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-asus-zenbook-duo-2026-official-launch-a-2/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-asus-zenbook-duo-2026-official-launch-a-2/"
+            "https://news.lego-sia.com/posts/2026/04/26/hardware-intel-xeon-7-diamond-rapids-postponed-to/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/hardware-intel-xeon-7-diamond-rapids-postponed-to/",
+            "https://news.lego-sia.com/posts/2026/04/26/hardware-intel-scraps-arc-celestial-xe3p-discrete/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/hardware-intel-scraps-arc-celestial-xe3p-discrete/"
         ],
-        "published_at": "2026-04-25T23:04:53.164582"
+        "published_at": "2026-04-26T05:05:55.097718"
     },
     "insights": {
-        "notebook_id": "a7afe7d3-21a8-4b8a-91af-fc3190101859",
-        "title": "2026-04-25 insights Analysis",
+        "notebook_id": "01a916da-2355-46f4-a6bb-74736414195b",
+        "title": "2026-04-26 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-25T23:01:40.993450",
+        "triggered_at": "2026-04-26T05:02:11.541891",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/25/insights-mastering-the-terminal-8-essential-curl-w/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/insights-mastering-the-terminal-8-essential-curl-w/",
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-strengthening-3d-prints-the-science-of-ov/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-strengthening-3d-prints-the-science-of-ov/",
-            "https://news.lego-sia.com/posts/2026/04/25/insights-reclaiming-control-enhancing-android-with/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/insights-reclaiming-control-enhancing-android-with/",
-            "https://news.lego-sia.com/posts/2026/04/25/insights-human-centric-automation-transitioning-fr/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/insights-human-centric-automation-transitioning-fr/"
+            "https://news.lego-sia.com/posts/2026/04/26/insights-japan-eu-undersea-cable-security-pact-arc/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/insights-japan-eu-undersea-cable-security-pact-arc/",
+            "https://news.lego-sia.com/posts/2026/04/26/insights-hondas-autonomous-realignment-level-4-pos/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/insights-hondas-autonomous-realignment-level-4-pos/",
+            "https://news.lego-sia.com/posts/2026/04/26/markets-weaponization-of-tungsten-how-chinas-expor/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/markets-weaponization-of-tungsten-how-chinas-expor/"
         ],
-        "published_at": "2026-04-25T23:04:57.813949"
+        "published_at": "2026-04-26T05:07:23.786665"
     }
 }
