@@ -1,33 +1,39 @@
 {
     "hardware_part1": {
-        "notebook_id": "73efeb5b-5474-4518-9689-21165bbdbc17",
-        "title": "2026-04-25 hardware Analysis (part1)",
+        "notebook_id": "7a3915a2-fc66-4e7a-b5da-ed35fb461a72",
+        "title": "2026-04-26 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-25T17:01:18.191641",
+        "triggered_at": "2026-04-26T11:01:23.047842",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-princeton-researchers-unveil-3d-bioelectr/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-princeton-researchers-unveil-3d-bioelectr/",
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-neo-semiconductor-validates-3d-x-dram-poc/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-neo-semiconductor-validates-3d-x-dram-poc/",
-            "https://news.lego-sia.com/posts/2026/04/25/markets-inference-and-agentic-ai-drive-cpu-demand/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/markets-inference-and-agentic-ai-drive-cpu-demand/"
+            "https://news.lego-sia.com/posts/2026/04/26/hardware-bmw-ix3-flow-edition-commercializing-e-in/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/hardware-bmw-ix3-flow-edition-commercializing-e-in/",
+            "https://news.lego-sia.com/posts/2026/04/26/ai-the-interconnect-bottleneck-why-ai-infrastructu/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/ai-the-interconnect-bottleneck-why-ai-infrastructu/",
+            "https://news.lego-sia.com/posts/2026/04/26/insights-asml-flattening-management-hierarchy-amid/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/insights-asml-flattening-management-hierarchy-amid/",
+            "https://news.lego-sia.com/posts/2026/04/26/markets-memory-frontiers-samsung-hits-sub-10nm-dra/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/markets-memory-frontiers-samsung-hits-sub-10nm-dra/"
         ],
-        "published_at": "2026-04-25T17:03:00.681933"
+        "published_at": "2026-04-26T11:03:26.720805"
     },
     "hardware_part2": {
-        "notebook_id": "146cf275-461e-4cd9-8c14-1bb0069784ad",
-        "title": "2026-04-25 hardware Analysis (part2)",
+        "notebook_id": "0620a1c8-f9ca-45d7-8061-19e917f3a293",
+        "title": "2026-04-26 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-25T17:01:25.641525",
+        "triggered_at": "2026-04-26T11:01:30.667281",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-landmark-optoelectronics-scales-strategic/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-landmark-optoelectronics-scales-strategic/",
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-horizon-robotics-challenges-tesla-with-co/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-horizon-robotics-challenges-tesla-with-co/"
+            "https://news.lego-sia.com/posts/2026/04/26/ai-the-us20-billion-gamble-how-nvidia-and-openai-a/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/ai-the-us20-billion-gamble-how-nvidia-and-openai-a/",
+            "https://news.lego-sia.com/posts/2026/04/26/hardware-jdi-accelerates-ltps-exit-reshaping-autom/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/hardware-jdi-accelerates-ltps-exit-reshaping-autom/",
+            "https://news.lego-sia.com/posts/2026/04/26/hardware-bizlink-transforms-into-hpc-powerhouse-cp/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/hardware-bizlink-transforms-into-hpc-powerhouse-cp/",
+            "https://news.lego-sia.com/posts/2026/04/26/markets-foundry-rivalry-samsung-leverages-hbm-to-s/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/markets-foundry-rivalry-samsung-leverages-hbm-to-s/"
         ],
-        "published_at": "2026-04-25T17:03:03.329658"
+        "published_at": "2026-04-26T11:03:29.418982"
     },
     "ai_part1": {
         "notebook_id": "031d0699-2be8-41b1-b566-ea0dacc4aeda",
@@ -92,22 +98,18 @@
         "published_at": "2026-04-25T11:10:44.169580"
     },
     "ai": {
-        "notebook_id": "0c7d6b0b-4d27-4eea-ad23-fa38f002c010",
-        "title": "2026-04-25 ai Analysis",
+        "notebook_id": "28b25b1b-edce-4b0d-92de-48901ee37d2c",
+        "title": "2026-04-26 ai Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-25T23:01:26.065159",
+        "triggered_at": "2026-04-26T11:01:15.817536",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/25/insights-palantirs-identity-crisis-leaked-messages/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/insights-palantirs-identity-crisis-leaked-messages/",
-            "https://news.lego-sia.com/posts/2026/04/25/ai-from-stanford-lab-to-1b-unicorn-james-zou-launc/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/ai-from-stanford-lab-to-1b-unicorn-james-zou-launc/",
-            "https://news.lego-sia.com/posts/2026/04/25/hardware-meta-secures-multi-billion-dollar-amazon/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/hardware-meta-secures-multi-billion-dollar-amazon/",
-            "https://news.lego-sia.com/posts/2026/04/25/markets-meta-and-microsoft-cut-23000-jobs-to-fuel/",
-            "https://news.lego-sia.com/en/posts/2026/04/25/markets-meta-and-microsoft-cut-23000-jobs-to-fuel/"
+            "https://news.lego-sia.com/posts/2026/04/26/ai-anthropic-launches-experimental-marketplace-for/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/ai-anthropic-launches-experimental-marketplace-for/",
+            "https://news.lego-sia.com/posts/2026/04/26/markets-maine-governor-vetoes-ld-307-statewide-dat/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/markets-maine-governor-vetoes-ld-307-statewide-dat/"
         ],
-        "published_at": "2026-04-25T23:04:49.387938"
+        "published_at": "2026-04-26T11:03:37.834780"
     },
     "hardware": {
         "notebook_id": "9c53740f-c143-4bd8-9c8f-8a07eb488fff",
@@ -124,19 +126,15 @@
         "published_at": "2026-04-26T05:05:55.097718"
     },
     "insights": {
-        "notebook_id": "01a916da-2355-46f4-a6bb-74736414195b",
+        "notebook_id": "d5837e08-54f1-4228-a2b3-8e0cf4e4d6e1",
         "title": "2026-04-26 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-26T05:02:11.541891",
+        "triggered_at": "2026-04-26T11:01:38.811485",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/26/insights-japan-eu-undersea-cable-security-pact-arc/",
-            "https://news.lego-sia.com/en/posts/2026/04/26/insights-japan-eu-undersea-cable-security-pact-arc/",
-            "https://news.lego-sia.com/posts/2026/04/26/insights-hondas-autonomous-realignment-level-4-pos/",
-            "https://news.lego-sia.com/en/posts/2026/04/26/insights-hondas-autonomous-realignment-level-4-pos/",
-            "https://news.lego-sia.com/posts/2026/04/26/markets-weaponization-of-tungsten-how-chinas-expor/",
-            "https://news.lego-sia.com/en/posts/2026/04/26/markets-weaponization-of-tungsten-how-chinas-expor/"
+            "https://news.lego-sia.com/posts/2026/04/26/hardware-the-costly-persistence-of-ssd-myths-in-20/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/hardware-the-costly-persistence-of-ssd-myths-in-20/"
         ],
-        "published_at": "2026-04-26T05:07:23.786665"
+        "published_at": "2026-04-26T11:03:40.258468"
     }
 }
