@@ -126,15 +126,15 @@
         "published_at": "2026-04-26T05:05:55.097718"
     },
     "insights": {
-        "notebook_id": "d5837e08-54f1-4228-a2b3-8e0cf4e4d6e1",
+        "notebook_id": "7258d55c-8b86-4de4-9607-a0859370b997",
         "title": "2026-04-26 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-26T11:01:38.811485",
+        "triggered_at": "2026-04-26T17:00:44.306146",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/26/hardware-the-costly-persistence-of-ssd-myths-in-20/",
-            "https://news.lego-sia.com/en/posts/2026/04/26/hardware-the-costly-persistence-of-ssd-myths-in-20/"
+            "https://news.lego-sia.com/posts/2026/04/26/insights-chinese-carmakers-take-on-tesla-in-the-ra/",
+            "https://news.lego-sia.com/en/posts/2026/04/26/insights-chinese-carmakers-take-on-tesla-in-the-ra/"
         ],
-        "published_at": "2026-04-26T11:03:40.258468"
+        "published_at": "2026-04-26T17:01:53.664307"
     }
 }
