@@ -1,39 +1,35 @@
 {
     "hardware_part1": {
-        "notebook_id": "cabe3827-e79c-47c1-89ba-724bdb3488a0",
-        "title": "2026-04-26 hardware Analysis (part1)",
+        "notebook_id": "a6c10246-9821-43ef-b030-fc9053f78a4b",
+        "title": "2026-04-27 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-26T23:01:42.365784",
+        "triggered_at": "2026-04-27T11:01:13.646300",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/27/hardware-democratizing-industrial-metal-3d-printin/",
-            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-democratizing-industrial-metal-3d-printin/",
-            "https://news.lego-sia.com/posts/2026/04/27/hardware-the-dark-side-of-amds-latest-x3d-power-in/",
-            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-the-dark-side-of-amds-latest-x3d-power-in/",
-            "https://news.lego-sia.com/posts/2026/04/27/hardware-commodore-retreats-from-fpga-firmware-loc/",
-            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-commodore-retreats-from-fpga-firmware-loc/",
-            "https://news.lego-sia.com/posts/2026/04/27/ai-deepseek-v4-launch-and-the-us-china-ai-conflict/",
-            "https://news.lego-sia.com/en/posts/2026/04/27/ai-deepseek-v4-launch-and-the-us-china-ai-conflict/"
+            "https://news.lego-sia.com/posts/2026/04/27/hardware-everlight-electronics-navigates-strategic/",
+            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-everlight-electronics-navigates-strategic/",
+            "https://news.lego-sia.com/posts/2026/04/27/hardware-tendon-driven-hands-overcoming-the-physic/",
+            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-tendon-driven-hands-overcoming-the-physic/",
+            "https://news.lego-sia.com/posts/2026/04/27/hardware-neo-semiconductor-validates-3d-dram-poc-a/",
+            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-neo-semiconductor-validates-3d-dram-poc-a/"
         ],
-        "published_at": "2026-04-27T07:11:23.481370"
+        "published_at": "2026-04-27T11:02:58.979905"
     },
     "hardware_part2": {
-        "notebook_id": "d1c4e150-d2ac-49ba-9cb5-31f94656bf47",
-        "title": "2026-04-26 hardware Analysis (part2)",
+        "notebook_id": "3551bed7-d4ca-4012-a49e-bffcbe83787a",
+        "title": "2026-04-27 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-26T23:01:50.113839",
+        "triggered_at": "2026-04-27T11:01:21.511394",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/27/markets-silicon-superiority-taiwans-ai-driven-mark/",
-            "https://news.lego-sia.com/en/posts/2026/04/27/markets-silicon-superiority-taiwans-ai-driven-mark/",
-            "https://news.lego-sia.com/posts/2026/04/27/hardware-intels-strategic-yield-play-monetizing-lo/",
-            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-intels-strategic-yield-play-monetizing-lo/",
-            "https://news.lego-sia.com/posts/2026/04/27/hardware-the-rise-of-attritable-undersea-warfare-d/",
-            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-the-rise-of-attritable-undersea-warfare-d/",
-            "https://news.lego-sia.com/posts/2026/04/27/markets-apple-to-leapfrog-dell-the-macbook-neo-and/",
-            "https://news.lego-sia.com/en/posts/2026/04/27/markets-apple-to-leapfrog-dell-the-macbook-neo-and/"
+            "https://news.lego-sia.com/posts/2026/04/27/hardware-cerebras-systems-files-for-nasdaq-ipo-ana/",
+            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-cerebras-systems-files-for-nasdaq-ipo-ana/",
+            "https://news.lego-sia.com/posts/2026/04/27/hardware-the-dholera-dilemma-tata-electronics-grap/",
+            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-the-dholera-dilemma-tata-electronics-grap/",
+            "https://news.lego-sia.com/posts/2026/04/27/hardware-innolux-redefines-display-foundry-harness/",
+            "https://news.lego-sia.com/en/posts/2026/04/27/hardware-innolux-redefines-display-foundry-harness/"
         ],
-        "published_at": "2026-04-27T07:11:27.464416"
+        "published_at": "2026-04-27T11:03:01.564211"
     },
     "ai_part1": {
         "notebook_id": "031d0699-2be8-41b1-b566-ea0dacc4aeda",
