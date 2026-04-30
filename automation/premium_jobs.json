@@ -1,39 +1,39 @@
 {
     "hardware_part1": {
-        "notebook_id": "00632473-9088-4092-8b61-d544d8337ed2",
+        "notebook_id": "01566815-eb99-450c-8595-1db318ca4e9c",
         "title": "2026-04-30 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-30T11:01:45.235930",
+        "triggered_at": "2026-04-30T17:01:13.609948",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/30/hardware-ai-server-infrastructure-demand-locks-glo/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-ai-server-infrastructure-demand-locks-glo/",
-            "https://news.lego-sia.com/posts/2026/04/30/hardware-the-great-infrastructure-overhaul-why-800/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-the-great-infrastructure-overhaul-why-800/",
-            "https://news.lego-sia.com/posts/2026/04/30/markets-taiwans-strategic-quantum-leap-moea-launch/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/markets-taiwans-strategic-quantum-leap-moea-launch/",
-            "https://news.lego-sia.com/posts/2026/04/30/hardware-tsmcs-soic-3d-stacking-roadmap-scaling-to/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-tsmcs-soic-3d-stacking-roadmap-scaling-to/"
+            "https://news.lego-sia.com/posts/2026/04/30/hardware-epfl-breaks-ground-with-evaporation-drive/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-epfl-breaks-ground-with-evaporation-drive/",
+            "https://news.lego-sia.com/posts/2026/04/30/markets-reliance-unveils-17-billion-strategy-for-1/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/markets-reliance-unveils-17-billion-strategy-for-1/",
+            "https://news.lego-sia.com/posts/2026/04/30/markets-jcet-signals-osat-recovery-advanced-packag/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/markets-jcet-signals-osat-recovery-advanced-packag/",
+            "https://news.lego-sia.com/posts/2026/04/30/hardware-metas-multi-billion-dollar-aws-graviton-d/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-metas-multi-billion-dollar-aws-graviton-d/"
         ],
-        "published_at": "2026-04-30T11:04:44.366642"
+        "published_at": "2026-04-30T17:03:27.672149"
     },
     "hardware_part2": {
-        "notebook_id": "c3e4733d-12dc-4062-8a90-12e779ac69e3",
+        "notebook_id": "9e19dad6-a727-4331-8f0e-d77b486da3f1",
         "title": "2026-04-30 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-30T11:01:52.966305",
+        "triggered_at": "2026-04-30T17:01:20.796306",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/30/hardware-us-department-of-commerce-issues-directiv/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-us-department-of-commerce-issues-directiv/",
-            "https://news.lego-sia.com/posts/2026/04/30/hardware-intel-optimizes-wafer-edge-yield-to-maxim/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-intel-optimizes-wafer-edge-yield-to-maxim/",
-            "https://news.lego-sia.com/posts/2026/04/30/hardware-lisuan-tech-breaks-gpu-triumvirate-first/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-lisuan-tech-breaks-gpu-triumvirate-first/",
-            "https://news.lego-sia.com/posts/2026/04/30/ai-meta-to-power-ai-data-centers-with-space-based/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/ai-meta-to-power-ai-data-centers-with-space-based/"
+            "https://news.lego-sia.com/posts/2026/04/30/ai-openai-shifts-ai-infrastructure-strategy-moves/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/ai-openai-shifts-ai-infrastructure-strategy-moves/",
+            "https://news.lego-sia.com/posts/2026/04/30/hardware-intel-and-softbank-unveil-hb3dm-a-potenti/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-intel-and-softbank-unveil-hb3dm-a-potenti/",
+            "https://news.lego-sia.com/posts/2026/04/30/hardware-intel-18a-p-node-analysis-delivering-9-pe/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-intel-18a-p-node-analysis-delivering-9-pe/",
+            "https://news.lego-sia.com/posts/2026/04/30/markets-apple-reportedly-shelves-vision-pro-future/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/markets-apple-reportedly-shelves-vision-pro-future/"
         ],
-        "published_at": "2026-04-30T11:05:47.933044"
+        "published_at": "2026-04-30T17:03:33.727526"
     },
     "ai_part1": {
         "notebook_id": "1c82c993-0630-441d-ba15-1129e06c59a7",
@@ -104,20 +104,18 @@
         "published_at": "2026-04-30T05:09:55.947152"
     },
     "ai": {
-        "notebook_id": "eb12fab0-f8bb-40da-bc03-2a5e88cfe28f",
-        "title": "2026-04-28 ai Analysis",
+        "notebook_id": "68c87948-0ab5-41a6-aa59-2758fe43d155",
+        "title": "2026-04-30 ai Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-28T17:01:19.737274",
+        "triggered_at": "2026-04-30T17:01:06.487160",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/28/ai-google-finalizes-classified-pentagon-ai-deal-fo/",
-            "https://news.lego-sia.com/en/posts/2026/04/28/ai-google-finalizes-classified-pentagon-ai-deal-fo/",
-            "https://news.lego-sia.com/posts/2026/04/28/ai-meta-ordered-to-unwind-2b-manus-acquisition-by/",
-            "https://news.lego-sia.com/en/posts/2026/04/28/ai-meta-ordered-to-unwind-2b-manus-acquisition-by/",
-            "https://news.lego-sia.com/posts/2026/04/28/ai-redpine-secures-68m-seed-led-by-nordicninja-to/",
-            "https://news.lego-sia.com/en/posts/2026/04/28/ai-redpine-secures-68m-seed-led-by-nordicninja-to/"
+            "https://news.lego-sia.com/posts/2026/04/30/ai-softbanks-infrastructure-paradox-automating-the/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/ai-softbanks-infrastructure-paradox-automating-the/",
+            "https://news.lego-sia.com/posts/2026/04/30/ai-protons-privacy-sentinel-andy-yen-on-countering/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/ai-protons-privacy-sentinel-andy-yen-on-countering/"
         ],
-        "published_at": "2026-04-28T17:05:07.372383"
+        "published_at": "2026-04-30T17:04:19.459000"
     },
     "hardware": {
         "notebook_id": "82370880-b43d-4d52-917e-ba34d4bb9892",
@@ -136,19 +134,19 @@
         "published_at": "2026-04-27T07:14:12.307955"
     },
     "insights": {
-        "notebook_id": "b42494ed-9100-4544-af5c-0b4411d4a6c4",
+        "notebook_id": "3bde623f-f4d6-4638-abbc-ceadbed296d3",
         "title": "2026-04-30 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-30T11:02:00.594436",
+        "triggered_at": "2026-04-30T17:01:27.977816",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/30/hardware-global-memory-supply-chain-analysis-2026/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-global-memory-supply-chain-analysis-2026/",
-            "https://news.lego-sia.com/posts/2026/04/30/ai-meta-ai-capex-2026-massive-145-billion-investme/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/ai-meta-ai-capex-2026-massive-145-billion-investme/",
-            "https://news.lego-sia.com/posts/2026/04/30/markets-china-tech-ambitions-2026-real-estate-cris/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/markets-china-tech-ambitions-2026-real-estate-cris/"
+            "https://news.lego-sia.com/posts/2026/04/30/insights-the-strategic-paradox-of-us-automakers-do/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/insights-the-strategic-paradox-of-us-automakers-do/",
+            "https://news.lego-sia.com/posts/2026/04/30/hardware-samsung-signals-chronic-memory-deficit-as/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/hardware-samsung-signals-chronic-memory-deficit-as/",
+            "https://news.lego-sia.com/posts/2026/04/30/markets-global-pharmas-growing-appetite-for-chines/",
+            "https://news.lego-sia.com/en/posts/2026/04/30/markets-global-pharmas-growing-appetite-for-chines/"
         ],
-        "published_at": "2026-04-30T11:09:49.273841"
+        "published_at": "2026-04-30T17:05:09.913220"
     }
 }
