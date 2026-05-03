@@ -1,39 +1,39 @@
 {
     "hardware_part1": {
-        "notebook_id": "7ffbac0e-d40b-4b40-8c51-0a27e034b626",
+        "notebook_id": "b14bbbea-c9b8-480a-aa43-b9265fad89c7",
         "title": "2026-05-03 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T11:01:09.397793",
+        "triggered_at": "2026-05-03T17:00:55.063246",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-the-ai-infrastructure-goldmine-foxconn-in/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-the-ai-infrastructure-goldmine-foxconn-in/",
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-high-voltage-hegemony-onsemi-and-nio-pion/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-high-voltage-hegemony-onsemi-and-nio-pion/",
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-the-silicon-pivot-mediatek-targets-2-bill/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-the-silicon-pivot-mediatek-targets-2-bill/",
-            "https://news.lego-sia.com/posts/2026/05/03/markets-the-great-memory-reset-chinese-giants-mont/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/markets-the-great-memory-reset-chinese-giants-mont/"
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-mit-physicist-yichen-shen-leads-photonics/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-mit-physicist-yichen-shen-leads-photonics/",
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-taiwanese-makers-chip-in-as-leo-satellite/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-taiwanese-makers-chip-in-as-leo-satellite/",
+            "https://news.lego-sia.com/posts/2026/05/03/markets-silicon-motion-posts-record-1q26-revenue-d/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/markets-silicon-motion-posts-record-1q26-revenue-d/",
+            "https://news.lego-sia.com/posts/2026/05/03/ai-csp-capex-trajectory-towards-700b-navigating-ai/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/ai-csp-capex-trajectory-towards-700b-navigating-ai/"
         ],
-        "published_at": "2026-05-03T11:04:35.487437"
+        "published_at": "2026-05-03T17:02:57.354494"
     },
     "hardware_part2": {
-        "notebook_id": "bd197afc-0da9-400c-a4e7-c931aba3b4b7",
+        "notebook_id": "c557a88f-f591-4ea3-806c-fdd303a18893",
         "title": "2026-05-03 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T11:01:16.439733",
+        "triggered_at": "2026-05-03T17:01:02.448706",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-fcc-bans-chinese-electronics-labs-a-massi/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-fcc-bans-chinese-electronics-labs-a-massi/",
-            "https://news.lego-sia.com/posts/2026/05/03/ai-apple-local-ai-boom-high-memory-mac-mini-and-st/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/ai-apple-local-ai-boom-high-memory-mac-mini-and-st/",
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-amd-breaks-through-full-open-source-hdmi/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-amd-breaks-through-full-open-source-hdmi/",
-            "https://news.lego-sia.com/posts/2026/05/03/insights-mediatek-recruits-tsmc-packaging-legend-c/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/insights-mediatek-recruits-tsmc-packaging-legend-c/"
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-nvidia-vera-rubin-supply-chain-jpc-connec/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-nvidia-vera-rubin-supply-chain-jpc-connec/",
+            "https://news.lego-sia.com/posts/2026/05/03/markets-lite-on-ai-power-management-2q26-growth-dr/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/markets-lite-on-ai-power-management-2q26-growth-dr/",
+            "https://news.lego-sia.com/posts/2026/05/03/ai-automotive-ai-evolution-smart-eye-advances-full/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/ai-automotive-ai-evolution-smart-eye-advances-full/",
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-taiwan-quartz-manufacturers-strategize-fo/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-taiwan-quartz-manufacturers-strategize-fo/"
         ],
-        "published_at": "2026-05-03T11:04:40.119783"
+        "published_at": "2026-05-03T17:02:59.952441"
     },
     "ai_part1": {
         "notebook_id": "8fa72579-11ee-4233-929c-f2f4271bec77",
@@ -132,17 +132,17 @@
         "published_at": "2026-04-27T07:14:12.307955"
     },
     "insights": {
-        "notebook_id": "5c4fe010-1622-4fb5-8083-ead46eda859f",
-        "title": "2026-05-01 insights Analysis",
+        "notebook_id": "b7902e07-6f32-428e-a3fe-906a80b4d0f1",
+        "title": "2026-05-03 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-01T17:01:56.450076",
+        "triggered_at": "2026-05-03T17:01:09.344209",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/01/insights-sumitomo-corp-to-divest-madagascar-nickel/",
-            "https://news.lego-sia.com/en/posts/2026/05/01/insights-sumitomo-corp-to-divest-madagascar-nickel/",
-            "https://news.lego-sia.com/posts/2026/05/01/insights-nissan-scraps-us-ev-production-plans-in-m/",
-            "https://news.lego-sia.com/en/posts/2026/05/01/insights-nissan-scraps-us-ev-production-plans-in-m/"
+            "https://news.lego-sia.com/posts/2026/05/03/insights-to-lam-modi-summit-and-asean-digital-econ/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/insights-to-lam-modi-summit-and-asean-digital-econ/",
+            "https://news.lego-sia.com/posts/2026/05/03/insights-trkiyes-agtech-offensive-navigating-the-g/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/insights-trkiyes-agtech-offensive-navigating-the-g/"
         ],
-        "published_at": "2026-05-01T17:08:17.193913"
+        "published_at": "2026-05-03T17:03:45.476088"
     }
 }
