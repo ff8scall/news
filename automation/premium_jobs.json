@@ -1,39 +1,33 @@
 {
     "hardware_part1": {
-        "notebook_id": "b14bbbea-c9b8-480a-aa43-b9265fad89c7",
+        "notebook_id": "11357de4-a567-4280-b3e3-9fb468f9a57d",
         "title": "2026-05-03 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T17:00:55.063246",
+        "triggered_at": "2026-05-03T23:01:20.741370",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-mit-physicist-yichen-shen-leads-photonics/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-mit-physicist-yichen-shen-leads-photonics/",
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-taiwanese-makers-chip-in-as-leo-satellite/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-taiwanese-makers-chip-in-as-leo-satellite/",
-            "https://news.lego-sia.com/posts/2026/05/03/markets-silicon-motion-posts-record-1q26-revenue-d/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/markets-silicon-motion-posts-record-1q26-revenue-d/",
-            "https://news.lego-sia.com/posts/2026/05/03/ai-csp-capex-trajectory-towards-700b-navigating-ai/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/ai-csp-capex-trajectory-towards-700b-navigating-ai/"
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-anthropic-targets-fractiles-sram-based-ar/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-anthropic-targets-fractiles-sram-based-ar/",
+            "https://news.lego-sia.com/posts/2026/05/03/markets-nvidias-china-market-share-hits-zero-jense/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/markets-nvidias-china-market-share-hits-zero-jense/",
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-amazon-middle-east-data-centers-crippled/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-amazon-middle-east-data-centers-crippled/"
         ],
-        "published_at": "2026-05-03T17:02:57.354494"
+        "published_at": "2026-05-03T23:02:51.079230"
     },
     "hardware_part2": {
-        "notebook_id": "c557a88f-f591-4ea3-806c-fdd303a18893",
+        "notebook_id": "ebd760b0-1f3d-4257-a5e2-76a234cbfdde",
         "title": "2026-05-03 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T17:01:02.448706",
+        "triggered_at": "2026-05-03T23:01:28.535109",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-nvidia-vera-rubin-supply-chain-jpc-connec/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-nvidia-vera-rubin-supply-chain-jpc-connec/",
-            "https://news.lego-sia.com/posts/2026/05/03/markets-lite-on-ai-power-management-2q26-growth-dr/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/markets-lite-on-ai-power-management-2q26-growth-dr/",
-            "https://news.lego-sia.com/posts/2026/05/03/ai-automotive-ai-evolution-smart-eye-advances-full/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/ai-automotive-ai-evolution-smart-eye-advances-full/",
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-taiwan-quartz-manufacturers-strategize-fo/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-taiwan-quartz-manufacturers-strategize-fo/"
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-japan-revolutionizes-attrition-warfare-wi/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-japan-revolutionizes-attrition-warfare-wi/",
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-foxconn-accelerates-orbital-vertical-inte/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-foxconn-accelerates-orbital-vertical-inte/"
         ],
-        "published_at": "2026-05-03T17:02:59.952441"
+        "published_at": "2026-05-03T23:03:36.687340"
     },
     "ai_part1": {
         "notebook_id": "8fa72579-11ee-4233-929c-f2f4271bec77",
@@ -132,17 +126,19 @@
         "published_at": "2026-04-27T07:14:12.307955"
     },
     "insights": {
-        "notebook_id": "b7902e07-6f32-428e-a3fe-906a80b4d0f1",
+        "notebook_id": "bd378276-dad8-42a2-a84e-0ec5fe7074ac",
         "title": "2026-05-03 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T17:01:09.344209",
+        "triggered_at": "2026-05-03T23:01:35.929754",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/insights-to-lam-modi-summit-and-asean-digital-econ/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/insights-to-lam-modi-summit-and-asean-digital-econ/",
-            "https://news.lego-sia.com/posts/2026/05/03/insights-trkiyes-agtech-offensive-navigating-the-g/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/insights-trkiyes-agtech-offensive-navigating-the-g/"
+            "https://news.lego-sia.com/posts/2026/05/03/insights-the-ethernet-marketing-myth-why-you-are-o/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/insights-the-ethernet-marketing-myth-why-you-are-o/",
+            "https://news.lego-sia.com/posts/2026/05/03/ai-organizing-digital-chaos-using-claude-ai-to-str/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/ai-organizing-digital-chaos-using-claude-ai-to-str/",
+            "https://news.lego-sia.com/posts/2026/05/03/markets-geopolitical-gridlock-us-blockade-strands/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/markets-geopolitical-gridlock-us-blockade-strands/"
         ],
-        "published_at": "2026-05-03T17:03:45.476088"
+        "published_at": "2026-05-03T23:04:05.573379"
     }
 }
