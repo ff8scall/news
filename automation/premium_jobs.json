@@ -1,39 +1,39 @@
 {
     "hardware_part1": {
-        "notebook_id": "d199c958-481c-4129-b0af-d25b9982e599",
+        "notebook_id": "7ffbac0e-d40b-4b40-8c51-0a27e034b626",
         "title": "2026-05-03 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T09:25:14.892509",
+        "triggered_at": "2026-05-03T11:01:09.397793",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-south-koreas-ai-chip-sector-hits-historic/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-south-koreas-ai-chip-sector-hits-historic/",
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-mitsubishi-electric-orchestrates-landmark/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-mitsubishi-electric-orchestrates-landmark/",
-            "https://news.lego-sia.com/posts/2026/05/03/markets-big-tech-ai-capex-to-surge-77-to-725-billi/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/markets-big-tech-ai-capex-to-surge-77-to-725-billi/",
-            "https://news.lego-sia.com/posts/2026/05/03/ai-softbank-targets-100-billion-valuation-for-us-b/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/ai-softbank-targets-100-billion-valuation-for-us-b/"
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-the-ai-infrastructure-goldmine-foxconn-in/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-the-ai-infrastructure-goldmine-foxconn-in/",
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-high-voltage-hegemony-onsemi-and-nio-pion/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-high-voltage-hegemony-onsemi-and-nio-pion/",
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-the-silicon-pivot-mediatek-targets-2-bill/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-the-silicon-pivot-mediatek-targets-2-bill/",
+            "https://news.lego-sia.com/posts/2026/05/03/markets-the-great-memory-reset-chinese-giants-mont/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/markets-the-great-memory-reset-chinese-giants-mont/"
         ],
-        "published_at": "2026-05-03T09:27:26.360106"
+        "published_at": "2026-05-03T11:04:35.487437"
     },
     "hardware_part2": {
-        "notebook_id": "eb8557ec-469d-4c53-8ebb-2bdd76429ac8",
+        "notebook_id": "bd197afc-0da9-400c-a4e7-c931aba3b4b7",
         "title": "2026-05-03 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T09:25:22.255956",
+        "triggered_at": "2026-05-03T11:01:16.439733",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-openais-stargate-strategy-pivot-securing/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-openais-stargate-strategy-pivot-securing/",
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-synopsys-ansys-integration-transforming-s/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-synopsys-ansys-integration-transforming-s/",
-            "https://news.lego-sia.com/posts/2026/05/03/markets-samsung-electro-mechanics-hits-krw-3-trill/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/markets-samsung-electro-mechanics-hits-krw-3-trill/",
-            "https://news.lego-sia.com/posts/2026/05/03/markets-qualcomm-maintains-70-market-share-in-sams/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/markets-qualcomm-maintains-70-market-share-in-sams/"
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-fcc-bans-chinese-electronics-labs-a-massi/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-fcc-bans-chinese-electronics-labs-a-massi/",
+            "https://news.lego-sia.com/posts/2026/05/03/ai-apple-local-ai-boom-high-memory-mac-mini-and-st/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/ai-apple-local-ai-boom-high-memory-mac-mini-and-st/",
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-amd-breaks-through-full-open-source-hdmi/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-amd-breaks-through-full-open-source-hdmi/",
+            "https://news.lego-sia.com/posts/2026/05/03/insights-mediatek-recruits-tsmc-packaging-legend-c/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/insights-mediatek-recruits-tsmc-packaging-legend-c/"
         ],
-        "published_at": "2026-05-03T09:27:29.240795"
+        "published_at": "2026-05-03T11:04:40.119783"
     },
     "ai_part1": {
         "notebook_id": "8fa72579-11ee-4233-929c-f2f4271bec77",
@@ -102,18 +102,18 @@
         "published_at": "2026-05-03T09:31:53.029763"
     },
     "ai": {
-        "notebook_id": "68c87948-0ab5-41a6-aa59-2758fe43d155",
-        "title": "2026-04-30 ai Analysis",
+        "notebook_id": "e09d31ff-ed3e-4968-a882-ddd29af00f15",
+        "title": "2026-05-03 ai Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-04-30T17:01:06.487160",
+        "triggered_at": "2026-05-03T11:01:02.245331",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/04/30/ai-softbanks-infrastructure-paradox-automating-the/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/ai-softbanks-infrastructure-paradox-automating-the/",
-            "https://news.lego-sia.com/posts/2026/04/30/ai-protons-privacy-sentinel-andy-yen-on-countering/",
-            "https://news.lego-sia.com/en/posts/2026/04/30/ai-protons-privacy-sentinel-andy-yen-on-countering/"
+            "https://news.lego-sia.com/posts/2026/05/03/hardware-the-end-of-the-599-mac-mini-how-local-ai/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-the-end-of-the-599-mac-mini-how-local-ai/",
+            "https://news.lego-sia.com/posts/2026/05/03/ai-bmos-quantum-leap-canadian-bank-integrates-quan/",
+            "https://news.lego-sia.com/en/posts/2026/05/03/ai-bmos-quantum-leap-canadian-bank-integrates-quan/"
         ],
-        "published_at": "2026-04-30T17:04:19.459000"
+        "published_at": "2026-05-03T11:05:19.388503"
     },
     "hardware": {
         "notebook_id": "82370880-b43d-4d52-917e-ba34d4bb9892",

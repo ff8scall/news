@@ -12,18 +12,23 @@ logger = logging.getLogger("LegoSia.IndexNow")
 def notify_indexnow(urls):
     """
     Search engines(Bing, Naver 등)에 새 URL 생성을 알림.
-    [V1.5] Streaming Mode 전환: 개별 URL 통보로 검색 엔진 부하 최적화
+    [V14.8] Batch Mode (POST) 확정: 신규 생성된 기사(Newly Created)의 효율적 색인을 위해 배치 전송 사용.
     """
     if not urls:
         return
     
-    # 중복 제거
-    urls = list(set(urls))
+    # 중복 제거 및 정체
+    urls = list(set([u.strip() for u in urls if u.strip()]))
+    if not urls: return
+
+    # 호스트 추출 (첫 번째 URL 기준)
+    from urllib.parse import urlparse
+    parsed_home = urlparse(urls[0])
+    host = parsed_home.netloc
     
     bing_key = os.getenv("INDEXNOW_KEY_BING", "bbd0d9a6843c450eb3e9d811a0fd504a")
     naver_key = os.getenv("INDEXNOW_KEY_NAVER", "c3a4f8e21d6b4927a7c5b1e0d3f4a6b2")
     
-    # 엔드포인트와 해당 엔진에서 사용할 키 매핑
     targets = [
         {"name": "Bing", "url": "https://www.bing.com/indexnow", "key": bing_key},
         {"name": "Naver", "url": "https://searchadvisor.naver.com/indexnow", "key": naver_key},
@@ -32,41 +37,36 @@ def notify_indexnow(urls):
     ]
     
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/123.0.0.0"
+        "Content-Type": "application/json; charset=utf-8",
+        "User-Agent": "Mozilla/5.0 (LegoSiaBot/1.0; +https://news.lego-sia.com)"
     }
 
-    print(f" [*] Streaming {len(urls)} URLs to IndexNow Engines...")
+    # [V14.8] 다건 전송 시 POST(Batch) 방식을 기본으로 사용
+    print(f" [*] Batch notifying {len(urls)} URLs to IndexNow Engines (Newly Created Focus)...")
     
-    for url in urls:
-        for target in targets:
-            name = target["name"]
-            # [STREAMING MODE] GET 요청 사용
-            params = {
-                "url": url,
-                "key": target["key"]
-            }
-            
-            try:
-                # 스트리밍 방식은 GET 요청이 표준이며 부하가 적음
-                res = requests.get(target["url"], params=params, headers=headers, timeout=10)
-                if res.status_code in [200, 202]:
-                    logger.info(f"{name} streaming success: {url} ({res.status_code})")
-                else:
-                    print(f" [!] {name} streaming failed for {url}: {res.status_code}")
-                    logger.warning(f"{name} streaming failed: {res.status_code} - {url}")
-            except Exception as e:
-                logger.error(f"{name} streaming error: {e}")
-        
-        # [V1.6] Throttling: 검색 엔진 부하 방지 및 개별 URL 인지력 향상을 위해 1초 지연 추가
-        time.sleep(1.0)
-    
-    print(f" [OK] IndexNow streaming notification completed.")
-    
-    # [V1.4] Google Indexing API 통합
+    for target in targets:
+        payload = {
+            "host": host,
+            "key": target["key"],
+            "keyLocation": f"https://{host}/{target['key']}.txt",
+            "urlList": urls
+        }
+        try:
+            # POST 방식이 색인 성공률과 속도 면에서 신규 기사 대량 등록 시 유리함
+            res = requests.post(target["url"], json=payload, headers=headers, timeout=15)
+            if res.status_code in [200, 202]:
+                logger.info(f" [SUCCESS] {target['name']} Batch: {len(urls)} URLs ({res.status_code})")
+                print(f" [OK] {target['name']} batch accepted.")
+            else:
+                logger.warning(f" [FAIL] {target['name']} Batch: {res.status_code} - {res.text[:100]}")
+                print(f" [!] {target['name']} failed: {res.status_code}")
+        except Exception as e:
+            logger.error(f" [ERROR] {target['name']} Batch Error: {e}")
+
+    # Google Indexing API (신규 기사 실시간 색인 핵심)
     try:
         notify_google_indexing(urls)
     except Exception as e:
-        print(f" [ERROR] Google Indexing notification failed: {e}")
         logger.error(f"Google Indexing error: {e}")
 
 if __name__ == "__main__":
