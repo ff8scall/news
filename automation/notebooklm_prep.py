@@ -238,8 +238,43 @@ class NotebookLMApp:
                 os.remove(tmp_path)
                 return content
             except Exception as e:
-                logger.error(f"Error reading downloaded report: {e}")
+                logger.error(f"Error reading/removing temp report: {e}")
         return None
+
+    def cleanup_old_notebooks(self, days=2):
+        """[V3.0] 2일 이상 경과한 노트북을 삭제하여 공간 및 관리 효율성 확보"""
+        from datetime import datetime, timezone, timedelta
+        
+        logger.info(f" [CLEANUP] Searching for notebooks older than {days} days...")
+        try:
+            notebooks = self.run_cmd(["list", "notebooks", "--full", "--json"], use_json=True)
+            if not notebooks or not isinstance(notebooks, list):
+                logger.info(" [CLEANUP] No notebooks found to clean.")
+                return
+            
+            now = datetime.now(timezone.utc)
+            threshold = now - timedelta(days=days)
+            deleted_count = 0
+            
+            for nb in notebooks:
+                created_at_str = nb.get("created_at")
+                if not created_at_str: continue
+                
+                try:
+                    # format: 2026-04-17T13:07:06Z
+                    created_at = datetime.fromisoformat(created_at_str.replace("Z", "+00:00"))
+                    if created_at < threshold:
+                        nb_id = nb["id"]
+                        nb_title = nb.get("title", "Untitled")
+                        logger.info(f" [CLEANUP] Deleting old notebook: {nb_title} ({nb_id}, created {created_at_str})")
+                        self.run_cmd(["delete", "notebook", nb_id, "-y"], use_json=False)
+                        deleted_count += 1
+                except Exception as e:
+                    logger.error(f" [CLEANUP] Error parsing date or deleting {nb.get('id')}: {e}")
+            
+            logger.info(f" [CLEANUP] Finished. Deleted {deleted_count} old notebooks.")
+        except Exception as e:
+            logger.error(f" [CLEANUP] Critical error: {e}")
 
 
 def get_prompt_for_mode(mode):

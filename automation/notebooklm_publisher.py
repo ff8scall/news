@@ -111,7 +111,10 @@ class NotebookLMPublisher:
             if success:
                 job["status"] = "published"
                 job["published_at"] = datetime.now().isoformat()
-                published_count += 1
+                # published_count += 1 (기존: Job 단위)
+                # [V1.7] 실제 발행된 기사(Article) 수를 합산하여 반환
+                new_articles_in_job = len(job.get("urls", [])) // 2 # KO/EN 쌍이므로 2로 나눔
+                published_count += new_articles_in_job
                 
                 # [V1.5] URL 수집 (IndexNow용)
                 if "urls" in job:

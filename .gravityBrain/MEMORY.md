@@ -1,12 +1,13 @@
 # 🧠 MEMORY: 뉴스 인텔리전스 시스템
 
 ## 📍 현재 상태
-- **날짜**: 2026-04-27 (v14.3 SEO 복구 및 IndexNow 최적화)
-- **달성**: 11:00 배치 시 Bing 색인 누락 장애 분석 완료 및 지연 시간(Throttling) 도입을 통한 재색인 98건 성공.
-- **수정**: `indexnow_service.py` 전송 간 1초 지연 추가, `hugo.toml` 메타 데이터(languageCode 등) 복구, `seo.html` 다국어 태그 통합.
-- **상태**: 4대 엔진(Bing, Naver 등)에 최근 이틀치 기사(KO/EN) 98건 재색인 통보 완료.
+- **날짜**: 2026-05-03 (v14.5 장애 복구 및 시스템 안정화)
+- **달성**: notebooklm_prep.py SyntaxError 해결, news_main.py 사멸 코드(cat_safe) 제거.
+- **수정**: `notebooklm_prep.py` download_report 내 try-except 구문 완성.
+- **상태**: 파이프라인 엔트리포인트 정상 로드 확인 및 스케줄링 대기 중.
 - **최근 결정**: 
-    - **[v14.3] SEO Recovery & IndexNow Throttling**: 검색 엔진의 개별 URL 인지력을 높이기 위해 Streaming(GET) 방식에 1초의 Throttling을 도입함. 유실되었던 `hreflang`, `canonical`, 사이트 메타 정보를 복구하여 다국어 검색 품질을 강화함.
+    - **[v14.5] Hotfix & Cleanup**: 어제 추가된 NLM cleanup 기능 중 발생한 구문 오류를 즉시 수정하고, news_main.py에 남아있던 구버전 category 참조 변수를 제거하여 cluster 체계로의 완벽한 전이를 수행함.
+    - **[v14.4] v14.4 시스템 최적화 및 IndexNow 강화**: 텔레그램 알림 일원화, 리포트 건수 정확화, NLM 2일 경과 데이터 자동 삭제 로직 구현 완료.
     - **[v14.2] Hotfix & WebP Optimization**: 배포 과정에서 누락된 머지 충돌을 해결하고, 이미지 자산의 효율성을 위해 모든 다운로드 이미지를 WebP로 자동 변환하는 기능을 활성화함. (v6.2 대응)
     - **[v14.1] JSON-Native & Hybrid Recovery**: NLM에게 JSON 출력을 강제하고 실패 시 V13.0 정규식 및 ID 기반 분할로 복구하는 다중 방어 체계 구축. 작업 분할 임계값을 4로 낮추어 출력 안정성 극대화.
     - **[v12.2] 슬러그 유니크성 강화**: 비영어권 제목 정제 시 발생하는 슬러그 충돌을 방지하기 위해, 모든 기사 슬러그 뒤에 고유 ID를 추가하도록 `notebooklm_publisher.py`를 개선했습니다.
@@ -51,5 +52,7 @@
 - [x] 중메뉴 폐지 및 4대 대메뉴(AI, Hardware, Insights, Markets) 체제 전환 완료 [v6.6]
 - [x] NLM 파서 v14.1 업그레이드 (JSON-Native Engine + Hybrid Fallback)
 - [x] NLM 작업 분할 임계값 하향 (T=4) 및 08:00 배치 실전 검증 완료
+- [x] 텔레그램 알림 일원화 및 완료 보고서 건수 정확화 완료 (v14.4)
+- [x] NLM 노후 데이터(2일 경과) 자동 삭제 로직 구현 완료
 - [ ] V14.1 시스템 도입 후 JSON 문법 준수율 및 파싱 성공률 장기 모니터링 (Next)
 - [ ] 백로그 시스템 도입 후 기사 누적 속도 및 품질 모니터링

@@ -6,8 +6,8 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 # [V3.3] 멀티태스킹 패치: 비동기 실행으로 명령 응답 지연 해소
-base_dir = os.path.dirname(os.path.abspath(__file__))
-env_path = os.path.join(base_dir, '.env')
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+env_path = os.path.join(root_dir, '.env')
 load_dotenv(env_path)
 
 class TelegramRemote:

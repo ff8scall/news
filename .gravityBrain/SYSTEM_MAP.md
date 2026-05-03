@@ -52,7 +52,8 @@ graph TD
 - **최근 주요 변경**: NotebookLM JSON 출력 강제화(v14.0), JSON-Regex 하이브리드 파싱 엔진, NLM 작업 분할 임계값 하향(T=4).
 - **Real-time Recovery**: 영문 서비스의 '빈 페이지' 발생을 원천 차단하는 지능형 번역 폴백 시스템 운영.
 - **Full Automation**: 수확부터 리포트 대기, 발행, Git Push(배포), IndexNow까지 단일 명령으로 처리.
-- **IndexNow v1.3**: Naver Search Advisor 통합 및 도메인별 개별 키(News 전용) 매핑 로직 추가.
+- **IndexNow v1.6**: Naver/Bing Streaming(GET) 방식에 1초 쓰로틀링(Throttling) 및 배포 실패 시에도 알림 보장 로직 추가.
+- **NLM Retention (v3.0)**: 2일 이상 경과한 노후 노트북 자동 삭제 로직을 통한 저장 공간 최적화.
 - **Git Sync**: 로컬에서 생성된 기사를 자동으로 GitHub에 반영하여 라이브 사이트 실시간 업데이트.
 
 ## 🏷️ 대분류 체계 (Standard v4.0)

@@ -26,7 +26,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("automation/nlm_orchestrator.log", encoding="utf-8"),
+        logging.FileHandler(os.path.join(current_dir, "nlm_orchestrator.log"), encoding="utf-8"),
         logging.StreamHandler()
     ]
 )
@@ -136,13 +136,18 @@ def run_full_pipeline(mode="A", limit=15, source="rss", poll_interval=60, max_wa
                 new_p = summary.get("published", 0)
                 if new_p > 0:
                     total_published += new_p
-                    # 배포 및 인덱싱
-                    if git_sync():
-                        urls = summary.get("urls", [])
-                        if urls:
-                            logger.info(f" [IndexNow] Notifying for {len(urls)} URLs...")
-                            notify_indexnow(urls)
-                            total_indexed += len(urls)
+                    # [IndexNow] 발행된 모든 URL 수집
+                    current_urls = summary.get("urls", [])
+                    
+                    # 배포 시도 (실패하더라도 IndexNow 시도는 진행 - Bing이 나중에라도 긁어갈 수 있도록)
+                    sync_success = git_sync()
+                    if not sync_success:
+                        logger.warning(" [GIT] Sync failed, but proceeding with IndexNow notification.")
+                    
+                    if current_urls:
+                        logger.info(f" [IndexNow] Notifying for {len(current_urls)} URLs...")
+                        notify_indexnow(current_urls)
+                        total_indexed += len(current_urls)
             
             # 모든 Job이 published 상태인지 확인
             try:
@@ -169,6 +174,13 @@ def run_full_pipeline(mode="A", limit=15, source="rss", poll_interval=60, max_wa
             f"• Time Taken: {int((time.time() - start_time_total)/60)}m"
         )
         send_telegram_report(report_msg)
+        
+        # [V3.0] 노후 데이터 정리 (2일 경과분)
+        try:
+            app = NotebookLMApp()
+            app.cleanup_old_notebooks(days=2)
+        except Exception as e:
+            logger.error(f" [CLEANUP] Post-pipeline cleanup failed: {e}")
 
     except Exception as e:
         err_trace = traceback.format_exc()

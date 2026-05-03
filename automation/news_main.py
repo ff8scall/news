@@ -496,7 +496,7 @@ def manage_news_pipeline(limit_per_cat=1, use_local=False):
         total_published += count
     
     # [V11.5] URL 수집 로직 (발행 직후 최신 슬러그 기반으로 URL 생성)
-    for cat in categories:
+    for cat in clusters:
         items = items_by_cat.get(cat, [])
         for item in items:
             cluster = item.get('cluster') or cat

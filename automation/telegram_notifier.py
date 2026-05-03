@@ -2,8 +2,9 @@ import os
 import requests
 from dotenv import load_dotenv
 
-# .env 로드
-env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
+# .env 로드 (프로젝트 루트 참조)
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+env_path = os.path.join(root_dir, '.env')
 load_dotenv(env_path)
 
 class TelegramNotifier:
