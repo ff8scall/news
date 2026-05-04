@@ -1,33 +1,39 @@
 {
     "hardware_part1": {
-        "notebook_id": "11357de4-a567-4280-b3e3-9fb468f9a57d",
-        "title": "2026-05-03 hardware Analysis (part1)",
+        "notebook_id": "d8d4afd0-0b95-4c89-8f6f-4547df58f25e",
+        "title": "2026-05-04 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T23:01:20.741370",
+        "triggered_at": "2026-05-04T11:01:14.663885",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-anthropic-targets-fractiles-sram-based-ar/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-anthropic-targets-fractiles-sram-based-ar/",
-            "https://news.lego-sia.com/posts/2026/05/03/markets-nvidias-china-market-share-hits-zero-jense/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/markets-nvidias-china-market-share-hits-zero-jense/",
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-amazon-middle-east-data-centers-crippled/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-amazon-middle-east-data-centers-crippled/"
+            "https://news.lego-sia.com/posts/2026/05/04/hardware-delta-electronics-redefines-power-deliver/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-delta-electronics-redefines-power-deliver/",
+            "https://news.lego-sia.com/posts/2026/05/04/markets-beijing-auto-show-2026-embodied-ai-and-the/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/markets-beijing-auto-show-2026-embodied-ai-and-the/",
+            "https://news.lego-sia.com/posts/2026/05/04/hardware-semicon-sea-2026-malaysias-strategic-pivo/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-semicon-sea-2026-malaysias-strategic-pivo/",
+            "https://news.lego-sia.com/posts/2026/05/04/insights-croma-ates-1q26-anomaly-full-year-capacit/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/insights-croma-ates-1q26-anomaly-full-year-capacit/"
         ],
-        "published_at": "2026-05-03T23:02:51.079230"
+        "published_at": "2026-05-04T11:03:13.988613"
     },
     "hardware_part2": {
-        "notebook_id": "ebd760b0-1f3d-4257-a5e2-76a234cbfdde",
-        "title": "2026-05-03 hardware Analysis (part2)",
+        "notebook_id": "b4ff0b52-a63e-4fde-a3ac-89f4c80b2fe8",
+        "title": "2026-05-04 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T23:01:28.535109",
+        "triggered_at": "2026-05-04T11:01:23.934879",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-japan-revolutionizes-attrition-warfare-wi/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-japan-revolutionizes-attrition-warfare-wi/",
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-foxconn-accelerates-orbital-vertical-inte/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-foxconn-accelerates-orbital-vertical-inte/"
+            "https://news.lego-sia.com/posts/2026/05/04/hardware-spil-aggressively-expands-advanced-packag/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-spil-aggressively-expands-advanced-packag/",
+            "https://news.lego-sia.com/posts/2026/05/04/insights-beijing-auto-show-2026-the-end-of-hardwar/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/insights-beijing-auto-show-2026-the-end-of-hardwar/",
+            "https://news.lego-sia.com/posts/2026/05/04/hardware-benq-materials-unit-cenefom-enters-global/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-benq-materials-unit-cenefom-enters-global/",
+            "https://news.lego-sia.com/posts/2026/05/04/ai-mit-technology-reviews-2026-ai-roadmap-10-trend/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/ai-mit-technology-reviews-2026-ai-roadmap-10-trend/"
         ],
-        "published_at": "2026-05-03T23:03:36.687340"
+        "published_at": "2026-05-04T11:03:30.010539"
     },
     "ai_part1": {
         "notebook_id": "1ea4b6c6-74e1-46ea-b645-f2f5a22de9b3",
@@ -94,18 +100,22 @@
         "published_at": "2026-05-04T05:05:51.860310"
     },
     "ai": {
-        "notebook_id": "e09d31ff-ed3e-4968-a882-ddd29af00f15",
-        "title": "2026-05-03 ai Analysis",
+        "notebook_id": "fe790be7-c55e-456b-a40d-ba76ec5b4468",
+        "title": "2026-05-04 ai Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T11:01:02.245331",
+        "triggered_at": "2026-05-04T11:01:05.376034",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/hardware-the-end-of-the-599-mac-mini-how-local-ai/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/hardware-the-end-of-the-599-mac-mini-how-local-ai/",
-            "https://news.lego-sia.com/posts/2026/05/03/ai-bmos-quantum-leap-canadian-bank-integrates-quan/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/ai-bmos-quantum-leap-canadian-bank-integrates-quan/"
+            "https://news.lego-sia.com/posts/2026/05/04/ai-the-irony-of-automation-artisan-ais-stop-hiring/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/ai-the-irony-of-automation-artisan-ais-stop-hiring/",
+            "https://news.lego-sia.com/posts/2026/05/04/markets-the-tripartite-governance-model-why-chinas/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/markets-the-tripartite-governance-model-why-chinas/",
+            "https://news.lego-sia.com/posts/2026/05/04/hardware-openais-openclaw-strategy-transforming-ch/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-openais-openclaw-strategy-transforming-ch/",
+            "https://news.lego-sia.com/posts/2026/05/04/insights-defining-authorship-for-the-21st-century/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/insights-defining-authorship-for-the-21st-century/"
         ],
-        "published_at": "2026-05-03T11:05:19.388503"
+        "published_at": "2026-05-04T11:04:41.099030"
     },
     "hardware": {
         "notebook_id": "dea17c96-5e49-4e4f-923c-8adf77926a1d",
@@ -120,19 +130,19 @@
         "published_at": "2026-05-04T05:05:54.701939"
     },
     "insights": {
-        "notebook_id": "bd378276-dad8-42a2-a84e-0ec5fe7074ac",
-        "title": "2026-05-03 insights Analysis",
+        "notebook_id": "4172d81d-202d-459d-ac82-8e08af4c326e",
+        "title": "2026-05-04 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-03T23:01:35.929754",
+        "triggered_at": "2026-05-04T11:01:32.648978",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/03/insights-the-ethernet-marketing-myth-why-you-are-o/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/insights-the-ethernet-marketing-myth-why-you-are-o/",
-            "https://news.lego-sia.com/posts/2026/05/03/ai-organizing-digital-chaos-using-claude-ai-to-str/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/ai-organizing-digital-chaos-using-claude-ai-to-str/",
-            "https://news.lego-sia.com/posts/2026/05/03/markets-geopolitical-gridlock-us-blockade-strands/",
-            "https://news.lego-sia.com/en/posts/2026/05/03/markets-geopolitical-gridlock-us-blockade-strands/"
+            "https://news.lego-sia.com/posts/2026/05/04/insights-tokyo-emerges-as-a-safe-haven-for-global/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/insights-tokyo-emerges-as-a-safe-haven-for-global/",
+            "https://news.lego-sia.com/posts/2026/05/04/ai-beyond-the-paycheck-the-new-frontiers-of-ai-tal/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/ai-beyond-the-paycheck-the-new-frontiers-of-ai-tal/",
+            "https://news.lego-sia.com/posts/2026/05/04/markets-tokyo-office-rents-hit-31-year-peak-the-st/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/markets-tokyo-office-rents-hit-31-year-peak-the-st/"
         ],
-        "published_at": "2026-05-03T23:04:05.573379"
+        "published_at": "2026-05-04T11:06:10.095487"
     }
 }
