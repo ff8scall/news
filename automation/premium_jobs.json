@@ -1,39 +1,37 @@
 {
     "hardware_part1": {
-        "notebook_id": "d8d4afd0-0b95-4c89-8f6f-4547df58f25e",
+        "notebook_id": "20c6ecf2-2836-42b8-95e3-c5700fcae3fe",
         "title": "2026-05-04 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-04T11:01:14.663885",
+        "triggered_at": "2026-05-04T17:01:35.511105",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/04/hardware-delta-electronics-redefines-power-deliver/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-delta-electronics-redefines-power-deliver/",
-            "https://news.lego-sia.com/posts/2026/05/04/markets-beijing-auto-show-2026-embodied-ai-and-the/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/markets-beijing-auto-show-2026-embodied-ai-and-the/",
-            "https://news.lego-sia.com/posts/2026/05/04/hardware-semicon-sea-2026-malaysias-strategic-pivo/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-semicon-sea-2026-malaysias-strategic-pivo/",
-            "https://news.lego-sia.com/posts/2026/05/04/insights-croma-ates-1q26-anomaly-full-year-capacit/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/insights-croma-ates-1q26-anomaly-full-year-capacit/"
+            "https://news.lego-sia.com/posts/2026/05/04/hardware-esmc-confirms-2027-production-roadmap-a-s/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-esmc-confirms-2027-production-roadmap-a-s/",
+            "https://news.lego-sia.com/posts/2026/05/04/markets-indias-tech-leap-from-startup-innovation-t/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/markets-indias-tech-leap-from-startup-innovation-t/",
+            "https://news.lego-sia.com/posts/2026/05/04/hardware-the-advanced-packaging-war-samsung-leads/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-the-advanced-packaging-war-samsung-leads/",
+            "https://news.lego-sia.com/posts/2026/05/04/ai-ai-infrastructure-catalyst-idms-like-texas-inst/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/ai-ai-infrastructure-catalyst-idms-like-texas-inst/"
         ],
-        "published_at": "2026-05-04T11:03:13.988613"
+        "published_at": "2026-05-04T17:05:06.531479"
     },
     "hardware_part2": {
-        "notebook_id": "b4ff0b52-a63e-4fde-a3ac-89f4c80b2fe8",
+        "notebook_id": "41c4ab26-fd78-4b3c-8e21-3821fd5fecf1",
         "title": "2026-05-04 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-04T11:01:23.934879",
+        "triggered_at": "2026-05-04T17:01:44.554801",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/04/hardware-spil-aggressively-expands-advanced-packag/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-spil-aggressively-expands-advanced-packag/",
-            "https://news.lego-sia.com/posts/2026/05/04/insights-beijing-auto-show-2026-the-end-of-hardwar/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/insights-beijing-auto-show-2026-the-end-of-hardwar/",
-            "https://news.lego-sia.com/posts/2026/05/04/hardware-benq-materials-unit-cenefom-enters-global/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-benq-materials-unit-cenefom-enters-global/",
-            "https://news.lego-sia.com/posts/2026/05/04/ai-mit-technology-reviews-2026-ai-roadmap-10-trend/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/ai-mit-technology-reviews-2026-ai-roadmap-10-trend/"
+            "https://news.lego-sia.com/posts/2026/05/04/markets-recovery-verisilicon-microelectronics-2026/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/markets-recovery-verisilicon-microelectronics-2026/",
+            "https://news.lego-sia.com/posts/2026/05/04/hardware-recovery-ai-optical-replacing-0/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-recovery-ai-optical-replacing-0/",
+            "https://news.lego-sia.com/posts/2026/05/04/hardware-recovery-ai-cerebras-systems-ipo-400-0/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-recovery-ai-cerebras-systems-ipo-400-0/"
         ],
-        "published_at": "2026-05-04T11:03:30.010539"
+        "published_at": "2026-05-04T17:06:35.491316"
     },
     "ai_part1": {
         "notebook_id": "1ea4b6c6-74e1-46ea-b645-f2f5a22de9b3",
@@ -100,22 +98,16 @@
         "published_at": "2026-05-04T05:05:51.860310"
     },
     "ai": {
-        "notebook_id": "fe790be7-c55e-456b-a40d-ba76ec5b4468",
+        "notebook_id": "03fbc0dd-39c4-4b2f-8ac6-8e50141577ad",
         "title": "2026-05-04 ai Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-04T11:01:05.376034",
+        "triggered_at": "2026-05-04T17:01:26.614130",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/04/ai-the-irony-of-automation-artisan-ais-stop-hiring/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/ai-the-irony-of-automation-artisan-ais-stop-hiring/",
-            "https://news.lego-sia.com/posts/2026/05/04/markets-the-tripartite-governance-model-why-chinas/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/markets-the-tripartite-governance-model-why-chinas/",
-            "https://news.lego-sia.com/posts/2026/05/04/hardware-openais-openclaw-strategy-transforming-ch/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-openais-openclaw-strategy-transforming-ch/",
-            "https://news.lego-sia.com/posts/2026/05/04/insights-defining-authorship-for-the-21st-century/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/insights-defining-authorship-for-the-21st-century/"
+            "https://news.lego-sia.com/posts/2026/05/04/hardware-linkerbot-the-6-billion-robot-hand-unicor/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-linkerbot-the-6-billion-robot-hand-unicor/"
         ],
-        "published_at": "2026-05-04T11:04:41.099030"
+        "published_at": "2026-05-04T17:07:16.078471"
     },
     "hardware": {
         "notebook_id": "dea17c96-5e49-4e4f-923c-8adf77926a1d",
@@ -130,19 +122,17 @@
         "published_at": "2026-05-04T05:05:54.701939"
     },
     "insights": {
-        "notebook_id": "4172d81d-202d-459d-ac82-8e08af4c326e",
+        "notebook_id": "6ff7630e-5cf9-4bd3-9dba-ac1e989ed1ad",
         "title": "2026-05-04 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-04T11:01:32.648978",
+        "triggered_at": "2026-05-04T17:01:53.571561",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/04/insights-tokyo-emerges-as-a-safe-haven-for-global/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/insights-tokyo-emerges-as-a-safe-haven-for-global/",
-            "https://news.lego-sia.com/posts/2026/05/04/ai-beyond-the-paycheck-the-new-frontiers-of-ai-tal/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/ai-beyond-the-paycheck-the-new-frontiers-of-ai-tal/",
-            "https://news.lego-sia.com/posts/2026/05/04/markets-tokyo-office-rents-hit-31-year-peak-the-st/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/markets-tokyo-office-rents-hit-31-year-peak-the-st/"
+            "https://news.lego-sia.com/posts/2026/05/04/insights-strengthening-australia-japan-economic-se/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/insights-strengthening-australia-japan-economic-se/",
+            "https://news.lego-sia.com/posts/2026/05/04/insights-aseans-energy-shift-strategic-diversifica/",
+            "https://news.lego-sia.com/en/posts/2026/05/04/insights-aseans-energy-shift-strategic-diversifica/"
         ],
-        "published_at": "2026-05-04T11:06:10.095487"
+        "published_at": "2026-05-04T17:08:07.797870"
     }
 }
