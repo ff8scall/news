@@ -1,100 +1,105 @@
 {
     "hardware_part1": {
-        "notebook_id": "d18347e3-ced5-4409-92b1-df0a5408bca2",
+        "notebook_id": "06859b1c-aec1-467d-ad3e-3efb8f4c106d",
         "title": "2026-05-07 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-07T05:02:57.710455",
+        "triggered_at": "2026-05-07T11:01:56.390733",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/07/hardware-amds-data-center-victory-lap-the-strategi/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-amds-data-center-victory-lap-the-strategi/",
-            "https://news.lego-sia.com/posts/2026/05/07/markets-globalfoundries-pivots-to-high-growth-sect/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/markets-globalfoundries-pivots-to-high-growth-sect/",
-            "https://news.lego-sia.com/posts/2026/05/07/hardware-indias-strategic-expansion-new-projects-i/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-indias-strategic-expansion-new-projects-i/",
-            "https://news.lego-sia.com/posts/2026/05/07/hardware-globalwafers-tactical-response-inventory/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-globalwafers-tactical-response-inventory/"
+            "https://news.lego-sia.com/posts/2026/05/07/hardware-amds-strategic-expansion-zen-7-architectu/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-amds-strategic-expansion-zen-7-architectu/",
+            "https://news.lego-sia.com/posts/2026/05/07/markets-spacexs-119-billion-terafab-gamble-redefin/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/markets-spacexs-119-billion-terafab-gamble-redefin/",
+            "https://news.lego-sia.com/posts/2026/05/07/insights-apples-professional-hardware-crisis-disco/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/insights-apples-professional-hardware-crisis-disco/",
+            "https://news.lego-sia.com/posts/2026/05/07/ai-recovery-amd-1-ai-4/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/ai-recovery-amd-1-ai-4/"
         ],
-        "published_at": "2026-05-07T05:06:17.605789"
+        "published_at": "2026-05-07T11:04:17.250079"
     },
     "hardware_part2": {
-        "notebook_id": "c7b2b328-0d0e-4620-bb56-6e36c29f6674",
+        "notebook_id": "367f6af8-08c1-4fba-9dc0-d73db903f84e",
         "title": "2026-05-07 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-07T05:03:08.193753",
+        "triggered_at": "2026-05-07T11:02:05.494732",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/07/hardware-supermicros-margin-volatility-analyzing-t/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-supermicros-margin-volatility-analyzing-t/",
-            "https://news.lego-sia.com/posts/2026/05/07/hardware-globalfoundries-strategic-leap-building-a/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-globalfoundries-strategic-leap-building-a/",
-            "https://news.lego-sia.com/posts/2026/05/07/insights-the-compliance-crisis-supermicros-40b-rev/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/insights-the-compliance-crisis-supermicros-40b-rev/",
-            "https://news.lego-sia.com/posts/2026/05/07/markets-tata-electronics-30b-strategy-redrawing-th/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/markets-tata-electronics-30b-strategy-redrawing-th/"
+            "https://news.lego-sia.com/posts/2026/05/07/hardware-denmark-halts-new-data-center-grid-connec/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-denmark-halts-new-data-center-grid-connec/",
+            "https://news.lego-sia.com/posts/2026/05/07/hardware-rambus-debuts-pcie-70-switch-ip-featuring/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-rambus-debuts-pcie-70-switch-ip-featuring/",
+            "https://news.lego-sia.com/posts/2026/05/07/hardware-amd-ceo-lisa-su-foresees-11-cpu-to-gpu-pa/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-amd-ceo-lisa-su-foresees-11-cpu-to-gpu-pa/",
+            "https://news.lego-sia.com/posts/2026/05/07/ai-lumentum-achieves-record-growth-as-networking-s/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/ai-lumentum-achieves-record-growth-as-networking-s/"
         ],
-        "published_at": "2026-05-07T05:08:23.668456"
+        "published_at": "2026-05-07T11:05:29.008748"
     },
     "ai_part1": {
-        "notebook_id": "b508dba1-c505-46e0-ae2c-90e05ad9f3bf",
+        "notebook_id": "8fa41e72-9e63-4b80-9a92-7ded397a83ac",
         "title": "2026-05-07 ai Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-07T05:02:36.677559",
+        "triggered_at": "2026-05-07T11:01:38.045775",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/07/hardware-nvidia-secures-500m-strategic-stake-in-co/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-nvidia-secures-500m-strategic-stake-in-co/",
-            "https://news.lego-sia.com/posts/2026/05/07/hardware-spacex-unveils-55b-terafab-project-in-tex/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-spacex-unveils-55b-terafab-project-in-tex/",
-            "https://news.lego-sia.com/posts/2026/05/07/markets-eus-strategic-decoupling-from-chinese-tech/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/markets-eus-strategic-decoupling-from-chinese-tech/",
-            "https://news.lego-sia.com/posts/2026/05/07/ai-hut-8-seals-landmark-98b-lease-for-texas-ai-hub/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/ai-hut-8-seals-landmark-98b-lease-for-texas-ai-hub/"
+            "https://news.lego-sia.com/posts/2026/05/07/ai-google-deepmind-and-eve-online-strategic-integr/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/ai-google-deepmind-and-eve-online-strategic-integr/",
+            "https://news.lego-sia.com/posts/2026/05/07/ai-anthropic-claude-managed-agents-introduce-dream/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/ai-anthropic-claude-managed-agents-introduce-dream/",
+            "https://news.lego-sia.com/posts/2026/05/07/ai-google-gemma-4-achieves-3x-speed-boost-via-spec/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/ai-google-gemma-4-achieves-3x-speed-boost-via-spec/",
+            "https://news.lego-sia.com/posts/2026/05/07/ai-the-public-disclosure-of-openais-internal-confl/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/ai-the-public-disclosure-of-openais-internal-confl/"
         ],
-        "published_at": "2026-05-07T05:09:15.778083"
+        "published_at": "2026-05-07T11:05:57.629234"
     },
     "ai_part2": {
-        "notebook_id": "2b219b79-09dd-4870-b5c7-725d01a4977d",
+        "notebook_id": "cd059a4d-541f-44b0-9642-8fc28c7ceda8",
         "title": "2026-05-07 ai Analysis (part2)",
         "mode": "B",
-        "status": "pending",
-        "triggered_at": "2026-05-07T05:02:47.081653"
+        "status": "published",
+        "triggered_at": "2026-05-07T11:01:47.332691",
+        "urls": [
+            "https://news.lego-sia.com/posts/2026/05/07/markets-deepseek-eyes-45-billion-valuation-in-land/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/markets-deepseek-eyes-45-billion-valuation-in-land/",
+            "https://news.lego-sia.com/posts/2026/05/07/hardware-genesis-ai-secures-105m-seed-round-to-lau/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-genesis-ai-secures-105m-seed-round-to-lau/",
+            "https://news.lego-sia.com/posts/2026/05/07/insights-match-group-restricts-hiring-growth-to-of/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/insights-match-group-restricts-hiring-growth-to-of/",
+            "https://news.lego-sia.com/posts/2026/05/07/markets-google-files-tactical-retreat-in-brussels/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/markets-google-files-tactical-retreat-in-brussels/"
+        ],
+        "published_at": "2026-05-07T11:08:03.734592"
     },
     "insights_part1": {
-        "notebook_id": "1c35fb80-72b1-4dc9-9205-f5745f21e5f3",
+        "notebook_id": "4dcffcf2-d840-41db-bb51-8bc0e46410eb",
         "title": "2026-05-07 insights Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-07T05:03:19.021417",
+        "triggered_at": "2026-05-07T11:02:14.942420",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/07/insights-architectural-revolution-how-emerging-tec/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/insights-architectural-revolution-how-emerging-tec/",
-            "https://news.lego-sia.com/posts/2026/05/07/markets-vw-overtakes-amazon-as-rivians-lead-invest/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/markets-vw-overtakes-amazon-as-rivians-lead-invest/",
-            "https://news.lego-sia.com/posts/2026/05/07/insights-japans-ihi-and-mitsubishi-heavy-compete-t/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/insights-japans-ihi-and-mitsubishi-heavy-compete-t/",
-            "https://news.lego-sia.com/posts/2026/05/07/hardware-japans-high-speed-plastic-fiber-cables-en/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-japans-high-speed-plastic-fiber-cables-en/"
+            "https://news.lego-sia.com/posts/2026/05/07/markets-japan-stocks-hit-new-highs-on-hopes-for-ir/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/markets-japan-stocks-hit-new-highs-on-hopes-for-ir/",
+            "https://news.lego-sia.com/posts/2026/05/07/markets-sharp-yen-volatility-sparks-speculation-ov/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/markets-sharp-yen-volatility-sparks-speculation-ov/",
+            "https://news.lego-sia.com/posts/2026/05/07/hardware-mitsubishi-heavy-industries-accelerates-s/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-mitsubishi-heavy-industries-accelerates-s/"
         ],
-        "published_at": "2026-05-07T05:11:24.357643"
+        "published_at": "2026-05-07T11:09:32.427293"
     },
     "insights_part2": {
-        "notebook_id": "8559f2b4-fcc9-4edc-a6cd-45fe86d8922e",
+        "notebook_id": "fd98362b-d4bd-4eb7-8c36-aed84255ad06",
         "title": "2026-05-07 insights Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-07T05:03:29.467150",
+        "triggered_at": "2026-05-07T11:02:24.913989",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/07/markets-china-corporate-earnings-slump-for-third-c/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/markets-china-corporate-earnings-slump-for-third-c/",
-            "https://news.lego-sia.com/posts/2026/05/07/insights-kyoto-university-seeks-5-year-extension-f/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/insights-kyoto-university-seeks-5-year-extension-f/",
-            "https://news.lego-sia.com/posts/2026/05/07/insights-beyond-tech-vc-executive-warns-japanese-m/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/insights-beyond-tech-vc-executive-warns-japanese-m/",
-            "https://news.lego-sia.com/posts/2026/05/07/hardware-tiktok-secures-thailands-approval-for-mas/",
-            "https://news.lego-sia.com/en/posts/2026/05/07/hardware-tiktok-secures-thailands-approval-for-mas/"
+            "https://news.lego-sia.com/posts/2026/05/07/insights-sanction-evasion-architecture-decoding-ch/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/insights-sanction-evasion-architecture-decoding-ch/",
+            "https://news.lego-sia.com/posts/2026/05/07/markets-the-yens-strategic-crisis-janet-yellens-mi/",
+            "https://news.lego-sia.com/en/posts/2026/05/07/markets-the-yens-strategic-crisis-janet-yellens-mi/"
         ],
-        "published_at": "2026-05-07T05:13:18.403264"
+        "published_at": "2026-05-07T11:10:24.148030"
     },
     "ai": {
         "notebook_id": "03fbc0dd-39c4-4b2f-8ac6-8e50141577ad",
