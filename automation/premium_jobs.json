@@ -1,75 +1,75 @@
 {
     "hardware_part1": {
-        "notebook_id": "505d275a-2bfb-4318-a3a6-9e474a0bce8c",
+        "notebook_id": "23585c6e-7b38-4623-afb1-95e2b2f69f1d",
         "title": "2026-05-08 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-08T11:01:41.189046",
+        "triggered_at": "2026-05-08T17:01:48.441139",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/08/hardware-dirty-frag-exploit-critical-linux-zero-da/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-dirty-frag-exploit-critical-linux-zero-da/",
-            "https://news.lego-sia.com/posts/2026/05/08/hardware-amd-challenges-nvidia-h200-with-mi350p-pc/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-amd-challenges-nvidia-h200-with-mi350p-pc/",
-            "https://news.lego-sia.com/posts/2026/05/08/markets-the-ai-tax-motherboard-sales-collapse-by-2/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/markets-the-ai-tax-motherboard-sales-collapse-by-2/",
-            "https://news.lego-sia.com/posts/2026/05/08/ai-spacex-rents-massive-220000-gpu-supercomputer-t/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/ai-spacex-rents-massive-220000-gpu-supercomputer-t/"
+            "https://news.lego-sia.com/posts/2026/05/08/hardware-alibabas-470000-unit-custom-silicon-deplo/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-alibabas-470000-unit-custom-silicon-deplo/",
+            "https://news.lego-sia.com/posts/2026/05/08/hardware-the-resurgence-of-non-binary-logic-implem/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-the-resurgence-of-non-binary-logic-implem/",
+            "https://news.lego-sia.com/posts/2026/05/08/ai-metas-gigawatt-scale-custom-silicon-broadcom-bu/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/ai-metas-gigawatt-scale-custom-silicon-broadcom-bu/",
+            "https://news.lego-sia.com/posts/2026/05/08/hardware-the-end-of-copper-bottlenecks-ayar-labs-a/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-the-end-of-copper-bottlenecks-ayar-labs-a/"
         ],
-        "published_at": "2026-05-08T11:03:41.228228"
+        "published_at": "2026-05-08T17:05:07.832563"
     },
     "hardware_part2": {
-        "notebook_id": "1ed9182b-956e-4a4c-b082-09dfd86feffa",
+        "notebook_id": "0aa9b905-be16-4548-a7c4-5c18b2c0a123",
         "title": "2026-05-08 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-08T11:01:50.808224",
+        "triggered_at": "2026-05-08T17:01:58.034490",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/08/hardware-the-strategic-divergence-toward-100tb-how/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-the-strategic-divergence-toward-100tb-how/",
-            "https://news.lego-sia.com/posts/2026/05/08/hardware-pcie-80-v05-standardizes-1-tbs-bandwidth/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-pcie-80-v05-standardizes-1-tbs-bandwidth/",
-            "https://news.lego-sia.com/posts/2026/05/08/ai-softbanks-10gw-ai-vision-strategic-real-estate/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/ai-softbanks-10gw-ai-vision-strategic-real-estate/",
-            "https://news.lego-sia.com/posts/2026/05/08/markets-supermicro-co-founder-charged-in-25b-evasi/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/markets-supermicro-co-founder-charged-in-25b-evasi/"
+            "https://news.lego-sia.com/posts/2026/05/08/hardware-ai-infrastructure-pivot-global-ems-supply/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-ai-infrastructure-pivot-global-ems-supply/",
+            "https://news.lego-sia.com/posts/2026/05/08/hardware-memory-supply-constraints-hamper-ai-stora/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-memory-supply-constraints-hamper-ai-stora/",
+            "https://news.lego-sia.com/posts/2026/05/08/hardware-microled-facing-headwinds-as-sony-honda-m/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-microled-facing-headwinds-as-sony-honda-m/",
+            "https://news.lego-sia.com/posts/2026/05/08/hardware-tsmc-accelerates-arizona-expansion-to-sup/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-tsmc-accelerates-arizona-expansion-to-sup/"
         ],
-        "published_at": "2026-05-08T11:04:53.883947"
+        "published_at": "2026-05-08T17:07:03.741653"
     },
     "ai_part1": {
-        "notebook_id": "149c6736-01f1-453f-9ac6-62fe604483d2",
+        "notebook_id": "e2490527-36cf-4857-9c10-e7629b8d8a55",
         "title": "2026-05-08 ai Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-08T11:01:21.713716",
+        "triggered_at": "2026-05-08T17:01:29.284434",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/08/ai-anthropics-mythos-unearths-wealth-of-high-sever/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/ai-anthropics-mythos-unearths-wealth-of-high-sever/",
-            "https://news.lego-sia.com/posts/2026/05/08/markets-openai-executive-signals-intent-to-spend-5/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/markets-openai-executive-signals-intent-to-spend-5/",
-            "https://news.lego-sia.com/posts/2026/05/08/hardware-astera-labs-unveils-high-speed-connectivi/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-astera-labs-unveils-high-speed-connectivi/",
-            "https://news.lego-sia.com/posts/2026/05/08/ai-anthropic-deploys-specialized-finance-agents-wi/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/ai-anthropic-deploys-specialized-finance-agents-wi/"
+            "https://news.lego-sia.com/posts/2026/05/08/hardware-the-great-inference-pivot-how-ai-hardware/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-the-great-inference-pivot-how-ai-hardware/",
+            "https://news.lego-sia.com/posts/2026/05/08/ai-the-rise-of-local-ai-agents-escaping-usage-base/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/ai-the-rise-of-local-ai-agents-escaping-usage-base/",
+            "https://news.lego-sia.com/posts/2026/05/08/insights-the-new-cio-mandate-governing-the-ai-agen/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/insights-the-new-cio-mandate-governing-the-ai-agen/",
+            "https://news.lego-sia.com/posts/2026/05/08/insights-web-integrity-under-threat-mozilla-critiq/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/insights-web-integrity-under-threat-mozilla-critiq/"
         ],
-        "published_at": "2026-05-08T11:06:47.260220"
+        "published_at": "2026-05-08T17:08:57.141338"
     },
     "ai_part2": {
-        "notebook_id": "98680d60-483d-477f-8981-ba4dad901985",
+        "notebook_id": "fc081454-6701-49bd-af49-5cc28d6d656c",
         "title": "2026-05-08 ai Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-08T11:01:31.443670",
+        "triggered_at": "2026-05-08T17:01:38.786295",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/08/ai-ibm-db2-ai-automation-the-trust-paradigm-and-th/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/ai-ibm-db2-ai-automation-the-trust-paradigm-and-th/",
-            "https://news.lego-sia.com/posts/2026/05/08/ai-servicenows-strategic-governance-the-ai-control/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/ai-servicenows-strategic-governance-the-ai-control/",
-            "https://news.lego-sia.com/posts/2026/05/08/insights-microsoft-vs-code-and-the-ethics-of-ai-at/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/insights-microsoft-vs-code-and-the-ethics-of-ai-at/",
-            "https://news.lego-sia.com/posts/2026/05/08/ai-the-infrastructure-crisis-why-current-cloud-sto/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/ai-the-infrastructure-crisis-why-current-cloud-sto/"
+            "https://news.lego-sia.com/posts/2026/05/08/ai-the-fragility-of-llm-integrity-how-simple-data/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/ai-the-fragility-of-llm-integrity-how-simple-data/",
+            "https://news.lego-sia.com/posts/2026/05/08/insights-hype-vs-reality-internal-aws-directives-c/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/insights-hype-vs-reality-internal-aws-directives-c/",
+            "https://news.lego-sia.com/posts/2026/05/08/markets-strategic-diversification-openai-expands-g/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/markets-strategic-diversification-openai-expands-g/",
+            "https://news.lego-sia.com/posts/2026/05/08/hardware-ibm-releases-bob-scaling-ai-assisted-codi/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-ibm-releases-bob-scaling-ai-assisted-codi/"
         ],
-        "published_at": "2026-05-08T11:08:40.262779"
+        "published_at": "2026-05-08T17:10:51.628723"
     },
     "insights_part1": {
         "notebook_id": "8142832e-2028-44cd-a7b0-26798e9ec658",
@@ -148,21 +148,19 @@
         "published_at": "2026-05-04T05:05:54.701939"
     },
     "insights": {
-        "notebook_id": "1060b441-e489-431e-bd97-9311e3edb4cd",
+        "notebook_id": "5f978aca-f736-4779-91bc-0cf49d8e1571",
         "title": "2026-05-08 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-08T11:02:00.081418",
+        "triggered_at": "2026-05-08T17:02:07.580557",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/08/insights-evaluating-geekbench-6-the-challenge-of-r/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/insights-evaluating-geekbench-6-the-challenge-of-r/",
-            "https://news.lego-sia.com/posts/2026/05/08/insights-selex-challenges-vinfast-with-open-ev-cha/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/insights-selex-challenges-vinfast-with-open-ev-cha/",
-            "https://news.lego-sia.com/posts/2026/05/08/insights-bmw-and-mercedes-struggle-with-localizati/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/insights-bmw-and-mercedes-struggle-with-localizati/",
-            "https://news.lego-sia.com/posts/2026/05/08/insights-global-shipping-vulnerabilities-exposed-b/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/insights-global-shipping-vulnerabilities-exposed-b/"
+            "https://news.lego-sia.com/posts/2026/05/08/insights-toyota-revises-fy26-profit-forecast-downw/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/insights-toyota-revises-fy26-profit-forecast-downw/",
+            "https://news.lego-sia.com/posts/2026/05/08/hardware-sony-projects-double-digit-profit-growth/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-sony-projects-double-digit-profit-growth/",
+            "https://news.lego-sia.com/posts/2026/05/08/markets-huayou-cobalt-secures-future-lithium-suppl/",
+            "https://news.lego-sia.com/en/posts/2026/05/08/markets-huayou-cobalt-secures-future-lithium-suppl/"
         ],
-        "published_at": "2026-05-08T11:10:10.061011"
+        "published_at": "2026-05-08T17:12:20.784237"
     }
 }
