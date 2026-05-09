@@ -1,75 +1,71 @@
 {
     "hardware_part1": {
-        "notebook_id": "8bc153a4-0c4b-4ee5-ad91-d876cc122e1a",
+        "notebook_id": "8863b475-54b6-465a-9346-ebb0dcc71e01",
         "title": "2026-05-09 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-09T11:01:45.755156",
+        "triggered_at": "2026-05-09T17:01:24.645125",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/09/markets-amd-surpasses-intel-in-historic-data-cente/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/markets-amd-surpasses-intel-in-historic-data-cente/",
-            "https://news.lego-sia.com/posts/2026/05/09/hardware-samsung-tests-next-gen-14nm-exynos-2800-e/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-samsung-tests-next-gen-14nm-exynos-2800-e/",
-            "https://news.lego-sia.com/posts/2026/05/09/insights-regulatory-contagion-69-us-jurisdictions/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/insights-regulatory-contagion-69-us-jurisdictions/",
-            "https://news.lego-sia.com/posts/2026/05/09/markets-geopolitical-instability-in-the-middle-eas/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/markets-geopolitical-instability-in-the-middle-eas/"
+            "https://news.lego-sia.com/posts/2026/05/09/hardware-nvidia-and-corning-bolster-ai-infrastruct/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-nvidia-and-corning-bolster-ai-infrastruct/",
+            "https://news.lego-sia.com/posts/2026/05/09/ai-the-anthropic-xai-deal-analyzing-gpu-efficiency/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/ai-the-anthropic-xai-deal-analyzing-gpu-efficiency/",
+            "https://news.lego-sia.com/posts/2026/05/09/hardware-tsmc-targets-advanced-packaging-dominance/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-tsmc-targets-advanced-packaging-dominance/",
+            "https://news.lego-sia.com/posts/2026/05/09/hardware-sony-and-tsmc-form-strategic-joint-ventur/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-sony-and-tsmc-form-strategic-joint-ventur/"
         ],
-        "published_at": "2026-05-09T11:03:43.654883"
+        "published_at": "2026-05-09T17:03:11.775093"
     },
     "hardware_part2": {
-        "notebook_id": "ba2cd31d-d6b7-4155-a815-78e464762833",
+        "notebook_id": "d448903d-9c62-47bd-ae00-cae7fd9f5f63",
         "title": "2026-05-09 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-09T11:01:55.265942",
+        "triggered_at": "2026-05-09T17:01:33.819144",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/09/hardware-sk-hynix-memory-capacity-hits-zero-desper/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-sk-hynix-memory-capacity-hits-zero-desper/",
-            "https://news.lego-sia.com/posts/2026/05/09/insights-the-erosion-of-digital-history-ai-driven/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/insights-the-erosion-of-digital-history-ai-driven/",
-            "https://news.lego-sia.com/posts/2026/05/09/markets-silicon-diplomacy-trump-administration-lev/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/markets-silicon-diplomacy-trump-administration-lev/",
-            "https://news.lego-sia.com/posts/2026/05/09/markets-tsmcs-299-revenue-spike-a-data-driven-anal/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/markets-tsmcs-299-revenue-spike-a-data-driven-anal/"
+            "https://news.lego-sia.com/posts/2026/05/09/hardware-nvidias-high-stakes-thermal-pivot-vera-ru/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-nvidias-high-stakes-thermal-pivot-vera-ru/",
+            "https://news.lego-sia.com/posts/2026/05/09/markets-the-apple-intel-foundry-alliance-a-strateg/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/markets-the-apple-intel-foundry-alliance-a-strateg/",
+            "https://news.lego-sia.com/posts/2026/05/09/hardware-minisforum-debuts-s5-and-s7-all-flash-nas/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-minisforum-debuts-s5-and-s7-all-flash-nas/",
+            "https://news.lego-sia.com/posts/2026/05/09/markets-samsung-accelerates-pyeongtaek-fab-expansi/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/markets-samsung-accelerates-pyeongtaek-fab-expansi/"
         ],
-        "published_at": "2026-05-09T11:04:55.020802"
+        "published_at": "2026-05-09T17:03:29.052317"
     },
     "ai_part1": {
-        "notebook_id": "a94e5cf4-e585-48a1-a3fc-0f89eb0bd1aa",
+        "notebook_id": "f6fab2ad-d5cb-41da-bd58-2cb6409b8ee8",
         "title": "2026-05-09 ai Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-09T11:01:27.391157",
+        "triggered_at": "2026-05-09T17:01:05.479180",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/09/ai-mozillas-security-revolution-mythos-ai-identifi/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/ai-mozillas-security-revolution-mythos-ai-identifi/",
-            "https://news.lego-sia.com/posts/2026/05/09/ai-openai-unveils-advanced-voice-intelligence-api/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/ai-openai-unveils-advanced-voice-intelligence-api/",
-            "https://news.lego-sia.com/posts/2026/05/09/ai-diagnostic-despair-boffins-warn-as-ai-fails-80/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/ai-diagnostic-despair-boffins-warn-as-ai-fails-80/",
-            "https://news.lego-sia.com/posts/2026/05/09/ai-github-copilot-customer-revolt-token-usage-fix/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/ai-github-copilot-customer-revolt-token-usage-fix/"
+            "https://news.lego-sia.com/posts/2026/05/09/ai-nhtsa-escalates-investigation-into-ubers-partne/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/ai-nhtsa-escalates-investigation-into-ubers-partne/",
+            "https://news.lego-sia.com/posts/2026/05/09/markets-h-1b-wage-overhaul-proposed-162000-salary/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/markets-h-1b-wage-overhaul-proposed-162000-salary/",
+            "https://news.lego-sia.com/posts/2026/05/09/hardware-the-lip-bu-tan-paradox-intel-stock-triple/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-the-lip-bu-tan-paradox-intel-stock-triple/"
         ],
-        "published_at": "2026-05-09T11:05:23.363377"
+        "published_at": "2026-05-09T17:04:41.611184"
     },
     "ai_part2": {
-        "notebook_id": "fe844767-0121-43c3-9210-47a4ff5b3dad",
+        "notebook_id": "9e512bc2-c70f-4f24-b405-cced71e69b01",
         "title": "2026-05-09 ai Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-09T11:01:36.526354",
+        "triggered_at": "2026-05-09T17:01:15.045294",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/09/hardware-nvidia-iren-strategic-partnership-21bn-wa/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-nvidia-iren-strategic-partnership-21bn-wa/",
-            "https://news.lego-sia.com/posts/2026/05/09/markets-softbank-slashes-openai-margin-loan-target/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/markets-softbank-slashes-openai-margin-loan-target/",
-            "https://news.lego-sia.com/posts/2026/05/09/ai-openai-launches-gpt-realtime-2-integrating-gpt/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/ai-openai-launches-gpt-realtime-2-integrating-gpt/",
-            "https://news.lego-sia.com/posts/2026/05/09/insights-the-enterprise-ai-gold-rush-sap-acquires/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/insights-the-enterprise-ai-gold-rush-sap-acquires/"
+            "https://news.lego-sia.com/posts/2026/05/09/ai-malware-infiltration-in-ai-supply-chains-analyz/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/ai-malware-infiltration-in-ai-supply-chains-analyz/",
+            "https://news.lego-sia.com/posts/2026/05/09/hardware-tesla-model-y-achieves-nhtsa-milestone-am/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-tesla-model-y-achieves-nhtsa-milestone-am/",
+            "https://news.lego-sia.com/posts/2026/05/09/markets-ai-displacement-cloudflares-record-earning/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/markets-ai-displacement-cloudflares-record-earning/"
         ],
-        "published_at": "2026-05-09T11:06:28.476406"
+        "published_at": "2026-05-09T17:06:10.531799"
     },
     "insights_part1": {
         "notebook_id": "79f55c9c-dd74-4a86-88f3-8efefc9f92ce",
@@ -130,19 +126,17 @@
         "published_at": "2026-05-04T05:05:54.701939"
     },
     "insights": {
-        "notebook_id": "5f978aca-f736-4779-91bc-0cf49d8e1571",
-        "title": "2026-05-08 insights Analysis",
+        "notebook_id": "1215a266-cd20-413b-b2bb-e1fb5d6c27af",
+        "title": "2026-05-09 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-08T17:02:07.580557",
+        "triggered_at": "2026-05-09T17:01:42.935000",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/08/insights-toyota-revises-fy26-profit-forecast-downw/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/insights-toyota-revises-fy26-profit-forecast-downw/",
-            "https://news.lego-sia.com/posts/2026/05/08/hardware-sony-projects-double-digit-profit-growth/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/hardware-sony-projects-double-digit-profit-growth/",
-            "https://news.lego-sia.com/posts/2026/05/08/markets-huayou-cobalt-secures-future-lithium-suppl/",
-            "https://news.lego-sia.com/en/posts/2026/05/08/markets-huayou-cobalt-secures-future-lithium-suppl/"
+            "https://news.lego-sia.com/posts/2026/05/09/insights-cnc-turnkey-automation-buyers-guide-navig/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/insights-cnc-turnkey-automation-buyers-guide-navig/",
+            "https://news.lego-sia.com/posts/2026/05/09/hardware-how-gpu-thermal-throttling-kills-your-fra/",
+            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-how-gpu-thermal-throttling-kills-your-fra/"
         ],
-        "published_at": "2026-05-08T17:12:20.784237"
+        "published_at": "2026-05-09T17:06:38.726160"
     }
 }
