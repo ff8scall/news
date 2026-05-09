@@ -100,41 +100,43 @@
         "published_at": "2026-05-09T11:09:06.037312"
     },
     "ai": {
-        "notebook_id": "03fbc0dd-39c4-4b2f-8ac6-8e50141577ad",
-        "title": "2026-05-04 ai Analysis",
+        "notebook_id": "66282113-9ef4-43d2-b821-0659e620d4b1",
+        "title": "2026-05-10 ai Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-04T17:01:26.614130",
+        "triggered_at": "2026-05-10T05:01:15.743147",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/04/hardware-linkerbot-the-6-billion-robot-hand-unicor/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-linkerbot-the-6-billion-robot-hand-unicor/"
+            "https://news.lego-sia.com/posts/2026/05/10/ai-nvidia-commits-40-billion-to-ai-equity-deals-in/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/ai-nvidia-commits-40-billion-to-ai-equity-deals-in/"
         ],
-        "published_at": "2026-05-04T17:07:16.078471"
+        "published_at": "2026-05-10T05:02:46.678476"
     },
     "hardware": {
-        "notebook_id": "dea17c96-5e49-4e4f-923c-8adf77926a1d",
-        "title": "2026-05-04 hardware Analysis",
+        "notebook_id": "03d7e638-032c-4061-bddb-f07050c46504",
+        "title": "2026-05-10 hardware Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-04T05:01:24.503889",
+        "triggered_at": "2026-05-10T05:01:25.911597",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/04/hardware-nvidia-accelerates-jetson-ai-processor-eo/",
-            "https://news.lego-sia.com/en/posts/2026/05/04/hardware-nvidia-accelerates-jetson-ai-processor-eo/"
+            "https://news.lego-sia.com/posts/2026/05/10/hardware-fcc-reverses-stance-on-foreign-hardware-u/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-fcc-reverses-stance-on-foreign-hardware-u/",
+            "https://news.lego-sia.com/posts/2026/05/10/hardware-maryland-disputes-2-billion-grid-upgrade/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-maryland-disputes-2-billion-grid-upgrade/"
         ],
-        "published_at": "2026-05-04T05:05:54.701939"
+        "published_at": "2026-05-10T05:02:51.040000"
     },
     "insights": {
-        "notebook_id": "8a050dea-18f4-4352-a908-439554c2d292",
-        "title": "2026-05-09 insights Analysis",
+        "notebook_id": "8000fafd-1e24-4fc0-be99-92bc0961c0d6",
+        "title": "2026-05-10 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-09T23:01:53.361781",
+        "triggered_at": "2026-05-10T05:01:35.831662",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/09/hardware-the-interface-paradox-why-fine-print-dict/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-the-interface-paradox-why-fine-print-dict/",
-            "https://news.lego-sia.com/posts/2026/05/09/ai-google-antigravity-vs-claude-why-the-programmer/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/ai-google-antigravity-vs-claude-why-the-programmer/"
+            "https://news.lego-sia.com/posts/2026/05/10/insights-choice-vs-integration-how-the-deconstruct/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/insights-choice-vs-integration-how-the-deconstruct/",
+            "https://news.lego-sia.com/posts/2026/05/10/insights-nato-and-japan-shared-satellite-launch-si/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/insights-nato-and-japan-shared-satellite-launch-si/"
         ],
-        "published_at": "2026-05-09T23:06:37.353098"
+        "published_at": "2026-05-10T05:03:44.807296"
     }
 }
