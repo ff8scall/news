@@ -70,38 +70,34 @@
         "published_at": "2026-05-09T23:06:31.871044"
     },
     "insights_part1": {
-        "notebook_id": "79f55c9c-dd74-4a86-88f3-8efefc9f92ce",
-        "title": "2026-05-09 insights Analysis (part1)",
+        "notebook_id": "cfffb37b-5921-41c4-8369-d1d01039a847",
+        "title": "2026-05-11 insights Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-09T11:02:05.067321",
+        "triggered_at": "2026-05-11T05:01:21.027423",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/09/insights-amazon-orchestrates-major-pivot-rebrandin/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/insights-amazon-orchestrates-major-pivot-rebrandin/",
-            "https://news.lego-sia.com/posts/2026/05/09/insights-the-dirty-frag-menace-high-reliability-ex/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/insights-the-dirty-frag-menace-high-reliability-ex/",
-            "https://news.lego-sia.com/posts/2026/05/09/insights-huawei-inside-emerges-as-the-dominant-for/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/insights-huawei-inside-emerges-as-the-dominant-for/",
-            "https://news.lego-sia.com/posts/2026/05/09/ai-sony-group-ceo-targets-ai-integration-as-the-ca/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/ai-sony-group-ceo-targets-ai-integration-as-the-ca/"
+            "https://news.lego-sia.com/posts/2026/05/11/insights-the-hybrid-efficiency-benchmark-why-the-t/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/insights-the-hybrid-efficiency-benchmark-why-the-t/",
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-maximizing-storage-roi-the-case-for-diy-e/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-maximizing-storage-roi-the-case-for-diy-e/",
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-troubleshooting-usb-c-hub-failures-power/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-troubleshooting-usb-c-hub-failures-power/"
         ],
-        "published_at": "2026-05-09T11:07:36.284367"
+        "published_at": "2026-05-11T05:02:48.758800"
     },
     "insights_part2": {
-        "notebook_id": "eab14df0-ff8d-4bc5-b022-e56c14a4ee6c",
-        "title": "2026-05-09 insights Analysis (part2)",
+        "notebook_id": "a6fab7aa-7bff-42a3-83fc-a017cf264429",
+        "title": "2026-05-11 insights Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-09T11:02:14.848476",
+        "triggered_at": "2026-05-11T05:01:30.521949",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/09/insights-future-data-storage-innovation-dna-casset/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/insights-future-data-storage-innovation-dna-casset/",
-            "https://news.lego-sia.com/posts/2026/05/09/ai-anthropic-strategic-partnerships-addressing-the/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/ai-anthropic-strategic-partnerships-addressing-the/",
-            "https://news.lego-sia.com/posts/2026/05/09/hardware-sony-and-tsmc-strategic-partnership-for-n/",
-            "https://news.lego-sia.com/en/posts/2026/05/09/hardware-sony-and-tsmc-strategic-partnership-for-n/"
+            "https://news.lego-sia.com/posts/2026/05/11/insights-beyond-nas-why-sff-mini-pcs-are-the-ultim/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/insights-beyond-nas-why-sff-mini-pcs-are-the-ultim/",
+            "https://news.lego-sia.com/posts/2026/05/11/insights-data-sovereignty-in-automation-3-sensitiv/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/insights-data-sovereignty-in-automation-3-sensitiv/"
         ],
-        "published_at": "2026-05-09T11:09:06.037312"
+        "published_at": "2026-05-11T05:02:53.650459"
     },
     "ai": {
         "notebook_id": "4ab859f9-97e9-4f1d-bf80-f97637fd4da2",
@@ -118,20 +114,18 @@
         "published_at": "2026-05-10T23:04:21.192741"
     },
     "hardware": {
-        "notebook_id": "e0bfec38-7ae0-4333-98b9-bca8818c01a5",
-        "title": "2026-05-10 hardware Analysis",
+        "notebook_id": "d8b9a6c6-41b6-4636-b2eb-b9e06574d41a",
+        "title": "2026-05-11 hardware Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-10T11:01:04.078710",
+        "triggered_at": "2026-05-11T05:01:11.347933",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-ai-demand-accelerates-vanguards-singapore/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-ai-demand-accelerates-vanguards-singapore/",
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-king-slide-defies-ai-skepticism-predictin/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-king-slide-defies-ai-skepticism-predictin/",
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-indium-phosphide-inp-shortage-looming-the/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-indium-phosphide-inp-shortage-looming-the/"
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-mit-revives-3d-printed-y-zipper-technolog/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-mit-revives-3d-printed-y-zipper-technolog/",
+            "https://news.lego-sia.com/posts/2026/05/11/markets-fake-ddr5-memory-modules-surge-in-secondar/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/markets-fake-ddr5-memory-modules-surge-in-secondar/"
         ],
-        "published_at": "2026-05-10T11:02:37.067585"
+        "published_at": "2026-05-11T05:03:05.202069"
     },
     "insights": {
         "notebook_id": "ca3414a5-bd24-4369-9b3d-b645a0b81f09",
