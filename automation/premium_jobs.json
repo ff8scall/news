@@ -112,31 +112,35 @@
         "published_at": "2026-05-10T05:02:46.678476"
     },
     "hardware": {
-        "notebook_id": "03d7e638-032c-4061-bddb-f07050c46504",
+        "notebook_id": "e0bfec38-7ae0-4333-98b9-bca8818c01a5",
         "title": "2026-05-10 hardware Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-10T05:01:25.911597",
+        "triggered_at": "2026-05-10T11:01:04.078710",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-fcc-reverses-stance-on-foreign-hardware-u/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-fcc-reverses-stance-on-foreign-hardware-u/",
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-maryland-disputes-2-billion-grid-upgrade/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-maryland-disputes-2-billion-grid-upgrade/"
+            "https://news.lego-sia.com/posts/2026/05/10/hardware-ai-demand-accelerates-vanguards-singapore/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-ai-demand-accelerates-vanguards-singapore/",
+            "https://news.lego-sia.com/posts/2026/05/10/hardware-king-slide-defies-ai-skepticism-predictin/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-king-slide-defies-ai-skepticism-predictin/",
+            "https://news.lego-sia.com/posts/2026/05/10/hardware-indium-phosphide-inp-shortage-looming-the/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-indium-phosphide-inp-shortage-looming-the/"
         ],
-        "published_at": "2026-05-10T05:02:51.040000"
+        "published_at": "2026-05-10T11:02:37.067585"
     },
     "insights": {
-        "notebook_id": "8000fafd-1e24-4fc0-be99-92bc0961c0d6",
+        "notebook_id": "68a2865e-db15-4ee0-a56e-010f09c3bf4e",
         "title": "2026-05-10 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-10T05:01:35.831662",
+        "triggered_at": "2026-05-10T11:01:13.901895",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/10/insights-choice-vs-integration-how-the-deconstruct/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/insights-choice-vs-integration-how-the-deconstruct/",
-            "https://news.lego-sia.com/posts/2026/05/10/insights-nato-and-japan-shared-satellite-launch-si/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/insights-nato-and-japan-shared-satellite-launch-si/"
+            "https://news.lego-sia.com/posts/2026/05/10/insights-the-alchemy-of-media-data-analyzing-sonys/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/insights-the-alchemy-of-media-data-analyzing-sonys/",
+            "https://news.lego-sia.com/posts/2026/05/10/insights-architecting-energy-resilience-japans-str/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/insights-architecting-energy-resilience-japans-str/",
+            "https://news.lego-sia.com/posts/2026/05/10/insights-the-logistics-of-overtourism-deciphering/",
+            "https://news.lego-sia.com/en/posts/2026/05/10/insights-the-logistics-of-overtourism-deciphering/"
         ],
-        "published_at": "2026-05-10T05:03:44.807296"
+        "published_at": "2026-05-10T11:04:05.885763"
     }
 }
