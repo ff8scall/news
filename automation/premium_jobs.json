@@ -1,35 +1,39 @@
 {
     "hardware_part1": {
-        "notebook_id": "4ffe6ba3-9b09-4aec-a134-9540cb403763",
+        "notebook_id": "7f7c8631-2ffd-46a4-8caa-ad05a352b3c6",
         "title": "2026-05-11 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-11T11:01:13.159781",
+        "triggered_at": "2026-05-11T17:01:26.235673",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/11/hardware-the-2028-memory-squeeze-assessing-the-imp/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-the-2028-memory-squeeze-assessing-the-imp/",
-            "https://news.lego-sia.com/posts/2026/05/11/hardware-ist-strategic-pivot-divesting-legacy-unit/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-ist-strategic-pivot-divesting-legacy-unit/",
-            "https://news.lego-sia.com/posts/2026/05/11/markets-giga-computings-strategic-expansion-in-kor/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/markets-giga-computings-strategic-expansion-in-kor/"
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-amd-radeon-2651-driver-regression-blender/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-amd-radeon-2651-driver-regression-blender/",
+            "https://news.lego-sia.com/posts/2026/05/11/markets-apple-to-leverage-intel-18a-node-a-strateg/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/markets-apple-to-leverage-intel-18a-node-a-strateg/",
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-amd-unveils-dgf-supercompression-reducing/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-amd-unveils-dgf-supercompression-reducing/",
+            "https://news.lego-sia.com/posts/2026/05/11/insights-micron-svp-warns-of-memory-wall-inhibitin/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/insights-micron-svp-warns-of-memory-wall-inhibitin/"
         ],
-        "published_at": "2026-05-11T11:02:37.337622"
+        "published_at": "2026-05-11T17:03:31.567986"
     },
     "hardware_part2": {
-        "notebook_id": "f96159d1-4980-420e-a55a-c1bf76484840",
+        "notebook_id": "42a88849-bc59-41c0-bdb6-692c901591e8",
         "title": "2026-05-11 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-11T11:01:22.372689",
+        "triggered_at": "2026-05-11T17:01:35.688882",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/11/hardware-nvidia-dominates-the-grid-21b-stake-in-ir/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-nvidia-dominates-the-grid-21b-stake-in-ir/",
-            "https://news.lego-sia.com/posts/2026/05/11/hardware-samsungs-exynos-2700-gamble-the-make-or-b/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-samsungs-exynos-2700-gamble-the-make-or-b/",
-            "https://news.lego-sia.com/posts/2026/05/11/hardware-indias-strategic-pivot-tata-and-yotta-spe/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-indias-strategic-pivot-tata-and-yotta-spe/"
+            "https://news.lego-sia.com/posts/2026/05/11/markets-samsung-labor-impasse-29b-supply-chain-ris/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/markets-samsung-labor-impasse-29b-supply-chain-ris/",
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-amd-abandons-tsmc-monopoly-strategic-shif/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-amd-abandons-tsmc-monopoly-strategic-shif/",
+            "https://news.lego-sia.com/posts/2026/05/11/ai-phison-30-strategic-pivot-to-ai-storage-infrast/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/ai-phison-30-strategic-pivot-to-ai-storage-infrast/",
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-tesla-ai5-ignition-lg-innotek-and-semco-b/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-tesla-ai5-ignition-lg-innotek-and-semco-b/"
         ],
-        "published_at": "2026-05-11T11:03:48.030253"
+        "published_at": "2026-05-11T17:03:47.108261"
     },
     "ai_part1": {
         "notebook_id": "2d26ccea-c54b-4052-a558-789fc4583ad5",
@@ -122,19 +126,19 @@
         "published_at": "2026-05-11T05:03:05.202069"
     },
     "insights": {
-        "notebook_id": "6e6ff95e-d9d3-4ea7-b7f0-0f2e8792b856",
+        "notebook_id": "c5c44fd5-5d9f-4e5f-8c04-a57fd10ab5c9",
         "title": "2026-05-11 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-11T11:01:31.640989",
+        "triggered_at": "2026-05-11T17:01:45.689513",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/11/insights-vietnams-strategic-labor-integration-with/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/insights-vietnams-strategic-labor-integration-with/",
-            "https://news.lego-sia.com/posts/2026/05/11/markets-the-fukuoka-model-decentralizing-japans-te/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/markets-the-fukuoka-model-decentralizing-japans-te/",
-            "https://news.lego-sia.com/posts/2026/05/11/insights-uaes-strategic-departure-from-opec-fiscal/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/insights-uaes-strategic-departure-from-opec-fiscal/"
+            "https://news.lego-sia.com/posts/2026/05/11/ai-softbank-expands-into-battery-business-to-power/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/ai-softbank-expands-into-battery-business-to-power/",
+            "https://news.lego-sia.com/posts/2026/05/11/insights-chinese-automaker-chery-partners-with-jap/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/insights-chinese-automaker-chery-partners-with-jap/",
+            "https://news.lego-sia.com/posts/2026/05/11/markets-kioxia-share-growth-signals-japans-market/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/markets-kioxia-share-growth-signals-japans-market/"
         ],
-        "published_at": "2026-05-11T11:05:20.702862"
+        "published_at": "2026-05-11T17:04:34.424378"
     }
 }
