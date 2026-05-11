@@ -1,39 +1,35 @@
 {
     "hardware_part1": {
-        "notebook_id": "7838b5c4-ae7d-4774-8323-3ef6eb137593",
-        "title": "2026-05-10 hardware Analysis (part1)",
+        "notebook_id": "4ffe6ba3-9b09-4aec-a134-9540cb403763",
+        "title": "2026-05-11 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-10T23:01:17.104004",
+        "triggered_at": "2026-05-11T11:01:13.159781",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-china-unveils-hanyuan-2-the-dawn-of-dual/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-china-unveils-hanyuan-2-the-dawn-of-dual/",
-            "https://news.lego-sia.com/posts/2026/05/10/insights-the-hidden-hydrological-cost-of-ai-qts-ge/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/insights-the-hidden-hydrological-cost-of-ai-qts-ge/",
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-the-dual-cache-frontier-technical-analysi/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-the-dual-cache-frontier-technical-analysi/",
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-the-end-of-an-era-amd-k5-removal-from-lin/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-the-end-of-an-era-amd-k5-removal-from-lin/"
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-the-2028-memory-squeeze-assessing-the-imp/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-the-2028-memory-squeeze-assessing-the-imp/",
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-ist-strategic-pivot-divesting-legacy-unit/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-ist-strategic-pivot-divesting-legacy-unit/",
+            "https://news.lego-sia.com/posts/2026/05/11/markets-giga-computings-strategic-expansion-in-kor/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/markets-giga-computings-strategic-expansion-in-kor/"
         ],
-        "published_at": "2026-05-10T23:03:29.654230"
+        "published_at": "2026-05-11T11:02:37.337622"
     },
     "hardware_part2": {
-        "notebook_id": "45afb0d1-30dd-4061-b33e-9fabacde59cd",
-        "title": "2026-05-10 hardware Analysis (part2)",
+        "notebook_id": "f96159d1-4980-420e-a55a-c1bf76484840",
+        "title": "2026-05-11 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-10T23:01:26.760636",
+        "triggered_at": "2026-05-11T11:01:22.372689",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-unheard-threats-ai-data-center-infrasound/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-unheard-threats-ai-data-center-infrasound/",
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-the-200-ai-powerhouse-modding-the-nvidia/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-the-200-ai-powerhouse-modding-the-nvidia/",
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-breaking-the-sound-barrier-nasas-skyfall/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-breaking-the-sound-barrier-nasas-skyfall/",
-            "https://news.lego-sia.com/posts/2026/05/10/hardware-precision-defense-ukraines-ai-powered-try/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/hardware-precision-defense-ukraines-ai-powered-try/"
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-nvidia-dominates-the-grid-21b-stake-in-ir/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-nvidia-dominates-the-grid-21b-stake-in-ir/",
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-samsungs-exynos-2700-gamble-the-make-or-b/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-samsungs-exynos-2700-gamble-the-make-or-b/",
+            "https://news.lego-sia.com/posts/2026/05/11/hardware-indias-strategic-pivot-tata-and-yotta-spe/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-indias-strategic-pivot-tata-and-yotta-spe/"
         ],
-        "published_at": "2026-05-10T23:03:33.995975"
+        "published_at": "2026-05-11T11:03:48.030253"
     },
     "ai_part1": {
         "notebook_id": "2d26ccea-c54b-4052-a558-789fc4583ad5",
@@ -100,18 +96,16 @@
         "published_at": "2026-05-11T05:02:53.650459"
     },
     "ai": {
-        "notebook_id": "4ab859f9-97e9-4f1d-bf80-f97637fd4da2",
-        "title": "2026-05-10 ai Analysis",
+        "notebook_id": "e0d79a14-2cf4-48cf-b2c1-65785adcd17a",
+        "title": "2026-05-11 ai Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-10T23:01:07.584321",
+        "triggered_at": "2026-05-11T11:01:04.305281",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/10/ai-alibaba-scales-agentic-commerce-via-qwen-ai-int/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/ai-alibaba-scales-agentic-commerce-via-qwen-ai-int/",
-            "https://news.lego-sia.com/posts/2026/05/10/markets-nvidia-hits-40b-in-ai-equity-bets-strategi/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/markets-nvidia-hits-40b-in-ai-equity-bets-strategi/"
+            "https://news.lego-sia.com/posts/2026/05/11/ai-anthropic-blames-fictional-evil-ai-tropes-for-c/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/ai-anthropic-blames-fictional-evil-ai-tropes-for-c/"
         ],
-        "published_at": "2026-05-10T23:04:21.192741"
+        "published_at": "2026-05-11T11:03:51.518948"
     },
     "hardware": {
         "notebook_id": "d8b9a6c6-41b6-4636-b2eb-b9e06574d41a",
@@ -128,21 +122,19 @@
         "published_at": "2026-05-11T05:03:05.202069"
     },
     "insights": {
-        "notebook_id": "ca3414a5-bd24-4369-9b3d-b645a0b81f09",
-        "title": "2026-05-10 insights Analysis",
+        "notebook_id": "6e6ff95e-d9d3-4ea7-b7f0-0f2e8792b856",
+        "title": "2026-05-11 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-10T23:01:36.196033",
+        "triggered_at": "2026-05-11T11:01:31.640989",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/10/insights-the-battery-paradox-why-galaxy-watch-alwa/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/insights-the-battery-paradox-why-galaxy-watch-alwa/",
-            "https://news.lego-sia.com/posts/2026/05/10/insights-beyond-the-pump-unmasking-the-5-hidden-co/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/insights-beyond-the-pump-unmasking-the-5-hidden-co/",
-            "https://news.lego-sia.com/posts/2026/05/10/insights-ecoflows-retail-revolution-making-solar-e/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/insights-ecoflows-retail-revolution-making-solar-e/",
-            "https://news.lego-sia.com/posts/2026/05/10/insights-the-drone-alliance-japan-and-taiwan-forge/",
-            "https://news.lego-sia.com/en/posts/2026/05/10/insights-the-drone-alliance-japan-and-taiwan-forge/"
+            "https://news.lego-sia.com/posts/2026/05/11/insights-vietnams-strategic-labor-integration-with/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/insights-vietnams-strategic-labor-integration-with/",
+            "https://news.lego-sia.com/posts/2026/05/11/markets-the-fukuoka-model-decentralizing-japans-te/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/markets-the-fukuoka-model-decentralizing-japans-te/",
+            "https://news.lego-sia.com/posts/2026/05/11/insights-uaes-strategic-departure-from-opec-fiscal/",
+            "https://news.lego-sia.com/en/posts/2026/05/11/insights-uaes-strategic-departure-from-opec-fiscal/"
         ],
-        "published_at": "2026-05-10T23:05:19.159470"
+        "published_at": "2026-05-11T11:05:20.702862"
     }
 }
