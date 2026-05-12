@@ -1,39 +1,39 @@
 {
     "hardware_part1": {
-        "notebook_id": "81608080-23d4-493b-a639-9feb2bc6e816",
+        "notebook_id": "9c67262b-2636-4b92-b8f5-8a3fb921017b",
         "title": "2026-05-12 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T11:01:44.416533",
+        "triggered_at": "2026-05-12T17:01:25.951033",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-intel-razor-lake-ax-engineering-the-futur/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-intel-razor-lake-ax-engineering-the-futur/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-applied-materials-and-tsmc-strategic-alli/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-applied-materials-and-tsmc-strategic-alli/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-powevs-strategic-entry-into-high-capacity/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-powevs-strategic-entry-into-high-capacity/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-hpe-compute-scale-up-server-3250-unleashi/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-hpe-compute-scale-up-server-3250-unleashi/"
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-infineon-triumphs-in-us-itc-preliminary-r/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-infineon-triumphs-in-us-itc-preliminary-r/",
+            "https://news.lego-sia.com/posts/2026/05/12/markets-the-geopolitics-of-wide-bandgap-gan-patent/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/markets-the-geopolitics-of-wide-bandgap-gan-patent/",
+            "https://news.lego-sia.com/posts/2026/05/12/ai-chenbros-strategic-evolution-mastering-ai-therm/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/ai-chenbros-strategic-evolution-mastering-ai-therm/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-japans-diamond-semiconductor-breakthrough/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-japans-diamond-semiconductor-breakthrough/"
         ],
-        "published_at": "2026-05-12T11:03:59.096053"
+        "published_at": "2026-05-12T17:03:37.498900"
     },
     "hardware_part2": {
-        "notebook_id": "d8b15357-df60-44a7-bf83-2e236ae84a14",
+        "notebook_id": "a9c380e8-f627-4a46-a632-e64e2f090e9d",
         "title": "2026-05-12 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T11:01:53.800102",
+        "triggered_at": "2026-05-12T17:01:35.166419",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-amd-radeon-rx-9050-leak-navi-44-architect/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-amd-radeon-rx-9050-leak-navi-44-architect/",
-            "https://news.lego-sia.com/posts/2026/05/12/markets-the-tsmc-bottleneck-why-apple-qualcomm-and/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/markets-the-tsmc-bottleneck-why-apple-qualcomm-and/",
-            "https://news.lego-sia.com/posts/2026/05/12/insights-semicon-sea-2026-the-rise-of-the-southeas/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-semicon-sea-2026-the-rise-of-the-southeas/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-taiwans-leap-into-integrated-autonomous-s/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-taiwans-leap-into-integrated-autonomous-s/"
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-cyients-strategic-kinetic-acquisition-red/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-cyients-strategic-kinetic-acquisition-red/",
+            "https://news.lego-sia.com/posts/2026/05/12/markets-intel-and-nvidia-confirm-strategic-product/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/markets-intel-and-nvidia-confirm-strategic-product/",
+            "https://news.lego-sia.com/posts/2026/05/12/ai-chinas-genai-fundraising-wave-building-a-hardwa/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/ai-chinas-genai-fundraising-wave-building-a-hardwa/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-beyond-the-foundry-analyzing-the-broadeni/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-beyond-the-foundry-analyzing-the-broadeni/"
         ],
-        "published_at": "2026-05-12T11:05:10.588444"
+        "published_at": "2026-05-12T17:03:48.410443"
     },
     "ai_part1": {
         "notebook_id": "42750b64-826d-41ea-80f4-d74278434c42",
@@ -104,16 +104,22 @@
         "published_at": "2026-05-12T11:11:14.346982"
     },
     "ai": {
-        "notebook_id": "e0d79a14-2cf4-48cf-b2c1-65785adcd17a",
-        "title": "2026-05-11 ai Analysis",
+        "notebook_id": "6e25b577-2dbc-4b29-ba9f-d9e966cc8447",
+        "title": "2026-05-12 ai Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-11T11:01:04.305281",
+        "triggered_at": "2026-05-12T17:01:16.361146",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/11/ai-anthropic-blames-fictional-evil-ai-tropes-for-c/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/ai-anthropic-blames-fictional-evil-ai-tropes-for-c/"
+            "https://news.lego-sia.com/posts/2026/05/12/ai-gitlabs-radical-pivot-to-the-agentic-era-flatte/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/ai-gitlabs-radical-pivot-to-the-agentic-era-flatte/",
+            "https://news.lego-sia.com/posts/2026/05/12/markets-the-ai-repricing-phenomenon-why-zoominfos/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/markets-the-ai-repricing-phenomenon-why-zoominfos/",
+            "https://news.lego-sia.com/posts/2026/05/12/ai-the-end-of-asynchronous-ai-thinking-machines-mo/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/ai-the-end-of-asynchronous-ai-thinking-machines-mo/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-arctic-infrastructure-sovereign-nscale-la/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-arctic-infrastructure-sovereign-nscale-la/"
         ],
-        "published_at": "2026-05-11T11:03:51.518948"
+        "published_at": "2026-05-12T17:05:54.978377"
     },
     "hardware": {
         "notebook_id": "d8b9a6c6-41b6-4636-b2eb-b9e06574d41a",
@@ -130,15 +136,21 @@
         "published_at": "2026-05-11T05:03:05.202069"
     },
     "insights": {
-        "notebook_id": "9e23d0fd-1410-4d00-8915-940da0bb100c",
-        "title": "2026-05-11 insights Analysis",
+        "notebook_id": "4111c3f2-2eb2-4ca9-b38a-d8b7b2a0a0f2",
+        "title": "2026-05-12 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-11T23:02:13.814770",
+        "triggered_at": "2026-05-12T17:01:44.841445",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/11/insights-alphabet-strategically-diversifies-debt-p/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/insights-alphabet-strategically-diversifies-debt-p/"
+            "https://news.lego-sia.com/posts/2026/05/12/insights-mitsubishi-heavys-strategic-pivot-assessi/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/insights-mitsubishi-heavys-strategic-pivot-assessi/",
+            "https://news.lego-sia.com/posts/2026/05/12/markets-market-leverage-and-geopolitical-posturing/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/markets-market-leverage-and-geopolitical-posturing/",
+            "https://news.lego-sia.com/posts/2026/05/12/ai-the-ai-peoples-dividend-south-koreas-radical-bl/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/ai-the-ai-peoples-dividend-south-koreas-radical-bl/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-the-noble-gas-crisis-iran-related-conflic/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-the-noble-gas-crisis-iran-related-conflic/"
         ],
-        "published_at": "2026-05-11T23:07:18.894660"
+        "published_at": "2026-05-12T17:07:24.484708"
     }
 }
