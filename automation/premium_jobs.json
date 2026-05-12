@@ -1,100 +1,107 @@
 {
     "hardware_part1": {
-        "notebook_id": "5a226db6-75eb-4045-8652-8109ff14f3b3",
+        "notebook_id": "81608080-23d4-493b-a639-9feb2bc6e816",
         "title": "2026-05-12 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T05:01:50.660291",
+        "triggered_at": "2026-05-12T11:01:44.416533",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/ai-the-rise-of-regulatory-arbitrage-why-ai-data-ce/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/ai-the-rise-of-regulatory-arbitrage-why-ai-data-ce/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-market-surge-sk-hynix-and-intel-forge-25d/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-market-surge-sk-hynix-and-intel-forge-25d/",
-            "https://news.lego-sia.com/posts/2026/05/12/markets-the-10-trillion-ransom-iran-proposes-contr/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/markets-the-10-trillion-ransom-iran-proposes-contr/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-the-technical-pivot-why-sk-hynix-is-integ/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-the-technical-pivot-why-sk-hynix-is-integ/"
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-intel-razor-lake-ax-engineering-the-futur/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-intel-razor-lake-ax-engineering-the-futur/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-applied-materials-and-tsmc-strategic-alli/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-applied-materials-and-tsmc-strategic-alli/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-powevs-strategic-entry-into-high-capacity/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-powevs-strategic-entry-into-high-capacity/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-hpe-compute-scale-up-server-3250-unleashi/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-hpe-compute-scale-up-server-3250-unleashi/"
         ],
-        "published_at": "2026-05-12T05:03:51.032481"
+        "published_at": "2026-05-12T11:03:59.096053"
     },
     "hardware_part2": {
-        "notebook_id": "97d4479f-c4e9-47d1-90ac-d1f2d5284f92",
+        "notebook_id": "d8b15357-df60-44a7-bf83-2e236ae84a14",
         "title": "2026-05-12 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T05:02:00.849270",
+        "triggered_at": "2026-05-12T11:01:53.800102",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-transcend-chairman-warns-of-epochal-ai-me/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-transcend-chairman-warns-of-epochal-ai-me/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-delta-electronics-sees-sustained-revenue/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-delta-electronics-sees-sustained-revenue/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-beyond-fabs-lam-research-emphasizes-invis/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-beyond-fabs-lam-research-emphasizes-invis/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-amd-rdna-4-leak-entry-level-rx-9050-rumor/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-amd-rdna-4-leak-entry-level-rx-9050-rumor/"
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-amd-radeon-rx-9050-leak-navi-44-architect/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-amd-radeon-rx-9050-leak-navi-44-architect/",
+            "https://news.lego-sia.com/posts/2026/05/12/markets-the-tsmc-bottleneck-why-apple-qualcomm-and/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/markets-the-tsmc-bottleneck-why-apple-qualcomm-and/",
+            "https://news.lego-sia.com/posts/2026/05/12/insights-semicon-sea-2026-the-rise-of-the-southeas/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/insights-semicon-sea-2026-the-rise-of-the-southeas/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-taiwans-leap-into-integrated-autonomous-s/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-taiwans-leap-into-integrated-autonomous-s/"
         ],
-        "published_at": "2026-05-12T05:03:55.210961"
+        "published_at": "2026-05-12T11:05:10.588444"
     },
     "ai_part1": {
-        "notebook_id": "c752c974-9c06-4070-bfe5-050653ae5178",
+        "notebook_id": "42750b64-826d-41ea-80f4-d74278434c42",
         "title": "2026-05-12 ai Analysis (part1)",
         "mode": "B",
-        "status": "pending",
-        "triggered_at": "2026-05-12T05:01:31.513390"
+        "status": "published",
+        "triggered_at": "2026-05-12T11:01:25.460931",
+        "urls": [
+            "https://news.lego-sia.com/posts/2026/05/12/ai-recovery-novo-nordisk-stem-pd-0/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/ai-recovery-novo-nordisk-stem-pd-0/",
+            "https://news.lego-sia.com/posts/2026/05/12/markets-recovery-alphabet-ai-0/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/markets-recovery-alphabet-ai-0/",
+            "https://news.lego-sia.com/posts/2026/05/12/insights-recovery-aiopenai-llm-0/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/insights-recovery-aiopenai-llm-0/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-recovery-ai-fervo-ener-0/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-recovery-ai-fervo-ener-0/"
+        ],
+        "published_at": "2026-05-12T11:07:03.692059"
     },
     "ai_part2": {
-        "notebook_id": "9119bde5-38ef-454e-8ef8-4eb1eafcf2c6",
+        "notebook_id": "12f6c782-8bd1-4fef-8a1c-eda716c1ed6c",
         "title": "2026-05-12 ai Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T05:01:41.207649",
+        "triggered_at": "2026-05-12T11:01:35.207769",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/insights-beyond-the-cleanup-job-redefining-enterpr/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-beyond-the-cleanup-job-redefining-enterpr/",
-            "https://news.lego-sia.com/posts/2026/05/12/insights-stopping-bugs-before-shipping-the-shift-t/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-stopping-bugs-before-shipping-the-shift-t/",
-            "https://news.lego-sia.com/posts/2026/05/12/ai-linux-kernel-emergency-the-critical-dirty-frag/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/ai-linux-kernel-emergency-the-critical-dirty-frag/",
-            "https://news.lego-sia.com/posts/2026/05/12/ai-the-evolution-of-linux-security-why-recent-vuln/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/ai-the-evolution-of-linux-security-why-recent-vuln/"
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-linux-security-crisis-critical-vulnerabil/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-linux-security-crisis-critical-vulnerabil/",
+            "https://news.lego-sia.com/posts/2026/05/12/insights-data-centers-30-million-gallon-resource-l/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/insights-data-centers-30-million-gallon-resource-l/",
+            "https://news.lego-sia.com/posts/2026/05/12/markets-gms-strategic-workforce-transformation-dep/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/markets-gms-strategic-workforce-transformation-dep/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-microsofts-strategic-optimization-reducin/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-microsofts-strategic-optimization-reducin/"
         ],
-        "published_at": "2026-05-12T05:05:32.282326"
+        "published_at": "2026-05-12T11:08:09.417294"
     },
     "insights_part1": {
-        "notebook_id": "ea15e4bf-b673-4509-8a30-1aa361cd2145",
+        "notebook_id": "70a216c3-1ba2-4338-99c0-04b3e1ba80d9",
         "title": "2026-05-12 insights Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T05:02:10.831852",
+        "triggered_at": "2026-05-12T11:02:02.759212",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/insights-cross-platform-encryption-rcs-integration/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-cross-platform-encryption-rcs-integration/",
-            "https://news.lego-sia.com/posts/2026/05/12/insights-electric-vehicle-range-and-value-why-the/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-electric-vehicle-range-and-value-why-the/",
-            "https://news.lego-sia.com/posts/2026/05/12/insights-privacy-and-accountability-texas-sues-net/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-privacy-and-accountability-texas-sues-net/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-the-paradox-of-longevity-why-7-years-of-u/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-the-paradox-of-longevity-why-7-years-of-u/"
+            "https://news.lego-sia.com/posts/2026/05/12/markets-recovery-ev-1/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/markets-recovery-ev-1/",
+            "https://news.lego-sia.com/posts/2026/05/12/ai-recovery-mythos-2/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/ai-recovery-mythos-2/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-recovery-nec-4/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-recovery-nec-4/"
         ],
-        "published_at": "2026-05-12T05:05:42.348993"
+        "published_at": "2026-05-12T11:09:55.061297"
     },
     "insights_part2": {
-        "notebook_id": "c4fe8ae8-21a5-4609-b94c-1d8f4674871b",
+        "notebook_id": "282e7ad8-cc3d-4514-8774-8a9ac2a3de6b",
         "title": "2026-05-12 insights Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T05:02:20.519514",
+        "triggered_at": "2026-05-12T11:02:12.203961",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/insights-mazda-cx-50-strategy-leveraging-toyota-hy/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-mazda-cx-50-strategy-leveraging-toyota-hy/",
-            "https://news.lego-sia.com/posts/2026/05/12/markets-institutional-de-risking-in-japan-3-billio/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/markets-institutional-de-risking-in-japan-3-billio/",
-            "https://news.lego-sia.com/posts/2026/05/12/insights-samsung-electronics-labor-deadlock-union/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-samsung-electronics-labor-deadlock-union/",
-            "https://news.lego-sia.com/posts/2026/05/12/markets-sonys-multi-billion-dollar-ip-expansion-pa/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/markets-sonys-multi-billion-dollar-ip-expansion-pa/"
+            "https://news.lego-sia.com/posts/2026/05/12/insights-mitsubishi-electrics-strategic-divergence/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/insights-mitsubishi-electrics-strategic-divergence/",
+            "https://news.lego-sia.com/posts/2026/05/12/hardware-panasonics-ev-battery-bottleneck-analyzin/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-panasonics-ev-battery-bottleneck-analyzin/",
+            "https://news.lego-sia.com/posts/2026/05/12/insights-japans-space-startups-and-the-human-capit/",
+            "https://news.lego-sia.com/en/posts/2026/05/12/insights-japans-space-startups-and-the-human-capit/"
         ],
-        "published_at": "2026-05-12T05:07:12.997337"
+        "published_at": "2026-05-12T11:11:14.346982"
     },
     "ai": {
         "notebook_id": "e0d79a14-2cf4-48cf-b2c1-65785adcd17a",
