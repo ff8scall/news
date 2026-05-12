@@ -1,107 +1,74 @@
 {
     "hardware_part1": {
-        "notebook_id": "34f46e4a-5ace-4362-9dcb-84c51a6e8b68",
-        "title": "2026-05-12 hardware Analysis (part1)",
+        "notebook_id": "31e3af97-d7fd-4e54-ae51-b011630ce721",
+        "title": "2026-05-13 hardware Analysis (part1)",
         "mode": "B",
-        "status": "published",
-        "triggered_at": "2026-05-12T23:03:10.096600",
-        "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-taiwan-thermal-firms-ride-ai-server-boom/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-taiwan-thermal-firms-ride-ai-server-boom/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-taiwan-ai-testing-boom-kyec-mpi-and-winwa/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-taiwan-ai-testing-boom-kyec-mpi-and-winwa/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-innolux-returns-to-profitability-amid-spe/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-innolux-returns-to-profitability-amid-spe/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-nvidias-modular-ai-strategy-fuels-delta-e/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-nvidias-modular-ai-strategy-fuels-delta-e/"
-        ],
-        "published_at": "2026-05-12T23:04:57.293430"
+        "status": "pending",
+        "triggered_at": "2026-05-13T05:01:41.212748"
     },
     "hardware_part2": {
-        "notebook_id": "636b05ac-17d4-44dd-b404-df9b8462a9a0",
-        "title": "2026-05-12 hardware Analysis (part2)",
+        "notebook_id": "6e31a45e-132b-4743-9921-bb912a575fde",
+        "title": "2026-05-13 hardware Analysis (part2)",
         "mode": "B",
-        "status": "published",
-        "triggered_at": "2026-05-12T23:03:20.954401",
-        "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-nvidias-pivot-from-copper-to-fiber-reshap/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-nvidias-pivot-from-copper-to-fiber-reshap/",
-            "https://news.lego-sia.com/posts/2026/05/12/markets-geopolitical-semiconductor-diplomacy-the-t/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/markets-geopolitical-semiconductor-diplomacy-the-t/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-intels-strategic-recovery-leveraging-the/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-intels-strategic-recovery-leveraging-the/",
-            "https://news.lego-sia.com/posts/2026/05/12/insights-arms-bold-diversification-entering-the-ag/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-arms-bold-diversification-entering-the-ag/"
-        ],
-        "published_at": "2026-05-12T23:07:08.172943"
+        "status": "pending",
+        "triggered_at": "2026-05-13T05:01:51.836991"
     },
     "ai_part1": {
-        "notebook_id": "50b5e35e-e938-427a-a261-1dd765e0de31",
-        "title": "2026-05-12 ai Analysis (part1)",
+        "notebook_id": "e8a8d03c-9c10-4485-9d39-3f4b9ecf4382",
+        "title": "2026-05-13 ai Analysis (part1)",
         "mode": "B",
-        "status": "published",
-        "triggered_at": "2026-05-12T23:02:51.365565",
-        "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/insights-the-rise-of-tokenmaxxing-how-amazons-ai-m/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-the-rise-of-tokenmaxxing-how-amazons-ai-m/",
-            "https://news.lego-sia.com/posts/2026/05/12/markets-redefining-the-handoff-dessn-secures-6m-to/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/markets-redefining-the-handoff-dessn-secures-6m-to/",
-            "https://news.lego-sia.com/posts/2026/05/12/ai-the-data-flywheel-effect-vapi-hits-500m-valuati/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/ai-the-data-flywheel-effect-vapi-hits-500m-valuati/",
-            "https://news.lego-sia.com/posts/2026/05/12/ai-agentic-content-management-laserfiche-integrate/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/ai-agentic-content-management-laserfiche-integrate/"
-        ],
-        "published_at": "2026-05-12T23:07:49.667142"
+        "status": "pending",
+        "triggered_at": "2026-05-13T05:01:20.579598"
     },
     "ai_part2": {
-        "notebook_id": "58ec515a-e441-44ff-a63f-92219980e4da",
-        "title": "2026-05-12 ai Analysis (part2)",
+        "notebook_id": "40f035bc-adac-42fa-b9e1-65542295dc57",
+        "title": "2026-05-13 ai Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T23:03:00.200349",
+        "triggered_at": "2026-05-13T05:01:31.143367",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/insights-the-strategic-pivot-why-business-architec/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-the-strategic-pivot-why-business-architec/",
-            "https://news.lego-sia.com/posts/2026/05/12/ai-nhs-england-data-row-palantir-contractors-grant/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/ai-nhs-england-data-row-palantir-contractors-grant/",
-            "https://news.lego-sia.com/posts/2026/05/12/markets-chinas-500m-hourly-export-record-ai-goods/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/markets-chinas-500m-hourly-export-record-ai-goods/",
-            "https://news.lego-sia.com/posts/2026/05/12/markets-ilya-sutskever-reveals-7bn-openai-stake-am/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/markets-ilya-sutskever-reveals-7bn-openai-stake-am/"
+            "https://news.lego-sia.com/posts/2026/05/13/hardware-the-genesis-of-googlebooks-inaugurating-t/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-the-genesis-of-googlebooks-inaugurating-t/",
+            "https://news.lego-sia.com/posts/2026/05/13/ai-the-2026-android-paradigm-shift-deep-integratio/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/ai-the-2026-android-paradigm-shift-deep-integratio/",
+            "https://news.lego-sia.com/posts/2026/05/13/markets-orbital-ai-compute-the-strategic-google-sp/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/markets-orbital-ai-compute-the-strategic-google-sp/",
+            "https://news.lego-sia.com/posts/2026/05/13/ai-the-android-show-deep-dive-orchestrating-a-unif/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/ai-the-android-show-deep-dive-orchestrating-a-unif/"
         ],
-        "published_at": "2026-05-12T23:09:42.809197"
+        "published_at": "2026-05-13T05:04:19.174442"
     },
     "insights_part1": {
-        "notebook_id": "cbb8b4f7-398c-454c-b143-d1554d9ce542",
-        "title": "2026-05-12 insights Analysis (part1)",
+        "notebook_id": "4968d8f8-356f-4b93-b843-0475af8a4ed3",
+        "title": "2026-05-13 insights Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T23:03:30.334970",
+        "triggered_at": "2026-05-13T05:02:02.074900",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/insights-the-technical-impossibility-of-ssd-data-r/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-the-technical-impossibility-of-ssd-data-r/",
-            "https://news.lego-sia.com/posts/2026/05/12/insights-the-rise-of-esphome-why-the-smart-home-co/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-the-rise-of-esphome-why-the-smart-home-co/",
-            "https://news.lego-sia.com/posts/2026/05/12/ai-ai-coding-benchmark-evaluating-chatgpt-claude-a/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/ai-ai-coding-benchmark-evaluating-chatgpt-claude-a/"
+            "https://news.lego-sia.com/posts/2026/05/13/insights-recovery-ev-1/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/insights-recovery-ev-1/",
+            "https://news.lego-sia.com/posts/2026/05/13/insights-recovery-v8-2/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/insights-recovery-v8-2/"
         ],
-        "published_at": "2026-05-12T23:09:48.126641"
+        "published_at": "2026-05-13T05:04:24.873673"
     },
     "insights_part2": {
-        "notebook_id": "ee93e8ab-d6ae-4462-8f98-a3fcb8fffdb9",
-        "title": "2026-05-12 insights Analysis (part2)",
+        "notebook_id": "77c411f6-9290-469c-8385-d35f51ba306d",
+        "title": "2026-05-13 insights Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T23:03:40.306133",
+        "triggered_at": "2026-05-13T05:02:12.682153",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/insights-the-vpn-security-paradox-strategic-analys/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/insights-the-vpn-security-paradox-strategic-analys/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-the-nidec-quality-crisis-investigating-th/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-the-nidec-quality-crisis-investigating-th/",
-            "https://news.lego-sia.com/posts/2026/05/12/markets-eqts-37-billion-strategic-pivot-capturing/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/markets-eqts-37-billion-strategic-pivot-capturing/"
+            "https://news.lego-sia.com/posts/2026/05/13/ai-android-17-evolution-how-the-agentic-era-replac/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/ai-android-17-evolution-how-the-agentic-era-replac/",
+            "https://news.lego-sia.com/posts/2026/05/13/ai-orbital-ai-infrastructure-the-us-china-strategi/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/ai-orbital-ai-infrastructure-the-us-china-strategi/",
+            "https://news.lego-sia.com/posts/2026/05/13/insights-precision-chronometry-milestone-japan-lea/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/insights-precision-chronometry-milestone-japan-lea/",
+            "https://news.lego-sia.com/posts/2026/05/13/markets-mazda-ev-strategy-shift-20-investment-cut/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/markets-mazda-ev-strategy-shift-20-investment-cut/"
         ],
-        "published_at": "2026-05-12T23:10:53.314881"
+        "published_at": "2026-05-13T05:05:16.948870"
     },
     "ai": {
         "notebook_id": "6e25b577-2dbc-4b29-ba9f-d9e966cc8447",
