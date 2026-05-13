@@ -1,111 +1,103 @@
 {
     "hardware_part1": {
-        "notebook_id": "a550a874-b908-4aa8-a5e6-019b85ea489c",
+        "notebook_id": "97d89955-b30a-421e-95fc-2573eb1edaaf",
         "title": "2026-05-13 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-13T11:01:40.159760",
+        "triggered_at": "2026-05-13T17:01:50.847589",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/13/hardware-the-architecture-of-urgency-microsoft-def/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-the-architecture-of-urgency-microsoft-def/",
-            "https://news.lego-sia.com/posts/2026/05/13/hardware-intel-razor-lake-ax-redefining-the-soc-wi/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-intel-razor-lake-ax-redefining-the-soc-wi/",
-            "https://news.lego-sia.com/posts/2026/05/13/markets-the-ai-export-explosion-chinas-ic-value-do/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/markets-the-ai-export-explosion-chinas-ic-value-do/",
-            "https://news.lego-sia.com/posts/2026/05/13/ai-breaking-the-cowos-bottleneck-sk-hynix-and-inte/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/ai-breaking-the-cowos-bottleneck-sk-hynix-and-inte/"
+            "https://news.lego-sia.com/posts/2026/05/13/hardware-the-arizona-paradox-tsmc-proves-profitabi/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-the-arizona-paradox-tsmc-proves-profitabi/",
+            "https://news.lego-sia.com/posts/2026/05/13/hardware-micron-leapfrogs-with-1-gamma-node-sampli/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-micron-leapfrogs-with-1-gamma-node-sampli/",
+            "https://news.lego-sia.com/posts/2026/05/13/markets-singapore-spearheads-asean-semiconductor-a/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/markets-singapore-spearheads-asean-semiconductor-a/",
+            "https://news.lego-sia.com/posts/2026/05/13/ai-moore-threads-and-lightwheelai-forge-domestic-e/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/ai-moore-threads-and-lightwheelai-forge-domestic-e/"
         ],
-        "published_at": "2026-05-13T11:05:34.310160"
+        "published_at": "2026-05-13T17:04:11.529374"
     },
     "hardware_part2": {
-        "notebook_id": "6b29e6d7-b8a9-43db-b857-e87c19f15488",
+        "notebook_id": "8b5284ff-5828-4e63-9e5f-59f743a22757",
         "title": "2026-05-13 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-13T11:01:50.347036",
+        "triggered_at": "2026-05-13T17:02:00.841557",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/13/hardware-samsung-labor-dispute-threatens-global-su/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-samsung-labor-dispute-threatens-global-su/",
-            "https://news.lego-sia.com/posts/2026/05/13/ai-applied-materials-and-tsmc-partner-at-epic-cent/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/ai-applied-materials-and-tsmc-partner-at-epic-cent/",
-            "https://news.lego-sia.com/posts/2026/05/13/hardware-google-leak-reveals-googlebook-platform-a/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-google-leak-reveals-googlebook-platform-a/",
-            "https://news.lego-sia.com/posts/2026/05/13/markets-trump-administration-considers-expansion-o/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/markets-trump-administration-considers-expansion-o/"
+            "https://news.lego-sia.com/posts/2026/05/13/hardware-2026-asic-sector-divergence-guc-surges-on/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-2026-asic-sector-divergence-guc-surges-on/",
+            "https://news.lego-sia.com/posts/2026/05/13/hardware-tsmc-board-clears-us313b-budget-and-us20b/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-tsmc-board-clears-us313b-budget-and-us20b/",
+            "https://news.lego-sia.com/posts/2026/05/13/markets-compal-electronics-diversifies-revenue-bas/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/markets-compal-electronics-diversifies-revenue-bas/",
+            "https://news.lego-sia.com/posts/2026/05/13/hardware-tesla-reinforces-european-strategy-with-u/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-tesla-reinforces-european-strategy-with-u/"
         ],
-        "published_at": "2026-05-13T11:05:39.280781"
+        "published_at": "2026-05-13T17:04:16.301039"
     },
     "ai_part1": {
-        "notebook_id": "cac0ae8b-8534-44cb-a268-f599175d2330",
+        "notebook_id": "3175b2b8-e42d-4246-8187-31427d4e0c78",
         "title": "2026-05-13 ai Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-13T11:01:20.300193",
+        "triggered_at": "2026-05-13T17:01:32.419330",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/13/ai-androids-architectural-pivot-integrating-gemini/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/ai-androids-architectural-pivot-integrating-gemini/",
-            "https://news.lego-sia.com/posts/2026/05/13/ai-anthropics-vertical-expansion-dominating-legal/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/ai-anthropics-vertical-expansion-dominating-legal/",
-            "https://news.lego-sia.com/posts/2026/05/13/insights-jbs-dev-on-ai-sustainability-avoiding-the/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/insights-jbs-dev-on-ai-sustainability-avoiding-the/",
-            "https://news.lego-sia.com/posts/2026/05/13/insights-asymmetric-security-threats-malicious-ope/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/insights-asymmetric-security-threats-malicious-ope/"
+            "https://news.lego-sia.com/posts/2026/05/13/ai-waymo-recalls-3791-robotaxis-over-software-flaw/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/ai-waymo-recalls-3791-robotaxis-over-software-flaw/",
+            "https://news.lego-sia.com/posts/2026/05/13/insights-medicares-access-model-establishing-the-f/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/insights-medicares-access-model-establishing-the-f/",
+            "https://news.lego-sia.com/posts/2026/05/13/markets-openai-acquires-consulting-firm-tomoro-sig/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/markets-openai-acquires-consulting-firm-tomoro-sig/"
         ],
-        "published_at": "2026-05-13T11:06:20.349032"
+        "published_at": "2026-05-13T17:05:28.402037"
     },
     "ai_part2": {
-        "notebook_id": "8df1b3ef-7e02-472d-83e8-d7add35fc8b8",
+        "notebook_id": "4a9d0930-583f-470d-be04-31e6541f87b1",
         "title": "2026-05-13 ai Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-13T11:01:30.051262",
+        "triggered_at": "2026-05-13T17:01:41.469218",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/13/insights-nadellas-next-ibm-anxiety-the-strategic-e/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/insights-nadellas-next-ibm-anxiety-the-strategic-e/",
-            "https://news.lego-sia.com/posts/2026/05/13/ai-google-detects-first-ai-generated-zero-day-expl/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/ai-google-detects-first-ai-generated-zero-day-expl/",
-            "https://news.lego-sia.com/posts/2026/05/13/markets-gms-strategic-skill-swap-laying-off-600-it/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/markets-gms-strategic-skill-swap-laying-off-600-it/",
-            "https://news.lego-sia.com/posts/2026/05/13/ai-openai-launches-daybreak-to-challenge-anthropic/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/ai-openai-launches-daybreak-to-challenge-anthropic/"
+            "https://news.lego-sia.com/posts/2026/05/13/ai-n8n-valuation-surges-to-52-billion-as-it-anchor/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/ai-n8n-valuation-surges-to-52-billion-as-it-anchor/",
+            "https://news.lego-sia.com/posts/2026/05/13/hardware-google-retires-chromebook-in-favor-of-and/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-google-retires-chromebook-in-favor-of-and/",
+            "https://news.lego-sia.com/posts/2026/05/13/markets-saps-identity-shift-transitioning-from-a-s/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/markets-saps-identity-shift-transitioning-from-a-s/"
         ],
-        "published_at": "2026-05-13T11:07:49.131127"
+        "published_at": "2026-05-13T17:05:56.279727"
     },
     "insights_part1": {
-        "notebook_id": "8c46b44a-1db1-4ef5-bfc2-6796a0ecc6a2",
+        "notebook_id": "61609ab9-1f31-46a5-9454-c47593e61c5d",
         "title": "2026-05-13 insights Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-13T11:02:00.096027",
+        "triggered_at": "2026-05-13T17:02:10.073500",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/13/markets-sea-ltd-faces-margin-compression-as-e-comm/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/markets-sea-ltd-faces-margin-compression-as-e-comm/",
-            "https://news.lego-sia.com/posts/2026/05/13/hardware-japans-industrial-giants-nsk-and-ntn-to-m/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-japans-industrial-giants-nsk-and-ntn-to-m/",
-            "https://news.lego-sia.com/posts/2026/05/13/insights-us-solar-manufacturers-allege-strategic-t/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/insights-us-solar-manufacturers-allege-strategic-t/",
-            "https://news.lego-sia.com/posts/2026/05/13/hardware-hyundai-ioniq-9-black-ink-flagship-ev-ach/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-hyundai-ioniq-9-black-ink-flagship-ev-ach/"
+            "https://news.lego-sia.com/posts/2026/05/13/markets-softbanks-annual-profit-quadruples-as-it-d/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/markets-softbanks-annual-profit-quadruples-as-it-d/",
+            "https://news.lego-sia.com/posts/2026/05/13/ai-japan-megabanks-to-gain-access-to-anthropics-po/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/ai-japan-megabanks-to-gain-access-to-anthropics-po/",
+            "https://news.lego-sia.com/posts/2026/05/13/hardware-qualcomm-broadens-vietnam-rd-into-chip-de/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-qualcomm-broadens-vietnam-rd-into-chip-de/"
         ],
-        "published_at": "2026-05-13T11:09:18.402189"
+        "published_at": "2026-05-13T17:07:01.349995"
     },
     "insights_part2": {
-        "notebook_id": "0dcd221e-f75d-4c9d-abc2-e791660fe59f",
+        "notebook_id": "152563f2-6294-44f2-b8a5-e436c470a1ad",
         "title": "2026-05-13 insights Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-13T11:02:10.388488",
+        "triggered_at": "2026-05-13T17:02:19.499218",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/13/insights-singapores-strategic-energy-pivot-nuclear/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/insights-singapores-strategic-energy-pivot-nuclear/",
-            "https://news.lego-sia.com/posts/2026/05/13/markets-the-yen-paradox-why-japan-inc-and-househol/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/markets-the-yen-paradox-why-japan-inc-and-househol/",
-            "https://news.lego-sia.com/posts/2026/05/13/insights-convenience-at-a-cost-chinas-delivery-boo/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/insights-convenience-at-a-cost-chinas-delivery-boo/",
-            "https://news.lego-sia.com/posts/2026/05/13/hardware-incentivizing-innovation-how-murata-maint/",
-            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-incentivizing-innovation-how-murata-maint/"
+            "https://news.lego-sia.com/posts/2026/05/13/insights-samsung-electronics-facing-unprecedented/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/insights-samsung-electronics-facing-unprecedented/",
+            "https://news.lego-sia.com/posts/2026/05/13/markets-nvidias-jensen-huang-and-donald-trump-visi/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/markets-nvidias-jensen-huang-and-donald-trump-visi/",
+            "https://news.lego-sia.com/posts/2026/05/13/hardware-texas-instruments-scales-in-house-product/",
+            "https://news.lego-sia.com/en/posts/2026/05/13/hardware-texas-instruments-scales-in-house-product/"
         ],
-        "published_at": "2026-05-13T11:11:11.609040"
+        "published_at": "2026-05-13T17:08:30.958814"
     },
     "ai": {
         "notebook_id": "6e25b577-2dbc-4b29-ba9f-d9e966cc8447",
