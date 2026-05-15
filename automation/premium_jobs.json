@@ -1,75 +1,73 @@
 {
     "hardware_part1": {
-        "notebook_id": "8fd51bb3-f820-479d-a0bc-24f137fe0d7f",
+        "notebook_id": "b4eb3636-fd4c-411c-a2f7-f07b735d511c",
         "title": "2026-05-15 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-15T05:01:44.346185",
+        "triggered_at": "2026-05-15T11:02:01.040644",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/15/markets-tencent-leverages-q1-revenue-surge-for-2h2/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/markets-tencent-leverages-q1-revenue-surge-for-2h2/",
-            "https://news.lego-sia.com/posts/2026/05/15/hardware-openais-strategic-pivot-leveraging-the-ce/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-openais-strategic-pivot-leveraging-the-ce/",
-            "https://news.lego-sia.com/posts/2026/05/15/hardware-mediatek-adopts-intel-emib-alongside-tsmc/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-mediatek-adopts-intel-emib-alongside-tsmc/",
-            "https://news.lego-sia.com/posts/2026/05/15/insights-the-road-to-14nm-deciphering-the-high-sta/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/insights-the-road-to-14nm-deciphering-the-high-sta/"
+            "https://news.lego-sia.com/posts/2026/05/15/hardware-tsmc-ai-infrastructure-hegemony-18-new-fa/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-tsmc-ai-infrastructure-hegemony-18-new-fa/",
+            "https://news.lego-sia.com/posts/2026/05/15/markets-qbit-semiconductors-strategic-pivot-domina/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/markets-qbit-semiconductors-strategic-pivot-domina/",
+            "https://news.lego-sia.com/posts/2026/05/15/insights-japans-semiconductor-dual-track-strategy/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/insights-japans-semiconductor-dual-track-strategy/",
+            "https://news.lego-sia.com/posts/2026/05/15/hardware-amd-fsr-4-official-launch-empowering-rade/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-amd-fsr-4-official-launch-empowering-rade/"
         ],
-        "published_at": "2026-05-15T05:03:58.023753"
+        "published_at": "2026-05-15T11:04:13.537508"
     },
     "hardware_part2": {
-        "notebook_id": "0f783a7a-00f2-4100-8366-109f580f3e0d",
+        "notebook_id": "996fca83-1ea6-4e71-b962-324d0a451c09",
         "title": "2026-05-15 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-15T05:01:55.401532",
+        "triggered_at": "2026-05-15T11:02:10.829793",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/15/hardware-amd-disrupts-enterprise-dominance-with-re/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-amd-disrupts-enterprise-dominance-with-re/",
-            "https://news.lego-sia.com/posts/2026/05/15/hardware-taiwanese-display-industry-pivots-to-micr/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-taiwanese-display-industry-pivots-to-micr/",
-            "https://news.lego-sia.com/posts/2026/05/15/hardware-phison-posts-historic-record-earnings-as/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-phison-posts-historic-record-earnings-as/",
-            "https://news.lego-sia.com/posts/2026/05/15/hardware-ai-chip-boom-propels-taiwan-testing-giant/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-ai-chip-boom-propels-taiwan-testing-giant/"
+            "https://news.lego-sia.com/posts/2026/05/15/hardware-intel-razor-lake-ax-leaks-flagship-igpu-t/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-intel-razor-lake-ax-leaks-flagship-igpu-t/",
+            "https://news.lego-sia.com/posts/2026/05/15/hardware-kioxia-and-dell-technologies-unveil-98-pb/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-kioxia-and-dell-technologies-unveil-98-pb/",
+            "https://news.lego-sia.com/posts/2026/05/15/markets-foxconn-reports-63-profit-surge-driven-by/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/markets-foxconn-reports-63-profit-surge-driven-by/"
         ],
-        "published_at": "2026-05-15T05:04:02.522507"
+        "published_at": "2026-05-15T11:04:20.447917"
     },
     "ai_part1": {
-        "notebook_id": "fc0dd97f-605b-42da-8d5f-89be568f2e6f",
+        "notebook_id": "3739f988-4cb3-4578-8b25-b26411a47a57",
         "title": "2026-05-15 ai Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-15T05:01:23.016230",
+        "triggered_at": "2026-05-15T11:01:41.867989",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/15/ai-aws-kiro-transforming-the-sdlc-by-proving-logic/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/ai-aws-kiro-transforming-the-sdlc-by-proving-logic/",
-            "https://news.lego-sia.com/posts/2026/05/15/ai-ibms-governed-enterprise-ai-navigating-messy-bu/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/ai-ibms-governed-enterprise-ai-navigating-messy-bu/",
-            "https://news.lego-sia.com/posts/2026/05/15/ai-white-circle-secures-11m-seed-funding-to-build/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/ai-white-circle-secures-11m-seed-funding-to-build/",
-            "https://news.lego-sia.com/posts/2026/05/15/ai-google-cloud-marketplace-scaling-the-agentic-en/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/ai-google-cloud-marketplace-scaling-the-agentic-en/"
+            "https://news.lego-sia.com/posts/2026/05/15/ai-thinking-machines-beyond-turn-based-latency-wit/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/ai-thinking-machines-beyond-turn-based-latency-wit/",
+            "https://news.lego-sia.com/posts/2026/05/15/insights-lessons-from-the-first-wave-of-agentic-ai/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/insights-lessons-from-the-first-wave-of-agentic-ai/",
+            "https://news.lego-sia.com/posts/2026/05/15/markets-openais-4b-expansion-launching-the-openai/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/markets-openais-4b-expansion-launching-the-openai/",
+            "https://news.lego-sia.com/posts/2026/05/15/hardware-amd-and-red-hat-optimizing-enterprise-ai/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-amd-and-red-hat-optimizing-enterprise-ai/"
         ],
-        "published_at": "2026-05-15T05:04:07.041325"
+        "published_at": "2026-05-15T11:04:29.755691"
     },
     "ai_part2": {
-        "notebook_id": "36dc2818-48cb-41ad-91c1-b0706f870513",
+        "notebook_id": "72374ef5-8dbb-4c58-89c2-301ed163f76b",
         "title": "2026-05-15 ai Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-15T05:01:33.508084",
+        "triggered_at": "2026-05-15T11:01:51.423097",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/15/ai-honeycomb-solves-the-ai-black-box-with-producti/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/ai-honeycomb-solves-the-ai-black-box-with-producti/",
-            "https://news.lego-sia.com/posts/2026/05/15/ai-signadot-closes-the-devops-loop-self-validating/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/ai-signadot-closes-the-devops-loop-self-validating/",
-            "https://news.lego-sia.com/posts/2026/05/15/ai-sap-unveils-the-autonomous-enterprise-recasting/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/ai-sap-unveils-the-autonomous-enterprise-recasting/",
-            "https://news.lego-sia.com/posts/2026/05/15/ai-red-hat-championing-digital-sovereignty-expandi/",
-            "https://news.lego-sia.com/en/posts/2026/05/15/ai-red-hat-championing-digital-sovereignty-expandi/"
+            "https://news.lego-sia.com/posts/2026/05/15/insights-ibm-think-2026-engineering-the-ai-control/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/insights-ibm-think-2026-engineering-the-ai-control/",
+            "https://news.lego-sia.com/posts/2026/05/15/ai-quiq-enterprise-voice-ai-scaling-beyond-pilot-p/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/ai-quiq-enterprise-voice-ai-scaling-beyond-pilot-p/",
+            "https://news.lego-sia.com/posts/2026/05/15/insights-metas-whatsapp-incognito-chat-leveraging/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/insights-metas-whatsapp-incognito-chat-leveraging/",
+            "https://news.lego-sia.com/posts/2026/05/15/hardware-fractile-raises-220m-overcoming-the-von-n/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/hardware-fractile-raises-220m-overcoming-the-von-n/"
         ],
-        "published_at": "2026-05-15T05:04:11.551016"
+        "published_at": "2026-05-15T11:04:41.425653"
     },
     "insights_part1": {
         "notebook_id": "cb8b2257-bd5d-4b07-b323-35a4b7c49d52",
@@ -136,19 +134,15 @@
         "published_at": "2026-05-11T05:03:05.202069"
     },
     "insights": {
-        "notebook_id": "db00cff3-136c-4270-9659-fc12eb3ae61d",
-        "title": "2026-05-14 insights Analysis",
+        "notebook_id": "0dfeae87-4799-44ad-9047-8a35ee78c975",
+        "title": "2026-05-15 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-14T23:02:16.423321",
+        "triggered_at": "2026-05-15T11:02:20.684152",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/14/ai-omrons-ai-unit-leverages-50m-japanese-patient-d/",
-            "https://news.lego-sia.com/en/posts/2026/05/14/ai-omrons-ai-unit-leverages-50m-japanese-patient-d/",
-            "https://news.lego-sia.com/posts/2026/05/14/insights-geopolitical-disruption-drives-data-cente/",
-            "https://news.lego-sia.com/en/posts/2026/05/14/insights-geopolitical-disruption-drives-data-cente/",
-            "https://news.lego-sia.com/posts/2026/05/14/markets-foxconn-projects-strong-q2-performance-as/",
-            "https://news.lego-sia.com/en/posts/2026/05/14/markets-foxconn-projects-strong-q2-performance-as/"
+            "https://news.lego-sia.com/posts/2026/05/15/insights-chinas-rare-earth-dominance-challenged-a/",
+            "https://news.lego-sia.com/en/posts/2026/05/15/insights-chinas-rare-earth-dominance-challenged-a/"
         ],
-        "published_at": "2026-05-14T23:05:02.986985"
+        "published_at": "2026-05-15T11:05:22.098501"
     }
 }
