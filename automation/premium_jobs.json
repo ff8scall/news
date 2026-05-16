@@ -108,49 +108,51 @@
         "published_at": "2026-05-16T05:06:44.281404"
     },
     "ai": {
-        "notebook_id": "6e25b577-2dbc-4b29-ba9f-d9e966cc8447",
-        "title": "2026-05-12 ai Analysis",
+        "notebook_id": "a01d63c2-775c-45c8-b43a-e9070259b92d",
+        "title": "2026-05-17 ai Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-12T17:01:16.361146",
+        "triggered_at": "2026-05-17T05:01:23.039004",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/12/ai-gitlabs-radical-pivot-to-the-agentic-era-flatte/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/ai-gitlabs-radical-pivot-to-the-agentic-era-flatte/",
-            "https://news.lego-sia.com/posts/2026/05/12/markets-the-ai-repricing-phenomenon-why-zoominfos/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/markets-the-ai-repricing-phenomenon-why-zoominfos/",
-            "https://news.lego-sia.com/posts/2026/05/12/ai-the-end-of-asynchronous-ai-thinking-machines-mo/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/ai-the-end-of-asynchronous-ai-thinking-machines-mo/",
-            "https://news.lego-sia.com/posts/2026/05/12/hardware-arctic-infrastructure-sovereign-nscale-la/",
-            "https://news.lego-sia.com/en/posts/2026/05/12/hardware-arctic-infrastructure-sovereign-nscale-la/"
+            "https://news.lego-sia.com/posts/2026/05/17/ai-salesforce-ceo-marc-benioff-bets-300m-on-anthro/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/ai-salesforce-ceo-marc-benioff-bets-300m-on-anthro/",
+            "https://news.lego-sia.com/posts/2026/05/17/ai-openai-integrates-financial-data-via-plaid-the/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/ai-openai-integrates-financial-data-via-plaid-the/",
+            "https://news.lego-sia.com/posts/2026/05/17/insights-arxiv-cracks-down-on-ai-generated-researc/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/insights-arxiv-cracks-down-on-ai-generated-researc/",
+            "https://news.lego-sia.com/posts/2026/05/17/ai-openai-strategy-shift-greg-brockman-leads-produ/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/ai-openai-strategy-shift-greg-brockman-leads-produ/"
         ],
-        "published_at": "2026-05-12T17:05:54.978377"
+        "published_at": "2026-05-17T05:04:20.926543"
     },
     "hardware": {
-        "notebook_id": "d8b9a6c6-41b6-4636-b2eb-b9e06574d41a",
-        "title": "2026-05-11 hardware Analysis",
+        "notebook_id": "78f2b79a-0596-4100-bd5c-ce0979b3d6b4",
+        "title": "2026-05-17 hardware Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-11T05:01:11.347933",
+        "triggered_at": "2026-05-17T05:01:33.329741",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/11/hardware-mit-revives-3d-printed-y-zipper-technolog/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/hardware-mit-revives-3d-printed-y-zipper-technolog/",
-            "https://news.lego-sia.com/posts/2026/05/11/markets-fake-ddr5-memory-modules-surge-in-secondar/",
-            "https://news.lego-sia.com/en/posts/2026/05/11/markets-fake-ddr5-memory-modules-surge-in-secondar/"
+            "https://news.lego-sia.com/posts/2026/05/17/hardware-intel-scraps-core-ultra-9-290k-plus-dimin/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-intel-scraps-core-ultra-9-290k-plus-dimin/",
+            "https://news.lego-sia.com/posts/2026/05/17/hardware-texas-local-ban-vs-state-law-the-battle-o/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-texas-local-ban-vs-state-law-the-battle-o/"
         ],
-        "published_at": "2026-05-11T05:03:05.202069"
+        "published_at": "2026-05-17T05:04:25.219669"
     },
     "insights": {
-        "notebook_id": "18abef8a-aa3c-4eaa-9546-2c283e3b64fe",
-        "title": "2026-05-16 insights Analysis",
+        "notebook_id": "c36b3f5e-6218-45fa-a4e4-94f0f9225421",
+        "title": "2026-05-17 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-16T23:01:55.035508",
+        "triggered_at": "2026-05-17T05:01:44.238056",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/16/insights-optimizing-linux-workflows-eliminating-in/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/insights-optimizing-linux-workflows-eliminating-in/",
-            "https://news.lego-sia.com/posts/2026/05/16/insights-unlocking-smart-home-potential-5-underuti/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/insights-unlocking-smart-home-potential-5-underuti/"
+            "https://news.lego-sia.com/posts/2026/05/17/ai-the-rise-of-local-llm-video-doorbells-privacy-f/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/ai-the-rise-of-local-llm-video-doorbells-privacy-f/",
+            "https://news.lego-sia.com/posts/2026/05/17/insights-google-magic-eraser-goes-universal-analyz/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/insights-google-magic-eraser-goes-universal-analyz/",
+            "https://news.lego-sia.com/posts/2026/05/17/markets-the-institutionalization-of-crypto-in-japa/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/markets-the-institutionalization-of-crypto-in-japa/"
         ],
-        "published_at": "2026-05-16T23:05:52.355912"
+        "published_at": "2026-05-17T05:04:35.664998"
     }
 }
