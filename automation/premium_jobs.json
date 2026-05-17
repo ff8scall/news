@@ -30,40 +30,34 @@
         "published_at": "2026-05-17T23:03:49.267098"
     },
     "ai_part1": {
-        "notebook_id": "91375f2a-51d6-4e0f-bb11-7f96b088b91d",
-        "title": "2026-05-16 ai Analysis (part1)",
+        "notebook_id": "341a774f-3814-4697-a3f8-979c0228d751",
+        "title": "2026-05-18 ai Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-16T23:01:15.614968",
+        "triggered_at": "2026-05-18T05:01:04.019695",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/16/ai-the-end-of-search-alibaba-integrates-qwen-ai-to/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/ai-the-end-of-search-alibaba-integrates-qwen-ai-to/",
-            "https://news.lego-sia.com/posts/2026/05/16/markets-the-70-failure-reality-nasdaq-highlights-r/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/markets-the-70-failure-reality-nasdaq-highlights-r/",
-            "https://news.lego-sia.com/posts/2026/05/16/ai-ai-enhanced-cyber-warfare-north-korean-syndicat/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/ai-ai-enhanced-cyber-warfare-north-korean-syndicat/",
-            "https://news.lego-sia.com/posts/2026/05/16/insights-linux-kernel-security-crisis-qualys-flags/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/insights-linux-kernel-security-crisis-qualys-flags/"
+            "https://news.lego-sia.com/posts/2026/05/18/ai-the-trust-trial-scrutinizing-sam-altmans-integr/",
+            "https://news.lego-sia.com/en/posts/2026/05/18/ai-the-trust-trial-scrutinizing-sam-altmans-integr/",
+            "https://news.lego-sia.com/posts/2026/05/18/ai-the-mobility-revolution-navigating-the-ai-skill/",
+            "https://news.lego-sia.com/en/posts/2026/05/18/ai-the-mobility-revolution-navigating-the-ai-skill/",
+            "https://news.lego-sia.com/posts/2026/05/18/ai-apple-ios-27-standalone-siri-app-debuts-with-au/",
+            "https://news.lego-sia.com/en/posts/2026/05/18/ai-apple-ios-27-standalone-siri-app-debuts-with-au/"
         ],
-        "published_at": "2026-05-16T23:04:54.001688"
+        "published_at": "2026-05-18T05:03:34.198953"
     },
     "ai_part2": {
-        "notebook_id": "f542cc19-f99b-4f3f-9e1f-35e5bf14926d",
-        "title": "2026-05-16 ai Analysis (part2)",
+        "notebook_id": "7f7af9e2-5453-4773-bfbc-bbf50d1ca68f",
+        "title": "2026-05-18 ai Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-16T23:01:25.540329",
+        "triggered_at": "2026-05-18T05:01:13.918805",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/16/markets-the-us-is-betting-on-ai-to-catch-insider-t/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/markets-the-us-is-betting-on-ai-to-catch-insider-t/",
-            "https://news.lego-sia.com/posts/2026/05/16/ai-four-openclaw-flaws-let-attackers-steal-data-an/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/ai-four-openclaw-flaws-let-attackers-steal-data-an/",
-            "https://news.lego-sia.com/posts/2026/05/16/insights-most-ceos-think-their-boards-are-rushing/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/insights-most-ceos-think-their-boards-are-rushing/",
-            "https://news.lego-sia.com/posts/2026/05/16/ai-stripes-john-collison-says-agentic-commerce-wil/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/ai-stripes-john-collison-says-agentic-commerce-wil/"
+            "https://news.lego-sia.com/posts/2026/05/18/ai-meta-powered-lennon-soderbergh-challenges-canne/",
+            "https://news.lego-sia.com/en/posts/2026/05/18/ai-meta-powered-lennon-soderbergh-challenges-canne/",
+            "https://news.lego-sia.com/posts/2026/05/18/ai-openais-strategic-pivot-greg-brockman-leads-uni/",
+            "https://news.lego-sia.com/en/posts/2026/05/18/ai-openais-strategic-pivot-greg-brockman-leads-uni/"
         ],
-        "published_at": "2026-05-16T23:05:46.339136"
+        "published_at": "2026-05-18T05:03:37.885287"
     },
     "insights_part1": {
         "notebook_id": "8108dabe-0087-47dc-8e08-6895249f0b16",
@@ -120,31 +114,33 @@
         "published_at": "2026-05-17T23:04:42.433122"
     },
     "hardware": {
-        "notebook_id": "78f2b79a-0596-4100-bd5c-ce0979b3d6b4",
-        "title": "2026-05-17 hardware Analysis",
+        "notebook_id": "d94a4f2e-7ed9-4bf8-bd7c-c00ecffe2f1d",
+        "title": "2026-05-18 hardware Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-17T05:01:33.329741",
+        "triggered_at": "2026-05-18T05:01:23.609345",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/17/hardware-intel-scraps-core-ultra-9-290k-plus-dimin/",
-            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-intel-scraps-core-ultra-9-290k-plus-dimin/",
-            "https://news.lego-sia.com/posts/2026/05/17/hardware-texas-local-ban-vs-state-law-the-battle-o/",
-            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-texas-local-ban-vs-state-law-the-battle-o/"
+            "https://news.lego-sia.com/posts/2026/05/18/hardware-asml-to-equip-indias-first-commercial-fab/",
+            "https://news.lego-sia.com/en/posts/2026/05/18/hardware-asml-to-equip-indias-first-commercial-fab/"
         ],
-        "published_at": "2026-05-17T05:04:25.219669"
+        "published_at": "2026-05-18T05:03:41.983844"
     },
     "insights": {
-        "notebook_id": "05774524-80b7-4ec0-ab8f-99523f69e827",
-        "title": "2026-05-17 insights Analysis",
+        "notebook_id": "89e5ad03-39d3-4f79-8d4b-5163658bd5cb",
+        "title": "2026-05-18 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-17T23:02:02.971602",
+        "triggered_at": "2026-05-18T05:01:33.765665",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/17/insights-redefining-the-luxury-flagship-audi-q9s-i/",
-            "https://news.lego-sia.com/en/posts/2026/05/17/insights-redefining-the-luxury-flagship-audi-q9s-i/",
-            "https://news.lego-sia.com/posts/2026/05/17/insights-the-adobe-exodus-why-davinci-resolves-nod/",
-            "https://news.lego-sia.com/en/posts/2026/05/17/insights-the-adobe-exodus-why-davinci-resolves-nod/"
+            "https://news.lego-sia.com/posts/2026/05/18/hardware-shimanos-strategic-pivot-leveraging-ai-po/",
+            "https://news.lego-sia.com/en/posts/2026/05/18/hardware-shimanos-strategic-pivot-leveraging-ai-po/",
+            "https://news.lego-sia.com/posts/2026/05/18/ai-japan-to-establish-national-cyberdefense-framew/",
+            "https://news.lego-sia.com/en/posts/2026/05/18/ai-japan-to-establish-national-cyberdefense-framew/",
+            "https://news.lego-sia.com/posts/2026/05/18/markets-sumitomo-metal-and-sojitz-diversify-supply/",
+            "https://news.lego-sia.com/en/posts/2026/05/18/markets-sumitomo-metal-and-sojitz-diversify-supply/",
+            "https://news.lego-sia.com/posts/2026/05/18/insights-finland-and-japan-strengthen-strategic-ti/",
+            "https://news.lego-sia.com/en/posts/2026/05/18/insights-finland-and-japan-strengthen-strategic-ti/"
         ],
-        "published_at": "2026-05-17T23:04:48.087980"
+        "published_at": "2026-05-18T05:04:02.622677"
     }
 }
