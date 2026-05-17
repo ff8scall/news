@@ -1,39 +1,39 @@
 {
     "hardware_part1": {
-        "notebook_id": "3f70b85d-e199-4fe9-ac43-a393e716cd1c",
-        "title": "2026-05-16 hardware Analysis (part1)",
+        "notebook_id": "bfaa95e5-20bc-49cf-b608-99036cafca27",
+        "title": "2026-05-17 hardware Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-16T23:01:35.232290",
+        "triggered_at": "2026-05-17T11:01:23.070680",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/16/markets-the-re100-compliance-crisis-taiwans-renewa/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/markets-the-re100-compliance-crisis-taiwans-renewa/",
-            "https://news.lego-sia.com/posts/2026/05/16/hardware-next-gen-optics-metalens-manufacturing-tr/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/hardware-next-gen-optics-metalens-manufacturing-tr/",
-            "https://news.lego-sia.com/posts/2026/05/16/insights-the-h200-rejection-chinas-strategic-pivot/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/insights-the-h200-rejection-chinas-strategic-pivot/",
-            "https://news.lego-sia.com/posts/2026/05/16/hardware-amd-microsoft-strategy-advanced-shader-de/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/hardware-amd-microsoft-strategy-advanced-shader-de/"
+            "https://news.lego-sia.com/posts/2026/05/17/hardware-redefining-maritime-deterrence-the-strate/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-redefining-maritime-deterrence-the-strate/",
+            "https://news.lego-sia.com/posts/2026/05/17/hardware-the-silicon-carbon-frontier-scrutinizing/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-the-silicon-carbon-frontier-scrutinizing/",
+            "https://news.lego-sia.com/posts/2026/05/17/markets-ciscos-ai-infrastructure-dominance-analyzi/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/markets-ciscos-ai-infrastructure-dominance-analyzi/",
+            "https://news.lego-sia.com/posts/2026/05/17/hardware-the-strategic-vacuum-how-the-global-hbm-s/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-the-strategic-vacuum-how-the-global-hbm-s/"
         ],
-        "published_at": "2026-05-16T23:03:34.283108"
+        "published_at": "2026-05-17T11:03:55.420706"
     },
     "hardware_part2": {
-        "notebook_id": "ff79255b-6a6b-4fcd-a180-2c0b95488650",
-        "title": "2026-05-16 hardware Analysis (part2)",
+        "notebook_id": "4e656499-35c5-4349-a910-3bcb1c9c4afe",
+        "title": "2026-05-17 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-16T23:01:44.898817",
+        "triggered_at": "2026-05-17T11:01:33.752388",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/16/markets-chinas-memory-sovereignty-ymtc-and-cxmt-es/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/markets-chinas-memory-sovereignty-ymtc-and-cxmt-es/",
-            "https://news.lego-sia.com/posts/2026/05/16/insights-pjm-grid-crisis-76-surge-in-power-prices/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/insights-pjm-grid-crisis-76-surge-in-power-prices/",
-            "https://news.lego-sia.com/posts/2026/05/16/hardware-the-36x-interconnect-multiplier-ai-data-c/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/hardware-the-36x-interconnect-multiplier-ai-data-c/",
-            "https://news.lego-sia.com/posts/2026/05/16/ai-the-m5-breach-anthropics-claude-mythos-ai-uncov/",
-            "https://news.lego-sia.com/en/posts/2026/05/16/ai-the-m5-breach-anthropics-claude-mythos-ai-uncov/"
+            "https://news.lego-sia.com/posts/2026/05/17/hardware-optical-supply-chain-pivot-engineering-fr/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-optical-supply-chain-pivot-engineering-fr/",
+            "https://news.lego-sia.com/posts/2026/05/17/hardware-adlinks-strategic-pivot-how-physical-ai-d/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-adlinks-strategic-pivot-how-physical-ai-d/",
+            "https://news.lego-sia.com/posts/2026/05/17/hardware-advantechs-5-year-vision-leadership-trans/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-advantechs-5-year-vision-leadership-trans/",
+            "https://news.lego-sia.com/posts/2026/05/17/hardware-galateks-micron-level-innovation-solving/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/hardware-galateks-micron-level-innovation-solving/"
         ],
-        "published_at": "2026-05-16T23:04:02.273704"
+        "published_at": "2026-05-17T11:03:59.856297"
     },
     "ai_part1": {
         "notebook_id": "91375f2a-51d6-4e0f-bb11-7f96b088b91d",
@@ -140,19 +140,15 @@
         "published_at": "2026-05-17T05:04:25.219669"
     },
     "insights": {
-        "notebook_id": "c36b3f5e-6218-45fa-a4e4-94f0f9225421",
+        "notebook_id": "6937b991-303e-43e4-a971-4299446b1409",
         "title": "2026-05-17 insights Analysis",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-17T05:01:44.238056",
+        "triggered_at": "2026-05-17T11:01:43.873644",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/17/ai-the-rise-of-local-llm-video-doorbells-privacy-f/",
-            "https://news.lego-sia.com/en/posts/2026/05/17/ai-the-rise-of-local-llm-video-doorbells-privacy-f/",
-            "https://news.lego-sia.com/posts/2026/05/17/insights-google-magic-eraser-goes-universal-analyz/",
-            "https://news.lego-sia.com/en/posts/2026/05/17/insights-google-magic-eraser-goes-universal-analyz/",
-            "https://news.lego-sia.com/posts/2026/05/17/markets-the-institutionalization-of-crypto-in-japa/",
-            "https://news.lego-sia.com/en/posts/2026/05/17/markets-the-institutionalization-of-crypto-in-japa/"
+            "https://news.lego-sia.com/posts/2026/05/17/insights-why-the-toyota-corolla-hybrid-outpaces-th/",
+            "https://news.lego-sia.com/en/posts/2026/05/17/insights-why-the-toyota-corolla-hybrid-outpaces-th/"
         ],
-        "published_at": "2026-05-17T05:04:35.664998"
+        "published_at": "2026-05-17T11:04:04.081491"
     }
 }
