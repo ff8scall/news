@@ -18,22 +18,22 @@
         "published_at": "2026-05-20T05:07:02.626277"
     },
     "hardware_part2": {
-        "notebook_id": "65bc0eee-516e-4344-b895-6a0d3162947e",
+        "notebook_id": "fbf4e72d-1954-4007-a65f-2eed4a3ba0bb",
         "title": "2026-05-20 hardware Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-20T05:04:07.777402",
+        "triggered_at": "2026-05-20T11:01:36.571175",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/20/hardware-recovery-2026-w--winsemiawsc-0/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-recovery-2026-w--winsemiawsc-0/",
-            "https://news.lego-sia.com/posts/2026/05/20/hardware-recovery---ai-tpu-0/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-recovery---ai-tpu-0/",
-            "https://news.lego-sia.com/posts/2026/05/20/hardware-recovery-18a-0/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-recovery-18a-0/",
-            "https://news.lego-sia.com/posts/2026/05/20/hardware-recovery-2026-0/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-recovery-2026-0/"
+            "https://news.lego-sia.com/posts/2026/05/20/hardware-intel-project-firefly-sub-600-laptops-lev/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-intel-project-firefly-sub-600-laptops-lev/",
+            "https://news.lego-sia.com/posts/2026/05/20/hardware-fabricked-attack-researchers-breach-amd-i/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-fabricked-attack-researchers-breach-amd-i/",
+            "https://news.lego-sia.com/posts/2026/05/20/hardware-intel-nova-lake-engineering-samples-ship/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-intel-nova-lake-engineering-samples-ship/",
+            "https://news.lego-sia.com/posts/2026/05/20/markets-mckinsey-robotics-report-a-400-billion-out/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/markets-mckinsey-robotics-report-a-400-billion-out/"
         ],
-        "published_at": "2026-05-20T05:07:28.683443"
+        "published_at": "2026-05-20T11:03:42.425597"
     },
     "ai_part1": {
         "notebook_id": "0819511f-29f1-49ff-8bc5-14353486ef95",
@@ -54,58 +54,58 @@
         "published_at": "2026-05-20T05:07:39.158458"
     },
     "ai_part2": {
-        "notebook_id": "1f109744-60b8-4a25-a258-755f285c4695",
+        "notebook_id": "071e9124-2c85-4a2d-9967-3e916888adc9",
         "title": "2026-05-20 ai Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-20T05:03:48.076782",
+        "triggered_at": "2026-05-20T11:01:17.859941",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/20/markets-ai-infrastructure-gold-rush-nextera-and-do/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/markets-ai-infrastructure-gold-rush-nextera-and-do/",
-            "https://news.lego-sia.com/posts/2026/05/20/ai-next-gen-world-models-google-genie-integrates-s/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/ai-next-gen-world-models-google-genie-integrates-s/",
-            "https://news.lego-sia.com/posts/2026/05/20/ai-the-agentic-shift-gemini-35-flash-redefines-llm/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/ai-the-agentic-shift-gemini-35-flash-redefines-llm/",
-            "https://news.lego-sia.com/posts/2026/05/20/ai-no-code-evolution-google-ai-studio-enables-inst/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/ai-no-code-evolution-google-ai-studio-enables-inst/"
+            "https://news.lego-sia.com/posts/2026/05/20/ai-android-cli-and-agentic-coding-decoupling-the-i/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/ai-android-cli-and-agentic-coding-decoupling-the-i/",
+            "https://news.lego-sia.com/posts/2026/05/20/insights-andrej-karpathy-joins-anthropic-human-cap/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/insights-andrej-karpathy-joins-anthropic-human-cap/",
+            "https://news.lego-sia.com/posts/2026/05/20/markets-google-search-redesign-retiring-the-25-yea/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/markets-google-search-redesign-retiring-the-25-yea/",
+            "https://news.lego-sia.com/posts/2026/05/20/markets-amazon-alexa-for-shopping-orchestrating-ru/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/markets-amazon-alexa-for-shopping-orchestrating-ru/"
         ],
-        "published_at": "2026-05-20T05:08:36.493340"
+        "published_at": "2026-05-20T11:04:34.520673"
     },
     "insights_part1": {
-        "notebook_id": "6b8254cc-b562-4f39-a822-6df969c99929",
+        "notebook_id": "7c5a1995-ae81-414a-a0dc-adae0195bd0f",
         "title": "2026-05-20 insights Analysis (part1)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-20T05:04:17.705093",
+        "triggered_at": "2026-05-20T11:01:45.997127",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/20/hardware-deep-dive-x86-64-split-lock-performance-p/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-deep-dive-x86-64-split-lock-performance-p/",
-            "https://news.lego-sia.com/posts/2026/05/20/ai-google-ai-studio-from-code-to-context-via-promp/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/ai-google-ai-studio-from-code-to-context-via-promp/",
-            "https://news.lego-sia.com/posts/2026/05/20/insights-platform-paradox-analyzing-googles-automa/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/insights-platform-paradox-analyzing-googles-automa/",
-            "https://news.lego-sia.com/posts/2026/05/20/markets-panasonics-strategic-ma-acquiring-agility/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/markets-panasonics-strategic-ma-acquiring-agility/"
+            "https://news.lego-sia.com/posts/2026/05/20/hardware-japan-to-test-perovskite-solar-power-at-s/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-japan-to-test-perovskite-solar-power-at-s/",
+            "https://news.lego-sia.com/posts/2026/05/20/ai-hitachi-teams-with-anthropic-on-ai-for-rail-and/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/ai-hitachi-teams-with-anthropic-on-ai-for-rail-and/",
+            "https://news.lego-sia.com/posts/2026/05/20/ai-meta-to-debut-ai-smart-glasses-in-japan-with-tr/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/ai-meta-to-debut-ai-smart-glasses-in-japan-with-tr/",
+            "https://news.lego-sia.com/posts/2026/05/20/markets-asias-agri-tech-startups-offer-answers-to/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/markets-asias-agri-tech-startups-offer-answers-to/"
         ],
-        "published_at": "2026-05-20T05:08:48.285587"
+        "published_at": "2026-05-20T11:04:54.848901"
     },
     "insights_part2": {
-        "notebook_id": "88af8d30-0d85-4409-8a9d-bea68726b627",
+        "notebook_id": "e17dcb40-cfc0-4605-9226-676a1808c244",
         "title": "2026-05-20 insights Analysis (part2)",
         "mode": "B",
         "status": "published",
-        "triggered_at": "2026-05-20T05:04:27.777248",
+        "triggered_at": "2026-05-20T11:01:55.133479",
         "urls": [
-            "https://news.lego-sia.com/posts/2026/05/20/markets-structural-reform-in-japans-startup-ecosys/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/markets-structural-reform-in-japans-startup-ecosys/",
-            "https://news.lego-sia.com/posts/2026/05/20/ai-google-unveils-token-optimized-ai-models-drivin/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/ai-google-unveils-token-optimized-ai-models-drivin/",
-            "https://news.lego-sia.com/posts/2026/05/20/hardware-tdks-strategic-acquisition-of-malaysian-s/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-tdks-strategic-acquisition-of-malaysian-s/",
-            "https://news.lego-sia.com/posts/2026/05/20/hardware-fujikura-scales-us-fiber-optic-capacity-s/",
-            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-fujikura-scales-us-fiber-optic-capacity-s/"
+            "https://news.lego-sia.com/posts/2026/05/20/markets-strategic-japan-singapore-alliance-nec-and/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/markets-strategic-japan-singapore-alliance-nec-and/",
+            "https://news.lego-sia.com/posts/2026/05/20/hardware-investigating-x86-64-split-lock-performan/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/hardware-investigating-x86-64-split-lock-performan/",
+            "https://news.lego-sia.com/posts/2026/05/20/ai-the-ai-revolution-in-software-engineering-embra/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/ai-the-ai-revolution-in-software-engineering-embra/",
+            "https://news.lego-sia.com/posts/2026/05/20/insights-content-strategy-pivot-john-krasinskis-ja/",
+            "https://news.lego-sia.com/en/posts/2026/05/20/insights-content-strategy-pivot-john-krasinskis-ja/"
         ],
-        "published_at": "2026-05-20T05:09:03.619787"
+        "published_at": "2026-05-20T11:05:05.396975"
     },
     "ai": {
         "notebook_id": "82483818-f6ef-462c-a3bb-50f04d7abed4",
